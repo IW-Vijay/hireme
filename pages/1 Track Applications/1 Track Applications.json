@@ -1,0 +1,91 @@
+{
+  "unpublishedPage": {
+    "name": "1 Track Applications",
+    "slug": "1-track-applications",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1160,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1140,
+          "containerStyle": "none",
+          "snapRows": 128,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 850,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
+          "dynamicBindingPathList": []
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "1 Track Applications_Utils.dataCount",
+              "name": "Utils.dataCount",
+              "collectionId": "1 Track Applications_Utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const dataArray = await getAllApplications.run();\n  let counts = {\n    all: dataArray.length,\n    hired: 0,\n    interviewed: 0,\n    in_assessment: 0,\n    in_review: 0\n  };\n  dataArray.forEach(application => {\n    switch (application.application_status) {\n      case 'Offer Accepted':\n        counts.hired += 1;\n        break;\n      case 'Interview Done':\n        counts.interviewed += 1;\n        counts.in_review += 1;\n        break;\n      case 'Offer Made':\n        counts.in_assessment += 1;\n        break;\n      default:\n        break;\n    }\n  });\n  return counts;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "1 Track Applications_Utils.dropdownData",
+              "name": "Utils.dropdownData",
+              "collectionId": "1 Track Applications_Utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const dataArray = await getAllApplications.run();\n  let uniqueLocations = new Set();\n  let uniqueRoles = new Set();\n  let uniqueStatuses = new Set();\n  dataArray.forEach(candidate => {\n    uniqueLocations.add(candidate.country);\n    uniqueRoles.add(candidate.applied_role);\n    uniqueStatuses.add(candidate.application_status);\n  });\n  let formatSetToArray = set => {\n    let array = Array.from(set);\n    return array.map(item => ({\n      label: item,\n      value: item\n    }));\n  };\n  return {\n    location: formatSetToArray(uniqueLocations),\n    applied_role: formatSetToArray(uniqueRoles),\n    application_status: formatSetToArray(uniqueStatuses)\n  };\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "1 Track Applications_Utils.filteredApplications",
+              "name": "Utils.filteredApplications",
+              "collectionId": "1 Track Applications_Utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const allApplications = await getAllApplications.run();\n  const statusFilter = sel_status.selectedOptionValue;\n  const roleFilter = sel_role.selectedOptionValue;\n  const locationFilter = sel_location.selectedOptionValue;\n  return allApplications.filter(application => {\n    const statusMatch = !statusFilter || statusFilter === '' || statusFilter === 'All' || application.application_status === statusFilter;\n    const roleMatch = !roleFilter || roleFilter === '' || roleFilter === 'All' || application.applied_role === roleFilter;\n    const locationMatch = !locationFilter || locationFilter === '' || locationFilter === 'All' || application.country === locationFilter;\n    return statusMatch && roleMatch && locationMatch;\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "1 Track Applications_getApplicationRound",
+              "name": "getApplicationRound",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "tbl_application.selectedRow.id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "1 Track Applications",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": []
+  },
+  "deleted": false,
+  "gitSyncId": "61c170fe9229e87746b79e05_61c433d6e89bc475f3cbc8aa"
+}

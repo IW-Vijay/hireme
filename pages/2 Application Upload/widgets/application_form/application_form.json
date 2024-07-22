@@ -1,0 +1,164 @@
+{
+    "boxShadow": "none",
+    "widgetName": "application_form",
+    "dynamicPropertyPathList": [{"key": "borderRadius"}],
+    "topRow": 18,
+    "bottomRow": 85,
+    "parentRowSpace": 40,
+    "type": "FORM_WIDGET",
+    "parentColumnSpace": 74,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 1,
+    "dynamicBindingPathList": [],
+    "children": [{
+        "labelTextSize": "0.875rem",
+        "boxShadow": "none",
+        "widgetName": "Canvas1",
+        "rightColumn": 2072,
+        "detachFromLayout": true,
+        "widgetId": "hnice2rhm7",
+        "topRow": 0,
+        "bottomRow": 670,
+        "containerStyle": "none",
+        "parentRowSpace": 1,
+        "isVisible": true,
+        "canExtend": false,
+        "type": "CANVAS_WIDGET",
+        "version": 1,
+        "parentId": "jl8q4pz21u",
+        "minHeight": 670,
+        "blueprint": {"view": [
+            {
+                "size": {
+                    "rows": 1,
+                    "cols": 12
+                },
+                "position": {
+                    "top": 0,
+                    "left": 0
+                },
+                "type": "TEXT_WIDGET",
+                "props": {
+                    "text": "Form",
+                    "textStyle": "HEADING"
+                }
+            },
+            {
+                "size": {
+                    "rows": 1,
+                    "cols": 4
+                },
+                "position": {
+                    "top": 11,
+                    "left": 12
+                },
+                "type": "FORM_BUTTON_WIDGET",
+                "props": {
+                    "resetFormOnClick": true,
+                    "disabledWhenInvalid": true,
+                    "buttonStyle": "PRIMARY_BUTTON",
+                    "text": "Submit"
+                }
+            },
+            {
+                "size": {
+                    "rows": 1,
+                    "cols": 4
+                },
+                "position": {
+                    "top": 11,
+                    "left": 8
+                },
+                "type": "FORM_BUTTON_WIDGET",
+                "props": {
+                    "resetFormOnClick": true,
+                    "disabledWhenInvalid": false,
+                    "buttonStyle": "SECONDARY_BUTTON",
+                    "text": "Reset"
+                }
+            }
+        ]},
+        "isLoading": false,
+        "parentColumnSpace": 1,
+        "dynamicTriggerPathList": [],
+        "leftColumn": 0,
+        "dynamicBindingPathList": [],
+        "borderRadius": "0px"
+    }],
+    "labelTextSize": "0.875rem",
+    "backgroundColor": "white",
+    "rightColumn": 63,
+    "dynamicHeight": "FIXED",
+    "widgetId": "jl8q4pz21u",
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "blueprint": {"view": [{
+        "position": {
+            "top": 0,
+            "left": 0
+        },
+        "type": "CANVAS_WIDGET",
+        "props": {
+            "blueprint": {"view": [
+                {
+                    "size": {
+                        "rows": 1,
+                        "cols": 12
+                    },
+                    "position": {
+                        "top": 0,
+                        "left": 0
+                    },
+                    "type": "TEXT_WIDGET",
+                    "props": {
+                        "text": "Form",
+                        "textStyle": "HEADING"
+                    }
+                },
+                {
+                    "size": {
+                        "rows": 1,
+                        "cols": 4
+                    },
+                    "position": {
+                        "top": 11,
+                        "left": 12
+                    },
+                    "type": "FORM_BUTTON_WIDGET",
+                    "props": {
+                        "resetFormOnClick": true,
+                        "disabledWhenInvalid": true,
+                        "buttonStyle": "PRIMARY_BUTTON",
+                        "text": "Submit"
+                    }
+                },
+                {
+                    "size": {
+                        "rows": 1,
+                        "cols": 4
+                    },
+                    "position": {
+                        "top": 11,
+                        "left": 8
+                    },
+                    "type": "FORM_BUTTON_WIDGET",
+                    "props": {
+                        "resetFormOnClick": true,
+                        "disabledWhenInvalid": false,
+                        "buttonStyle": "SECONDARY_BUTTON",
+                        "text": "Reset"
+                    }
+                }
+            ]},
+            "detachFromLayout": true,
+            "children": [],
+            "containerStyle": "none",
+            "canExtend": false
+        }
+    }]},
+    "isLoading": false,
+    "borderRadius": "0",
+    "maxDynamicHeight": 9000,
+    "minDynamicHeight": 4
+}
