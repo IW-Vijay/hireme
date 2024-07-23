@@ -1,7 +1,7 @@
 {
   "pages": [
     {
-      "id": "2 Application Upload",
+      "id": "SignupPage",
       "isDefault": false
     },
     {
@@ -32,9 +32,6 @@
   "unpublishedCustomJSLibs": [
     {
       "uidString": "xmlParser_https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.5/parser.min.js"
-    },
-    {
-      "uidString": "auth_https://cdn.jsdelivr.net/npm/@firebase/auth@1.7.5/+esm"
     }
   ],
   "publishedCustomJSLibs": [],
