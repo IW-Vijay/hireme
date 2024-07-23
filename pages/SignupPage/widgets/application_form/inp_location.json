@@ -9,8 +9,8 @@
         "number",
         "textarea"
     ],
-    "topRow": 20,
-    "bottomRow": 28,
+    "topRow": 33,
+    "bottomRow": 41,
     "parentRowSpace": 10,
     "labelWidth": 5,
     "autoFocus": false,

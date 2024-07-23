@@ -1,6 +1,6 @@
 {
     "boxShadow": "none",
-    "widgetName": "inp_phone",
+    "widgetName": "inp_pass",
     "displayName": "Input",
     "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
     "searchTags": [
@@ -9,8 +9,8 @@
         "number",
         "textarea"
     ],
-    "topRow": 2,
-    "bottomRow": 10,
+    "topRow": 11,
+    "bottomRow": 19,
     "parentRowSpace": 10,
     "labelWidth": 5,
     "autoFocus": false,
@@ -33,11 +33,11 @@
     "isDeprecated": false,
     "rightColumn": 46,
     "dynamicHeight": "FIXED",
-    "widgetId": "bh9k7ji1le",
+    "widgetId": "ao9ljcbzap",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "showStepArrows": false,
     "isVisible": true,
-    "label": "Phone No.",
+    "label": "Password",
     "version": 2,
     "parentId": "hnice2rhm7",
     "labelAlignment": "left",

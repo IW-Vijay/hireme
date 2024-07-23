@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "EntryPage",
-    "slug": "entrypage",
+    "name": "LoginPage",
+    "slug": "loginpage",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 550,
+          "bottomRow": 480,
           "containerStyle": "none",
           "snapRows": 104,
           "parentRowSpace": 1,
@@ -29,7 +29,7 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "EntryPage",
+        "id": "LoginPage",
         "deleted": false,
         "policies": [],
         "userPermissions": []

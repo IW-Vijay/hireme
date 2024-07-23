@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "SignupPage",
-    "slug": "signuppage",
+    "name": "AddJobPost",
+    "slug": "addjobpost",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1610,
+          "bottomRow": 950,
           "containerStyle": "none",
           "snapRows": 104,
           "parentRowSpace": 1,
@@ -29,7 +29,7 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "SignupPage",
+        "id": "AddJobPost",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -40,5 +40,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "61c170fe9229e87746b79e05_61c433d6e89bc475f3cbc8a8"
+  "gitSyncId": "669e2437c1686e0970b3aff6_fd4e9aa2-699e-4a7e-867d-3dcc765503c2"
 }

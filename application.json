@@ -2,18 +2,22 @@
   "pages": [
     {
       "id": "SignupPage",
-      "isDefault": false
-    },
-    {
-      "id": "1 Track Applications",
       "isDefault": true
     },
     {
-      "id": "EntryPage",
+      "id": "1 Track Applications",
       "isDefault": false
     },
     {
-      "id": "OtpPage",
+      "id": "LoginPage",
+      "isDefault": false
+    },
+    {
+      "id": "HomePage",
+      "isDefault": false
+    },
+    {
+      "id": "AddJobPost",
       "isDefault": false
     }
   ],

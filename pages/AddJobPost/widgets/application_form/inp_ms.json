@@ -1,8 +1,8 @@
 {
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
     "iconSVG": "/static/media/icon.757d7d5aeba566dd0ed4fbdfa932c80a.svg",
-    "labelText": "Describe Yourself in 100 words",
-    "topRow": 49,
+    "labelText": "Mandatory Skills",
+    "topRow": 19,
     "labelWidth": 5,
     "type": "RICH_TEXT_EDITOR_WIDGET",
     "animateLoading": true,
@@ -32,13 +32,13 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "needsErrorInfo": false,
     "mobileBottomRow": 58,
-    "widgetName": "inp_description",
+    "widgetName": "inp_ms",
     "displayName": "Rich Text Editor",
     "searchTags": [
         "input",
         "rte"
     ],
-    "bottomRow": 80,
+    "bottomRow": 43,
     "parentRowSpace": 10,
     "hideCard": false,
     "mobileRightColumn": 25,
