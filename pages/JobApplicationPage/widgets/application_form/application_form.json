@@ -3,7 +3,7 @@
     "widgetName": "application_form",
     "dynamicPropertyPathList": [{"key": "borderRadius"}],
     "topRow": 16,
-    "bottomRow": 111,
+    "bottomRow": 66,
     "parentRowSpace": 40,
     "type": "FORM_WIDGET",
     "shouldScrollContents": true,
@@ -19,7 +19,7 @@
         "detachFromLayout": true,
         "widgetId": "hnice2rhm7",
         "topRow": 0,
-        "bottomRow": 950,
+        "bottomRow": 500,
         "containerStyle": "none",
         "parentRowSpace": 1,
         "isVisible": true,
@@ -162,6 +162,6 @@
     "originalTopRow": 16,
     "borderRadius": "0",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 161,
+    "originalBottomRow": 67,
     "minDynamicHeight": 4
 }

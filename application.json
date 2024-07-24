@@ -2,7 +2,7 @@
   "pages": [
     {
       "id": "SignupPage",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "1 Track Applications",
@@ -19,6 +19,18 @@
     {
       "id": "AddJobPost",
       "isDefault": false
+    },
+    {
+      "id": "JobPage",
+      "isDefault": false
+    },
+    {
+      "id": "JobApplicationPage",
+      "isDefault": false
+    },
+    {
+      "id": "MyJobsPage",
+      "isDefault": true
     }
   ],
   "viewMode": false,
@@ -40,6 +52,11 @@
   ],
   "publishedCustomJSLibs": [],
   "applicationVersion": 2,
+  "embedSetting": {
+    "height": "720px",
+    "width": "1024px",
+    "showNavigationBar": false
+  },
   "isManualUpdate": false,
   "forkedFromTemplateTitle": "Applicant Tracker",
   "deleted": false

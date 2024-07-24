@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "SignupPage",
-    "slug": "signuppage",
+    "name": "MyJobsPage",
+    "slug": "myjobspage",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1110,
+          "bottomRow": 520,
           "containerStyle": "none",
           "snapRows": 104,
           "parentRowSpace": 1,
@@ -29,7 +29,7 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "SignupPage",
+        "id": "MyJobsPage",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -40,5 +40,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "61c170fe9229e87746b79e05_61c433d6e89bc475f3cbc8a8"
+  "gitSyncId": "669e2437c1686e0970b3aff6_dc1fb99d-569c-41a5-b192-38f888a29a8a"
 }

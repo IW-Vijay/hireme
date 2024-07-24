@@ -1,0 +1,72 @@
+{
+    "boxShadow": "none",
+    "iconSVG": "/static/media/icon.f75d6119a27d024bcadffee55460cf52.svg",
+    "topRow": 16,
+    "labelWidth": 5,
+    "type": "RADIO_GROUP_WIDGET",
+    "defaultOptionValue": "OS",
+    "animateLoading": true,
+    "leftColumn": 21,
+    "dynamicBindingPathList": [{"key": "accentColor"}],
+    "options": [
+        {
+            "label": "On-Stie",
+            "value": "OS"
+        },
+        {
+            "label": "Remote",
+            "value": "R"
+        },
+        {
+            "label": "Hybrid",
+            "value": "H"
+        }
+    ],
+    "labelStyle": "BOLD",
+    "isDisabled": false,
+    "flexVerticalAlignment": "start",
+    "isRequired": true,
+    "dynamicHeight": "AUTO_HEIGHT",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "onCanvasUI": {
+        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+        "disableParentSelection": false,
+        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+    },
+    "isVisible": true,
+    "version": 1,
+    "tags": ["Toggles"],
+    "isLoading": false,
+    "originalBottomRow": 22,
+    "alignment": "left",
+    "needsErrorInfo": false,
+    "mobileBottomRow": 81,
+    "widgetName": "RadioGroup1",
+    "displayName": "Radio Group",
+    "searchTags": ["choice"],
+    "bottomRow": 22,
+    "parentRowSpace": 10,
+    "hideCard": false,
+    "mobileRightColumn": 41,
+    "parentColumnSpace": 18.880859375,
+    "dynamicTriggerPathList": [],
+    "labelPosition": "Top",
+    "key": "2fqt7zjj90",
+    "labelTextSize": "1rem",
+    "isDeprecated": false,
+    "rightColumn": 41,
+    "thumbnailSVG": "/static/media/thumbnail.f1ed00d0b9588bed20e6359d9d03a790.svg",
+    "widgetId": "0ksijwgucp",
+    "label": "Job Type",
+    "parentId": "hnice2rhm7",
+    "labelAlignment": "left",
+    "renderMode": "CANVAS",
+    "mobileTopRow": 75,
+    "originalTopRow": 16,
+    "mobileLeftColumn": 21,
+    "maxDynamicHeight": 9000,
+    "isInline": true,
+    "minDynamicHeight": 4
+}
