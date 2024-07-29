@@ -1,66 +1,82 @@
 {
-    "needsErrorInfo": false,
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "mobileBottomRow": 49,
-    "widgetName": "Custom1",
-    "borderColor": "#E0DEDE",
-    "srcDoc": {
-        "css": ".user-cards {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 20px;\n  padding: 20px;\n}\n\n.user-card {\n  width: 200px;\n  text-align: center;\n  border-radius: 10px;\n  overflow: hidden;\n  transition: transform 0.3s, box-shadow 0.3s;\n}\n\n.user-card:hover {\n  transform: translateY(-10px);\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);\n}\n\n.user-image img {\n  width: 100%;\n  height: auto;\n  border-bottom: 1px solid #ddd;\n}\n\n.user-info {\n  padding: 10px;\n}",
-        "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Card } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\nfunction App() {\n  const users = appsmith.model.Users;\n  return /*#__PURE__*/React.createElement(\"div\", {\n    className: \"user-cards\"\n  }, users.map((userObj, index) => {\n    const userId = Object.keys(userObj)[0];\n    const user = userObj[userId];\n    return /*#__PURE__*/React.createElement(Card, {\n      key: index,\n      className: \"user-card\",\n      style: {\n        backgroundColor: '#f0f2f5',\n        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'\n      }\n    }, /*#__PURE__*/React.createElement(\"div\", {\n      className: \"user-image\"\n    }, /*#__PURE__*/React.createElement(\"img\", {\n      src: user.image,\n      alt: `${user.name}'s image`\n    })), /*#__PURE__*/React.createElement(\"div\", {\n      className: \"user-info\"\n    }, /*#__PURE__*/React.createElement(\"h2\", null, user.name)));\n  }));\n}\nappsmith.onReady(() => {\n  /*\n   * This handler function will get called when parent application is ready.\n   * Initialize your component here\n   * more info - https://docs.appsmith.com/reference/widgets/custom#onready\n   */\n  reactDom.render( /*#__PURE__*/React.createElement(App, null), document.getElementById(\"root\"));\n});",
-        "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"><\/div>\n"
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 52,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n  \"Users\": [\n    { \"user1\": { \"name\": \"vijay\", \"image\": \"image_url1\" }},\n    { \"user2\": { \"name\": \"jay\", \"image\": \"image_url2\" }},\n    { \"user3\": { \"name\": \"anil\", \"image\": \"image_url3\" }},\n    { \"user4\": { \"name\": \"sunil\", \"image\": \"image_url4\" }},\n    { \"user5\": { \"name\": \"rahul\", \"image\": \"image_url5\" }},\n    { \"user6\": { \"name\": \"rohit\", \"image\": \"image_url6\" }},\n    { \"user7\": { \"name\": \"arjun\", \"image\": \"image_url7\" }},\n    { \"user8\": { \"name\": \"amit\", \"image\": \"image_url8\" }},\n    { \"user9\": { \"name\": \"sachin\", \"image\": \"image_url9\" }},\n    { \"user10\": { \"name\": \"vikas\", \"image\": \"image_url10\" }},\n    { \"user11\": { \"name\": \"manoj\", \"image\": \"image_url11\" }},\n    { \"user12\": { \"name\": \"ramesh\", \"image\": \"image_url12\" }},\n    { \"user13\": { \"name\": \"suresh\", \"image\": \"image_url13\" }},\n    { \"user14\": { \"name\": \"ajay\", \"image\": \"image_url14\" }},\n    { \"user15\": { \"name\": \"kumar\", \"image\": \"image_url15\" }},\n    { \"user16\": { \"name\": \"deepak\", \"image\": \"image_url16\" }},\n    { \"user17\": { \"name\": \"sanjay\", \"image\": \"image_url17\" }},\n    { \"user18\": { \"name\": \"ashok\", \"image\": \"image_url18\" }},\n    { \"user19\": { \"name\": \"mohan\", \"image\": \"image_url19\" }},\n    { \"user20\": { \"name\": \"gopal\", \"image\": \"image_url20\" }}\n  ]\n}",
+  "displayName": "Custom",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
     },
-    "isCanvas": false,
-    "displayName": "Custom",
-    "iconSVG": "/static/media/icon.9b1065660dedd39cf997e3faa42244bc.svg",
-    "searchTags": ["external"],
-    "topRow": 18,
-    "bottomRow": 52,
-    "parentRowSpace": 10,
-    "type": "CUSTOM_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 26,
-    "dynamicTriggerPathList": [{"key": "onResetClick"}],
-    "parentColumnSpace": 19.8125,
-    "dynamicBindingPathList": [
-        {"key": "theme"},
-        {"key": "borderRadius"},
-        {"key": "boxShadow"}
-    ],
-    "leftColumn": 2,
-    "defaultModel": "{\n  \"Users\": [\n    { \"user1\": { \"name\": \"vijay\", \"image\": \"image_url1\" }},\n    { \"user2\": { \"name\": \"jay\", \"image\": \"image_url2\" }},\n    { \"user3\": { \"name\": \"anil\", \"image\": \"image_url3\" }},\n    { \"user4\": { \"name\": \"sunil\", \"image\": \"image_url4\" }},\n    { \"user5\": { \"name\": \"rahul\", \"image\": \"image_url5\" }},\n    { \"user6\": { \"name\": \"rohit\", \"image\": \"image_url6\" }},\n    { \"user7\": { \"name\": \"arjun\", \"image\": \"image_url7\" }},\n    { \"user8\": { \"name\": \"amit\", \"image\": \"image_url8\" }},\n    { \"user9\": { \"name\": \"sachin\", \"image\": \"image_url9\" }},\n    { \"user10\": { \"name\": \"vikas\", \"image\": \"image_url10\" }},\n    { \"user11\": { \"name\": \"manoj\", \"image\": \"image_url11\" }},\n    { \"user12\": { \"name\": \"ramesh\", \"image\": \"image_url12\" }},\n    { \"user13\": { \"name\": \"suresh\", \"image\": \"image_url13\" }},\n    { \"user14\": { \"name\": \"ajay\", \"image\": \"image_url14\" }},\n    { \"user15\": { \"name\": \"kumar\", \"image\": \"image_url15\" }},\n    { \"user16\": { \"name\": \"deepak\", \"image\": \"image_url16\" }},\n    { \"user17\": { \"name\": \"sanjay\", \"image\": \"image_url17\" }},\n    { \"user18\": { \"name\": \"ashok\", \"image\": \"image_url18\" }},\n    { \"user19\": { \"name\": \"mohan\", \"image\": \"image_url19\" }},\n    { \"user20\": { \"name\": \"gopal\", \"image\": \"image_url20\" }}\n  ]\n}",
-    "borderWidth": "1",
-    "theme": "{{appsmith.theme}}",
-    "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
-    "events": ["onResetClick"],
-    "key": "kf1vvilwh2",
-    "backgroundColor": "#FFFFFF",
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "thumbnailSVG": "/static/media/thumbnail.a7d7cde44fad9a0d4d490def43560a78.svg",
-    "dynamicHeight": "FIXED",
-    "isSearchWildcard": true,
-    "widgetId": "seryp1goc1",
-    "onCanvasUI": {
-        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-        "disableParentSelection": false,
-        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+    {
+      "key": "borderRadius"
     },
-    "isVisible": true,
-    "version": 1,
-    "uncompiledSrcDoc": {
-        "css": ".user-cards {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 20px;\n  padding: 20px;\n}\n\n.user-card {\n  width: 200px;\n  text-align: center;\n  border-radius: 10px;\n  overflow: hidden;\n  transition: transform 0.3s, box-shadow 0.3s;\n}\n\n.user-card:hover {\n  transform: translateY(-10px);\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);\n}\n\n.user-image img {\n  width: 100%;\n  height: auto;\n  border-bottom: 1px solid #ddd;\n}\n\n.user-info {\n  padding: 10px;\n}\n",
-        "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Card } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\n\nfunction App() {\n  const users = appsmith.model.Users;\n\n  return (\n    <div className=\"user-cards\">\n      {users.map((userObj, index) => {\n        const userId = Object.keys(userObj)[0];\n        const user = userObj[userId];\n        return (\n          <Card key={index} className=\"user-card\" style={{ backgroundColor: '#f0f2f5', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>\n            <div className=\"user-image\">\n              <img src={user.image} alt={`${user.name}'s image`} />\n            <\/div>\n            <div className=\"user-info\">\n              <h2>{user.name}<\/h2>\n            <\/div>\n          <\/Card>\n        );\n      })}\n    <\/div>\n  );\n}\n\nappsmith.onReady(() => {\n  /*\n   * This handler function will get called when parent application is ready.\n   * Initialize your component here\n   * more info - https://docs.appsmith.com/reference/widgets/custom#onready\n   */\n  reactDom.render(<App />, document.getElementById(\"root\"));\n});\n",
-        "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"><\/div>\n"
-    },
-    "parentId": "0",
-    "tags": ["Display"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 19,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 3,
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.9b1065660dedd39cf997e3faa42244bc.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "kf1vvilwh2",
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 49,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 19,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "searchTags": [
+    "external"
+  ],
+  "srcDoc": {
+    "css": ".user-cards {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 20px;\n  padding: 20px;\n}\n\n.user-card {\n  width: 200px;\n  text-align: center;\n  border-radius: 10px;\n  overflow: hidden;\n  transition: transform 0.3s, box-shadow 0.3s;\n}\n\n.user-card:hover {\n  transform: translateY(-10px);\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);\n}\n\n.user-image img {\n  width: 100%;\n  height: auto;\n  border-bottom: 1px solid #ddd;\n}\n\n.user-info {\n  padding: 10px;\n}",
+    "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Card } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\nfunction App() {\n  const users = appsmith.model.Users;\n  return /*#__PURE__*/React.createElement(\"div\", {\n    className: \"user-cards\"\n  }, users.map((userObj, index) => {\n    const userId = Object.keys(userObj)[0];\n    const user = userObj[userId];\n    return /*#__PURE__*/React.createElement(Card, {\n      key: index,\n      className: \"user-card\",\n      style: {\n        backgroundColor: '#f0f2f5',\n        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'\n      }\n    }, /*#__PURE__*/React.createElement(\"div\", {\n      className: \"user-image\"\n    }, /*#__PURE__*/React.createElement(\"img\", {\n      src: user.image,\n      alt: `${user.name}'s image`\n    })), /*#__PURE__*/React.createElement(\"div\", {\n      className: \"user-info\"\n    }, /*#__PURE__*/React.createElement(\"h2\", null, user.name)));\n  }));\n}\nappsmith.onReady(() => {\n  /*\n   * This handler function will get called when parent application is ready.\n   * Initialize your component here\n   * more info - https://docs.appsmith.com/reference/widgets/custom#onready\n   */\n  reactDom.render( /*#__PURE__*/React.createElement(App, null), document.getElementById(\"root\"));\n});"
+  },
+  "tags": [
+    "Display"
+  ],
+  "theme": "{{appsmith.theme}}",
+  "thumbnailSVG": "/static/media/thumbnail.a7d7cde44fad9a0d4d490def43560a78.svg",
+  "topRow": 18,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".user-cards {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 20px;\n  padding: 20px;\n}\n\n.user-card {\n  width: 200px;\n  text-align: center;\n  border-radius: 10px;\n  overflow: hidden;\n  transition: transform 0.3s, box-shadow 0.3s;\n}\n\n.user-card:hover {\n  transform: translateY(-10px);\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);\n}\n\n.user-image img {\n  width: 100%;\n  height: auto;\n  border-bottom: 1px solid #ddd;\n}\n\n.user-info {\n  padding: 10px;\n}\n",
+    "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Card } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\n\nfunction App() {\n  const users = appsmith.model.Users;\n\n  return (\n    <div className=\"user-cards\">\n      {users.map((userObj, index) => {\n        const userId = Object.keys(userObj)[0];\n        const user = userObj[userId];\n        return (\n          <Card key={index} className=\"user-card\" style={{ backgroundColor: '#f0f2f5', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>\n            <div className=\"user-image\">\n              <img src={user.image} alt={`${user.name}'s image`} />\n            </div>\n            <div className=\"user-info\">\n              <h2>{user.name}</h2>\n            </div>\n          </Card>\n        );\n      })}\n    </div>\n  );\n}\n\nappsmith.onReady(() => {\n  /*\n   * This handler function will get called when parent application is ready.\n   * Initialize your component here\n   * more info - https://docs.appsmith.com/reference/widgets/custom#onready\n   */\n  reactDom.render(<App />, document.getElementById(\"root\"));\n});\n"
+  },
+  "version": 1,
+  "widgetId": "seryp1goc1",
+  "widgetName": "Custom1"
 }

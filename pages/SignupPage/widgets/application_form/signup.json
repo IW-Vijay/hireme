@@ -1,49 +1,57 @@
 {
-    "resetFormOnClick": false,
-    "boxShadow": "none",
-    "mobileBottomRow": 62,
-    "widgetName": "signup",
-    "onClick": "{{UploadFiles.run().then(() => {\n  showAlert('Applicant Added Succesfully', 'success');\n  navigateTo('1 Track Applications', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('Error adding applicant', 'error');\n});}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "displayName": "Button",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 89,
-    "bottomRow": 93,
-    "parentRowSpace": 10,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 34,
-    "animateLoading": true,
-    "parentColumnSpace": 17.064453125,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 24,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "text": "Sign Up",
-    "isDisabled": false,
-    "key": "wvi3t76jwl",
-    "isDeprecated": false,
-    "rightColumn": 40,
-    "isDefaultClickDisabled": true,
-    "widgetId": "5akvnnoqql",
-    "minWidth": 120,
-    "isVisible": true,
-    "recaptchaType": "V3",
-    "version": 1,
-    "parentId": "hnice2rhm7",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 58,
-    "responsiveBehavior": "hug",
-    "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 18,
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 93,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "wvi3t76jwl",
+  "leftColumn": 24,
+  "minWidth": 120,
+  "mobileBottomRow": 62,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 58,
+  "onClick": "{{UploadFiles.run().then(() => {\n  showAlert('Applicant Added Succesfully', 'success');\n  navigateTo('1 Track Applications', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('Error adding applicant', 'error');\n});}}",
+  "parentColumnSpace": 17.064453125,
+  "parentId": "hnice2rhm7",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 40,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "text": "Sign Up",
+  "topRow": 89,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "5akvnnoqql",
+  "widgetName": "signup"
 }

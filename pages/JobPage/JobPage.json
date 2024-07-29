@@ -1,44 +1,33 @@
 {
+  "gitSyncId": "669e2437c1686e0970b3aff6_c80b9a31-ffde-44e9-9e78-c5af0760a0cd",
   "unpublishedPage": {
-    "name": "JobPage",
-    "slug": "jobpage",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1160,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 450,
-          "containerStyle": "none",
-          "snapRows": 104,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
-          "minHeight": 850,
-          "parentColumnSpace": 1,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
           "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "dynamicBindingPathList": []
-        },
-        "layoutOnLoadActions": [],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "JobPage",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "minHeight": 850,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "rightColumn": 1160,
+          "snapColumns": 64,
+          "snapRows": 104,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "669e2437c1686e0970b3aff6_c80b9a31-ffde-44e9-9e78-c5af0760a0cd"
+    "name": "JobPage",
+    "slug": "jobpage"
+  }
 }
