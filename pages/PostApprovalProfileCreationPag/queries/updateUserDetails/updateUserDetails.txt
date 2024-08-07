@@ -1,0 +1,12 @@
+UPDATE users
+SET       
+    name = {{inp_name.text}},                      
+    image = 'new_image_url',                 
+    phoneno = {{inp_phone.text}},            
+    email = {{inp_email.text}},       
+    role = {{inp_role.selectedOptionValue}},                      
+    location = {{inp_location.text}},                  
+    about = {{inp_about.text}},  
+		status = 'appuser',
+    interest = {{inp_interest.text}}             
+WHERE user_id = {{appsmith.URL.queryParams.user_id}};

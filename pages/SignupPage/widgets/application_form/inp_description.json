@@ -29,7 +29,7 @@
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",
-  "labelText": "Describe Yourself in 100 words",
+  "labelText": "Describe Yourself in 100 words (Visible on profile)",
   "labelTextSize": "1rem",
   "labelWidth": 5,
   "leftColumn": 1,
@@ -48,6 +48,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "originalBottomRow": 80,
+  "originalTopRow": 49,
   "parentColumnSpace": 17.064453125,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,

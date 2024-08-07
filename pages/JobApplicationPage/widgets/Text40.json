@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 16,
+  "bottomRow": 14,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -40,10 +40,10 @@
     "label"
   ],
   "shouldTruncate": false,
-  "text": "Create Profile",
+  "text": "Application",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 10,
+  "topRow": 8,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

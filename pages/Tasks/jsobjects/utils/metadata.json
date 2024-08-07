@@ -1,0 +1,24 @@
+{
+  "gitSyncId": "669e2437c1686e0970b3aff6_94ff5cef-e3ad-4df6-9a37-b51c9fbbbb73",
+  "id": "Tasks_utils",
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "Tasks",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "selectedTask",
+        "value": "undefined"
+      },
+      {
+        "name": "showCompleted",
+        "value": "true"
+      },
+      {
+        "name": "listState",
+        "value": "'today'"
+      }
+    ]
+  }
+}

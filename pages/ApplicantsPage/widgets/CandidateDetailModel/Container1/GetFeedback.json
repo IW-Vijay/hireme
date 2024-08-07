@@ -1,0 +1,34 @@
+{
+  "borderRadius": "0px",
+  "bottomRow": 64,
+  "boxShadow": "none",
+  "buttonColor": "#166534",
+  "buttonVariant": "SECONDARY",
+  "dynamicBindingPathList": [],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "labelTextSize": "0.875rem",
+  "leftColumn": 32,
+  "onClick": "{{showModal('Feedback_ModalCopy');\ngetApplicationRound.run()}}",
+  "originalBottomRow": 65,
+  "originalTopRow": 59,
+  "parentColumnSpace": 29.875,
+  "parentId": "zukl32rg5z",
+  "parentRowSpace": 40,
+  "recaptchaType": "V3",
+  "rightColumn": 61,
+  "text": "Review",
+  "topRow": 58,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "mgtub30sxh",
+  "widgetName": "GetFeedback"
+}

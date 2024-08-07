@@ -48,6 +48,8 @@
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
+  "originalBottomRow": 87,
+  "originalTopRow": 80,
   "parentColumnSpace": 13.08203125,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,

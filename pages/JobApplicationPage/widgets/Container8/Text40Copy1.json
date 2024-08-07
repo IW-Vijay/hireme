@@ -25,15 +25,15 @@
   "isLoading": false,
   "isVisible": true,
   "key": "lpp3worjsh",
-  "leftColumn": 4,
+  "leftColumn": 5,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
-  "parentId": "ypcrh0u8z5",
+  "parentId": "kepujb6px5",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 23,
+  "rightColumn": 9,
   "searchTags": [
     "typography",
     "paragraph",
@@ -47,6 +47,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "chjkx3t5tu",
+  "widgetId": "ppp7y87ao7",
   "widgetName": "Text40Copy1"
 }

@@ -13,6 +13,10 @@
   "icon": "moon",
   "pages": [
     {
+      "id": "Tasks",
+      "isDefault": false
+    },
+    {
       "id": "SignupPage",
       "isDefault": false
     },
@@ -43,6 +47,54 @@
     {
       "id": "MyJobsPage",
       "isDefault": true
+    },
+    {
+      "id": "ApplicantsPage",
+      "isDefault": false
+    },
+    {
+      "id": "SignupPage Copy",
+      "isDefault": false
+    },
+    {
+      "id": "PostApprovalProfileCreationPag",
+      "isDefault": false
+    },
+    {
+      "id": "ApprovalList(foradmins)",
+      "isDefault": false
+    },
+    {
+      "id": "RegistrationPage",
+      "isDefault": false
+    },
+    {
+      "id": "AddEventPage",
+      "isDefault": false
+    },
+    {
+      "id": "SchoolCollegePage",
+      "isDefault": false
+    },
+    {
+      "id": "CompanyPage",
+      "isDefault": false
+    },
+    {
+      "id": "ForumsPage",
+      "isDefault": false
+    },
+    {
+      "id": "EventsPage",
+      "isDefault": false
+    },
+    {
+      "id": "ForumDiscussionPage",
+      "isDefault": false
+    },
+    {
+      "id": "AddForumPage",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

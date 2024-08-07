@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "669e2437c1686e0970b3aff6_45d85434-f9f6-497d-97ec-5862950cb731",
+  "id": "RegistrationPage_submitRequest",
+  "unpublishedCollection": {
+    "name": "submitRequest",
+    "pageId": "RegistrationPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

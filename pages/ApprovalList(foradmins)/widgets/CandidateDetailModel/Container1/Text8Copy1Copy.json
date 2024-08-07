@@ -1,0 +1,34 @@
+{
+  "borderRadius": "0px",
+  "bottomRow": 26,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "System Default",
+  "fontSize": "0.875rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": true,
+  "labelTextSize": "0.875rem",
+  "leftColumn": 21,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "overflow": "NONE",
+  "parentColumnSpace": 25.25,
+  "parentId": "zukl32rg5z",
+  "parentRowSpace": 40,
+  "rightColumn": 62,
+  "text": "{{ usersList.model.selectedUser ? usersList.model.selectedUser.role : \"role\" }}",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 22,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "208rmw72kg",
+  "widgetName": "Text8Copy1Copy"
+}

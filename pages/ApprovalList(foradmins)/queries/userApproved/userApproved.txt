@@ -1,0 +1,1 @@
+UPDATE users SET status = 'approved' WHERE user_id = {{usersList.model.selectedUser.user_id}};
