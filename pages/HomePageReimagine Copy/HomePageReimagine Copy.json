@@ -1,24 +1,23 @@
 {
-  "gitSyncId": "669e2437c1686e0970b3aff6_333fda0d-aa04-40b2-8249-89e765af4974",
+  "gitSyncId": "66cc5dff73f83b5809d9d3a1_000afdff-f6f0-48cf-b85d-7f5da77c058c",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1480,
+          "bottomRow": 870,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 770,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 124,
+          "snapRows": 75,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 89,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Tasks",
-    "slug": "tasks"
+    "name": "HomePageReimagine Copy",
+    "slug": "homepagereimagine-copy"
   }
 }

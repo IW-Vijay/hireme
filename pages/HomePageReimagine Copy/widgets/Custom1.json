@@ -1,0 +1,70 @@
+{
+  "NavSchool": "{{navigateTo('SchoolCollegePage', {}, 'SAME_WINDOW');}}",
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 87,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    },
+    {
+      "key": "NavSchool"
+    }
+  ],
+  "events": [
+    "onResetClick",
+    "NavSchool"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "rcggiaorlg",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 49,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 19,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 59,
+  "shouldScrollContents": true,
+  "srcDoc": {
+    "css": "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: Arial, sans-serif;\n  background-color: #f7f7f7;\n}\n\n.header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 20px;\n  background-color: #66d2ff;\n  color: #fff;\n}\n\n.header .logo {\n  display: flex;\n  align-items: center;\n}\n\n.header .logo img {\n  width: 40px;\n  margin-right: 10px;\n}\n\n.header h1 {\n  font-size: 24px;\n}\n\n.header .profile-icon img {\n  width: 40px;\n}\n\n.banner {\n  text-align: center;\n  padding: 50px 0;\n  position: relative;\n}\n\n.banner-content h2 {\n  font-size: 32px;\n  color: #9c27b0;\n  margin-bottom: 20px;\n}\n\n.banner-content p {\n  color: #555;\n  font-size: 18px;\n  max-width: 600px;\n  margin: 0 auto;\n}\n\n.main-sections {\n  display: flex;\n  flex-direction: column;\n  gap: 20px;\n  padding: 0; /* Removed side padding */\n}\n\n.section {\n  background-size: cover;\n  background-position: center;\n  background-repeat: no-repeat;\n  border-radius: 0; /* Removed border radius */\n  height: 150px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  cursor: pointer;\n  overflow: hidden;\n  margin: 0;\n  position: relative;\n  color: #555; /* Ensures text color stays dark */\n  padding: 40px 20px;\n}\n\n/* Horizontal fade to white on the left for Schools/Colleges and Events */\n.section.schools::before, .section.events::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: linear-gradient(to left, rgba(255, 255, 255, 0) 20%, white 90%);\n  z-index: 1;\n}\n\n/* Horizontal fade to white on the right for Forums and Companies */\n.section.forums::before, .section.companies::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, white 90%);\n  z-index: 1;\n}\n\n.section h3, .section p {\n  position: relative;\n  z-index: 2;\n}\n\n/* Schools/Colleges and Events - Left Aligned */\n.section.schools, .section.events {\n  text-align: left;\n}\n\n/* Forums and Companies - Right Aligned */\n.section.forums, .section.companies {\n  text-align: right;\n}\n\n/* Background images with provided URL */\n.section.schools {\n  background-image: url(\"https://replicate.delivery/yhqm/HlcwHepJBDWQNinRVK0PUhByiEx2vork8KIF48lbFe0xyhWTA/out-0.webp\");\n}\n\n.section.events {\n  background-image: url(\"https://replicate.delivery/yhqm/Da0TjQEOkbqdNR4vCTKFCddfA7AFA7u85mRt6A1utlzB6QrJA/out-0.webp\");\n}\n\n.section.forums {\n  background-image: url(\"https://replicate.delivery/yhqm/4DVSni89Wg7tCdkSMNNTfXHjYEEt2Cw6uyB1DKa51mIrfcWTA/out-0.webp\");\n}\n\n.section.companies {\n  background-image: url(\"https://replicate.delivery/yhqm/IOlIfNYErIT3T6KbApmVPfhpl36i85D398zU755QL9ip3hWTA/out-0.webp\");\n}\n\n.section h3 {\n  font-size: 24px;\n  margin-bottom: 15px;\n  color: #9c27b0; /* Original color restored */\n}\n\n.section p {\n  font-size: 16px;\n  color: #555; /* Original color restored */\n}\n\n/* Hover effect */\n.section.schools:hover h3, .section.schools:hover p,\n.section.events:hover h3, .section.events:hover p {\n  transform: translateX(5%) translateY(0%); /* Move text to the right */\n}\n\n.section.forums:hover h3, .section.forums:hover p,\n.section.companies:hover h3, .section.companies:hover p {\n  transform: translateX(-5%) translateY(0%); /* Move text to the left */\n}\n\n/* Reset styles */\n.section h3, .section p {\n  transition: transform 0.3s ease;\n}",
+    "html": "",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport ReactDOM from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nconst Header = () => /*#__PURE__*/React.createElement(\"header\", {\n  className: \"header\"\n}, /*#__PURE__*/React.createElement(\"div\", {\n  className: \"logo\"\n}, /*#__PURE__*/React.createElement(\"img\", {\n  src: \"logo.png\",\n  alt: \"Community Logo\"\n}), /*#__PURE__*/React.createElement(\"h1\", null, \"Community Portal\")), /*#__PURE__*/React.createElement(\"div\", {\n  className: \"profile-icon\"\n}, /*#__PURE__*/React.createElement(\"img\", {\n  src: \"profile-icon.png\",\n  alt: \"Profile Icon\"\n})));\nconst Banner = () => /*#__PURE__*/React.createElement(\"section\", {\n  className: \"banner\"\n}, /*#__PURE__*/React.createElement(\"div\", {\n  className: \"banner-content\"\n}, /*#__PURE__*/React.createElement(\"h2\", null, \"Community Name\"), /*#__PURE__*/React.createElement(\"p\", null, \"Community description goes here. Add a brief intro about the community.\")));\nconst MainSections = () => /*#__PURE__*/React.createElement(\"main\", {\n  className: \"main-sections\"\n}, /*#__PURE__*/React.createElement(\"div\", {\n  className: \"section schools\",\n  id: \"schools\"\n}, /*#__PURE__*/React.createElement(\"img\", {\n  src: \"school-image.png\",\n  alt: \"Schools\"\n}), /*#__PURE__*/React.createElement(\"h3\", null, \"Schools/Colleges\"), /*#__PURE__*/React.createElement(\"p\", null, \"Explore institutions of community members.\")), /*#__PURE__*/React.createElement(\"div\", {\n  className: \"section forums\",\n  id: \"forums\"\n}, /*#__PURE__*/React.createElement(\"img\", {\n  src: \"forum-image.png\",\n  alt: \"Forums\"\n}), /*#__PURE__*/React.createElement(\"h3\", null, \"Forums\"), /*#__PURE__*/React.createElement(\"p\", null, \"Have meaningful discussions with community members on various topics.\")), /*#__PURE__*/React.createElement(\"div\", {\n  className: \"section events\",\n  id: \"events\"\n}, /*#__PURE__*/React.createElement(\"img\", {\n  src: \"events-image.png\",\n  alt: \"Events\"\n}), /*#__PURE__*/React.createElement(\"h3\", null, \"Events\"), /*#__PURE__*/React.createElement(\"p\", null, \"Get information about various events happening within or outside the community.\")), /*#__PURE__*/React.createElement(\"div\", {\n  className: \"section companies\",\n  id: \"companies\"\n}, /*#__PURE__*/React.createElement(\"img\", {\n  src: \"companies-image.png\",\n  alt: \"Companies\"\n}), /*#__PURE__*/React.createElement(\"h3\", null, \"Companies\"), /*#__PURE__*/React.createElement(\"p\", null, \"Explore jobs and employees where community members work.\")));\nconst App = () => /*#__PURE__*/React.createElement(\"div\", null, /*#__PURE__*/React.createElement(Header, null), /*#__PURE__*/React.createElement(Banner, null), /*#__PURE__*/React.createElement(MainSections, null));\nReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('root'));"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 0,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\n\n\nbody {\n    font-family: Arial, sans-serif;\n    background-color: #f7f7f7;\n}\n\n.header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 20px;\n    background-color: #66d2ff;\n    color: #fff;\n}\n\n.header .logo {\n    display: flex;\n    align-items: center;\n}\n\n.header .logo img {\n    width: 40px;\n    margin-right: 10px;\n}\n\n.header h1 {\n    font-size: 24px;\n}\n\n.header .profile-icon img {\n    width: 40px;\n}\n\n.banner {\n    text-align: center;\n    padding: 50px 0;\n\t\tposition: relative;\n}\n\n.banner-content h2 {\n    font-size: 32px;\n    color: #9c27b0;\n    margin-bottom: 20px;\n}\n\n.banner-content p {\n    color: #555;\n    font-size: 18px;\n    max-width: 600px;\n    margin: 0 auto;\n}\n\n.main-sections {\n    display: flex;\n    flex-direction: column;\n    gap: 20px;\n    padding: 0; /* Removed side padding */\n}\n\n.section {\n    background-size: cover;\n    background-position: center;\n    background-repeat: no-repeat;\n    border-radius: 0; /* Removed border radius */\n    height: 150px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n\t\tcursor: pointer;\n    overflow: hidden;\n    margin: 0;\n    position: relative;\n    color: #555; /* Ensures text color stays dark */\n    padding: 40px 20px;\n}\n\n/* Horizontal fade to white on the left for Schools/Colleges and Events */\n.section.schools::before, .section.events::before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background: linear-gradient(to left, rgba(255, 255, 255, 0) 20%, white 90%);\n    z-index: 1;\n}\n\n/* Horizontal fade to white on the right for Forums and Companies */\n.section.forums::before, .section.companies::before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, white 90%);\n    z-index: 1;\n}\n\n.section h3, .section p {\n    position: relative;\n    z-index: 2;\n}\n\n/* Schools/Colleges and Events - Left Aligned */\n.section.schools, .section.events {\n    text-align: left;\n}\n\n/* Forums and Companies - Right Aligned */\n.section.forums, .section.companies {\n    text-align: right;\n}\n\n/* Background images with provided URL */\n.section.schools {\n    background-image: url('https://replicate.delivery/yhqm/HlcwHepJBDWQNinRVK0PUhByiEx2vork8KIF48lbFe0xyhWTA/out-0.webp');\n}\n\n.section.events {\n    background-image: url('https://replicate.delivery/yhqm/Da0TjQEOkbqdNR4vCTKFCddfA7AFA7u85mRt6A1utlzB6QrJA/out-0.webp');\n}\n\n.section.forums {\n    background-image: url('https://replicate.delivery/yhqm/4DVSni89Wg7tCdkSMNNTfXHjYEEt2Cw6uyB1DKa51mIrfcWTA/out-0.webp');\n}\n\n.section.companies {\n    background-image: url('https://replicate.delivery/yhqm/IOlIfNYErIT3T6KbApmVPfhpl36i85D398zU755QL9ip3hWTA/out-0.webp');\n}\n\n.section h3 {\n    font-size: 24px;\n    margin-bottom: 15px;\n    color: #9c27b0; /* Original color restored */\n}\n\n.section p {\n    font-size: 16px;\n    color: #555; /* Original color restored */\n}\n\n\n/* Hover effect */\n.section.schools:hover h3, .section.schools:hover p,\n.section.events:hover h3, .section.events:hover p {\n    transform: translateX(5%) translateY(0%); /* Move text to the right */\n}\n\n.section.forums:hover h3, .section.forums:hover p,\n.section.companies:hover h3, .section.companies:hover p {\n    transform: translateX(-5%) translateY(0%); /* Move text to the left */\n}\n\n/* Reset styles */\n.section h3, .section p {\n    transition: transform 0.3s ease;\n}\n",
+    "html": "",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport ReactDOM from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\n\nconst Header = () => (\n  <header className=\"header\">\n    <div className=\"logo\">\n      <img src=\"logo.png\" alt=\"Community Logo\" />\n      <h1>Community Portal</h1>\n    </div>\n    <div className=\"profile-icon\">\n      <img src=\"profile-icon.png\" alt=\"Profile Icon\" />\n    </div>\n  </header>\n);\n\nconst Banner = () => (\n  <section className=\"banner\">\n    <div className=\"banner-content\">\n      <h2>Community Name</h2>\n      <p>Community description goes here. Add a brief intro about the community.</p>\n    </div>\n  </section>\n);\n\nconst MainSections = () => (\n  <main className=\"main-sections\">\n    <div className=\"section schools\" id=\"schools\">\n      <img src=\"school-image.png\" alt=\"Schools\" />\n      <h3>Schools/Colleges</h3>\n      <p>Explore institutions of community members.</p>\n    </div>\n    <div className=\"section forums\" id=\"forums\">\n      <img src=\"forum-image.png\" alt=\"Forums\" />\n      <h3>Forums</h3>\n      <p>Have meaningful discussions with community members on various topics.</p>\n    </div>\n    <div className=\"section events\" id=\"events\">\n      <img src=\"events-image.png\" alt=\"Events\" />\n      <h3>Events</h3>\n      <p>Get information about various events happening within or outside the community.</p>\n    </div>\n    <div className=\"section companies\" id=\"companies\">\n      <img src=\"companies-image.png\" alt=\"Companies\" />\n      <h3>Companies</h3>\n      <p>Explore jobs and employees where community members work.</p>\n    </div>\n  </main>\n);\n\nconst App = () => (\n  <div>\n    <Header />\n    <Banner />\n    <MainSections />\n  </div>\n);\n\nReactDOM.render(<App />, document.getElementById('root'));\n"
+  },
+  "version": 1,
+  "widgetId": "fb8u4wz0gy",
+  "widgetName": "Custom1"
+}
