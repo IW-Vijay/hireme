@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 11,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -17,7 +17,7 @@
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1.25rem",
+  "fontSize": "1.875rem",
   "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -25,28 +25,30 @@
   "isLoading": false,
   "isVisible": true,
   "key": "lpp3worjsh",
-  "leftColumn": 5,
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "originalBottomRow": 42,
+  "originalTopRow": 36,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
-  "parentId": "ypcrh0u8z5",
+  "parentId": "40qq5os7rt",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 10,
+  "rightColumn": 13,
   "searchTags": [
     "typography",
     "paragraph",
     "label"
   ],
   "shouldTruncate": false,
-  "text": "HireMe",
+  "text": "Forums",
   "textAlign": "LEFT",
-  "textColor": "#fff",
-  "topRow": 1,
+  "textColor": "#231F20",
+  "topRow": 5,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "chjkx3t5tu",
-  "widgetName": "Text40Copy1"
+  "widgetId": "5u5qxw080m",
+  "widgetName": "Text40"
 }

@@ -1,0 +1,67 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 49,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n\"comments\" : \"{{JSON.stringify(forum_comments.data)}}\"\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "44k5s12njn",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 49,
+  "mobileLeftColumn": 8,
+  "mobileRightColumn": 31,
+  "mobileTopRow": 19,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "srcDoc": {
+    "css": "#comments-container {\n  padding: 20px; /* Add padding to the container */\n  box-sizing: border-box; /* Ensure padding is included in the container's width/height */\n  overflow: hidden; /* Hide any overflow from scaling */\n}\n\n.comment {\n  margin-bottom: 10px;\n  margin-top: 3px;\n  padding: 10px;\n  border: 1px solid #ddd;\n  border-radius: 5px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow */\n  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for scale and shadow */\n  display: flex; /* Flexbox layout */\n  flex-direction: column;\n  position: relative;\n}\n\n.comment:hover {\n  transform: scale(1.03); /* Slightly scales up the comment on hover */\n  box-shadow: 0 2px 4px rgba(0, 0, 255, 0.2); /* Increase shadow on hover */\n}\n\n.comment-reply {\n  margin-left: 20px;\n  border-left: 2px solid #ddd;\n  padding-left: 15px;\n  position: relative;\n}\n\n/* Ensure the top-level comment also has a visible line to show the stretch */\n.comment-reply::before {\n  content: \"\";\n  position: absolute;\n  left: -15px;\n  top: 0;\n  bottom: 0;\n  width: 2px;\n  background-color: #9c27b0;\n  z-index: -1;\n}\n\n.comment-user {\n  font-weight: bold;\n  color: #9c27b0;\n  display: inline; /* Display inline to align with comment text */\n}\n\n.comment-text {\n  display: inline; /* Display inline to align with user name */\n  margin-left: 5px; /* Space between user name and comment text */\n}\n\n.comment-date {\n  margin-top: 5px;\n  margin-bottom: 5px;\n  font-style: italic; /* Make the date italic */\n  color: #888; /* Optional: change color of the date */\n  font-size: 0.85em; /* Smaller font size for date */\n}\n\n.reply-button { /* Ensure positioning works */\n  bottom: 10px; /* Distance from the bottom */\n  left: 10px; /* Distance from the left */\n  width: 60px; /* Fixed width */\n  padding: 2px; /* Adjusted padding */\n  border: none;\n  border-radius: 3px; /* Rounded corners */\n  background-color: #d3d3d3; /* Grey background */\n  color: black;\n  cursor: pointer;\n  font-size: 0.7em; /* Smaller font size */\n  text-align: center; /* Center text horizontally */\n  line-height: 1.2; /* Adjust line height if needed */\n  transition: background-color 0.2s;\n}\n\n.reply-button:hover {\n  background-color: #9c27b0; /* Theme purple on hover */\n  color: white;\n}",
+    "html": "<div id=\"comments-container\"></div>\n",
+    "js": "const commentsData = appsmith.model.comments ? JSON.parse(appsmith.model.comments) : [];\n\n// Organize comments by their ID\nfunction buildCommentHierarchy(comments) {\n  const commentMap = {};\n\n  // Initialize the comment map\n  comments.forEach(comment => {\n    commentMap[comment.id] = {\n      ...comment,\n      replies: []\n    };\n  });\n\n  // Link child comments to their parent\n  comments.forEach(comment => {\n    if (comment.parent_comment_id !== null) {\n      commentMap[comment.parent_comment_id].replies.push(commentMap[comment.id]);\n    }\n  });\n\n  // Extract the top-level comments (where parent_comment_id is null)\n  return comments.filter(comment => comment.parent_comment_id === null).map(comment => commentMap[comment.id]);\n}\n\n// Render the comment tree recursively\nfunction renderComments(comments, container) {\n  comments.forEach(comment => {\n    const commentDiv = document.createElement('div');\n    commentDiv.classList.add('comment');\n    if (comment.parent_comment_id !== null) {\n      commentDiv.classList.add('comment-reply');\n    }\n\n    // Add comment content - wrapped in a single enclosing div\n    commentDiv.innerHTML = `\n      <div>\n        <div>\n          <span class=\"comment-user\">User ${comment.user_id}:</span>\n          <span class=\"comment-text\">${comment.comment}</span>\n        </div>\n        <div class=\"comment-date\">${new Date(comment.created_at).toLocaleDateString()} ${new Date(comment.created_at).toLocaleTimeString()}</div>\n        <button class=\"reply-button\">Reply</button>\n      </div>\n    `;\n    container.appendChild(commentDiv);\n\n    // Recursively render replies\n    if (comment.replies && comment.replies.length > 0) {\n      renderComments(comment.replies, commentDiv);\n    }\n\n    // Add event listener for reply button\n    const replyButton = commentDiv.querySelector('.reply-button');\n    replyButton.addEventListener('click', () => {\n      alert(`Reply to comment ID ${comment.id}`);\n      // Implement the actual reply functionality here\n    });\n  });\n}\nappsmith.onReady(() => {\n  const commentsData = appsmith.model.comments ? JSON.parse(appsmith.model.comments) : [];\n\n  // Proceed with the rest of your code here, such as building the hierarchy and rendering comments.\n  const commentsHierarchy = buildCommentHierarchy(commentsData);\n  const commentsContainer = document.getElementById('comments-container');\n  renderComments(commentsHierarchy, commentsContainer);\n});\n\n// Initialize the rendering\nconst commentsHierarchy = buildCommentHierarchy(commentsData);\nconst commentsContainer = document.getElementById('comments-container');\nrenderComments(commentsHierarchy, commentsContainer);"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 19,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "#comments-container {\n  padding: 20px; /* Add padding to the container */\n  box-sizing: border-box; /* Ensure padding is included in the container's width/height */\n  overflow: hidden; /* Hide any overflow from scaling */\n}\n\n\n.comment {\n  margin-bottom: 10px;\n\tmargin-top: 3px;\n\tpadding: 10px;\n  border: 1px solid #ddd;\n  border-radius: 5px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow */\n  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for scale and shadow */\n  display: flex; /* Flexbox layout */\n  flex-direction: column;\n\tposition: relative;\n}\n\n.comment:hover {\n  transform: scale(1.03); /* Slightly scales up the comment on hover */\n  box-shadow: 0 2px 4px rgba(0, 0, 255, 0.2); /* Increase shadow on hover */\n}\n\n.comment-reply {\n  margin-left: 20px;\n  border-left: 2px solid #ddd;\n  padding-left: 15px;\n\tposition: relative;\n}\n\n\n\n\n/* Ensure the top-level comment also has a visible line to show the stretch */\n.comment-reply::before {\n  content: '';\n  position: absolute;\n  left: -15px; \n  top: 0;\n  bottom: 0;\n  width: 2px;\n  background-color: #9c27b0;\n  z-index: -1; \n}\n\n\n\n.comment-user {\n  font-weight: bold;\n  color: #9c27b0;\n  display: inline; /* Display inline to align with comment text */\n}\n\n.comment-text {\n  display: inline; /* Display inline to align with user name */\n  margin-left: 5px; /* Space between user name and comment text */\n}\n\n.comment-date {\n\tmargin-top: 5px;\n\tmargin-bottom: 5px;\n  font-style: italic; /* Make the date italic */\n  color: #888; /* Optional: change color of the date */\n  font-size: 0.85em; /* Smaller font size for date */\n}\n\n\n.reply-button { /* Ensure positioning works */\n  bottom: 10px; /* Distance from the bottom */\n  left: 10px; /* Distance from the left */\n  width: 60px; /* Fixed width */\n  padding: 2px; /* Adjusted padding */\n  border: none;\n  border-radius: 3px; /* Rounded corners */\n  background-color: #d3d3d3; /* Grey background */\n  color: black;\n  cursor: pointer;\n  font-size: 0.7em; /* Smaller font size */\n  text-align: center; /* Center text horizontally */\n  line-height: 1.2; /* Adjust line height if needed */\n  transition: background-color 0.2s;\n}\n\n.reply-button:hover {\n  background-color: #9c27b0; /* Theme purple on hover */\n  color: white;\n}\n\n\n",
+    "html": "<div id=\"comments-container\"></div>\n",
+    "js": "const commentsData = appsmith.model.comments ? JSON.parse(appsmith.model.comments) : [];\n\n// Organize comments by their ID\nfunction buildCommentHierarchy(comments) {\n  const commentMap = {};\n\n  // Initialize the comment map\n  comments.forEach(comment => {\n    commentMap[comment.id] = { ...comment, replies: [] };\n  });\n\n  // Link child comments to their parent\n  comments.forEach(comment => {\n    if (comment.parent_comment_id !== null) {\n      commentMap[comment.parent_comment_id].replies.push(commentMap[comment.id]);\n    }\n  });\n\n  // Extract the top-level comments (where parent_comment_id is null)\n  return comments.filter(comment => comment.parent_comment_id === null).map(comment => commentMap[comment.id]);\n}\n\n// Render the comment tree recursively\nfunction renderComments(comments, container) {\n  comments.forEach(comment => {\n    const commentDiv = document.createElement('div');\n    commentDiv.classList.add('comment');\n    if (comment.parent_comment_id !== null) {\n      commentDiv.classList.add('comment-reply');\n    }\n\n    // Add comment content - wrapped in a single enclosing div\n    commentDiv.innerHTML = `\n      <div>\n        <div>\n          <span class=\"comment-user\">User ${comment.user_id}:</span>\n          <span class=\"comment-text\">${comment.comment}</span>\n        </div>\n        <div class=\"comment-date\">${new Date(comment.created_at).toLocaleDateString()} ${new Date(comment.created_at).toLocaleTimeString()}</div>\n        <button class=\"reply-button\">Reply</button>\n      </div>\n    `;\n\n    container.appendChild(commentDiv);\n\n    // Recursively render replies\n    if (comment.replies && comment.replies.length > 0) {\n      renderComments(comment.replies, commentDiv);\n    }\n\n    // Add event listener for reply button\n    const replyButton = commentDiv.querySelector('.reply-button');\n    replyButton.addEventListener('click', () => {\n      alert(`Reply to comment ID ${comment.id}`);\n      // Implement the actual reply functionality here\n    });\n  });\n}\n\nappsmith.onReady(() => {\n  const commentsData = appsmith.model.comments ? JSON.parse(appsmith.model.comments) : [];\n  \n  // Proceed with the rest of your code here, such as building the hierarchy and rendering comments.\n  const commentsHierarchy = buildCommentHierarchy(commentsData);\n  const commentsContainer = document.getElementById('comments-container');\n  renderComments(commentsHierarchy, commentsContainer);\n});\n\n\n// Initialize the rendering\nconst commentsHierarchy = buildCommentHierarchy(commentsData);\nconst commentsContainer = document.getElementById('comments-container');\nrenderComments(commentsHierarchy, commentsContainer);\n"
+  },
+  "version": 1,
+  "widgetId": "4uo97k4yd0",
+  "widgetName": "Custom1"
+}

@@ -1,28 +1,38 @@
 {
   "animateLoading": true,
   "borderRadius": "1.5rem",
-  "bottomRow": 5,
+  "bottomRow": 10,
   "boxShadow": "none",
-  "buttonColor": "#ffffff",
-  "buttonVariant": "SECONDARY",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "displayName": "Button",
-  "dynamicBindingPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "hideCard": false,
+  "iconAlign": "left",
+  "iconName": "plus",
   "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
   "isDefaultClickDisabled": true,
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "r26wbii1r8",
-  "leftColumn": 27,
+  "key": "rt3e2aexuc",
+  "leftColumn": 51,
   "minWidth": 120,
-  "mobileBottomRow": 5,
-  "mobileLeftColumn": 26,
-  "mobileRightColumn": 42,
-  "mobileTopRow": 1,
+  "mobileBottomRow": 61,
+  "mobileLeftColumn": 35,
+  "mobileRightColumn": 51,
+  "mobileTopRow": 57,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -31,15 +41,18 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "parentColumnSpace": 19.1875,
-  "parentId": "ypcrh0u8z5",
+  "onClick": "{{navigateTo('AddForumPage', {}, 'SAME_WINDOW');}}",
+  "originalBottomRow": 41,
+  "originalTopRow": 37,
+  "parentColumnSpace": 19.8125,
+  "parentId": "40qq5os7rt",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 32,
+  "rightColumn": 64,
   "searchTags": [
     "click",
     "submit"
@@ -47,11 +60,11 @@
   "tags": [
     "Buttons"
   ],
-  "text": "Search",
+  "text": "Add Forum",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 1,
+  "topRow": 6,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "fo6c3hzlfd",
-  "widgetName": "Button1"
+  "widgetId": "3yf36tv4jy",
+  "widgetName": "Button2"
 }

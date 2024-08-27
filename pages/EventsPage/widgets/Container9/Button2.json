@@ -41,7 +41,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{navigateTo('AddEventPage', {\n  \"user\": appsmith.store.user\n}, 'SAME_WINDOW');}}",
+  "onClick": "{{navigateTo('AddEventPage', {}, 'SAME_WINDOW');}}",
   "originalBottomRow": 61,
   "originalTopRow": 57,
   "parentColumnSpace": 19.8125,

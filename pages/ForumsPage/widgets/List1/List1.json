@@ -1,20 +1,26 @@
 {
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "additionalStaticProps": [
+    "level",
+    "levelData",
+    "prefixMetaWidgetId",
+    "metaWidgetId"
+  ],
   "animateLoading": true,
   "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
-  "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "0",
-  "bottomRow": 21,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "borderRadius": "0px",
+  "bottomRow": 92,
+  "boxShadow": "none",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 130,
+      "bottomRow": 710,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
       "detachFromLayout": true,
       "displayName": "Canvas",
+      "dropDisabled": true,
       "dynamicBindingPathList": [
         {
           "key": "borderRadius"
@@ -33,13 +39,14 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 100,
+      "minHeight": 400,
       "minWidth": 450,
-      "mobileBottomRow": 100,
+      "mobileBottomRow": 400,
       "mobileLeftColumn": 0,
-      "mobileRightColumn": 435.875,
+      "mobileRightColumn": 475.5,
       "mobileTopRow": 0,
       "needsErrorInfo": false,
+      "noPad": true,
       "onCanvasUI": {
         "disableParentSelection": true,
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
@@ -47,53 +54,72 @@
         "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
+      "openParentPropertyPane": true,
       "parentColumnSpace": 1,
-      "parentId": "vyap8ast2h",
+      "parentId": "targtr3mjo",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
-      "rightColumn": 435.875,
+      "rightColumn": 475.5,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "40qq5os7rt",
-      "widgetName": "Canvas18"
+      "widgetId": "4bjip9rg9u",
+      "widgetName": "Canvas19"
     }
   ],
-  "containerStyle": "card",
-  "displayName": "Container",
+  "currentItemsView": "{{[]}}",
+  "displayName": "List",
   "dynamicBindingPathList": [
     {
-      "key": "borderRadius"
+      "key": "currentItemsView"
     },
     {
-      "key": "boxShadow"
+      "key": "selectedItemView"
+    },
+    {
+      "key": "triggeredItemView"
+    },
+    {
+      "key": "primaryKeys"
+    },
+    {
+      "key": "accentColor"
     },
     {
       "key": "backgroundColor"
     },
     {
-      "key": "borderColor"
+      "key": "listData"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicTriggerPathList": [],
-  "flexVerticalAlignment": "stretch",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onItemClick"
+    }
+  ],
+  "enhancements": true,
+  "flexVerticalAlignment": "start",
+  "gridType": "vertical",
+  "hasMetaWidgets": true,
   "hideCard": false,
-  "iconSVG": "/static/media/icon.b4f5f9eb27fc2bb537b53187836aea6c.svg",
+  "iconSVG": "/static/media/icon.03ffd4284fea6902cc6bed8251f39ea8.svg",
   "isCanvas": true,
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "brs301tvd2",
+  "itemBackgroundColor": "#FFFFFF",
+  "itemSpacing": "8",
+  "key": "gqbq0jo32u",
   "leftColumn": 0,
-  "maxDynamicHeight": 9000,
-  "minDynamicHeight": 10,
+  "listData": "{{forums_query.data}}",
+  "mainCanvasId": "4bjip9rg9u",
+  "mainContainerId": "ud9yeootlc",
   "minWidth": 450,
-  "mobileBottomRow": 19,
+  "mobileBottomRow": 61,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 22,
-  "mobileTopRow": 9,
+  "mobileRightColumn": 24,
+  "mobileTopRow": 21,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -102,27 +128,28 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 21,
-  "originalTopRow": 8,
+  "onItemClick": "{{navigateTo('ForumDiscussionPage', {\n  \"forum\": JSON.stringify(List1.selectedItem)\n}, 'SAME_WINDOW');}}",
+  "originalBottomRow": 92,
+  "originalTopRow": 21,
+  "pageSize": 7,
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
+  "primaryKeys": "{{List1.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
   "renderMode": "CANVAS",
+  "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "searchTags": [
-    "div",
-    "parent",
-    "group"
-  ],
-  "shouldScrollContents": true,
+  "selectedItemView": "{{{}}}",
+  "serverSidePagination": false,
   "tags": [
-    "Layout"
+    "Display"
   ],
-  "thumbnailSVG": "/static/media/thumbnail.6cb355b93146b5347bbb048a568ed446.svg",
-  "topRow": 8,
-  "type": "CONTAINER_WIDGET",
-  "version": 1,
-  "widgetId": "vyap8ast2h",
-  "widgetName": "Container9"
+  "templateHeight": 160,
+  "thumbnailSVG": "/static/media/thumbnail.469b7e8d3a04de93014af9a7bc9ebe56.svg",
+  "topRow": 21,
+  "triggeredItemView": "{{{}}}",
+  "type": "LIST_WIDGET_V2",
+  "widgetId": "targtr3mjo",
+  "widgetName": "List1"
 }
