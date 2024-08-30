@@ -1,0 +1,13 @@
+INSERT INTO forumcomments (
+    parent_comment_id, 
+    forum_id, 
+    user_id, 
+    comment, 
+    created_at
+) VALUES (
+		{{commentsList.model.reply[1]}}, 
+  	{{JSON.parse(appsmith.URL.queryParams.forum).id}}, 
+    {{appsmith.store.user.user_id}},
+    {{commentsList.model.reply[0]}}, 
+    NOW()
+);

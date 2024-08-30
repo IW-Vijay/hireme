@@ -1,12 +1,12 @@
 {
-  "gitSyncId": "669e2437c1686e0970b3aff6_84978261-2c50-4d66-bca4-a489108c9d86",
+  "gitSyncId": "66cc5dff73f83b5809d9d3a1_a6aeb86b-b759-475d-ade8-9533b1f6d6c2",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1810,
+          "bottomRow": 380,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -27,7 +27,7 @@
         }
       }
     ],
-    "name": "ForumDiscussionPage",
-    "slug": "forumdiscussionpage"
+    "name": "ForumDiscussionPage Copy",
+    "slug": "forumdiscussionpage-copy"
   }
 }

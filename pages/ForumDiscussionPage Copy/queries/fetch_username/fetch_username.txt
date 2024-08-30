@@ -1,0 +1,1 @@
+SELECT name from users where user_id = {{this.params.user_id}};

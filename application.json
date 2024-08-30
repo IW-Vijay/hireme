@@ -99,6 +99,10 @@
     {
       "id": "HomePageReimagine",
       "isDefault": false
+    },
+    {
+      "id": "ForumDiscussionPage Copy",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
