@@ -107,6 +107,10 @@
     {
       "id": "EventsPageReimagine",
       "isDefault": false
+    },
+    {
+      "id": "ForumsPageReimagine",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

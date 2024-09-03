@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66cc5dff73f83b5809d9d3a1_71f11ed5-e3cc-4aec-8d31-7be8b1f74f5b",
+  "id": "EventsPageReimagine_eventsJsObject",
+  "unpublishedCollection": {
+    "name": "eventsJsObject",
+    "pageId": "EventsPageReimagine",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "backgroundColor": "#1d4ed8",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "0px",
+  "borderWidth": "0",
+  "bottomRow": 9,
+  "boxShadow": "none",
+  "defaultModel": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "13mowz9vx7",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 47,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 17,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "originalBottomRow": 9,
+  "originalTopRow": 0,
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "shouldScrollContents": true,
+  "srcDoc": {
+    "css": "body, html {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n  font-family: Arial, sans-serif;\n  background-color: #f5f5f5;\n}\n\n.header {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  background-color: rgba(255, 255, 255, 0.95);\n  padding: 15px 10px;\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);\n  z-index: 1000;\n  background-image: url(\"https://replicate.delivery/yhqm/rIL8dZv3lj6AFRvpUTPc6tp2ft7L5a2KDmardYfJOvZNmzWTA/out-0.webp\");\n  background-size: cover;\n  background-position: center;\n}\n\n.header::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(102, 210, 255, 0.3));\n  z-index: -1;\n}\n\n.logo {\n  display: flex;\n  align-items: center;\n}\n\n.logo img {\n  width: 50px;\n  height: 50px;\n  margin-right: 15px;\n}\n\n.logo h2 {\n  font-size: 24px;\n  font-weight: bold;\n  color: #333;\n}\n\n.navbar {\n  flex-grow: 1;\n  margin-left: 20px;\n}\n\n.navbar ul {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  display: flex;\n}\n\n.navbar li {\n  margin-left: 20px;\n}\n\n.navbar a {\n  text-decoration: none;\n  font-size: 12px;\n  color: #333;\n  padding: 0px 5px;\n  transition: color 0.3s, background-color 0.3s;\n}\n\n.navbar a:hover {\n  color: #8a2be2;\n  border-radius: 5px;\n}\n\n.navbar a[href=\"#events\"] {\n  color: #8a2be2; /* Purple color */\n}\n\n.profile {\n  display: flex;\n  align-items: center;\n}\n\n.profile-pic {\n  width: 50px;\n  height: 50px;\n  margin-right: 15px;\n}\n\n.profile-name {\n  font-size: 16px;\n  color: #000;\n  margin-right: 10px;\n}",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Header with Navbar</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n    <div class=\"header\">\n        <div class=\"logo\">\n\t\t\t\t\t<img src=\"https://replicate.delivery/yhqm/XLfnSUJ5KaTpUiuN0Yx12pcYOu8W0pCxxeGWc4reZtHbUhtmA/out-0.webp\" alt=\"Logo\">\n            <h2>Community Portal</h2>\n        </div>\n        <div class=\"navbar\">\n            <a href=\"#schoosl\">Schools/Colleges</a>\n            <a href=\"#forums\">Forums</a>\n            <a href=\"#events\">Events</a>\n            <a href=\"#companies\">Companies</a>\n        </div>\n        <div class=\"profile\">\n            <span class=\"profile-name\">John Doe</span>\n            <img src=\"https://replicate.delivery/yhqm/YP01jTxjgsYgFx2NDZsabAVniYubeSRj4UB0f3RV15AIuwWTA/out-0.webp\" alt=\"Profile Picture\" class=\"profile-pic\">\n        </div>\n    </div>\n\n    <script src=\"script.js\"></script>\n</body>\n</html>\n",
+    "js": "appsmith.onReady(() => {\n  // Add any dynamic functionality here if needed\n\n  // Example: Alert on clicking a navbar item\n  document.querySelectorAll('.navbar a').forEach(item => {\n    item.addEventListener('click', event => {\n      alert(`Navigating to ${item.textContent}`);\n    });\n  });\n\n  // You can add more event listeners or other functionality here\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 0,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "body, html {\n    margin: 0;\n    padding: 0;\n    width: 100%;\n    height: 100%;\n    font-family: Arial, sans-serif;\n    background-color: #f5f5f5;\n\t\t\n}\n\n.header {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    background-color: rgba(255, 255, 255, 0.95);\n    padding: 15px 10px;\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);\n    z-index: 1000;\n\t\tbackground-image: url('https://replicate.delivery/yhqm/rIL8dZv3lj6AFRvpUTPc6tp2ft7L5a2KDmardYfJOvZNmzWTA/out-0.webp');\n    background-size: cover;\n    background-position: center;\n}\n.header::before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(102, 210, 255, 0.3));\n    z-index: -1;\n}\n\n.logo {\n    display: flex;\n    align-items: center;\n}\n\n.logo img {\n    width: 50px;\n    height: 50px;\n    margin-right: 15px;\n}\n\n.logo h2 {\n    font-size: 24px;\n    font-weight: bold;\n    color: #333;\n}\n.navbar {\n    flex-grow: 1;\n\t\tmargin-left: 20px;\n}\n.navbar ul {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n}\n\n.navbar li {\n    margin-left: 20px;\n}\n\n.navbar a {\n    text-decoration: none;\n    font-size: 12px;\n    color: #333;\n    padding: 0px 5px;\n    transition: color 0.3s, background-color 0.3s;\n}\n\n.navbar a:hover {\n    color: #8a2be2;\n    border-radius: 5px;\n}\n.navbar a[href=\"#events\"] {\n    color: #8a2be2; /* Purple color */\n}\n\n\n.profile {\n    display: flex;\n    align-items: center;\n}\n\n.profile-pic {\n    width: 50px;\n    height: 50px;\n    margin-right: 15px\n}\n\n.profile-name {\n    font-size: 16px;\n    color: #000;\n\t\tmargin-right: 10px\n}",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Header with Navbar</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n    <div class=\"header\">\n        <div class=\"logo\">\n\t\t\t\t\t<img src=\"https://replicate.delivery/yhqm/XLfnSUJ5KaTpUiuN0Yx12pcYOu8W0pCxxeGWc4reZtHbUhtmA/out-0.webp\" alt=\"Logo\">\n            <h2>Community Portal</h2>\n        </div>\n        <div class=\"navbar\">\n            <a href=\"#schoosl\">Schools/Colleges</a>\n            <a href=\"#forums\">Forums</a>\n            <a href=\"#events\">Events</a>\n            <a href=\"#companies\">Companies</a>\n        </div>\n        <div class=\"profile\">\n            <span class=\"profile-name\">John Doe</span>\n            <img src=\"https://replicate.delivery/yhqm/YP01jTxjgsYgFx2NDZsabAVniYubeSRj4UB0f3RV15AIuwWTA/out-0.webp\" alt=\"Profile Picture\" class=\"profile-pic\">\n        </div>\n    </div>\n\n    <script src=\"script.js\"></script>\n</body>\n</html>\n",
+    "js": "appsmith.onReady(() => {\n    // Add any dynamic functionality here if needed\n\n    // Example: Alert on clicking a navbar item\n    document.querySelectorAll('.navbar a').forEach(item => {\n        item.addEventListener('click', event => {\n            alert(`Navigating to ${item.textContent}`);\n        });\n    });\n\n    // You can add more event listeners or other functionality here\n});\n"
+  },
+  "version": 1,
+  "widgetId": "vbh61ho4jy",
+  "widgetName": "Header"
+}

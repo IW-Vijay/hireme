@@ -1,0 +1,76 @@
+{
+  "backgroundColor": "#1d4ed8",
+  "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
+  "borderRadius": "0px",
+  "borderWidth": "0",
+  "bottomRow": 67,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{{forumsJsObject.customWidgetData()}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultModel"
+    },
+    {
+      "key": "borderColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    },
+    {
+      "key": "onForumClick"
+    }
+  ],
+  "events": [
+    "onResetClick",
+    "onForumClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "5j8n0cfjmu",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 59,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 29,
+  "needsErrorInfo": false,
+  "onForumClick": "{{navigateTo('ForumDiscussionPage', {\n \"forum\" : forumWidget.model.selectedForum\n}, 'SAME_WINDOW');}}",
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "originalBottomRow": 67,
+  "originalTopRow": 9,
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "shouldScrollContents": true,
+  "srcDoc": {
+    "css": "body, html {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n  font-family: Arial, sans-serif;\n}\n\n.forums-container {\n  padding: 20px;\n  background: url(\"https://replicate.delivery/yhqm/GveeAfJpuDGdnJqA0grhfZeQWuedoFNTTAKvw7oF7MJkGb50E/out-0.webp\") no-repeat center center/cover;\n  min-height: 100vh;\n  box-sizing: border-box;\n}\n\n.forums-heading {\n  font-size: 36px;\n  font-weight: bold;\n  color: #000; /* Black color for heading */\n  margin: 0; /* Spacing below the heading */\n}\n\n.search-box {\n  width: 50%;\n  padding: 10px;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  font-size: 16px;\n}\n\n.header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-bottom: 20px; /* Spacing below header */\n}\n\n.forums-list {\n  display: flex;\n  flex-direction: column;\n  gap: 10px; /* Spacing between forums */\n}\n\n.forum-item {\n  background-color: rgba(255, 255, 255, 0.8);\n  border-radius: 10px;\n  padding: 15px;\n  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);\n  display: flex;\n  align-items: center;\n  position: relative;\n  transition: transform 0.3s ease, box-shadow 0.3s ease;\n}\n\n.forum-item:hover {\n  background-color: rgba(255, 255, 255, 0.9);\n  transform: scale(1.02); /* Zoom effect on hover */\n  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);\n  cursor: pointer;\n}\n\n.forum-item img {\n  width: 100px; /* Adjust size as needed */\n  height: auto;\n  border-radius: 10px;\n  flex-shrink: 0; /* Prevent image from shrinking */\n  margin-right: 20px; /* Space between image and text */\n}\n\n.forum-details {\n  display: flex;\n  flex-direction: column;\n  gap: 10px; /* Spacing between items */\n  flex-grow: 1;\n  text-align: justify;\n  width: 10%;\n  margin-right: 30px;\n}\n\n.forum-meta {\n  display: flex;\n  flex-direction: column;\n  align-items: flex-end; /* Align to the right */\n  gap: 5px; /* Spacing between location and date */\n}\n\n.forum-item h3 {\n  font-size: 24px;\n  margin: 0;\n  color: #333;\n}\n\n.forum-item p {\n  margin: 0;\n  flex-grow: 1;\n}\n\n.forum-item .date {\n  font-size: 14px;\n  color: #666;\n  flex-grow: 1;\n}",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Forums Widget</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n    <div class=\"forums-container\">\n        <div class=\"header\">\n            <h1 class=\"forums-heading\">Forums</h1>\n            <input type=\"text\" id=\"searchBox\" class=\"search-box\" placeholder=\"Search forums...\">\n        </div>\n        <div id=\"forumsList\" class=\"forums-list\">\n            <!-- Forums will be dynamically inserted here -->\n        </div>\n    </div>\n\n    <script src=\"script.js\"></script>\n</body>\n</html>\n",
+    "js": "appsmith.onReady(function () {\n  const forums = appsmith.model.forums;\n  const forumsList = document.getElementById('forumsList');\n  function renderForums(filteredForums) {\n    forumsList.innerHTML = ''; // Clear previous content\n    filteredForums.forEach(forum => {\n      const forumItem = document.createElement('div');\n      forumItem.classList.add('forum-item');\n\n      // Conditionally render image or adjust the layout if no image\n      if (forum.forum_iamge) {\n        forumItem.innerHTML = `\n                    <img src=\"${forum.forum_image}\" alt=\"${forum.title}\">\n                    <div class=\"forum-details\">\n                        <h3>${forum.title}</h3>\n                        <p>${forum.description}</p>\n                    </div>\n                    <div class=\"forum-meta\">\n                        <div class=\"date\">${forum.created_on}</div>\n                    </div>\n                `;\n      } else {\n        forumItem.innerHTML = `\n                    <div class=\"forum-details no-image\">\n                        <h3>${forum.title}</h3>\n                        <p>${forum.description}</p>\n                    </div>\n                    <div class=\"forum-meta\">\n                        <div class=\"date\">${forum.created_on}</div>\n                    </div>\n                `;\n      }\n      forumItem.addEventListener('click', function () {\n        appsmith.updateModel({\n          selectedForum: JSON.stringify(forum)\n        });\n        appsmith.triggerEvent(\"onForumClick\");\n      });\n      forumsList.appendChild(forumItem);\n    });\n  }\n  document.getElementById('searchBox').addEventListener('input', function (e) {\n    const query = e.target.value.toLowerCase();\n    const filteredForums = forums.filter(forum => {\n      return forum.title.toLowerCase().includes(query) || forum.created_on.toLowerCase().includes(query) || forum.description.toLowerCase().includes(query);\n    });\n    renderForums(filteredForums);\n  });\n  renderForums(forums); // Initial render\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 9,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "body, html {\n    margin: 0;\n    padding: 0;\n    width: 100%;\n    height: 100%;\n    font-family: Arial, sans-serif;\n}\n\n.forums-container {\n    padding: 20px;\n    background: url('https://replicate.delivery/yhqm/GveeAfJpuDGdnJqA0grhfZeQWuedoFNTTAKvw7oF7MJkGb50E/out-0.webp') no-repeat center center/cover;\n    min-height: 100vh;\n    box-sizing: border-box;\n}\n\n.forums-heading {\n    font-size: 36px;\n    font-weight: bold;\n    color: #000; /* Black color for heading */\n    margin: 0; /* Spacing below the heading */\n}\n\n.search-box {\n    width: 50%;\n    padding: 10px;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    font-size: 16px;\n}\n\n.header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 20px; /* Spacing below header */\n}\n\n.forums-list {\n    display: flex;\n    flex-direction: column;\n    gap: 10px; /* Spacing between forums */\n}\n\n.forum-item {\n    background-color: rgba(255, 255, 255, 0.8);\n    border-radius: 10px;\n    padding: 15px;\n    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);\n    display: flex;\n    align-items: center;\n\t\tposition: relative;\n\t\ttransition: transform 0.3s ease, box-shadow 0.3s ease;\n}\n\n.forum-item:hover {\n\t\tbackground-color: rgba(255, 255, 255, 0.9);\n    transform: scale(1.02); /* Zoom effect on hover */\n    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);\n\t\tcursor: pointer;\n}\n\n.forum-item img {\n    width: 100px; /* Adjust size as needed */\n    height: auto;\n    border-radius: 10px;\n    flex-shrink: 0; /* Prevent image from shrinking */\n    margin-right: 20px; /* Space between image and text */\n}\n\n.forum-details {\n    display: flex;\n    flex-direction: column;\n    gap: 10px; /* Spacing between items */\n\t\tflex-grow: 1;\n\t\ttext-align: justify;\n\t\twidth : 10%;\n\t\tmargin-right: 30px;\n}\n\n.forum-meta {\n    display: flex;\n    flex-direction: column;\n    align-items: flex-end; /* Align to the right */\n    gap: 5px; /* Spacing between location and date */\n}\n\n.forum-item h3 {\n    font-size: 24px;\n    margin: 0;\n    color: #333;\n}\n\n.forum-item p {\n    margin: 0;\n    flex-grow: 1;\n}\n\n.forum-item .date {\n    font-size: 14px;\n    color: #666;\n\t\tflex-grow : 1;\n}\n",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Forums Widget</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n    <div class=\"forums-container\">\n        <div class=\"header\">\n            <h1 class=\"forums-heading\">Forums</h1>\n            <input type=\"text\" id=\"searchBox\" class=\"search-box\" placeholder=\"Search forums...\">\n        </div>\n        <div id=\"forumsList\" class=\"forums-list\">\n            <!-- Forums will be dynamically inserted here -->\n        </div>\n    </div>\n\n    <script src=\"script.js\"></script>\n</body>\n</html>\n",
+    "js": "appsmith.onReady(function() {\n\n    const forums = appsmith.model.forums;\n\n    const forumsList = document.getElementById('forumsList');\n\n    function renderForums(filteredForums) {\n        forumsList.innerHTML = ''; // Clear previous content\n        filteredForums.forEach(forum => {\n            const forumItem = document.createElement('div');\n            forumItem.classList.add('forum-item');\n\n            // Conditionally render image or adjust the layout if no image\n            if (forum.forum_iamge) {\n                forumItem.innerHTML = `\n                    <img src=\"${forum.forum_image}\" alt=\"${forum.title}\">\n                    <div class=\"forum-details\">\n                        <h3>${forum.title}</h3>\n                        <p>${forum.description}</p>\n                    </div>\n                    <div class=\"forum-meta\">\n                        <div class=\"date\">${forum.created_on}</div>\n                    </div>\n                `;\n            } else {\n                forumItem.innerHTML = `\n                    <div class=\"forum-details no-image\">\n                        <h3>${forum.title}</h3>\n                        <p>${forum.description}</p>\n                    </div>\n                    <div class=\"forum-meta\">\n                        <div class=\"date\">${forum.created_on}</div>\n                    </div>\n                `;\n            }\n\t\t\t\t\t\n\t\t\t\t\t\tforumItem.addEventListener('click', function() {\n\t\t\t\t\t\t\t\tappsmith.updateModel({selectedForum : JSON.stringify(forum)});\n                appsmith.triggerEvent(\"onForumClick\");\n            });\n\n            forumsList.appendChild(forumItem);\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n        });\n    }\n\n    document.getElementById('searchBox').addEventListener('input', function(e) {\n        const query = e.target.value.toLowerCase();\n        const filteredForums = forums.filter(forum => {\n            return forum.title.toLowerCase().includes(query) ||\n                   forum.created_on.toLowerCase().includes(query) ||\n                   forum.description.toLowerCase().includes(query);\n        });\n        renderForums(filteredForums);\n    });\n\n    renderForums(forums); // Initial render\n});\n"
+  },
+  "version": 1,
+  "widgetId": "sehr3d6lug",
+  "widgetName": "forumWidget"
+}

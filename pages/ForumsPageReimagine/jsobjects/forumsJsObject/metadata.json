@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66cc5dff73f83b5809d9d3a1_fab1dc14-9b4d-422c-bef3-cf6bffa86389",
+  "id": "ForumsPageReimagine_forumsJsObject",
+  "unpublishedCollection": {
+    "name": "forumsJsObject",
+    "pageId": "ForumsPageReimagine",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
