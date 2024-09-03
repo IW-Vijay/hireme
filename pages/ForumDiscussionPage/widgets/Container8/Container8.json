@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
+  "backgroundColor": "#d8b4fe",
   "borderColor": "transparent",
   "borderRadius": "0px",
   "borderWidth": "1",
@@ -35,11 +35,7 @@
   ],
   "containerStyle": "card",
   "displayName": "Container",
-  "dynamicBindingPathList": [
-    {
-      "key": "backgroundColor"
-    }
-  ],
+  "dynamicBindingPathList": [],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "hideCard": false,

@@ -1,24 +1,23 @@
 {
-  "gitSyncId": "669e2437c1686e0970b3aff6_38165724-b69b-4dde-931b-73e2e14e2f60",
+  "gitSyncId": "66cc5dff73f83b5809d9d3a1_ce2b1bfa-82c2-4ecd-af3b-2e89adb1a364",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 730,
+          "bottomRow": 380,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 850,
+          "minHeight": 770,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 1160,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 104,
+          "snapRows": 75,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 89,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "LoginPage",
-    "slug": "loginpage"
+    "name": "EventsPageReimagine",
+    "slug": "eventspagereimagine"
   }
 }

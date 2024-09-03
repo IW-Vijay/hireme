@@ -1,24 +1,23 @@
 {
-  "gitSyncId": "66cc5dff73f83b5809d9d3a1_a6aeb86b-b759-475d-ade8-9533b1f6d6c2",
+  "gitSyncId": "66cc5dff73f83b5809d9d3a1_de5e1a31-e4fc-4086-8b53-a50282da67df",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 380,
+          "bottomRow": 710,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 850,
+          "minHeight": 770,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 1160,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 104,
+          "snapRows": 75,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 89,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "ForumDiscussionPage Copy",
-    "slug": "forumdiscussionpage-copy"
+    "name": "LoginReimagine",
+    "slug": "loginreimagine"
   }
 }

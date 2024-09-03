@@ -101,7 +101,11 @@
       "isDefault": false
     },
     {
-      "id": "ForumDiscussionPage Copy",
+      "id": "LoginReimagine",
+      "isDefault": false
+    },
+    {
+      "id": "EventsPageReimagine",
       "isDefault": false
     }
   ],

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66cc5dff73f83b5809d9d3a1_a3c926f6-c2d2-458f-b3c2-a1bd3c17051d",
-  "id": "ForumDiscussionPage Copy_add_comment",
+  "gitSyncId": "66cc5dff73f83b5809d9d3a1_6dbf6177-242f-4a5f-9f8d-6d79b5e33dd6",
+  "id": "LoginReimagine_getUser",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO forumcomments (\n    parent_comment_id, \n    forum_id, \n    user_id, \n    comment, \n    created_at\n) VALUES (\n\t\t{{commentsList.model.reply[1]}}, \n  \t{{JSON.parse(appsmith.URL.queryParams.forum).id}}, \n    {{appsmith.store.user.user_id}},\n    {{commentsList.model.reply[0]}}, \n    NOW()\n);\n",
+      "body": "SELECT * FROM users WHERE email = {{Custom1.model.email}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "add_comment",
-    "pageId": "ForumDiscussionPage Copy",
+    "name": "getUser",
+    "pageId": "LoginReimagine",
     "userSetOnLoad": false
   }
 }

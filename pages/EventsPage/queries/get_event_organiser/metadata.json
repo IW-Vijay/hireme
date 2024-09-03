@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "get_event_organiser",
     "pageId": "EventsPage",
     "userSetOnLoad": false
