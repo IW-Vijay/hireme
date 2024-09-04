@@ -111,6 +111,10 @@
     {
       "id": "ForumsPageReimagine",
       "isDefault": false
+    },
+    {
+      "id": "ProfilePageReimagine",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

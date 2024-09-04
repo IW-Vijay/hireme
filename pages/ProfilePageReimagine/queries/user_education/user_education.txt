@@ -1,0 +1,1 @@
+SELECT * FROM education where user_id={{appsmith.store.user.user_id}} order by startdate desc;

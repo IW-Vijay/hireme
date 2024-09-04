@@ -1,7 +1,7 @@
 {
   "NavCompany": "{{navigateTo('CompanyPage', {}, 'SAME_WINDOW');}}",
-  "NavEvent": "{{navigateTo('EventsPage', {}, 'SAME_WINDOW');}}",
-  "NavForum": "{{navigateTo('ForumsPage', {}, 'SAME_WINDOW');}}",
+  "NavEvent": "{{navigateTo('EventsPageReimagine', {}, 'SAME_WINDOW');}}",
+  "NavForum": "{{navigateTo('ForumsPageReimagine', {}, 'SAME_WINDOW');}}",
   "NavSchool": "{{navigateTo('SchoolCollegePage', {}, 'SAME_WINDOW');}}",
   "backgroundColor": "#FFFFFF",
   "borderColor": "#E0DEDE",

@@ -1,24 +1,23 @@
 {
-  "gitSyncId": "669e2437c1686e0970b3aff6_84978261-2c50-4d66-bca4-a489108c9d86",
+  "gitSyncId": "66cc5dff73f83b5809d9d3a1_7801ccf8-01fe-4b25-a50b-59c902f590e7",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 2080,
+          "bottomRow": 760,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 850,
+          "minHeight": 770,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 1160,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 104,
+          "snapRows": 75,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 89,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "ForumDiscussionPage",
-    "slug": "forumdiscussionpage"
+    "name": "ProfilePageReimagine",
+    "slug": "profilepagereimagine"
   }
 }

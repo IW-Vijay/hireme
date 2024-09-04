@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM forumcomments where forum_id = {{JSON.parse(appsmith.URL.queryParams.forum).id}};",
+      "body": "SELECT * FROM forumcomments where forum_id = {{JSON.parse(appsmith.URL.queryParams.forum).id}} order by created_at desc;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

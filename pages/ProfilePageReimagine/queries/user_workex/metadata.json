@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66cc5dff73f83b5809d9d3a1_60d4bbab-7fc4-4dfc-b51e-193c24c67860",
-  "id": "ForumDiscussionPage_add_comment",
+  "gitSyncId": "66cc5dff73f83b5809d9d3a1_dec49352-233d-4134-90e8-78651172dc67",
+  "id": "ProfilePageReimagine_user_workex",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO forumcomments (\n    forum_id, \n    user_id, \n    comment, \n    created_at\n) VALUES ( \n  \t{{JSON.parse(appsmith.URL.queryParams.forum).id}}, \n    {{appsmith.store.user.user_id}},\n    {{commentsList.model.reply}}, \n    NOW()\n);\n",
+      "body": "SELECT * FROM workexperience where user_id={{appsmith.store.user.user_id}} order by startdate desc;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "add_comment",
-    "pageId": "ForumDiscussionPage",
+    "executeOnLoad": true,
+    "name": "user_workex",
+    "pageId": "ProfilePageReimagine",
     "userSetOnLoad": false
   }
 }
