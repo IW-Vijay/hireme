@@ -63,7 +63,7 @@
   "onForumsClick": "{{navigateTo('ForumsPageReimagine', {}, 'SAME_WINDOW');}}",
   "onHeadClick": "{{navigateTo('HomePageReimagine', {}, 'SAME_WINDOW');}}",
   "onInstitutionsClick": "{{navigateTo('SchoolCollegePage', {}, 'SAME_WINDOW');}}",
-  "onProfileClick": "{{showAlert('Will redirect to profile page', '');}}",
+  "onProfileClick": "{{navigateTo('ProfilePageReimagine', {}, 'SAME_WINDOW');}}",
   "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
   "originalBottomRow": 9,
   "originalTopRow": 0,

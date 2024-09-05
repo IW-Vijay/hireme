@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66cc5dff73f83b5809d9d3a1_4993e4e9-5867-42ba-a006-7978521dfff5",
+  "id": "PARegistrationPageReimagine_passwordHasing",
+  "unpublishedCollection": {
+    "name": "passwordHasing",
+    "pageId": "PARegistrationPageReimagine",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
