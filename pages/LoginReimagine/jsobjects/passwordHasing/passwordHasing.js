@@ -8,10 +8,10 @@ export default {
 	signin: (user, password) => {
     if (user) {
         if (user.status === 'approved' && this.verifyHash(password, user.password_hash)) {
-            navigateTo('PostApprovalProfileCreationPag', user);
+            navigateTo('PARegistrationPageReimagine');
         }
         else if (user.status === 'appuser' && this.verifyHash(password, user.password_hash)) {
-            navigateTo('HomePageReimagine', user);
+            navigateTo('HomePageReimagine');
         }else if (user.status === 'pending' && this.verifyHash(password, user.password_hash)) {
             showAlert('Your registration is not approved, try again later', 'error');
         }

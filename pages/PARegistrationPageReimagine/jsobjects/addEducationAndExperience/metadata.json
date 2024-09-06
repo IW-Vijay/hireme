@@ -1,8 +1,8 @@
 {
   "gitSyncId": "66cc5dff73f83b5809d9d3a1_88f8f394-89ee-4e13-a1af-ed556935167b",
-  "id": "PARegistrationPageReimagine_addEducationsAndExperiences",
+  "id": "PARegistrationPageReimagine_addEducationAndExperience",
   "unpublishedCollection": {
-    "name": "addEducationsAndExperiences",
+    "name": "addEducationAndExperience",
     "pageId": "PARegistrationPageReimagine",
     "pluginId": "js-plugin",
     "pluginType": "JS",

@@ -1,23 +1,24 @@
 export default {
-	modifyUser : () => {
+	modifyUser : () =>  {
 		updateUserDetails.run()
 			.then(() => {
-
+			
+			
 			// Get user_id from query parameters
-			const user_id = appsmith.URL.queryParams.user_id;
+			const user_id = appsmith.store.user.user_id;
 
-			const ed_len = Custom1.model.educations.length;
+			const ed_len = Custom1.model.userDetails.education.length;
 
-			const ex_len = Custom1.model.experiences.length;
+			const ex_len = Custom1.model.userDetails.workExperience.length;
 
 			// Ensure educations is an array and not undefined
 			if (ed_len > 0) {
 				for (let i = 0; i < ed_len; i++) {
-					const education = Custom1.model.educations[i];
-					const school = education.school
+					const education = Custom1.model.userDetails.education[i];
+					const school = education.institution
 					const specialization = education.specialization
-					const startdate = education.dateStarted
-					const enddate = education.dateEnded
+					const startdate = education.startDate
+					const enddate = education.endDate
 					const marks =education.marks
 					addEducation.run({user_id, school, specialization, startdate,enddate, marks}
 					).then(() => {
@@ -29,13 +30,12 @@ export default {
 			} else {
 				console.log("No educations to add or invalid format.");
 			}
-
 			// Ensure experiences is an array and not undefined
 			if (ex_len > 0) {
 				console.log("Adding experiences...");
 				for (let i = 0; i < ex_len; i++) {
-					const experience = Custom1.model.experiences[i];
-					const organization = experience.organisation 
+					const experience = Custom1.model.userDetails.workExperience[i];
+					const organization = experience.organisation
 					const role = experience.role
 					const startdate = experience.startDate
 					const enddate = experience.endDate
@@ -55,5 +55,6 @@ export default {
 			.catch((err) => {
 			console.error("Error updating user details:", err);
 		});
+		navigateTo('HomePageReimagine');
 	}
 }
