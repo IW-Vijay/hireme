@@ -44,6 +44,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "originalBottomRow": 5,
+  "originalTopRow": 1,
   "overflow": "NONE",
   "parentColumnSpace": 17.625,
   "parentId": "ypcrh0u8z5",
@@ -61,7 +63,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{appsmith.user.name || appsmith.user.email}}",
+  "text": "{{appsmith.store.user.name}}",
   "textAlign": "RIGHT",
   "textColor": "#ffffff",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",

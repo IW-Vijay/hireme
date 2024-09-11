@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "0.375rem",
-  "bottomRow": 40,
+  "bottomRow": 49,
   "boxShadow": "none",
-  "defaultText": "{{appsmith.URL.queryParams.location ? appsmith.URL.queryParams.location: \"\"}}",
+  "defaultText": "{{getUserJSObject.userData.data.user[0].location ? getUserJSObject.userData.data.user[0].location : \"\"}}",
   "displayName": "Input",
   "dynamicBindingPathList": [
     {
@@ -36,8 +36,8 @@
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 40,
-  "originalTopRow": 32,
+  "originalBottomRow": 83,
+  "originalTopRow": 75,
   "parentColumnSpace": 12.0732421875,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
@@ -52,7 +52,7 @@
     "textarea"
   ],
   "showStepArrows": false,
-  "topRow": 32,
+  "topRow": 41,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "cz355dgrg8",

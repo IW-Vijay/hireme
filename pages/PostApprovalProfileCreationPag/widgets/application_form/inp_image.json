@@ -5,7 +5,7 @@
   "borderWidth": "1",
   "bottomRow": 16,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultModel": "{\n  \"image\": \"{{appsmith.URL.queryParams.image}}\"\n}",
+  "defaultModel": "{\n  \"image\": \"{{getUserJSObject.userData.data.user[0].image ? getUserJSObject.userData.data.user[0].image : \"\"}}\"\n}",
   "displayName": "Custom",
   "dynamicBindingPathList": [
     {
@@ -54,7 +54,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onResetClick": "{{showAlert('Successfully reset!!', '').then(() => {\n  storeValue('image', Image2);\n});}}",
-  "originalBottomRow": 16,
+  "originalBottomRow": 50,
   "originalTopRow": 0,
   "parentColumnSpace": 18.880859375,
   "parentId": "hnice2rhm7",

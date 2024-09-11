@@ -99,7 +99,7 @@
           "widgetId": ""
         }
       },
-      "onClick": "{{navigateTo('CompanyPage', {\n \"user\" : appsmith.store.user\n}, 'SAME_WINDOW');}}",
+      "onClick": "{{navigateTo('CompaniesPage', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "widgetId": ""
     },

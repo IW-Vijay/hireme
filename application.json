@@ -13,47 +13,11 @@
   "icon": "moon",
   "pages": [
     {
-      "id": "Tasks",
-      "isDefault": false
-    },
-    {
-      "id": "SignupPage",
-      "isDefault": false
-    },
-    {
-      "id": "1 Track Applications",
-      "isDefault": false
-    },
-    {
       "id": "LoginPage",
-      "isDefault": false
-    },
-    {
-      "id": "HomePage",
-      "isDefault": false
-    },
-    {
-      "id": "AddJobPost",
-      "isDefault": false
-    },
-    {
-      "id": "JobPage",
-      "isDefault": false
-    },
-    {
-      "id": "JobApplicationPage",
-      "isDefault": false
-    },
-    {
-      "id": "MyJobsPage",
       "isDefault": true
     },
     {
-      "id": "ApplicantsPage",
-      "isDefault": false
-    },
-    {
-      "id": "SignupPage Copy",
+      "id": "HomePage",
       "isDefault": false
     },
     {
@@ -77,7 +41,7 @@
       "isDefault": false
     },
     {
-      "id": "CompanyPage",
+      "id": "CompaniesPage",
       "isDefault": false
     },
     {
@@ -94,34 +58,6 @@
     },
     {
       "id": "AddForumPage",
-      "isDefault": false
-    },
-    {
-      "id": "HomePageReimagine",
-      "isDefault": false
-    },
-    {
-      "id": "LoginReimagine",
-      "isDefault": false
-    },
-    {
-      "id": "EventsPageReimagine",
-      "isDefault": false
-    },
-    {
-      "id": "ForumsPageReimagine",
-      "isDefault": false
-    },
-    {
-      "id": "ProfilePageReimagine",
-      "isDefault": false
-    },
-    {
-      "id": "RegistrationPageReimagine",
-      "isDefault": false
-    },
-    {
-      "id": "PARegistrationPageReimagine",
       "isDefault": false
     }
   ],

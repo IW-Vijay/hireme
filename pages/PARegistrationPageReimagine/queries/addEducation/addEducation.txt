@@ -1,2 +1,0 @@
-INSERT INTO education (user_id, school, specialization, startdate, enddate, marks)
-VALUES ({{this.params.user_id}}, {{this.params.school}} , {{this.params.specialization}}, {{this.params.startdate}}, {{this.params.enddate}}, {{this.params.marks}});

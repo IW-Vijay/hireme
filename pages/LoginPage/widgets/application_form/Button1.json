@@ -34,7 +34,7 @@
   "mobileLeftColumn": 18,
   "mobileRightColumn": 34,
   "mobileTopRow": 58,
-  "onClick": "{{Query2.run().then(() => {\n  showAlert('Applicant Added Succesfully', 'success');\n  navigateTo('1 Track Applications', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('Error adding applicant', 'error');\n});}}",
+  "onClick": "{{getUser.run().then(() => {\n  LoginJSObject.signin(getUser.data[0], inp_pass.text);\n});}}",
   "parentColumnSpace": 17.064453125,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,

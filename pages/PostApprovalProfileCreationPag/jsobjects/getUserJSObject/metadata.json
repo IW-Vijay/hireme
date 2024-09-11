@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66e1b24a73f83b5809d9d6b5_15c051b3-870d-404d-87ff-f4a25279054c",
+  "id": "PostApprovalProfileCreationPag_getUserJSObject",
+  "unpublishedCollection": {
+    "name": "getUserJSObject",
+    "pageId": "PostApprovalProfileCreationPag",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

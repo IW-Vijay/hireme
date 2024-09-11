@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO users (image, name, phoneno, email, location, about, role, status, password_hash)\nVALUES\n(\n\t\t'{{\"exampleimage\"}}',\n    '{{inp_name.text}}',\n    '{{inp_phone.text}}',\n    '{{inp_email.text}}',\n    '{{inp_location.text}}',\n    '{{inp_about.text}}',\n\t\t'{{inp_role.selectedOptionValue}}',\n\t\t'{{\"pending\"}}',\n\t\t'{{passwordHasing.createHash(inp_password.text)}}'\n)",
+      "body": "INSERT INTO users (image, name, phoneno, email, location, about, status, password_hash, dob, gender, community_id)\nVALUES\n(\n\t\t'{{inp_image.model.image}}',\n    '{{inp_name.text}}',\n    '{{inp_phone.text}}',\n    '{{inp_email.text}}',\n    '{{inp_location.text}}',\n    '{{inp_about.text}}',\n\t\t'{{\"pending\"}}',\n\t\t'{{passwordHasing.createHash(inp_password.text)}}',\n\t\t{{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : 'NULL'}},\n\t\t'{{inp_gender.text}}',\n\t\t'{{inp_comid.text}}'\n)",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

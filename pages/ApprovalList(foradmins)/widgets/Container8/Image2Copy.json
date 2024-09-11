@@ -8,14 +8,18 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "image"
     }
   ],
+  "dynamicTriggerPathList": [],
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
-  "image": "",
+  "image": "{{appsmith.store.user.image}}",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,
@@ -37,7 +41,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "parentColumnSpace": 17.625,
-  "parentId": "rigd9edkla",
+  "parentId": "85dj58s0ep",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 62,
@@ -48,6 +52,6 @@
   "topRow": 1,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "wae5n70gjo",
+  "widgetId": "v77t7cfy8z",
   "widgetName": "Image2Copy"
 }

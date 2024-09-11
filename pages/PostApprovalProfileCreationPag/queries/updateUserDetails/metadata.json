@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE users\nSET       \n    name = {{inp_name.text}},                      \n    image = 'new_image_url',                 \n    phoneno = {{inp_phone.text}},            \n    email = {{inp_email.text}},       \n    role = {{inp_role.selectedOptionValue}},                      \n    location = {{inp_location.text}},                  \n    about = {{inp_about.text}},  \n\t\tstatus = 'appuser',\n    interest = {{inp_interest.text}}             \nWHERE user_id = {{appsmith.URL.queryParams.user_id}};",
+      "body": "UPDATE users\nSET       \n    name = {{inp_name.text}},                      \n    image = {{inp_image.model.image}},                 \n    phoneno = {{inp_phone.text}},            \n    email = {{inp_email.text}}, \n\t\tgender = {{inp_gender.text}},\n\t\tdob = {{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : 'NULL'}},\n    location = {{inp_location.text}},                  \n    about = {{inp_about.text}},  \n\t\tstatus = 'appuser',\n    interest = {{inp_interest.text}}             \nWHERE email = {{appsmith.URL.queryParams.email}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

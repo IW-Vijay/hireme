@@ -1,13 +1,15 @@
-INSERT INTO users (image, name, phoneno, email, location, about, role, status, password_hash)
+INSERT INTO users (image, name, phoneno, email, location, about, status, password_hash, dob, gender, community_id)
 VALUES
 (
-		'{{"exampleimage"}}',
+		'{{inp_image.model.image}}',
     '{{inp_name.text}}',
     '{{inp_phone.text}}',
     '{{inp_email.text}}',
     '{{inp_location.text}}',
     '{{inp_about.text}}',
-		'{{inp_role.selectedOptionValue}}',
 		'{{"pending"}}',
-		'{{passwordHasing.createHash(inp_password.text)}}'
+		'{{passwordHasing.createHash(inp_password.text)}}',
+		{{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : 'NULL'}},
+		'{{inp_gender.text}}',
+		'{{inp_comid.text}}'
 )

@@ -30,23 +30,23 @@
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
-  "parentId": "ypcrh0u8z5",
+  "parentId": "6a4aashydz",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 9,
+  "rightColumn": 16,
   "searchTags": [
     "typography",
     "paragraph",
     "label"
   ],
   "shouldTruncate": false,
-  "text": "HireMe",
+  "text": "Community Portal",
   "textAlign": "LEFT",
   "textColor": "#fff",
   "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "chjkx3t5tu",
+  "widgetId": "zg7rszs3x8",
   "widgetName": "Text40Copy1"
 }

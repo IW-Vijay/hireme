@@ -24,7 +24,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "j65kqedbz9",
-  "label": "Full Name",
+  "label": "Full Name*",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",

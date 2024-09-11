@@ -4,7 +4,7 @@ export default {
 			.then(() => {
 
 			// Get user_id from query parameters
-			const user_id = appsmith.URL.queryParams.user_id;
+			const user_id = getUserJSObject.userData.data.user[0].user_id;
 
 			const ed_len = educationWidget.model.educations.length;
 
@@ -51,6 +51,7 @@ export default {
 			} else {
 				console.log("No experiences to add or invalid format.");
 			}
+		navigateTo('HomePage');
 		})
 			.catch((err) => {
 			console.error("Error updating user details:", err);

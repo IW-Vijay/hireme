@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 48,
+  "bottomRow": 226,
   "boxShadow": "none",
   "defaultModel": "{{usersJsObject.customWidgetData()}}",
   "displayName": "Custom",
@@ -60,8 +60,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 48,
-  "originalTopRow": 18,
+  "originalBottomRow": 226,
+  "originalTopRow": 28,
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -83,7 +83,7 @@
   ],
   "theme": "{{appsmith.theme}}",
   "thumbnailSVG": "/static/media/thumbnail.a7d7cde44fad9a0d4d490def43560a78.svg",
-  "topRow": 18,
+  "topRow": 28,
   "type": "CUSTOM_WIDGET",
   "uncompiledSrcDoc": {
     "css": ".user-cards {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 20px;\n  padding: 20px;\n  justify-content: center;\n}\n\n.user-card {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between; /* Distribute space between items */\n  width: 250px;\n  text-align: center;\n  border-radius: 10px;\n  overflow: hidden;\n  transition: transform 0.3s, box-shadow 0.3s;\n}\n\n.user-card:hover {\n  transform: translateY(-10px);\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);\n}\n\n.user-image img {\n  width: 100%;\n  height: auto;\n  border-bottom: 1px solid #ddd;\n}\n\n.user-info {\n  padding: 10px;\n}\n\n.user-details {\n  margin-top: 10px;\n  font-size: 14px;\n  color: #555;\n}\n\n.separator {\n  border-top: 1px solid #ddd;\n  margin: 10px 0;\n}\n\n.button-container {\n  text-align: right;\n  padding: 0px 0px;\n\t\n\n  button {\n    margin: 0 7px;\n    border-radius: 50px !important; \n    font-size: 14px;\n    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;\n\n    &.ant-btn-primary {\n      background-color: green !important;\n      border: none !important;\n      color: #fff !important;\n\n      &:hover {\n        background-color: darkgreen !important;\n      }\n    }\n\n    &.ant-btn-danger {\n      background-color: red !important;\n      border: none !important;\n      color: #fff !important;\n\n      &:hover {\n        background-color: darkred !important;\n      }\n    }\n  }\n}\n",

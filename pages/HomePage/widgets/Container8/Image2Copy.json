@@ -8,14 +8,18 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "image"
     }
   ],
+  "dynamicTriggerPathList": [],
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
-  "image": "",
+  "image": "{{appsmith.store.user.image}}",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,

@@ -22,14 +22,14 @@
       "leftColumn": 0,
       "minHeight": 90,
       "parentColumnSpace": 1,
-      "parentId": "gwc10l8q42",
+      "parentId": "sg8ov9iv3v",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "rightColumn": 475.5,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "ypcrh0u8z5",
+      "widgetId": "wwkpb9xvvg",
       "widgetName": "Canvas17"
     }
   ],
@@ -66,6 +66,6 @@
   "topRow": 0,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "gwc10l8q42",
+  "widgetId": "sg8ov9iv3v",
   "widgetName": "Container8"
 }

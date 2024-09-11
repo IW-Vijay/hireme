@@ -5,7 +5,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 23,
   "boxShadow": "none",
-  "defaultText": "{{appsmith.URL.queryParams.phonenno ? appsmith.URL.queryParams.phoneno: \"\"}}",
+  "defaultText": "{{getUserJSObject.userData.data.user[0].phoneno ? getUserJSObject.userData.data.user[0].phoneno : \"\"}}",
   "displayName": "Input",
   "dynamicBindingPathList": [
     {
@@ -36,8 +36,8 @@
   "leftColumn": 32,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 23,
-  "originalTopRow": 16,
+  "originalBottomRow": 57,
+  "originalTopRow": 50,
   "parentColumnSpace": 12.0732421875,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
