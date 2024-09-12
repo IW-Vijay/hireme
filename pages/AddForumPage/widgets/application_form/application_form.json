@@ -71,7 +71,7 @@
     ]
   },
   "borderRadius": "0",
-  "bottomRow": 83,
+  "bottomRow": 78,
   "boxShadow": "none",
   "children": [
     {
@@ -129,7 +129,7 @@
         ]
       },
       "borderRadius": "0px",
-      "bottomRow": 590,
+      "bottomRow": 580,
       "boxShadow": "none",
       "canExtend": false,
       "containerStyle": "none",
@@ -170,14 +170,14 @@
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 82,
-  "originalTopRow": 24,
+  "originalBottomRow": 78,
+  "originalTopRow": 20,
   "parentColumnSpace": 74,
   "parentId": "0",
   "parentRowSpace": 40,
   "rightColumn": 63,
   "shouldScrollContents": true,
-  "topRow": 24,
+  "topRow": 20,
   "type": "FORM_WIDGET",
   "version": 1,
   "widgetId": "jl8q4pz21u",

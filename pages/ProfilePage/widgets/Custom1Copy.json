@@ -1,0 +1,61 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "0.375rem",
+  "borderWidth": "1",
+  "bottomRow": 86,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{{educationAndWorkexJsObject.workexs.data}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "events": [],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "v3tz20nfoz",
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 97,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 67,
+  "needsErrorInfo": false,
+  "originalBottomRow": 86,
+  "originalTopRow": 79,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "shouldScrollContents": true,
+  "srcDoc": {
+    "css": "body, html {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: auto; /* Set height to auto */\n  font-family: Arial, sans-serif;\n}\n\n.experience-details {\n  padding: 20px;\n  height: auto; /* Ensure the container height adjusts to content */\n}\n\n.card {\n  border: 1px solid #ccc;\n  border-radius: 8px;\n  padding: 15px;\n  margin-bottom: 15px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n  background-color: #fff;\n}\n\n.card-content {\n  display: flex;\n  flex-direction: column;\n}\n\n.card-row {\n  display: flex;\n  justify-content: space-between;\n  margin-bottom: 5px;\n}\n\n.card-column {\n  flex: 1;\n  padding: 5px;\n}\n\n.card-column.organization {\n  font-weight: bold;\n  font-size: 16px;\n}\n\n.card-column.role {\n  text-align: center;\n}\n\n.card-column.date {\n  text-align: right;\n}",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Work Experience Details</title>\n    <link rel=\"stylesheet\" href=\"workexperience.css\">\n</head>\n<body>\n    <div id=\"experienceDetails\" class=\"experience-details\">\n        <!-- Work experience details will be dynamically inserted here -->\n    </div>\n\n    <script src=\"workexperience.js\"></script>\n</body>\n</html>\n",
+    "js": "appsmith.onReady(function () {\n  const experience = appsmith.model.workex || [];\n  const experienceDetails = document.getElementById('experienceDetails');\n  function renderWorkExperience() {\n    let htmlContent = '';\n    if (experience.length > 0) {\n      experience.forEach(exp => {\n        htmlContent += `\n                    <div class=\"card\">\n                        <div class=\"card-content\">\n                            <div class=\"card-row\">\n                                <div class=\"card-column organization\">${exp.organization}</div>\n                                <div class=\"card-column role\">${exp.role}</div>\n                                <div class=\"card-column date\">${exp.startdate} - ${exp.enddate || 'Currently Working'}</div>\n                            </div>\n                            <div class=\"card-row\">\n                                <div class=\"card-column skills\">${exp.skills}</div>\n                            </div>\n                        </div>\n                    </div>\n                `;\n      });\n    } else {\n      htmlContent = '<p>No work experience details available.</p>';\n    }\n    experienceDetails.innerHTML = htmlContent;\n  }\n  renderWorkExperience();\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 79,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "body, html {\n    margin: 0;\n    padding: 0;\n    width: 100%;\n    height: auto; /* Set height to auto */\n    font-family: Arial, sans-serif;\n}\n\n.experience-details {\n    padding: 20px;\n    height: auto; /* Ensure the container height adjusts to content */\n}\n\n.card {\n    border: 1px solid #ccc;\n    border-radius: 8px;\n    padding: 15px;\n    margin-bottom: 15px;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n    background-color: #fff;\n}\n\n.card-content {\n    display: flex;\n    flex-direction: column;\n}\n\n.card-row {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 5px;\n}\n\n.card-column {\n    flex: 1;\n    padding: 5px;\n}\n\n.card-column.organization {\n    font-weight: bold;\n    font-size: 16px;\n}\n\n.card-column.role {\n    text-align: center;\n}\n\n.card-column.date {\n    text-align: right;\n}\n",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Work Experience Details</title>\n    <link rel=\"stylesheet\" href=\"workexperience.css\">\n</head>\n<body>\n    <div id=\"experienceDetails\" class=\"experience-details\">\n        <!-- Work experience details will be dynamically inserted here -->\n    </div>\n\n    <script src=\"workexperience.js\"></script>\n</body>\n</html>\n",
+    "js": "appsmith.onReady(function() {\n    const experience = appsmith.model.workex || [];\n\n    const experienceDetails = document.getElementById('experienceDetails');\n\n    function renderWorkExperience() {\n        let htmlContent = '';\n\n        if (experience.length > 0) {\n            experience.forEach(exp => {\n                htmlContent += `\n                    <div class=\"card\">\n                        <div class=\"card-content\">\n                            <div class=\"card-row\">\n                                <div class=\"card-column organization\">${exp.organization}</div>\n                                <div class=\"card-column role\">${exp.role}</div>\n                                <div class=\"card-column date\">${exp.startdate} - ${exp.enddate || 'Currently Working'}</div>\n                            </div>\n                            <div class=\"card-row\">\n                                <div class=\"card-column skills\">${exp.skills}</div>\n                            </div>\n                        </div>\n                    </div>\n                `;\n            });\n        } else {\n            htmlContent = '<p>No work experience details available.</p>';\n        }\n\n        experienceDetails.innerHTML = htmlContent;\n    }\n\n    renderWorkExperience();\n});\n"
+  },
+  "version": 1,
+  "widgetId": "hxbr1ark62",
+  "widgetName": "Custom1Copy"
+}

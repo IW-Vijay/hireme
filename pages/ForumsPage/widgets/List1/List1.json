@@ -9,7 +9,7 @@
   "animateLoading": true,
   "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
   "borderRadius": "0px",
-  "bottomRow": 92,
+  "bottomRow": 89,
   "boxShadow": "none",
   "children": [
     {
@@ -147,7 +147,7 @@
   ],
   "templateHeight": 160,
   "thumbnailSVG": "/static/media/thumbnail.469b7e8d3a04de93014af9a7bc9ebe56.svg",
-  "topRow": 21,
+  "topRow": 18,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "targtr3mjo",

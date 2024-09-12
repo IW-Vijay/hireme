@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66e1b24a73f83b5809d9d6b5_8d4fdff5-3d02-400f-8416-2c4089599abe",
+  "id": "EditProfilePage_getEducationsJSObject",
+  "unpublishedCollection": {
+    "name": "getEducationsJSObject",
+    "pageId": "EditProfilePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

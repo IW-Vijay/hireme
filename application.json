@@ -59,6 +59,18 @@
     {
       "id": "AddForumPage",
       "isDefault": false
+    },
+    {
+      "id": "AdminPanelPage",
+      "isDefault": false
+    },
+    {
+      "id": "ProfilePage",
+      "isDefault": false
+    },
+    {
+      "id": "EditProfilePage",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

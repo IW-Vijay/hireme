@@ -1,0 +1,2 @@
+DELETE FROM education
+WHERE user_id = {{appsmith.store.user.user_id}};

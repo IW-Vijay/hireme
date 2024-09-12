@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 226,
+  "bottomRow": 228,
   "boxShadow": "none",
   "defaultModel": "{{usersJsObject.customWidgetData()}}",
   "displayName": "Custom",
@@ -60,14 +60,14 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 226,
+  "originalBottomRow": 227,
   "originalTopRow": 28,
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
   "rejectUser": "{{userRejected.run().then(() => {});}}",
   "renderMode": "CANVAS",
-  "rightColumn": 63,
+  "rightColumn": 62,
   "searchTags": [
     "external"
   ],

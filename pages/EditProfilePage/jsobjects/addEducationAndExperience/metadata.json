@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66e1b24a73f83b5809d9d6b5_b755bdc1-8232-49c7-95f8-bff7f614d4f5",
+  "id": "EditProfilePage_addEducationAndExperience",
+  "unpublishedCollection": {
+    "name": "addEducationAndExperience",
+    "pageId": "EditProfilePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "0.375rem",
+  "borderWidth": "1",
+  "bottomRow": 73,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{{educationAndWorkexJsObject.educations.data}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "events": [],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "v3tz20nfoz",
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 97,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 67,
+  "needsErrorInfo": false,
+  "originalBottomRow": 73,
+  "originalTopRow": 66,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "shouldScrollContents": true,
+  "srcDoc": {
+    "css": "body, html {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: auto; /* Set height to auto */\n  font-family: Arial, sans-serif;\n}\n\n.education-details {\n  padding: 20px;\n  height: auto; /* Ensure the container height adjusts to content */\n}\n\n.card {\n  border: 1px solid #ccc;\n  border-radius: 8px;\n  padding: 15px;\n  margin-bottom: 15px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n  background-color: #fff;\n}\n\n.card-content {\n  display: flex;\n  flex-direction: column;\n}\n\n.card-row {\n  display: flex;\n  justify-content: space-between;\n  margin-bottom: 5px;\n}\n\n.card-column {\n  flex: 1;\n  padding: 5px;\n}\n\n.card-column.institution {\n  font-weight: bold;\n  font-size: 18px;\n}\n\n.card-column.marks, .card-column.date {\n  text-align: right;\n}",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Education Details</title>\n    <link rel=\"stylesheet\" href=\"education.css\">\n</head>\n<body>\n    <div id=\"educationDetails\" class=\"education-details\">\n        <!-- Education details will be dynamically inserted here -->\n    </div>\n\n    <script src=\"education.js\"></script>\n</body>\n</html>\n",
+    "js": "appsmith.onReady(function () {\n  const education = appsmith.model.education || [];\n  const educationDetails = document.getElementById('educationDetails');\n  function renderEducation() {\n    let htmlContent = '';\n    if (education.length > 0) {\n      education.forEach(edu => {\n        htmlContent += `\n                    <div class=\"card\">\n                        <div class=\"card-content\">\n                            <div class=\"card-row\">\n                                <div class=\"card-column institution\">${edu.school}</div>\n                                <div class=\"card-column date\">${edu.startdate} - ${edu.enddate || 'Present'}</div>\n                            </div>\n                            <div class=\"card-row\">\n                                <div class=\"card-column\">${edu.specialization}</div>\n                                <div class=\"card-column marks\">${edu.marks} %/CGPA</div>\n                            </div>\n                        </div>\n                    </div>\n                `;\n      });\n    } else {\n      htmlContent = '<p>No education details available.</p>';\n    }\n    educationDetails.innerHTML = htmlContent;\n  }\n  renderEducation();\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 66,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "body, html {\n    margin: 0;\n    padding: 0;\n    width: 100%;\n    height: auto; /* Set height to auto */\n    font-family: Arial, sans-serif;\n}\n\n.education-details {\n    padding: 20px;\n    height: auto; /* Ensure the container height adjusts to content */\n}\n\n.card {\n    border: 1px solid #ccc;\n    border-radius: 8px;\n    padding: 15px;\n    margin-bottom: 15px;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n    background-color: #fff;\n}\n\n.card-content {\n    display: flex;\n    flex-direction: column;\n}\n\n.card-row {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 5px;\n}\n\n.card-column {\n    flex: 1;\n    padding: 5px;\n}\n\n.card-column.institution {\n    font-weight: bold;\n    font-size: 18px;\n}\n\n.card-column.marks, .card-column.date {\n    text-align: right;\n}\n",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Education Details</title>\n    <link rel=\"stylesheet\" href=\"education.css\">\n</head>\n<body>\n    <div id=\"educationDetails\" class=\"education-details\">\n        <!-- Education details will be dynamically inserted here -->\n    </div>\n\n    <script src=\"education.js\"></script>\n</body>\n</html>\n",
+    "js": "appsmith.onReady(function() {\n    const education = appsmith.model.education || [];\n\n    const educationDetails = document.getElementById('educationDetails');\n\n    function renderEducation() {\n        let htmlContent = '';\n\n        if (education.length > 0) {\n            education.forEach(edu => {\n                htmlContent += `\n                    <div class=\"card\">\n                        <div class=\"card-content\">\n                            <div class=\"card-row\">\n                                <div class=\"card-column institution\">${edu.school}</div>\n                                <div class=\"card-column date\">${edu.startdate} - ${edu.enddate || 'Present'}</div>\n                            </div>\n                            <div class=\"card-row\">\n                                <div class=\"card-column\">${edu.specialization}</div>\n                                <div class=\"card-column marks\">${edu.marks} %/CGPA</div>\n                            </div>\n                        </div>\n                    </div>\n                `;\n            });\n        } else {\n            htmlContent = '<p>No education details available.</p>';\n        }\n\n        educationDetails.innerHTML = htmlContent;\n    }\n\n    renderEducation();\n});\n"
+  },
+  "version": 1,
+  "widgetId": "j9vaad9bxl",
+  "widgetName": "Custom1"
+}
