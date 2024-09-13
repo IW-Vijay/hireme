@@ -1,6 +1,6 @@
 {
   "borderRadius": "0px",
-  "bottomRow": 41,
+  "bottomRow": 37,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -22,11 +22,11 @@
   "parentColumnSpace": 25.25,
   "parentId": "zukl32rg5z",
   "parentRowSpace": 40,
-  "rightColumn": 62,
-  "text": "{{ usersList.model.selectedUser ? usersList.model.selectedUser.location : \"Location not available\" }}\n",
+  "rightColumn": 64,
+  "text": "{{ usersList.model.selectedUser.location ? usersList.model.selectedUser.location : \"Location not available\" }}\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 37,
+  "topRow": 33,
   "type": "TEXT_WIDGET",
   "version": 1,
   "widgetId": "mugyqga1zk",

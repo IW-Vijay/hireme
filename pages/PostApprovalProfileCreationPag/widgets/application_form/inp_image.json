@@ -54,7 +54,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onResetClick": "{{showAlert('Successfully reset!!', '').then(() => {\n  storeValue('image', Image2);\n});}}",
-  "originalBottomRow": 50,
+  "originalBottomRow": 17,
   "originalTopRow": 0,
   "parentColumnSpace": 18.880859375,
   "parentId": "hnice2rhm7",

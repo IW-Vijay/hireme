@@ -13,6 +13,10 @@
   "icon": "moon",
   "pages": [
     {
+      "id": "AllMembersPage",
+      "isDefault": false
+    },
+    {
       "id": "LoginPage",
       "isDefault": true
     },
@@ -70,6 +74,14 @@
     },
     {
       "id": "EditProfilePage",
+      "isDefault": false
+    },
+    {
+      "id": "EditMemberProfilePage",
+      "isDefault": false
+    },
+    {
+      "id": "PreApprovalMemberEditPage",
       "isDefault": false
     }
   ],

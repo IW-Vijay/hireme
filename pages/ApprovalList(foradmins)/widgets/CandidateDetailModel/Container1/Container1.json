@@ -30,12 +30,12 @@
     ]
   },
   "borderRadius": "0",
-  "bottomRow": 59,
+  "bottomRow": 60,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "children": [
     {
       "borderRadius": "0px",
-      "bottomRow": 550,
+      "bottomRow": 560,
       "boxShadow": "none",
       "canExtend": false,
       "containerStyle": "none",
@@ -63,20 +63,17 @@
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
-      "key": "isVisible"
-    },
-    {
       "key": "borderRadius"
     }
   ],
   "dynamicTriggerPathList": [],
   "isLoading": false,
-  "isVisible": "",
+  "isVisible": true,
   "labelTextSize": "0.875rem",
   "leftColumn": 3,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 59,
+  "originalBottomRow": 60,
   "originalTopRow": 4,
   "parentColumnSpace": 74,
   "parentId": "i8ptesipyl",

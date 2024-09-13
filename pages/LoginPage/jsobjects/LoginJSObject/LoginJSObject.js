@@ -1,7 +1,14 @@
 export default {
 	createHash: (password) => {
-		return dcodeIO.bcrypt.hashSync(password, 10);
-	},
+  dcodeIO.bcrypt.setRandomFallback((len) => {
+    const randomBytes = [];
+    for (let i = 0; i < len; i++) {
+      randomBytes.push(Math.floor(Math.random() * 256));
+    }
+    return randomBytes;
+  });
+  return dcodeIO.bcrypt.hashSync(password, 10);
+},
 	verifyHash: (password, hash) => {
 		return dcodeIO.bcrypt.compareSync(password, hash)
 	},
@@ -9,7 +16,7 @@ export default {
     if (user) {
 				storeValue("user" , user);
         if (user.status === 'approved' && this.verifyHash(password, user.password_hash)) {
-            navigateTo('PARegistrationPageReimagine');
+            navigateTo('PostApprovalProfileCreationPag', { email: inp_email.text });
         }
         else if (user.status === 'appuser' && this.verifyHash(password, user.password_hash)) {
             navigateTo('HomePage');

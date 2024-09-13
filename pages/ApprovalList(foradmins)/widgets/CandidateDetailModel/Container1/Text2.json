@@ -1,6 +1,6 @@
 {
   "borderRadius": "0px",
-  "bottomRow": 31,
+  "bottomRow": 29,
   "boxShadow": "none",
   "dynamicBindingPathList": [],
   "dynamicHeight": "FIXED",
@@ -22,7 +22,7 @@
   "text": "Email:",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 27,
+  "topRow": 25,
   "type": "TEXT_WIDGET",
   "version": 1,
   "widgetId": "9wbr32hgs1",

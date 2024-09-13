@@ -1,6 +1,6 @@
 {
   "borderRadius": "0px",
-  "bottomRow": 46,
+  "bottomRow": 49,
   "boxShadow": "none",
   "dynamicBindingPathList": [],
   "dynamicHeight": "FIXED",
@@ -22,7 +22,7 @@
   "text": "About",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 42,
+  "topRow": 45,
   "type": "TEXT_WIDGET",
   "version": 1,
   "widgetId": "v8h0lj0m1e",

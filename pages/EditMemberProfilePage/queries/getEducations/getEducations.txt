@@ -1,0 +1,1 @@
+SELECT * FROM education WHERE user_id = {{JSON.parse(appsmith.URL.queryParams.member).user_id}};

@@ -12,7 +12,8 @@ export default {
       await deleteWorkexs.run();
       
       // Step 4: Handle adding educations
-      const educations = educationWidget.model.educations || [];
+      const educations = educationWidget?.model?.educations || [];
+			
       if (educations.length > 0) {
         for (const education of educations) {
           const { school, specialization, startdate, enddate, marks } = education;
@@ -31,7 +32,7 @@ export default {
       }
       
       // Step 5: Handle adding experiences
-      const experiences = experienceWidget.model.experiences || [];
+      const experiences = experienceWidget?.model?.experiences || [];
       if (experiences.length > 0) {
         for (const experience of experiences) {
           const { organisation: organization, role, startDate: startdate, endDate: enddate, skills } = experience;

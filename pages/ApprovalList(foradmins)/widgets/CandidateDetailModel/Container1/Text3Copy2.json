@@ -1,6 +1,6 @@
 {
   "borderRadius": "0px",
-  "bottomRow": 41,
+  "bottomRow": 37,
   "boxShadow": "none",
   "dynamicBindingPathList": [],
   "dynamicHeight": "FIXED",
@@ -22,7 +22,7 @@
   "text": "Location",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 37,
+  "topRow": 33,
   "type": "TEXT_WIDGET",
   "version": 1,
   "widgetId": "z4dwzg8flw",

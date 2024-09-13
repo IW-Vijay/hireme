@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "0.375rem",
-  "bottomRow": 48,
+  "bottomRow": 46,
   "boxShadow": "none",
   "defaultText": "{{getUserJSObject.userData.data.user.phoneno ? getUserJSObject.userData.data.user.phoneno : \"\"}}",
   "displayName": "Input",
@@ -52,7 +52,7 @@
     "textarea"
   ],
   "showStepArrows": false,
-  "topRow": 41,
+  "topRow": 39,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "bh9k7ji1le",

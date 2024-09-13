@@ -19,11 +19,11 @@ export default {
         return;
     };
 		
-		if (com_id){
+		/*if (com_id){
 			create_user_for_approval.run();
 			navigateTo('PostApprovalProfileCreationPag', {"email" : inp_email.text});
 			return;
-		}
+		}*/
 		create_user_for_approval.run();
 	}
 }

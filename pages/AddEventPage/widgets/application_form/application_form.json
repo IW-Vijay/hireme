@@ -71,7 +71,7 @@
     ]
   },
   "borderRadius": "0",
-  "bottomRow": 78,
+  "bottomRow": 76,
   "boxShadow": "none",
   "children": [
     {
@@ -170,14 +170,14 @@
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 78,
-  "originalTopRow": 20,
+  "originalBottomRow": 76,
+  "originalTopRow": 18,
   "parentColumnSpace": 74,
   "parentId": "0",
   "parentRowSpace": 40,
   "rightColumn": 63,
   "shouldScrollContents": true,
-  "topRow": 20,
+  "topRow": 18,
   "type": "FORM_WIDGET",
   "version": 1,
   "widgetId": "jl8q4pz21u",

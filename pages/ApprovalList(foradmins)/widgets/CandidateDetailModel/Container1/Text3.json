@@ -1,6 +1,6 @@
 {
   "borderRadius": "0px",
-  "bottomRow": 36,
+  "bottomRow": 33,
   "boxShadow": "none",
   "dynamicBindingPathList": [],
   "dynamicHeight": "FIXED",
@@ -22,7 +22,7 @@
   "text": "Phone No:",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 32,
+  "topRow": 29,
   "type": "TEXT_WIDGET",
   "version": 1,
   "widgetId": "pi8stdktub",

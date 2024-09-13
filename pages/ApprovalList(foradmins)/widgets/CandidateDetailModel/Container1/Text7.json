@@ -1,6 +1,6 @@
 {
   "borderRadius": "0px",
-  "bottomRow": 31,
+  "bottomRow": 29,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -11,7 +11,7 @@
   "dynamicTriggerPathList": [],
   "fontFamily": "System Default",
   "fontSize": "1rem",
-  "fontStyle": "BOLD",
+  "fontStyle": "",
   "isLoading": false,
   "isVisible": true,
   "labelTextSize": "0.875rem",
@@ -22,11 +22,11 @@
   "parentColumnSpace": 25.25,
   "parentId": "zukl32rg5z",
   "parentRowSpace": 40,
-  "rightColumn": 63,
+  "rightColumn": 64,
   "text": "{{ usersList.model.selectedUser ? usersList.model.selectedUser.email : \"Email not available\" }}\n",
   "textAlign": "LEFT",
-  "textColor": "#166534",
-  "topRow": 27,
+  "textColor": "#231f20",
+  "topRow": 25,
   "type": "TEXT_WIDGET",
   "version": 1,
   "widgetId": "w66w05apo3",
