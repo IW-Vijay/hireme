@@ -13,10 +13,10 @@ export default {
 			// Add education details
 			if (educations.length > 0) {
 				const educationPromises = educations.map((education) => {
-					const { school, specialization, dateStarted: startdate, dateEnded: enddate, marks } = education;
+					const { school, degree, specialization,dateStarted: startdate, dateEnded: enddate, marks } = education;
 
 					// Add education to database
-					return addEducation.run({ user_id, school, specialization, startdate, enddate, marks })
+					return addEducation.run({ user_id, school, degree, specialization, startdate, enddate, marks })
 						.then(() => console.log("Education added:", education))
 						.catch((err) => console.error("Error adding education:", err));
 				});

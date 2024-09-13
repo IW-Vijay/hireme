@@ -1,0 +1,9 @@
+INSERT INTO Forums (created_by,title,image,description,status,created_on
+) VALUES (
+    '{{appsmith.store.user.user_id}}', 
+    '{{inp_name.text}}',
+		'{{inp_image.model.image}}',
+    '{{inp_about.text}}',
+    'active',
+    NOW()
+);

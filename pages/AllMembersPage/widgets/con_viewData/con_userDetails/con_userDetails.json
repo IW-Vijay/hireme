@@ -49,6 +49,7 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "hideCard": false,
   "iconSVG": "/static/media/icon.ea3e08d130e59c56867ae40114c10eed.svg",
@@ -57,7 +58,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "b2g4hzss2y",
-  "leftColumn": 37,
+  "leftColumn": 40,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
   "originalBottomRow": 65,

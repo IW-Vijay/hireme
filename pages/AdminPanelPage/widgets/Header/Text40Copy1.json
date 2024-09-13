@@ -30,7 +30,7 @@
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
-  "parentId": "vg1pliiov7",
+  "parentId": "047sb25fis",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 16,
@@ -47,6 +47,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "7o5ndu2pzf",
+  "widgetId": "4zbx4f4shp",
   "widgetName": "Text40Copy1"
 }

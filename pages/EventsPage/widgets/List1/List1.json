@@ -131,7 +131,7 @@
   "onItemClick": "{{get_event_organiser.run().then(() => {\n  showModal(SelectedEventModel.name);\n});}}",
   "originalBottomRow": 91,
   "originalTopRow": 20,
-  "pageSize": 4,
+  "pageSize": 6,
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,

@@ -35,6 +35,9 @@
     },
     {
       "key": "menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "menuItems.menuItemlngvh62q3m.onClick"
     }
   ],
   "iconAlign": "left",
@@ -68,12 +71,21 @@
     },
     "menuItem3": {
       "id": "menuItem3",
-      "index": 2,
+      "index": 3,
       "isDisabled": false,
       "isVisible": true,
       "label": "Log Out",
       "onClick": "{{navigateTo('LoginPage', {}, 'SAME_WINDOW');}}",
       "widgetId": ""
+    },
+    "menuItemlngvh62q3m": {
+      "id": "menuItemlngvh62q3m",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Membership",
+      "onClick": "{{navigateTo('MembershipPage', {}, 'SAME_WINDOW');}}",
+      "widgetId": "n2ko9sfb68"
     }
   },
   "menuItemsSource": "STATIC",

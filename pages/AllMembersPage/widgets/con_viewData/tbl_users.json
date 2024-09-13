@@ -51,7 +51,7 @@
     "gender": 110
   },
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": "{{appsmith.URL.queryParams.selectedmember ? appsmith.URL.queryParams.selectedmember : 0}}",
+  "defaultSelectedRowIndex": "{{appsmith.URL.queryParams.selectedmember || 0}}",
   "defaultSelectedRowIndices": [
     0
   ],
@@ -153,6 +153,7 @@
   "parentColumnSpace": 19.8125,
   "parentId": "5xz1epy6ib",
   "parentRowSpace": 10,
+  "primaryColumnId": "user_id",
   "primaryColumns": {
     "about": {
       "alias": "about",
@@ -620,7 +621,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 37,
+  "rightColumn": 40,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "tableData": "{{fetch_users.data}}",

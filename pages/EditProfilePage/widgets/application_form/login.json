@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "1.5rem",
-  "bottomRow": 125,
+  "bottomRow": 90,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -32,8 +32,8 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 58,
   "onClick": "{{addEducationAndExperience.modifyUser().then(() => {});}}",
-  "originalBottomRow": 125,
-  "originalTopRow": 121,
+  "originalBottomRow": 90,
+  "originalTopRow": 86,
   "parentColumnSpace": 17.064453125,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
@@ -48,7 +48,7 @@
     "submit"
   ],
   "text": "Update Profile",
-  "topRow": 121,
+  "topRow": 86,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "5akvnnoqql",

@@ -32,7 +32,7 @@
   "mobileRightColumn": 6,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "objectFit": "cover",
+  "objectFit": "contain",
   "onCanvasUI": {
     "disableParentSelection": false,
     "focusBGCSSVar": "--on-canvas-ui-widget-focus",
@@ -41,7 +41,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "parentColumnSpace": 17.625,
-  "parentId": "ojtr8df4pz",
+  "parentId": "5drcmj2jdl",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 62,
@@ -52,6 +52,6 @@
   "topRow": 1,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "ot9o9twy8r",
+  "widgetId": "m152vpgr0v",
   "widgetName": "Image2Copy"
 }

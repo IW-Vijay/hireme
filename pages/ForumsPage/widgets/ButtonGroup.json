@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "0px",
-  "bottomRow": 11,
+  "bottomRow": 12,
   "boxShadow": "none",
   "buttonVariant": "SECONDARY",
   "childStylesheet": {
@@ -176,7 +176,7 @@
     "Buttons"
   ],
   "thumbnailSVG": "/static/media/thumbnail.eaa22f923be763e8779a46432554f1ed.svg",
-  "topRow": 7,
+  "topRow": 8,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
   "widgetId": "di7j5qadoh",

@@ -1,8 +1,8 @@
-INSERT INTO Events (user_id,title,event_image,description,location,start_time,end_time,event_type,status,organizer_contact
+INSERT INTO Events (user_id,title,image,description,location,start_time,end_time,event_type,status,organizer_contact
 ) VALUES (
     '{{appsmith.store.user.user_id}}', 
     '{{inp_name.text}}',
-		'sample_iamage',
+		'{{inp_image.model.image}}',
     '{{inp_about.text}}',
     '{{inp_location.text}}',
     '{{inp_startdate.formattedDate}}', 

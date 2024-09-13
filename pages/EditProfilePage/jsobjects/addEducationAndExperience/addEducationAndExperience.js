@@ -16,10 +16,11 @@ export default {
 			
       if (educations.length > 0) {
         for (const education of educations) {
-          const { school, specialization, startdate, enddate, marks } = education;
+          const { school,degree, specialization, startdate, enddate, marks } = education;
           await addEducation.run({
             user_id, 
-            school, 
+            school,
+						degree,
             specialization, 
             startdate, 
             enddate, 

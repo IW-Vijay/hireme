@@ -43,7 +43,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{navigateTo('EventsPage', {\n \"user\": appsmith.store.user,\n}, 'SAME_WINDOW');}}",
+  "onClick": "{{navigateTo('ForumsPage', {}, 'SAME_WINDOW');}}",
   "originalBottomRow": 19,
   "originalTopRow": 15,
   "parentId": "5l5k1boxj5",
@@ -60,7 +60,7 @@
   "tags": [
     "Buttons"
   ],
-  "text": "Go Back",
+  "text": "Ok",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
   "topRow": 12,
   "type": "BUTTON_WIDGET",

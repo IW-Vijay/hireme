@@ -19,7 +19,7 @@
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
-  "image": "{{appsmith.store.user.image ? appsmith.store.user.image : \"\"}}",
+  "image": "{{appsmith.store.user.image}}",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,
@@ -32,7 +32,7 @@
   "mobileRightColumn": 6,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "objectFit": "cover",
+  "objectFit": "contain",
   "onCanvasUI": {
     "disableParentSelection": false,
     "focusBGCSSVar": "--on-canvas-ui-widget-focus",
@@ -41,7 +41,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "parentColumnSpace": 17.625,
-  "parentId": "cxu9v7gmtr",
+  "parentId": "nu38puzztc",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 62,
@@ -52,6 +52,6 @@
   "topRow": 1,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "hm3s8fcfsz",
+  "widgetId": "ujqzrxtles",
   "widgetName": "Image2Copy"
 }

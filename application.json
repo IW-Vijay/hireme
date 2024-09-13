@@ -83,6 +83,10 @@
     {
       "id": "PreApprovalMemberEditPage",
       "isDefault": false
+    },
+    {
+      "id": "MembershipPage",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

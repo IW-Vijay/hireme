@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO Events (user_id,title,event_image,description,location,start_time,end_time,event_type,status,organizer_contact\n) VALUES (\n    '{{appsmith.store.user.user_id}}', \n    '{{inp_name.text}}',\n\t\t'sample_iamage',\n    '{{inp_about.text}}',\n    '{{inp_location.text}}',\n    '{{inp_startdate.formattedDate}}', \n    '{{inp_enddate.formattedDate}}',\n    '{{inp_eventtype.selectedOptionValue}}',\n    'active',\n    '{{inp_phone.text}}'\n);\n",
+      "body": "INSERT INTO Events (user_id,title,image,description,location,start_time,end_time,event_type,status,organizer_contact\n) VALUES (\n    '{{appsmith.store.user.user_id}}', \n    '{{inp_name.text}}',\n\t\t'{{inp_image.model.image}}',\n    '{{inp_about.text}}',\n    '{{inp_location.text}}',\n    '{{inp_startdate.formattedDate}}', \n    '{{inp_enddate.formattedDate}}',\n    '{{inp_eventtype.selectedOptionValue}}',\n    'active',\n    '{{inp_phone.text}}'\n);\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

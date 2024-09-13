@@ -1,0 +1,1 @@
+SELECT * FROM users where community_id = {{appsmith.store.user.community_id}};
