@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 4,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "TERTIARY",
@@ -18,7 +18,7 @@
       "key": "onClick"
     }
   ],
-  "iconName": "edit",
+  "iconName": "eye-open",
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
@@ -30,7 +30,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 14,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('EditMemberProfilePage', {\n  \"member\": JSON.stringify(tbl_users.selectedRow),\n  \"rownumber\": tbl_users.selectedRowIndex\n}, 'SAME_WINDOW');}}",
+  "onClick": "{{navigateTo('MemberProfilePage', {\n  \"member\": JSON.stringify(tbl_users.selectedRow),\n  \"rownumber\": tbl_users.selectedRowIndex\n}, 'SAME_WINDOW');}}",
   "originalBottomRow": 83,
   "originalTopRow": 76,
   "parentColumnSpace": 19.8125,
@@ -39,7 +39,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
   "rightColumn": 64,
-  "topRow": 1,
+  "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
   "widgetId": "dl44zq5q46",

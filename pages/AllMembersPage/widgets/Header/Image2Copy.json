@@ -32,7 +32,7 @@
   "mobileRightColumn": 6,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "objectFit": "cover",
+  "objectFit": "contain",
   "onCanvasUI": {
     "disableParentSelection": false,
     "focusBGCSSVar": "--on-canvas-ui-widget-focus",

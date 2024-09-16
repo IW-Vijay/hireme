@@ -5,11 +5,14 @@
   "borderRadius": "0.375rem",
   "bottomRow": 86,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{getUserJSObject.userData.data.user.interest ? getUserJSObject.userData.data.user.interest : \"\"}}",
   "displayName": "Input",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
