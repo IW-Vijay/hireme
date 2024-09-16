@@ -3,7 +3,7 @@
   "borderColor": "#ffffff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 24,
+  "bottomRow": 25,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "",
   "displayName": "Custom",
@@ -51,7 +51,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onResetClick": "{{showAlert('Successfully reset!!', '').then(() => {\n  storeValue('image', Logo);\n});}}",
-  "originalBottomRow": 23,
+  "originalBottomRow": 24,
   "originalTopRow": 0,
   "parentColumnSpace": 18.880859375,
   "parentId": "hnice2rhm7",

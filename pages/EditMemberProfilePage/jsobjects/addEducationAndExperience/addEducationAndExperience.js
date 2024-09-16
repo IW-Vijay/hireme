@@ -15,7 +15,6 @@ export default {
       // Step 4: Handle adding educations
       const educations = educationWidget.model.educations || [];
 			
-			showAlert("edrupdated");
 			showAlert(educations.length);
       if (educations.length > 0) {
         for (const education of educations) {
