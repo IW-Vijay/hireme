@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "1.5rem",
-  "bottomRow": 62,
+  "bottomRow": 63,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -32,8 +32,8 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 58,
   "onClick": "{{updateMember.run().then(() => {\n  navigateTo('ApprovalList(foradmins)', {}, 'SAME_WINDOW');\n});}}",
-  "originalBottomRow": 61,
-  "originalTopRow": 57,
+  "originalBottomRow": 62,
+  "originalTopRow": 58,
   "parentColumnSpace": 17.064453125,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
@@ -48,7 +48,7 @@
     "submit"
   ],
   "text": "Save Changes",
-  "topRow": 58,
+  "topRow": 59,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "5akvnnoqql",

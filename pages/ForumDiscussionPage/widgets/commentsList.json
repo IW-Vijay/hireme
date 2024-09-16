@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 62,
+  "bottomRow": 53,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{commentsJSObject1.customWidgetData.data}}",
   "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
   "onNewCommentSubmission": "{{add_comment.run().then(() => {\n  commentsJSObject1.customWidgetData();\n  resetWidget(\"\", true);\n});}}",
   "onReplySubmission": "{{add_reply.run()}}",
   "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
-  "originalBottomRow": 53,
+  "originalBottomRow": 62,
   "originalTopRow": 35,
   "parentColumnSpace": 17.9375,
   "parentId": "0",

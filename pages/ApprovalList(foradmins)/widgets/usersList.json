@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 73,
+  "bottomRow": 71,
   "boxShadow": "none",
   "defaultModel": "{{\n{\"users\" : gettinguserslistforapproval.data}\n}}",
   "displayName": "Custom",
@@ -60,7 +60,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 71,
+  "originalBottomRow": 73,
   "originalTopRow": 23,
   "parentColumnSpace": 19.8125,
   "parentId": "0",
