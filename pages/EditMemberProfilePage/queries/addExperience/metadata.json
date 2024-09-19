@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO workexperience (user_id, organization, role, startdate, enddate, skills)\nVALUES ({{this.params.user_id}}, {{this.params.organization}}, {{this.params.role}}, {{this.params.startdate}}, {{this.params.enddate}}, {{this.params.skills}});\n",
+      "body": "INSERT INTO workexperience (user_id, organization, role, startdate, enddate, skills, type)\nVALUES ({{this.params.user_id}}, {{this.params.organization}}, {{this.params.role}}, {{this.params.startdate}}, {{this.params.enddate}}, {{this.params.skills}}, {{this.params.type}});\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

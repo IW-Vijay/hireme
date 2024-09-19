@@ -29,10 +29,10 @@ export default {
 			if (experiences.length > 0) {
 				console.log("Adding experiences...");
 				const experiencePromises = experiences.map((experience) => {
-					const { organisation: organization, role, startDate: startdate, endDate: enddate, skills } = experience;
+					const { organisation: organization, role, startDate: startdate, endDate: enddate, skills, type } = experience;
 
 					// Add experience to database
-					return addExperience.run({ user_id, organization, role, startdate, enddate, skills })
+					return addExperience.run({ user_id, organization, role, startdate, enddate, skills, type })
 						.then(() => console.log("Experience added:", experience))
 						.catch((err) => console.error("Error adding experience:", err));
 				});

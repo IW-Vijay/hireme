@@ -37,7 +37,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "text": "Approvals",
   "topRow": 1,
   "type": "BUTTON_WIDGET",

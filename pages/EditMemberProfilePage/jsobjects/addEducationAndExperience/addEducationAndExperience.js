@@ -37,14 +37,15 @@ export default {
       const experiences = experienceWidget.model.experiences || [];
       if (experiences.length > 0) {
         for (const experience of experiences) {
-          const { organisation: organization, role, startDate: startdate, endDate: enddate, skills } = experience;
+          const { organisation: organization, role, startDate: startdate, endDate: enddate, skills, type } = experience;
           await addExperience.run({
             user_id, 
             organization, 
             role, 
             startdate, 
             enddate, 
-            skills
+            skills,
+						type
           });
           console.log("Experience added:", experience);
         }

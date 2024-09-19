@@ -13,7 +13,11 @@
       "key": "image"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
@@ -40,6 +44,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "onClick": "{{navigateTo('ProfilePage', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 17.625,
   "parentId": "mstujzv3zf",
   "parentRowSpace": 10,

@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "0.375rem",
-  "bottomRow": 19,
+  "bottomRow": 22,
   "boxShadow": "none",
   "defaultText": "",
   "displayName": "Input",
@@ -47,7 +47,7 @@
     "textarea"
   ],
   "showStepArrows": false,
-  "topRow": 11,
+  "topRow": 14,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "ao9ljcbzap",

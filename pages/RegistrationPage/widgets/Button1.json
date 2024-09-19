@@ -39,7 +39,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{showModal(SignInModel.name);}}",
+  "onClick": "{{navigateTo('LoginPage', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,

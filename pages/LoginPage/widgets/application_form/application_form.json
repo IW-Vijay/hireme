@@ -1,5 +1,5 @@
 {
-  "backgroundColor": "white",
+  "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
   "blueprint": {
     "view": [
       {
@@ -70,8 +70,10 @@
       }
     ]
   },
-  "borderRadius": "0",
-  "bottomRow": 46,
+  "borderColor": "#3b82f6",
+  "borderRadius": "1.5rem",
+  "borderWidth": "1",
+  "bottomRow": 65,
   "boxShadow": "none",
   "children": [
     {
@@ -129,7 +131,7 @@
         ]
       },
       "borderRadius": "0px",
-      "bottomRow": 290,
+      "bottomRow": 380,
       "boxShadow": "none",
       "canExtend": false,
       "containerStyle": "none",
@@ -152,28 +154,26 @@
       "widgetName": "Canvas1"
     }
   ],
-  "dynamicBindingPathList": [],
-  "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
+  "dynamicBindingPathList": [
     {
-      "key": "borderRadius"
+      "key": "backgroundColor"
     }
   ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "isLoading": false,
   "isVisible": true,
   "labelTextSize": "0.875rem",
-  "leftColumn": 0,
+  "leftColumn": 10,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 46,
-  "originalTopRow": 17,
   "parentColumnSpace": 74,
   "parentId": "0",
   "parentRowSpace": 40,
-  "rightColumn": 64,
+  "rightColumn": 53,
   "shouldScrollContents": true,
-  "topRow": 17,
+  "topRow": 27,
   "type": "FORM_WIDGET",
   "version": 1,
   "widgetId": "jl8q4pz21u",
