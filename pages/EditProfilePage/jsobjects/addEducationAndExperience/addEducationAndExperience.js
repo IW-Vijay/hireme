@@ -35,7 +35,7 @@ export default {
 					const institution = institutions.find(inst => inst.name === school);
     			let institution_id = institution?.institution_id;
 					if(!institution_id){
-						addInstitution.run(school);
+						addInstitution.run({school});
 						institution_id = max_institution_id +1;
 					}
           await addEducation.run({
@@ -54,14 +54,14 @@ export default {
       }
       
       // Step 5: Handle adding experiences
-      const experiences = experienceWidget?.model?.experiences || [];
+      const experiences = experienceWidget?.model?.workexs || [];
       if (experiences.length > 0) {
         for (const experience of experiences) {
           const { organisation: organization, role, startDate: startdate, endDate: enddate, skills, type } = experience;
 					const organisation = organisations.find(inst => inst.name === organization);
     			let organization_id = organisation?.organization_id;
 					if(!organization_id){
-						addOrganization.run(organization);
+						addOrganization.run({organization});
 						organization_id =max_organization_id +1;
 					}
           await addExperience.run({
