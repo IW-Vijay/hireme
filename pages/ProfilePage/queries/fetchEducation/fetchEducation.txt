@@ -1,1 +1,1 @@
-SELECT * FROM education where user_id={{appsmith.store.user.user_id}};
+SELECT * FROM education_details where profile_id={{appsmith.store.user.profile_id}};

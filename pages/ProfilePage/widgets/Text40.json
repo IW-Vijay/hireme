@@ -46,7 +46,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{appsmith.store.user.name}}",
+  "text": "{{appsmith.store.user.profile_name}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 19,

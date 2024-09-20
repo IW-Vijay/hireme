@@ -23,7 +23,7 @@
   "parentId": "zukl32rg5z",
   "parentRowSpace": 40,
   "rightColumn": 64,
-  "text": "{{ usersList.model.selectedUser.phoneno ? usersList.model.selectedUser.phoneno : \"Phone number not available\" }}\n",
+  "text": "{{ usersList.model.selectedUser.phone_number ? usersList.model.selectedUser.phone_number : \"Phone number not available\" }}\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 29,

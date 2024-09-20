@@ -1,1 +1,1 @@
-SELECT * FROM workexperience where user_id={{appsmith.store.user.user_id}};
+SELECT * FROM work_experience where profile_id={{appsmith.store.user.profile_id}};

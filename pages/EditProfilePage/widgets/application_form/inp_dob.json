@@ -7,7 +7,7 @@
   "closeOnSelection": true,
   "dateFormat": "DD/MM/YYYY",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{getUserJSObject.userData.data.user.dob ? getUserJSObject.userData.data.user.dob : \"\"}}",
+  "defaultDate": "{{getUserJSObject.userData.data.user.birth_date ? getUserJSObject.userData.data.user.birth_date : \"\"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

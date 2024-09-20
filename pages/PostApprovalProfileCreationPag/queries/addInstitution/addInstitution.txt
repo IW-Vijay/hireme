@@ -1,0 +1,1 @@
+INSERT INTO institutions (institution_id ,name) values ({{this.params.institution_id}},{{this.params.school}});

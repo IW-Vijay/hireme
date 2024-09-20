@@ -46,7 +46,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{appsmith.store.user.phoneno ? appsmith.store.user.phoneno : \"Not Provided\"}}",
+  "text": "{{appsmith.store.user.phone_number ? appsmith.store.user.phone_number : \"Not Provided\"}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 42,

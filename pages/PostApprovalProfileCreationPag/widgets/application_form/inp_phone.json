@@ -5,7 +5,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 33,
   "boxShadow": "none",
-  "defaultText": "{{getUserJSObject.userData.data.user[0].phoneno ? getUserJSObject.userData.data.user[0].phoneno : \"\"}}",
+  "defaultText": "{{getUserJSObject.userData.data.user[0].phone_number ? getUserJSObject.userData.data.user[0].phone_number : \"\"}}",
   "displayName": "Input",
   "dynamicBindingPathList": [
     {
@@ -36,8 +36,8 @@
   "leftColumn": 32,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 32,
-  "originalTopRow": 25,
+  "originalBottomRow": 29,
+  "originalTopRow": 22,
   "parentColumnSpace": 12.0732421875,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,

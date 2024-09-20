@@ -1,4 +1,4 @@
-INSERT INTO users (image, name, phoneno, email, location, about, status, password_hash, dob, gender, community_id, role)
+INSERT INTO profiles (profile_image, profile_name, phone_number, email, location, about, status, password_hash, birth_date, gender, membership_id, role_id)
 VALUES
 (
 		'{{inp_image.model.image}}',
@@ -11,6 +11,6 @@ VALUES
 		'{{passwordHasing.createHash(inp_password.text)}}',
 		{{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : 'NULL'}},
 		'{{inp_gender.selectedOptionValue}}',
-		'{{inp_comid.text}}',
-		'member'
+		{{this.params.membership_id ? `'${this.params.membership_id}'` : 'NULL'}},
+		2
 )

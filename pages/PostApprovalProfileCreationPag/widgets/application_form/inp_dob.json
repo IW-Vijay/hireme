@@ -7,7 +7,7 @@
   "closeOnSelection": true,
   "dateFormat": "DD/MM/YYYY",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{getUserJSObject.userData.data.user[0].dob ? getUserJSObject.userData.data.user[0].dob : \"\"}}",
+  "defaultDate": "{{getUserJSObject.userData.data.user[0].birth_date ? getUserJSObject.userData.data.user[0].birth_date : \"\"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -48,8 +48,8 @@
   "mobileRightColumn": 52,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "originalBottomRow": 49,
-  "originalTopRow": 42,
+  "originalBottomRow": 46,
+  "originalTopRow": 39,
   "parentColumnSpace": 17.064453125,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,

@@ -1,0 +1,1 @@
+SELECT membership_id FROM memberships where community_member_id = {{inp_comid.text}};

@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66ebb00d73f83b5809d9d9a4_e873106c-f86f-45fb-9dca-243042087009",
+  "id": "ApprovalList(foradmins)_usersJSObject",
+  "unpublishedCollection": {
+    "name": "usersJSObject",
+    "pageId": "ApprovalList(foradmins)",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

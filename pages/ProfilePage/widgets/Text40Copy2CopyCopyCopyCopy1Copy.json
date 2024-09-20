@@ -46,7 +46,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{appsmith.store.user.dob ? appsmith.store.user.dob : \"Not Provided\"}}",
+  "text": "{{appsmith.store.user.birth_date ? appsmith.store.user.birth_date : \"Not Provided\"}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 50,

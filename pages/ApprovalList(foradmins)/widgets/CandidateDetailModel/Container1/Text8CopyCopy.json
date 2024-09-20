@@ -23,7 +23,7 @@
   "parentId": "zukl32rg5z",
   "parentRowSpace": 40,
   "rightColumn": 64,
-  "text": "{{ usersList.model.selectedUser.dob ? usersList.model.selectedUser.dob : \"not provided\" }}\n",
+  "text": "{{ usersList.model.selectedUser.birth_date? usersList.model.selectedUser.birth_date : \"not provided\" }}\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 37,

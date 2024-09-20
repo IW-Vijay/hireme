@@ -1,1 +1,1 @@
-SELECT * FROM users where email = {{inp_email.text}};
+SELECT * FROM PROFILES where email = {{inp_email.text}};

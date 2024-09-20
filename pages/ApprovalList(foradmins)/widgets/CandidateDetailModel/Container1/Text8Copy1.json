@@ -23,7 +23,7 @@
   "parentId": "zukl32rg5z",
   "parentRowSpace": 40,
   "rightColumn": 64,
-  "text": "{{ usersList.model.selectedUser.abou ? usersList.model.selectedUser.about : \"No information available\" }}\n",
+  "text": "{{ usersList.model.selectedUser.about ? usersList.model.selectedUser.about : \"No information available\" }}\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 45,

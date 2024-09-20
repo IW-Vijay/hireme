@@ -1,0 +1,1 @@
+SELECT community_member_id FROM memberships WHERE membership_id = {{appsmith.store.user.membership_id}};
