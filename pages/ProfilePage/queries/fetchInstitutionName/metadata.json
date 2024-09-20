@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66ebb00d73f83b5809d9d9a4_fc4f5904-f538-4890-a176-ae574a2e569e",
-  "id": "PostApprovalProfileCreationPag_addOrganization",
+  "gitSyncId": "66ebb00d73f83b5809d9d9a4_9ded207b-51a8-446a-8bb6-51628afd3d7d",
+  "id": "ProfilePage_fetchInstitutionName",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO organizations (organization_id,name) values ({{this.params.organization_id}},{{this.params.organization}});",
+      "body": "SELECT name FROM institutions where institution_id = {{this.params.institution_id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "addOrganization",
-    "pageId": "PostApprovalProfileCreationPag",
+    "executeOnLoad": true,
+    "name": "fetchInstitutionName",
+    "pageId": "ProfilePage",
     "userSetOnLoad": false
   }
 }

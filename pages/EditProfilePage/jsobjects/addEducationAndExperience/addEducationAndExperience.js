@@ -33,10 +33,10 @@ export default {
         for (const education of educations) {
           const { school,degree, specialization, startdate, enddate, marks } = education;
 					const institution = institutions.find(inst => inst.name === school);
-    			let institution_id = institution.institution_id;
+    			let institution_id = institution?.institution_id;
 					if(!institution_id){
 						addInstitution.run(school);
-						institution_id = max_institution_id;
+						institution_id = max_institution_id +1;
 					}
           await addEducation.run({
             user_id, 
@@ -59,10 +59,10 @@ export default {
         for (const experience of experiences) {
           const { organisation: organization, role, startDate: startdate, endDate: enddate, skills, type } = experience;
 					const organisation = organisations.find(inst => inst.name === organization);
-    			let organization_id = organisation.organization_id;
+    			let organization_id = organisation?.organization_id;
 					if(!organization_id){
 						addOrganization.run(organization);
-						organization_id =max_organization_id;
+						organization_id =max_organization_id +1;
 					}
           await addExperience.run({
             user_id, 
@@ -81,7 +81,7 @@ export default {
       
       // Step 6: Fetch updated user data
       await fetchUpdatedUser.run();
-      storeValue("user", fetchUpdatedUser.data[0]);
+      await storeValue("user", fetchUpdatedUser.data[0]);
       
       // Step 7: Navigate to profile page
       navigateTo('ProfilePage');

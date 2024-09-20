@@ -9,4 +9,4 @@ SET
     location = {{inp_location.text}},                  
     about = {{inp_about.text}},
     interest = {{inp_interest.text}}             
-WHERE email = {{appsmith.URL.queryParams.email}};
+WHERE profile_id = {{appsmith.store.user.profile_id}};

@@ -3,7 +3,7 @@
   "borderColor": "#b91c1c",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 90,
+  "bottomRow": 92,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{\tgetInstisAndOrgsJSObject.instiAndOrgData.data[0]\n}}",
   "displayName": "Custom",
@@ -48,8 +48,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 99,
-  "originalTopRow": 66,
+  "originalBottomRow": 91,
+  "originalTopRow": 71,
   "parentColumnSpace": 18.880859375,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
@@ -69,7 +69,7 @@
   ],
   "theme": "{{appsmith.theme}}",
   "thumbnailSVG": "/static/media/thumbnail.a7d7cde44fad9a0d4d490def43560a78.svg",
-  "topRow": 70,
+  "topRow": 72,
   "type": "CUSTOM_WIDGET",
   "uncompiledSrcDoc": {
     "css": ".education-form {\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n\tmax-height: none;\n  overflow: visible; \n}\n\n.education-field {\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  position: relative;\n  padding-right: 50px; /* Space for the remove button */\n}\n\n.education-row {\n  display: flex;\n  gap: 10px;\n}\n\n.row1 input {\n  padding: 10px;\n  border-radius: 5px;\n  border: 1px solid #ddd;\n}\n\n.row1 input.school {\n  flex: 2;\n  font-size: 16px;\n}\n\n.row1 input.specialization {\n  flex: 1.5;\n  font-size: 14px;\n}\n\n.row2 input {\n  padding: 10px;\n  border-radius: 5px;\n  border: 1px solid #ddd;\n}\n\n.row2 input.date-started,\n.row2 input.date-ended {\n  flex: 1;\n  font-size: 14px;\n}\n\n.row2 input.marks {\n  flex: 0.8;\n  font-size: 12px;\n}\n\n.remove-education-button {\n  position: absolute;\n  right: 10px; /* Space from the right edge */\n  top: 50%; /* Center vertically */\n  transform: translateY(-133%); /* Center vertically */\n  width: 24px;\n  height: 24px;\n  background-color: #ff4d4f;\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  cursor: pointer;\n  transition: background-color 0.3s ease, transform 0.3s ease;\n  z-index: 1; /* Ensure it's above other content */\n}\n\n.remove-education-button:hover {\n  background-color: #d9363e;\n  transform: translateY(-133%) scale(1.1);\n}\n\n.add-education-button {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: #28a745;\n  color: white;\n  padding: 8px 12px; /* Smaller padding */\n  border-radius: 5px;\n  cursor: pointer;\n  transition: background-color 0.3s ease, transform 0.3s ease;\n  width: 150px; /* Set a fixed width for the button */\n  text-align: center; /* Center text inside the button */\n  margin: 0 auto; /* Center the button horizontally */\n}\n\n.add-education-button:hover {\n  background-color: #218838;\n  transform: scale(1.02); /* Slightly increase the size on hover */\n}\n\n.currently-pursuing {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n}\n\n.currently-pursuing input[type=\"checkbox\"] {\n  margin-right: 5px;\n}\n\n\n\n\n\n.autocomplete-suggestions {\n  border: 1px solid #ddd;\n  background-color: #fff;\n  max-height: 150px;\n  overflow-y: auto;\n  position: absolute;\n  top: 35%; /* Position dropdown directly below the text field */\n  left: 0;\n  width: 87%; /* Ensure dropdown matches the width of the text field */\n  z-index: 1000;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n}\n\n.autocomplete-suggestions li {\n  padding: 8px;\n  cursor: pointer;\n}\n\n.autocomplete-suggestions li:hover {\n  background-color: #f0f0f0;\n}\n\n",

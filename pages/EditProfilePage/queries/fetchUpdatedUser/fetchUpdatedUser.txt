@@ -1,1 +1,1 @@
-SELECT * FROM profiles where email = {{appsmith.URL.queryParams.email}};
+SELECT * FROM profiles where profile_id = {{appsmith.store.user.profile_id}};

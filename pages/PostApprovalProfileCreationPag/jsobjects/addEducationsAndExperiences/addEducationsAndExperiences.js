@@ -31,10 +31,11 @@ export default {
 				const educationPromises = educations.map((education) => {
 					const { school, degree, specialization,dateStarted: startdate, dateEnded: enddate, marks } = education;
 					const institution = institutions.find(inst => inst.name === school);
-    			let institution_id = institution?.institution_id || NaN;
+    			let institution_id = institution?.institution_id;
 					if(!institution_id){
 						institution_id = max_institution_id +1;
-						addInstitution.run(institution_id, school);
+						showAlert(institution_id);
+						addInstitution.run({institution_id,school});
 					}
 
 					return addEducation.run({ user_id, institution_id, degree, specialization, startdate, enddate, marks })
@@ -52,11 +53,11 @@ export default {
 				const experiencePromises = experiences.map((experience) => {
 					const { organisation: organization, role, startDate: startdate, endDate: enddate, skills, type } = experience;
 					const organisation = organisations.find(inst => inst.name === organization);
-    			let organization_id = organisation?.organization_id || NaN;
+    			let organization_id = organisation?.organization_id;
 					
 					if(!organization_id){
 						organization_id =max_organization_id +1;
-						addOrganization.run(organization_id ,organization);
+						addOrganization.run({organization_id ,organization});
 					}
 
 					// Add experience to database

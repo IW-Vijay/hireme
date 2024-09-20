@@ -2,7 +2,7 @@ export default {
   userData () {
     // Get users and roles data
     const users = fetchUser.data || [];
-    const community_id = fetchCommunityID.data || 'not provided';
+    const community_id = fetchCommunityID.data[0] || 'not provided';
 		showAlert(community_id);
 
     // Map through users and replace role_id with role_name
