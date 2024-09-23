@@ -127,6 +127,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
   "enableClientSideSearch": true,
@@ -155,6 +158,7 @@
   "needsErrorInfo": false,
   "needsHeightForContent": true,
   "onPageChange": "{{fetch_users.run()}}",
+  "onRowSelected": "{{fetch_community_id.run()}}",
   "originalBottomRow": 80,
   "originalTopRow": 9,
   "parentColumnSpace": 19.8125,
