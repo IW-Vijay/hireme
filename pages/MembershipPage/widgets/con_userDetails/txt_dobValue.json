@@ -55,7 +55,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{new Date(tbl_users.selectedRow.dob).toDateString().substring(3)}}",
+  "text": "{{new Date(tbl_users.selectedRow.birth_date).toDateString().substring(3)}}",
   "textAlign": "LEFT",
   "textColor": "#101828",
   "topRow": 26,

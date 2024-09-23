@@ -55,7 +55,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{tbl_users.selectedRow.community_id}}",
+  "text": "{{fetch_community_id.data[0].community_member_id}}",
   "textAlign": "LEFT",
   "textColor": "#101828",
   "topRow": 42,

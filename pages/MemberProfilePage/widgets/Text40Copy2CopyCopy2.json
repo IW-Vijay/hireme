@@ -46,7 +46,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{userDataJSObject.user.data.user.community_id}}",
+  "text": "{{appsmith.URL.queryParams.community_id}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 34,

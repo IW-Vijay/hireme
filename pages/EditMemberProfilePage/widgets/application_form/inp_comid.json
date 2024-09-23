@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "0.375rem",
-  "bottomRow": 43,
+  "bottomRow": 33,
   "boxShadow": "none",
-  "defaultText": "{{getUserJSObject.userData.data.user.community_id ? getUserJSObject.userData.data.user.community_id : \"\"}}",
+  "defaultText": "{{ appsmith.URL.queryParams.community_id ? (\n  fetchMembershipDetails.data[0].email === getUserJSObject.userData.data.user.email ?\n    appsmith.URL.queryParams.community_id + ' (owner)' :\n    appsmith.URL.queryParams.community_id\n) : 'not provided' }}",
   "displayName": "Input",
   "dynamicBindingPathList": [
     {
@@ -13,16 +13,28 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "hideCard": false,
   "iconAlign": "left",
   "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
   "inputType": "TEXT",
   "isDeprecated": false,
-  "isDisabled": false,
+  "isDisabled": "{{fetchMembershipDetails.data[0].email == getUserJSObject.userData.data.user.email}}",
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
@@ -36,15 +48,16 @@
   "leftColumn": 32,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 40,
-  "originalTopRow": 33,
+  "onTextChanged": "{{fetchMembershipDetails.run()}}",
+  "originalBottomRow": 66,
+  "originalTopRow": 59,
   "parentColumnSpace": 12.0732421875,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
-  "placeholderText": "Enter phone number including country prefix",
+  "placeholderText": "Community ID",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
-  "rightColumn": 63,
+  "rightColumn": 49,
   "searchTags": [
     "form",
     "text input",
@@ -52,7 +65,7 @@
     "textarea"
   ],
   "showStepArrows": false,
-  "topRow": 35,
+  "topRow": 25,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "n7dz2v5mvs",

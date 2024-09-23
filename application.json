@@ -77,10 +77,6 @@
       "isDefault": false
     },
     {
-      "id": "EditMemberProfilePage",
-      "isDefault": false
-    },
-    {
       "id": "PreApprovalMemberEditPage",
       "isDefault": false
     },
@@ -94,6 +90,10 @@
     },
     {
       "id": "MemberProfilePage",
+      "isDefault": false
+    },
+    {
+      "id": "EditMemberProfilePage",
       "isDefault": false
     }
   ],

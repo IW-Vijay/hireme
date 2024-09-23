@@ -1,1 +1,1 @@
-SELECT * FROM education where user_id={{userDataJSObject.user.data.user.user_id}};
+SELECT * FROM education_details where profile_id={{userDataJSObject.user.data.user.profile_id}};

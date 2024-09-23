@@ -46,7 +46,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{userDataJSObject.user.data.user.dob ? userDataJSObject.user.data.user.dob : \"Not Provided\"}}",
+  "text": "{{userDataJSObject.user.data.user.birth_date ? userDataJSObject.user.data.user.birth_date : \"Not Provided\"}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 50,

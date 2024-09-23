@@ -1,1 +1,1 @@
-SELECT * FROM users where community_id = {{appsmith.store.user.community_id}};
+SELECT * FROM profiles where membership_id = {{appsmith.store.user.membership_id}};

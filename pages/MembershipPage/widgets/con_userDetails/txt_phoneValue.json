@@ -55,7 +55,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{tbl_users.selectedRow.phoneno}}",
+  "text": "{{tbl_users.selectedRow.phone_number}}",
   "textAlign": "LEFT",
   "textColor": "#101828",
   "topRow": 30,

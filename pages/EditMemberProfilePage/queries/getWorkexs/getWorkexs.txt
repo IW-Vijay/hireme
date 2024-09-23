@@ -1,1 +1,0 @@
-SELECT * FROM workexperience WHERE user_id = {{JSON.parse(appsmith.URL.queryParams.member).user_id}};

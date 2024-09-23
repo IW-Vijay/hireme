@@ -64,7 +64,7 @@
       "id": "menuItem2",
       "index": 1,
       "isDisabled": false,
-      "isVisible": "{{ appsmith.store.user.role === \"admin\" ? true : false }}\n",
+      "isVisible": "{{ appsmith.store.user.role_id === 1 ? true : false }}\n",
       "label": "Admin Panel",
       "onClick": "{{navigateTo('AdminPanelPage', {}, 'SAME_WINDOW');}}",
       "widgetId": ""
@@ -98,7 +98,7 @@
   "originalBottomRow": 88,
   "originalTopRow": 84,
   "parentColumnSpace": 19.8125,
-  "parentId": "nu38puzztc",
+  "parentId": "tqn581bhdf",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "renderMode": "CANVAS",
@@ -107,6 +107,6 @@
   "topRow": 1,
   "type": "MENU_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "agba9424c1",
+  "widgetId": "oadhiczbbl",
   "widgetName": "MenuButton1"
 }

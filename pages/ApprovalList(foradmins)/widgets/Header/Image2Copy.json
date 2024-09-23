@@ -44,7 +44,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{navigateTo(\"\", {}, 'SAME_WINDOW')}}",
+  "onClick": "{{navigateTo('ProfilePage', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 17.625,
   "parentId": "uaxjblnyz4",
   "parentRowSpace": 10,

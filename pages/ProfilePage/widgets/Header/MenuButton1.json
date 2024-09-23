@@ -64,7 +64,7 @@
       "id": "menuItem2",
       "index": 1,
       "isDisabled": false,
-      "isVisible": "{{ appsmith.store.user.role === \"admin\" ? true : false }}\n",
+      "isVisible": "{{ appsmith.store.user.role_id === 1 ? true : false }}\n",
       "label": "Admin Panel",
       "onClick": "{{navigateTo('AdminPanelPage', {}, 'SAME_WINDOW');}}",
       "widgetId": ""

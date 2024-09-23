@@ -23,7 +23,7 @@
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
-  "image": "{{appsmith.store.user.image}}",
+  "image": "{{appsmith.store.user.profile_image}}",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,
@@ -46,7 +46,7 @@
   },
   "onClick": "{{navigateTo('ProfilePage', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 17.625,
-  "parentId": "nu38puzztc",
+  "parentId": "tqn581bhdf",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 62,
@@ -57,6 +57,6 @@
   "topRow": 1,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "ujqzrxtles",
+  "widgetId": "vjz0ccvhst",
   "widgetName": "Image2Copy"
 }

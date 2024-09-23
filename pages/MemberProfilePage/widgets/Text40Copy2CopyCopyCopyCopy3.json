@@ -46,7 +46,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{userDataJSObject.user.data.user.phoneno ? userDataJSObject.user.data.user.phoneno : \"Not Provided\"}}",
+  "text": "{{userDataJSObject.user.data.user.phone_number ? userDataJSObject.user.data.user.phone_number : \"Not Provided\"}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 42,

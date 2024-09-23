@@ -30,7 +30,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 14,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('MemberProfilePage', {\n  \"member\": JSON.stringify(tbl_users.selectedRow),\n  \"rownumber\": tbl_users.selectedRowIndex\n}, 'SAME_WINDOW');}}",
+  "onClick": "{{navigateTo('MemberProfilePage', {\n  \"member\": JSON.stringify(tbl_users.selectedRow),\n  \"rownumber\": tbl_users.selectedRowIndex,\n  \"community_id\": fetch_community_id.data[0].community_member_id,\n  \"role\": tbl_users.selectedRow.role_id ? fetch_roles.data.find(role => role.role_id === tbl_users.selectedRow.role_id)?.role_name : \"Role\"\n}, 'SAME_WINDOW');}}",
   "originalBottomRow": 83,
   "originalTopRow": 76,
   "parentColumnSpace": 19.8125,

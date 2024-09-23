@@ -1,0 +1,1 @@
+SELECT organization_id, name FROM organizations;

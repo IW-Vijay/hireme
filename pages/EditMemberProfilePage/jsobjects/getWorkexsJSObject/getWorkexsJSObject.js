@@ -1,7 +1,8 @@
 export default {
 	workexData () {
 		return {
-			"workexs" : getWorkexs.data
+			"workexs" : JSON.parse(appsmith.URL.queryParams.workexs),
+			"organizations" : getInstisAndOrgsJSObject.instiAndOrgData.data[1].organizations
 		}
 	}
 }

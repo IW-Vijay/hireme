@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 79,
+  "bottomRow": 80,
   "boxShadow": "none",
   "defaultModel": "{{\nusersJSObject.usersData.data\n}}",
   "displayName": "Custom",
@@ -60,7 +60,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 78,
+  "originalBottomRow": 79,
   "originalTopRow": 23,
   "parentColumnSpace": 19.8125,
   "parentId": "0",

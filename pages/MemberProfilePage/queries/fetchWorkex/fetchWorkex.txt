@@ -1,1 +1,1 @@
-SELECT * FROM workexperience where user_id={{userDataJSObject.user.data.user.user_id}};
+SELECT * FROM work_experience where profile_id={{userDataJSObject.user.data.user.profile_id}};

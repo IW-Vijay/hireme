@@ -55,7 +55,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{tbl_users.selectedRow.role ? tbl_users.selectedRow.role : \"Role\"}}",
+  "text": "{{ \n  tbl_users.selectedRow.role_id \n    ? fetch_roles.data.find(role => role.role_id === tbl_users.selectedRow.role_id)?.role_name \n    : \"Role\" \n}}",
   "textAlign": "LEFT",
   "textColor": "#101828",
   "topRow": 4,
