@@ -16,7 +16,7 @@
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 25.25,
-  "parentId": "zukl32rg5z",
+  "parentId": "a05hq43n65",
   "parentRowSpace": 40,
   "rightColumn": 15,
   "text": "Email:",
@@ -25,6 +25,6 @@
   "topRow": 25,
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "9wbr32hgs1",
+  "widgetId": "u4cdzroqzk",
   "widgetName": "Text2"
 }

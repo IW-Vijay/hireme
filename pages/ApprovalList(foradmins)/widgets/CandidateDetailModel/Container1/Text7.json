@@ -20,7 +20,7 @@
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 25.25,
-  "parentId": "zukl32rg5z",
+  "parentId": "a05hq43n65",
   "parentRowSpace": 40,
   "rightColumn": 64,
   "text": "{{ usersList.model.selectedUser ? usersList.model.selectedUser.email : \"Email not available\" }}\n",
@@ -29,6 +29,6 @@
   "topRow": 25,
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "w66w05apo3",
+  "widgetId": "rwcbuhdt85",
   "widgetName": "Text7"
 }

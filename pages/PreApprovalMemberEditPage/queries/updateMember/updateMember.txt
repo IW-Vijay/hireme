@@ -1,13 +1,13 @@
-UPDATE users
+UPDATE profiles
 SET       
-    name = '{{inp_name.text}}',                      
-    image = '{{inp_image.model.image}}',                 
-    phoneno = '{{inp_phone.text}}',            
+    profile_name = '{{inp_name.text}}',                      
+    profile_image = '{{inp_image.model.image}}',                 
+    phone_number = '{{inp_phone.text}}',            
     email = '{{inp_email.text}}', 
 		gender = '{{inp_gender.selectedOptionValue}}',
-		community_id = '{{inp_comid.text}}',
-		role = '{{inp_role.selectedOptionValue}}',
-		dob = {{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : NaN }},
+		membership_id = '{{this.params.membership_id}}',
+		role_id = '{{inp_role.selectedOptionValue}}',
+		birth_date = {{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : NaN }},
     location = '{{inp_location.text}}',                  
     about = '{{inp_about.text}}'            
-WHERE user_id = {{JSON.parse(appsmith.URL.queryParams.member).user_id}};
+WHERE profile_id = {{JSON.parse(appsmith.URL.queryParams.member).profile_id}};

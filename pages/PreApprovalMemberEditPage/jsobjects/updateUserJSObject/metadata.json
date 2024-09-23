@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66ebb00d73f83b5809d9d9a4_0978b849-d44e-4e96-a6df-8b4c9d159604",
+  "id": "PreApprovalMemberEditPage_updateUserJSObject",
+  "unpublishedCollection": {
+    "name": "updateUserJSObject",
+    "pageId": "PreApprovalMemberEditPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

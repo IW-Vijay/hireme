@@ -47,7 +47,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "onrllqz8dk",
+      "parentId": "uo7t8vpjho",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -56,7 +56,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "i8ptesipyl",
+      "widgetId": "baof3c8w58",
       "widgetName": "Canvas18"
     }
   ],
@@ -107,10 +107,10 @@
     "Layout"
   ],
   "thumbnailSVG": "/static/media/thumbnail.c20e144182d9af35cde59e39d9afe632.svg",
-  "topRow": 19,
+  "topRow": 80,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "onrllqz8dk",
+  "widgetId": "uo7t8vpjho",
   "widgetName": "CandidateDetailModel",
   "width": 1196
 }

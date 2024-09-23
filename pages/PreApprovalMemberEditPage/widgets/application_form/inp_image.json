@@ -3,9 +3,9 @@
   "borderColor": "#ffffff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 20,
+  "bottomRow": 23,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultModel": "{\n  \"image\": \"{{memeberJSObject.member.data.member.image ? memeberJSObject.member.data.member.image : \"\"}}\"\n}",
+  "defaultModel": "{\n  \"image\": \"{{memeberJSObject.member.data.member.profile_image ? memeberJSObject.member.data.member.profile_image : \"\"}}\"\n}",
   "displayName": "Custom",
   "dynamicBindingPathList": [
     {
@@ -54,7 +54,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onResetClick": "{{showAlert('Successfully reset!!', '').then(() => {\n  storeValue('image', Image2);\n});}}",
-  "originalBottomRow": 19,
+  "originalBottomRow": 22,
   "originalTopRow": 0,
   "parentColumnSpace": 18.880859375,
   "parentId": "hnice2rhm7",

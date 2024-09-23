@@ -16,7 +16,7 @@
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 25.25,
-  "parentId": "zukl32rg5z",
+  "parentId": "a05hq43n65",
   "parentRowSpace": 40,
   "rightColumn": 15,
   "text": "Community ID",
@@ -25,6 +25,6 @@
   "topRow": 21,
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "5rm45cv0h1",
+  "widgetId": "d8rdgs1kwa",
   "widgetName": "Text5Copy"
 }

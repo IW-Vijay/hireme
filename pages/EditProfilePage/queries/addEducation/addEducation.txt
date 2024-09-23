@@ -1,2 +1,2 @@
 INSERT INTO education_details (profile_id, institution_id, degree,specialization, start_date, end_date, marks)
-VALUES ({{this.params.user_id}}, {{this.params.institution_id}} , {{this.params.degree}} ,{{this.params.specialization}}, {{this.params.startdate}}, {{this.params.enddate}}, {{this.params.marks}});
+VALUES ({{this.params.user_id}}, {{this.params.institution_id}} , {{this.params.degree}} ,{{this.params.specialization}}, {{this.params.start_date}}, {{this.params.end_date}}, {{this.params.marks}});

@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0.375rem",
   "borderWidth": "1",
-  "bottomRow": 79,
+  "bottomRow": 90,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{educationAndWorkexJsObject.educations.data}}",
   "dynamicBindingPathList": [
@@ -34,7 +34,7 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 67,
   "needsErrorInfo": false,
-  "originalBottomRow": 69,
+  "originalBottomRow": 79,
   "originalTopRow": 62,
   "parentColumnSpace": 19.8125,
   "parentId": "0",

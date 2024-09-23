@@ -16,7 +16,7 @@
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 25.25,
-  "parentId": "zukl32rg5z",
+  "parentId": "a05hq43n65",
   "parentRowSpace": 40,
   "rightColumn": 15,
   "text": "About",
@@ -25,6 +25,6 @@
   "topRow": 45,
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "v8h0lj0m1e",
+  "widgetId": "29uj2tfw9b",
   "widgetName": "Text5"
 }

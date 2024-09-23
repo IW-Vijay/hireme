@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66ebb00d73f83b5809d9d9a4_2222afab-e8e3-4706-89ce-c224d90e418f",
-  "id": "ApprovalList(foradmins)_fetchRoles",
+  "gitSyncId": "66ebb00d73f83b5809d9d9a4_ed7d296e-82de-4898-9874-43552f76c101",
+  "id": "AllMembersPage_fetch_community_id",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM roles;",
+      "body": "SELECT * FROM memberships where membership_id = {{tbl_users.selectedRow.membership_id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,10 +22,14 @@
       "name": "Community Portal Database",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": true,
-    "name": "fetchRoles",
-    "pageId": "ApprovalList(foradmins)",
+    "name": "fetch_community_id",
+    "pageId": "AllMembersPage",
     "userSetOnLoad": false
   }
 }

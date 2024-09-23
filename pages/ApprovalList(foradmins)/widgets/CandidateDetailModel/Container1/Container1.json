@@ -48,13 +48,13 @@
       "leftColumn": 0,
       "minHeight": 690,
       "parentColumnSpace": 1,
-      "parentId": "l54dykn18q",
+      "parentId": "uhow1zrkye",
       "parentRowSpace": 1,
       "rightColumn": 2368,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "zukl32rg5z",
+      "widgetId": "a05hq43n65",
       "widgetName": "Canvas19"
     }
   ],
@@ -76,13 +76,13 @@
   "originalBottomRow": 60,
   "originalTopRow": 4,
   "parentColumnSpace": 74,
-  "parentId": "i8ptesipyl",
+  "parentId": "baof3c8w58",
   "parentRowSpace": 40,
   "rightColumn": 60,
   "shouldScrollContents": true,
   "topRow": 4,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "l54dykn18q",
+  "widgetId": "uhow1zrkye",
   "widgetName": "Container1"
 }

@@ -2,13 +2,16 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "0.375rem",
-  "bottomRow": 50,
+  "bottomRow": 54,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( memeberJSObject.member.data.member.role ? memeberJSObject.member.data.member.role : \"\"))(inp_role.options, inp_role.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( memeberJSObject.member.data.member.role_id ? memeberJSObject.member.data.member.role_id : 2))(inp_role.options, inp_role.serverSideFiltering) }}",
   "displayName": "Select",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
+    },
+    {
+      "key": "sourceData"
     },
     {
       "key": "defaultOptionValue"
@@ -52,10 +55,10 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "optionLabel": "name",
-  "optionValue": "code",
-  "originalBottomRow": 49,
-  "originalTopRow": 42,
+  "optionLabel": "role_name",
+  "optionValue": "role_id",
+  "originalBottomRow": 53,
+  "originalTopRow": 46,
   "parentColumnSpace": 18.880859375,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
@@ -67,13 +70,13 @@
     "dropdown"
   ],
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Member\",\n    \"code\": \"member\"\n  },\n  {\n    \"name\": \"Admin\",\n    \"code\": \"admin\"\n  }\n]",
+  "sourceData": "{{fetchRoles.data}}",
   "tags": [
     "Suggested",
     "Select"
   ],
   "thumbnailSVG": "/static/media/thumbnail.9aef24cb159e9c6e4d0f1d7ca4fb0c79.svg",
-  "topRow": 43,
+  "topRow": 47,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "4azu8bta3j",

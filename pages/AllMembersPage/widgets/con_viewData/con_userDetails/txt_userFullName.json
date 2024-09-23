@@ -38,7 +38,7 @@
     "label"
   ],
   "shouldTruncate": false,
-  "text": "{{tbl_users.selectedRow.name}}",
+  "text": "{{tbl_users.selectedRow.profile_name}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 0,

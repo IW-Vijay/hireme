@@ -1,23 +1,32 @@
 export default {
-  usersData () {
-    // Get users and roles data
+  async usersData() {
+    await gettinguserslistforapproval.run(); // Wait for the approval list to be fetched
     const users = gettinguserslistforapproval.data || [];
-    const roles = fetchRoles.data || [];
 
-    // Map through users and replace role_id with role_name
-    const updatedUsers = users.map(user => {
-      // Find the matching role for the user
-      const role = roles.find(role => role.role_id === user.role_id);
-      
-      return {
-        ...user, // Keep other user fields
-        role: role ? role.role_name : null, // Replace role_id with role_name, or set null if no match
-        role_id: undefined // Remove role_id from the final output
-      };
-    });
+    // Prepare an array to hold updated users
+    const updatedUsers = [];
+
+    for (const user of users) {
+      let com_id = '';
+
+      if (user.membership_id) {
+        const membership_id = user.membership_id;
+        await fetchCommunityID.run({ membership_id }); // Wait for fetchCommunityID to complete
+        
+        // Check if the data is available
+        if (fetchCommunityID.data && fetchCommunityID.data.length > 0) {
+          com_id = fetchCommunityID.data[0].community_member_id; // Get community_member_id
+        }
+      }
+
+      updatedUsers.push({
+        ...user,
+        community_id: com_id,
+      });
+    }
 
     return {
-      "users": updatedUsers
+      users: updatedUsers,
     };
-  }
-}
+  },
+};

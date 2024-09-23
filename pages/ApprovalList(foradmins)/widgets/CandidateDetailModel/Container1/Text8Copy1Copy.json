@@ -20,7 +20,7 @@
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 25.25,
-  "parentId": "zukl32rg5z",
+  "parentId": "a05hq43n65",
   "parentRowSpace": 40,
   "rightColumn": 64,
   "text": "{{ usersList.model.selectedUser.community_id ? usersList.model.selectedUser.community_id : \"not provided\" }}",
@@ -29,6 +29,6 @@
   "topRow": 21,
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "208rmw72kg",
+  "widgetId": "ln9xumli5f",
   "widgetName": "Text8Copy1Copy"
 }

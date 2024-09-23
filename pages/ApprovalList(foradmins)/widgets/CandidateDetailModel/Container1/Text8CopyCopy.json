@@ -20,7 +20,7 @@
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 25.25,
-  "parentId": "zukl32rg5z",
+  "parentId": "a05hq43n65",
   "parentRowSpace": 40,
   "rightColumn": 64,
   "text": "{{ usersList.model.selectedUser.birth_date? usersList.model.selectedUser.birth_date : \"not provided\" }}\n",
@@ -29,6 +29,6 @@
   "topRow": 37,
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "pui63jc3pg",
+  "widgetId": "ohmashvstt",
   "widgetName": "Text8CopyCopy"
 }

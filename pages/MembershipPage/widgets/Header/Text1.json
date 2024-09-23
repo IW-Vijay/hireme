@@ -63,7 +63,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{appsmith.store.user.name}}",
+  "text": "{{appsmith.store.user.profile_name}}",
   "textAlign": "RIGHT",
   "textColor": "#ffffff",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
