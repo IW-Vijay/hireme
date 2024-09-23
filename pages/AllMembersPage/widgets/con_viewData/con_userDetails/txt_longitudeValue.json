@@ -55,7 +55,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{fetch_community_id.data ? fetch_community_id.data[0].community_member_id : ''}}",
+  "text": "{{fetch_community_id.data[0] ? fetch_community_id.data[0].community_member_id : ''}}",
   "textAlign": "LEFT",
   "textColor": "#101828",
   "topRow": 37,
