@@ -20,18 +20,19 @@ export default {
 		let membership_id = null;
 
 		if (community_id) {
-			fetch_membership_id.run();
-			membership_id = await fetch_membership_id.data;
-			showAlert(membership_id[0]);
+			await fetch_membership_id.run();
+			membership_id = fetch_membership_id.data[0].membership_id;
+
 			if (!membership_id) {
-				showAlert("Community ID is wrong, please try again.");
+				showAlert("This Community ID does not exist, please try again.");
 				return;
 			}
 		}
 
 		try {
 			// Try to create the user
-			await create_user_for_approval.run(membership_id);
+			//showAlert(membership_id);
+			await create_user_for_approval.run({membership_id});
 
 			// If successful, show the modal
 			showModal(RegisteredModel.name);
