@@ -1,6 +1,6 @@
 export default {
 	getInstitutions() {
-		return {
+		return  {
 			"institutions" : fetch_institutions.data
 		}
   }
