@@ -3,7 +3,7 @@
   "borderColor": "#ffffff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 41,
+  "bottomRow": 54,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{\n  \"image\": \"{{getUserJSObject.userData.data.user[0].profile_image ? getUserJSObject.userData.data.user[0].profile_image : NaN}}\"\n}",
   "displayName": "Custom",
@@ -54,7 +54,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onResetClick": "{{showAlert('Successfully reset!!', '').then(() => {\n  storeValue('image', Image2);\n});}}",
-  "originalBottomRow": 40,
+  "originalBottomRow": 52,
   "originalTopRow": 0,
   "parentColumnSpace": 18.880859375,
   "parentId": "hnice2rhm7",

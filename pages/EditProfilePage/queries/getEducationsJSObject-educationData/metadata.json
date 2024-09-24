@@ -22,7 +22,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "getEducationsJSObject.educationData",
     "name": "educationData",
     "pageId": "EditProfilePage",

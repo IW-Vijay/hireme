@@ -71,7 +71,7 @@
     ]
   },
   "borderRadius": "0",
-  "bottomRow": 165,
+  "bottomRow": 178,
   "boxShadow": "none",
   "children": [
     {
@@ -129,7 +129,7 @@
         ]
       },
       "borderRadius": "0px",
-      "bottomRow": 1440,
+      "bottomRow": 1570,
       "boxShadow": "none",
       "canExtend": false,
       "containerStyle": "none",
@@ -170,7 +170,7 @@
   "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 164,
+  "originalBottomRow": 176,
   "originalTopRow": 21,
   "parentColumnSpace": 74,
   "parentId": "0",
