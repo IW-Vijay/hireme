@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO institutions (institution_id, name) values ({{this.params.institution_id}}, {{this.params.school}});",
+      "body": "INSERT INTO institutions (name) values ({{this.params.institution_name}});",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

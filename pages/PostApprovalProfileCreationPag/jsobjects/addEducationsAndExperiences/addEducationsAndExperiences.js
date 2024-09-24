@@ -95,7 +95,7 @@ export default {
 			await storeValue("user", fetchUpdatedUser.data[0]);
 
 			// Step 7: Navigate to profile page
-			await navigateTo('Homepage');
+			await navigateTo('HomePage');
 
 		} catch (err) {
 			console.error("Error during user modification:", err);

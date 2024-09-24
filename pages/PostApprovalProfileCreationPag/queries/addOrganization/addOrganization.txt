@@ -1,1 +1,1 @@
-INSERT INTO organizations (organization_id,name) values ({{this.params.organization_id}},{{this.params.organization}});
+INSERT INTO organizations (name) values ({{this.params.organization_name}});
