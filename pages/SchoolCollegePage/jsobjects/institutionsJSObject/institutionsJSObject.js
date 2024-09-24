@@ -1,6 +1,7 @@
 export default {
-	instituion_list : fetch_institutions.data,
-	async getInstitutions () {
-		
-	}
+	getInstitutions() {
+		return {
+			"institutions" : fetch_institutions.data
+		}
+  }
 }
