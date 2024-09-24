@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66ebb00d73f83b5809d9d9a4_56c2a82a-c990-4888-bdf3-2202bb22d1d1",
+  "id": "SchoolCollegePage_institutionsJSObject",
+  "unpublishedCollection": {
+    "name": "institutionsJSObject",
+    "pageId": "SchoolCollegePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "consinstituion_list",
+        "value": "fetch_institutions.data"
+      }
+    ]
+  }
+}

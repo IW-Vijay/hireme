@@ -1,16 +1,25 @@
 export default {
 	modifyUser: async () => {
 		try {
-			let membership_id = getUserJSObject.userData.data.user.membership_id? getUserJSObject.userData.data.user.membership_id : '';
+			let membership_id = getUserJSObject.userData.data.user.membership_id?getUserJSObject.userData.data.user.membership_id : '';
 			 if (inp_comid.text !== "") {
 				 let membership_details = fetchMembershipDetails.data;
 				  if (!membership_details || membership_details.length === 0) {
-							// Create a new membership and wait for the result
-							await createNewMembership.run();
+							try {
+								// Attempt to create a new membership
+								await createNewMembership.run();
 
-							// Ensure that createNewMembership has completed and data is available
-							membership_id = createNewMembership.data[0].membership_id;
-						 }
+								// Ensure that createNewMembership has completed and data is available
+								membership_id = createNewMembership.data[0].membership_id;
+							} catch (error) {
+								// Catch any error and show it as an alert
+								showAlert(`This is user is already owner of an existing community ID, please modify membership to change community ID`);
+								await inp_comid.setValue(appsmith.URL.queryParams.community_id);
+								await fetchMembershipDetails.run();
+								await inp_premiumtype.selectedOptionValue(fetchMembershipDetails.data[0].premium_type_id);
+								return;
+							}
+						}
 				 	else {
 						membership_id = membership_details[0].membership_id;
 					}

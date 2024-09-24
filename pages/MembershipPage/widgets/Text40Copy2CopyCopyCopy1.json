@@ -12,6 +12,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -28,14 +31,14 @@
   "leftColumn": 10,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 33,
-  "originalTopRow": 29,
+  "originalBottomRow": 26,
+  "originalTopRow": 22,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 22,
+  "rightColumn": 23,
   "searchTags": [
     "typography",
     "paragraph",
@@ -43,7 +46,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "owner placeholder",
+  "text": "{{fetch_owner.data[0].member_name}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 22,

@@ -38,7 +38,7 @@
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 17,
+  "rightColumn": 23,
   "searchTags": [
     "typography",
     "paragraph",
@@ -46,7 +46,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{appsmith.store.user.community_id}}",
+  "text": "{{fetch_community_id.data[0] ? fetch_community_id.data[0].community_member_id : 'Not available'}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 18,

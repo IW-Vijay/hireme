@@ -5,7 +5,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 33,
   "boxShadow": "none",
-  "defaultText": "{{ appsmith.URL.queryParams.community_id ? (\n  fetchMembershipDetails.data[0].email === getUserJSObject.userData.data.user.email ?\n    appsmith.URL.queryParams.community_id + ' (owner)' :\n    appsmith.URL.queryParams.community_id\n) : 'not provided' }}",
+  "defaultText": "{{ appsmith.URL.queryParams.community_id ? appsmith.URL.queryParams.community_id\n : 'not provided' }}",
   "displayName": "Input",
   "dynamicBindingPathList": [
     {
@@ -13,9 +13,6 @@
     },
     {
       "key": "defaultText"
-    },
-    {
-      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -29,12 +26,13 @@
       "key": "onTextChanged"
     }
   ],
+  "errorMessage": "",
   "hideCard": false,
   "iconAlign": "left",
   "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
   "inputType": "TEXT",
   "isDeprecated": false,
-  "isDisabled": "{{fetchMembershipDetails.data[0].email == getUserJSObject.userData.data.user.email}}",
+  "isDisabled": "",
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
@@ -65,6 +63,7 @@
     "textarea"
   ],
   "showStepArrows": false,
+  "tooltip": "",
   "topRow": 25,
   "type": "INPUT_WIDGET_V2",
   "version": 2,

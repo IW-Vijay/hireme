@@ -15,9 +15,6 @@
     },
     {
       "key": "defaultOptionValue"
-    },
-    {
-      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -33,7 +30,7 @@
   "hideCard": false,
   "iconSVG": "/static/media/icon.c94480439adb48de6883bb496aa5ef7d.svg",
   "isDeprecated": false,
-  "isDisabled": "{{fetchMembershipDetails.data[0].email == getUserJSObject.userData.data.user.email}}",
+  "isDisabled": "",
   "isFilterable": false,
   "isLoading": false,
   "isRequired": false,
