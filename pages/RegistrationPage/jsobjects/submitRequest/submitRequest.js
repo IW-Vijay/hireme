@@ -20,7 +20,9 @@ export default {
 		let membership_id = null;
 
 		if (community_id) {
+			fetch_membership_id.run();
 			membership_id = await fetch_membership_id.data;
+			showAlert(membership_id[0]);
 			if (!membership_id) {
 				showAlert("Community ID is wrong, please try again.");
 				return;
