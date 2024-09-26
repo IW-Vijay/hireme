@@ -40,11 +40,11 @@
   "originalTopRow": 4,
   "overflow": "NONE",
   "parentColumnSpace": 5.5732421875,
-  "parentId": "gdckmpm8zg",
+  "parentId": "y6nbe9qq1z",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 57,
+  "rightColumn": 64,
   "searchTags": [
     "typography",
     "paragraph",
@@ -55,13 +55,13 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{ \n  tbl_users.selectedRow.role_id \n    ? fetch_roles.data.find(role => role.role_id === tbl_users.selectedRow.role_id)?.role_name \n    : \"Role\" \n}}\n",
+  "text": "{{ \n  tbl_users.selectedRow.role_id \n    ? fetch_roles.data.find(role => role.role_id === tbl_users.selectedRow.role_id)?.role_name \n    : \"Role\" \n}}",
   "textAlign": "LEFT",
   "textColor": "#101828",
   "topRow": 4,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "b6jxwnfvbz",
+  "widgetId": "4n1ebviezp",
   "widgetName": "txt_userEmail"
 }

@@ -1,0 +1,6 @@
+UPDATE profiles 
+SET 
+    status = 'approved', 
+    membership_id = {{ this.params.membership_id }} 
+WHERE 
+    profile_id = {{ JSON.parse(appsmith.URL.queryParams.requester).profile_id }};

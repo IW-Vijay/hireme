@@ -49,7 +49,7 @@
   "key": "p1wvy0bmx0",
   "label": "",
   "leftColumn": 62,
-  "menuColor": "#ffffff",
+  "menuColor": "#231f20",
   "menuItems": {
     "menuItem1": {
       "id": "menuItem1",
@@ -64,7 +64,7 @@
       "id": "menuItem2",
       "index": 1,
       "isDisabled": false,
-      "isVisible": "{{ appsmith.store.user.role_id === 1 ? true : false }}\n",
+      "isVisible": "{{ appsmith.store.user.role_id === 1 ? true : false }}",
       "label": "Admin Panel",
       "onClick": "{{navigateTo('AdminPanelPage', {}, 'SAME_WINDOW');}}",
       "widgetId": ""
@@ -83,7 +83,7 @@
       "index": 2,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Membership",
+      "label": "My Family",
       "onClick": "{{navigateTo('MembershipPage', {}, 'SAME_WINDOW');}}",
       "widgetId": "n2ko9sfb68"
     }
@@ -98,7 +98,7 @@
   "originalBottomRow": 88,
   "originalTopRow": 84,
   "parentColumnSpace": 19.8125,
-  "parentId": "9cimz5u0vp",
+  "parentId": "yrakr8n4ly",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "renderMode": "CANVAS",
@@ -107,6 +107,6 @@
   "topRow": 1,
   "type": "MENU_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "u6bkrd7r2j",
+  "widgetId": "4i0mzn5fz3",
   "widgetName": "MenuButton1"
 }

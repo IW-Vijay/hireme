@@ -1,1 +1,0 @@
-SELECT * FROM events where status = 'active' order by start_time desc;

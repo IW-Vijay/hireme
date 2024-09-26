@@ -1,0 +1,16 @@
+INSERT INTO profiles (profile_image, profile_name, phone_number, email, location, about, status, password_hash, birth_date, gender, role_id, membership_id)
+VALUES
+(
+		'{{inp_image.model.image}}',
+    '{{inp_name.text}}',
+    '{{inp_phone.text}}',
+    '{{inp_email.text}}',
+    '{{inp_location.text}}',
+    '{{inp_about.text}}',
+		'{{"appuser"}}',
+		'{{passwordHasing.createHash(inp_password.text)}}',
+		{{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : 'NULL'}},
+		'{{inp_gender.selectedOptionValue}}',
+		2,
+	'{{appsmith.store.user.membership_id}}'
+)

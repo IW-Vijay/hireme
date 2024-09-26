@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 21,
+  "bottomRow": 34,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -33,11 +33,11 @@
   "mobileLeftColumn": 2,
   "mobileRightColumn": 18,
   "mobileTopRow": 5,
-  "originalBottomRow": 21,
-  "originalTopRow": 17,
+  "originalBottomRow": 34,
+  "originalTopRow": 30,
   "overflow": "NONE",
   "parentColumnSpace": 5.5732421875,
-  "parentId": "gdckmpm8zg",
+  "parentId": "y6nbe9qq1z",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -55,10 +55,10 @@
   "text": "Gender",
   "textAlign": "LEFT",
   "textColor": "#71717a",
-  "topRow": 17,
+  "topRow": 30,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "ipl36h2mvz",
+  "widgetId": "mmzuc61lkp",
   "widgetName": "txt_genderCopy"
 }

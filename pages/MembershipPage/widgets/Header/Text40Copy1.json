@@ -8,15 +8,12 @@
       "key": "truncateButtonColor"
     },
     {
-      "key": "fontFamily"
-    },
-    {
       "key": "borderRadius"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
-  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontFamily": "Inter",
   "fontSize": "1.25rem",
   "fontStyle": "BOLD",
   "hideCard": false,
@@ -25,15 +22,15 @@
   "isLoading": false,
   "isVisible": true,
   "key": "lpp3worjsh",
-  "leftColumn": 5,
+  "leftColumn": 3,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
-  "parentId": "c4xk68tyvy",
+  "parentId": "aqblg9z76b",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 16,
+  "rightColumn": 14,
   "searchTags": [
     "typography",
     "paragraph",
@@ -42,11 +39,11 @@
   "shouldTruncate": false,
   "text": "Community Portal",
   "textAlign": "LEFT",
-  "textColor": "#fff",
+  "textColor": "#231f20",
   "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "vux9shb12a",
+  "widgetId": "np7fjyvrlf",
   "widgetName": "Text40Copy1"
 }

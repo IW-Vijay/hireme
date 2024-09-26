@@ -22,7 +22,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "nlsg1kbruy",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "maxZoomLevel": 1,
   "mobileBottomRow": 12,
   "mobileLeftColumn": 0,
@@ -38,10 +38,10 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "parentColumnSpace": 17.625,
-  "parentId": "tqn581bhdf",
+  "parentId": "7ivgv68jlk",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 4,
+  "rightColumn": 3,
   "tags": [
     "Media"
   ],
@@ -49,6 +49,6 @@
   "topRow": 1,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "ntxybeg97c",
+  "widgetId": "lz4acusvrs",
   "widgetName": "Image2"
 }

@@ -73,7 +73,7 @@
   "borderColor": "#3b82f6",
   "borderRadius": "1.5rem",
   "borderWidth": "1",
-  "bottomRow": 65,
+  "bottomRow": 66,
   "boxShadow": "none",
   "children": [
     {
@@ -131,7 +131,7 @@
         ]
       },
       "borderRadius": "0px",
-      "bottomRow": 380,
+      "bottomRow": 350,
       "boxShadow": "none",
       "canExtend": false,
       "containerStyle": "none",
@@ -168,12 +168,14 @@
   "leftColumn": 10,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "originalBottomRow": 67,
+  "originalTopRow": 32,
   "parentColumnSpace": 74,
   "parentId": "0",
   "parentRowSpace": 40,
   "rightColumn": 53,
   "shouldScrollContents": true,
-  "topRow": 27,
+  "topRow": 31,
   "type": "FORM_WIDGET",
   "version": 1,
   "widgetId": "jl8q4pz21u",

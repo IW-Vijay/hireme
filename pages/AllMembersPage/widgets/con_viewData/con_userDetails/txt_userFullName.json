@@ -25,11 +25,11 @@
   "isLoading": false,
   "isVisible": true,
   "key": "799bmivq9p",
-  "leftColumn": 18,
+  "leftColumn": 17,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
-  "parentId": "gdckmpm8zg",
+  "parentId": "y6nbe9qq1z",
   "renderMode": "CANVAS",
   "rightColumn": 57,
   "searchTags": [
@@ -45,6 +45,6 @@
   "truncateButtonColor": "#FFC13D",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "lbn6x1j3wk",
+  "widgetId": "9h6dm5rj92",
   "widgetName": "txt_userFullName"
 }

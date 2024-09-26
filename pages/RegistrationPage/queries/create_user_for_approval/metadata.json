@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO profiles (profile_image, profile_name, phone_number, email, location, about, status, password_hash, birth_date, gender, membership_id, role_id)\nVALUES\n(\n\t\t'{{inp_image.model.image}}',\n    '{{inp_name.text}}',\n    '{{inp_phone.text}}',\n    '{{inp_email.text}}',\n    '{{inp_location.text}}',\n    '{{inp_about.text}}',\n\t\t'{{\"pending\"}}',\n\t\t'{{passwordHasing.createHash(inp_password.text)}}',\n\t\t{{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : 'NULL'}},\n\t\t'{{inp_gender.selectedOptionValue}}',\n\t\t{{this.params.membership_id ? `'${this.params.membership_id}'` : 'NULL'}},\n\t\t2\n)",
+      "body": "INSERT INTO profiles (profile_image, profile_name, phone_number, email, location, about, status, password_hash, birth_date, gender, role_id)\nVALUES\n(\n\t\t'{{inp_image.model.image}}',\n    '{{inp_name.text}}',\n    '{{inp_phone.text}}',\n    '{{inp_email.text}}',\n    '{{inp_location.text}}',\n    '{{inp_about.text}}',\n\t\t'{{\"pending\"}}',\n\t\t'{{passwordHasing.createHash(inp_password.text)}}',\n\t\t{{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : 'NULL'}},\n\t\t'{{inp_gender.selectedOptionValue}}',\n\t\t2\n)",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

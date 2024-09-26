@@ -9,14 +9,11 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "fontFamily"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
-  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontFamily": "Inter",
   "fontSize": "1.875rem",
   "fontStyle": "BOLD",
   "hideCard": false,
@@ -48,7 +45,7 @@
     "label"
   ],
   "shouldTruncate": false,
-  "text": "Members",
+  "text": "All Community Members",
   "textAlign": "LEFT",
   "textColor": "#101828",
   "topRow": 0,

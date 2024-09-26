@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66f4e75573f83b5809d9de24_a755542d-94ad-4e6a-9393-0b31c745cafc",
+  "id": "ProfilePageForApproval_updateUserJSObject",
+  "unpublishedCollection": {
+    "name": "updateUserJSObject",
+    "pageId": "ProfilePageForApproval",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

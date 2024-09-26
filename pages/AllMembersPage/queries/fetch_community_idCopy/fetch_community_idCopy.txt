@@ -1,0 +1,1 @@
+SELECT * FROM memberships where membership_id = {{tbl_users.selectedRow.membership_id}};

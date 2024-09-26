@@ -1,1 +1,1 @@
-SELECT * FROM profiles where membership_id = {{appsmith.store.user.membership_id}};
+SELECT * FROM profiles where membership_id = {{appsmith.store.user.membership_id}} and isDeleted = 0;

@@ -1,1 +1,0 @@
-SELECT * FROM organizations where name = {{this.params.organization_name}};

@@ -1,1 +1,1 @@
-UPDATE profiles SET status = 'rejected' WHERE profile_id = {{usersList.model.selectedUser.profile_id}};
+UPDATE profiles SET status = 'rejected' WHERE profile_id = {{usersList.model.selectedUser.profile_id}} returning *;

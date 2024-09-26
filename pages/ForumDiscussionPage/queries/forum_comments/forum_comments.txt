@@ -1,1 +1,0 @@
-SELECT * FROM forumcomments where forum_id = {{JSON.parse(appsmith.URL.queryParams.forum).id}} order by created_at desc;

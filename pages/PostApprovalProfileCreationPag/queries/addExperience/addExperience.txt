@@ -1,2 +1,0 @@
-INSERT INTO work_experience (profile_id, organization_id, position, start_date, end_date, skills, type)
-VALUES ({{this.params.user_id}}, {{this.params.organization_id}}, {{this.params.role}}, {{this.params.startdate}}, {{this.params.enddate}}, {{this.params.skills}}, {{this.params.type}});

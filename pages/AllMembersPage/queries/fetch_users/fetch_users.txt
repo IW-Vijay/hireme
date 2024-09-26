@@ -1,1 +1,1 @@
-SELECT * FROM profiles order by created_at desc;
+SELECT * FROM profiles where isDeleted = 0 order by created_at desc;

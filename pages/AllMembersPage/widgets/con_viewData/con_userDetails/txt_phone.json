@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 29,
+  "bottomRow": 30,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -33,11 +33,11 @@
   "mobileLeftColumn": 2,
   "mobileRightColumn": 18,
   "mobileTopRow": 5,
-  "originalBottomRow": 29,
-  "originalTopRow": 25,
+  "originalBottomRow": 30,
+  "originalTopRow": 26,
   "overflow": "NONE",
   "parentColumnSpace": 5.5732421875,
-  "parentId": "gdckmpm8zg",
+  "parentId": "y6nbe9qq1z",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -55,10 +55,10 @@
   "text": "Phone",
   "textAlign": "LEFT",
   "textColor": "#71717a",
-  "topRow": 25,
+  "topRow": 26,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "t4o9f2u2tm",
+  "widgetId": "ua8yw09pxw",
   "widgetName": "txt_phone"
 }

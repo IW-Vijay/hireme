@@ -3,14 +3,19 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonColor": "#1e1e1e",
   "buttonVariant": "TERTIARY",
   "dynamicBindingPathList": [
     {
-      "key": "buttonColor"
+      "key": "borderRadius"
     },
     {
-      "key": "borderRadius"
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -21,9 +26,9 @@
   "iconName": "eye-open",
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{tbl_users.selectedRow.profile_id !== appsmith.store.user.profile_id}}",
   "key": "z4xkj14pwk",
-  "leftColumn": 58,
+  "leftColumn": 57,
   "minWidth": 50,
   "mobileBottomRow": 18,
   "mobileLeftColumn": 58,
@@ -34,7 +39,7 @@
   "originalBottomRow": 83,
   "originalTopRow": 76,
   "parentColumnSpace": 19.8125,
-  "parentId": "gdckmpm8zg",
+  "parentId": "y6nbe9qq1z",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -42,6 +47,6 @@
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "dl44zq5q46",
+  "widgetId": "k5kzhlgzuk",
   "widgetName": "IconButton3"
 }

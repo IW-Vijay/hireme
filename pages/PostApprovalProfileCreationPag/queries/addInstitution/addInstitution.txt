@@ -1,1 +1,0 @@
-INSERT INTO institutions (name) values ({{this.params.institution_name}});

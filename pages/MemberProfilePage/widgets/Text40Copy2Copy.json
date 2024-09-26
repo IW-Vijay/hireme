@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 38,
+  "bottomRow": 34,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -43,10 +43,10 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "Community ID",
+  "text": "Membership ID",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 34,
+  "topRow": 30,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
+  "backgroundColor": "#d9d9d9",
   "borderColor": "transparent",
   "borderRadius": "0px",
   "borderWidth": "1",
@@ -22,24 +22,20 @@
       "leftColumn": 0,
       "minHeight": 90,
       "parentColumnSpace": 1,
-      "parentId": "qpuyfl1573",
+      "parentId": "rs1a6x0qpu",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "rightColumn": 475.5,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "047sb25fis",
+      "widgetId": "zibp2bwxa1",
       "widgetName": "Canvas17"
     }
   ],
   "containerStyle": "card",
   "displayName": "Container",
-  "dynamicBindingPathList": [
-    {
-      "key": "backgroundColor"
-    }
-  ],
+  "dynamicBindingPathList": [],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "hideCard": false,
@@ -66,6 +62,6 @@
   "topRow": 0,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "qpuyfl1573",
+  "widgetId": "rs1a6x0qpu",
   "widgetName": "Header"
 }

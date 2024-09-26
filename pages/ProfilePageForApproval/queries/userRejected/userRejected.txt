@@ -1,0 +1,1 @@
+UPDATE profiles SET status = 'rejected' WHERE profile_id = {{JSON.parse(appsmith.URL.queryParams.requester).profile_id}};

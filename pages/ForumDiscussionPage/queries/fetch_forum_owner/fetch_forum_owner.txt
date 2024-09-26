@@ -1,1 +1,0 @@
-SELECT * FROM users where user_id = {{JSON.parse(appsmith.URL.queryParams.forum).created_by}};

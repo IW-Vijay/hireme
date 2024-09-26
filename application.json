@@ -21,11 +21,7 @@
       "isDefault": false
     },
     {
-      "id": "HomePage",
-      "isDefault": false
-    },
-    {
-      "id": "PostApprovalProfileCreationPag",
+      "id": "LandingPage",
       "isDefault": false
     },
     {
@@ -37,31 +33,11 @@
       "isDefault": false
     },
     {
-      "id": "AddEventPage",
-      "isDefault": false
-    },
-    {
       "id": "SchoolCollegePage",
       "isDefault": false
     },
     {
       "id": "CompaniesPage",
-      "isDefault": false
-    },
-    {
-      "id": "ForumsPage",
-      "isDefault": false
-    },
-    {
-      "id": "EventsPage",
-      "isDefault": false
-    },
-    {
-      "id": "ForumDiscussionPage",
-      "isDefault": false
-    },
-    {
-      "id": "AddForumPage",
       "isDefault": false
     },
     {
@@ -85,7 +61,7 @@
       "isDefault": false
     },
     {
-      "id": "LandingPage",
+      "id": "HomePage",
       "isDefault": true
     },
     {
@@ -94,6 +70,14 @@
     },
     {
       "id": "EditMemberProfilePage",
+      "isDefault": false
+    },
+    {
+      "id": "ProfilePageForApproval",
+      "isDefault": false
+    },
+    {
+      "id": "AddMemberPage",
       "isDefault": false
     }
   ],
