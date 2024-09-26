@@ -15,13 +15,12 @@ export default {
 	signin: (user, password) => {
     if (user) {
 				storeValue("user" , user);
-       /* if (user.status === 'approved' && this.verifyHash(password, user.password_hash)) {
-            navigateTo('PostApprovalProfileCreationPag', { email: inp_email.text });
-        }
-        else */
-			if (user.status === 'appuser' && this.verifyHash(password, user.password_hash)) {
+				fetchMembershipStatus.run({membership_id : user.membership_id});
+				const status = fetchMembershipStatus.data[0].status_id;
+				//showAlert(user.isdeleted.toString());
+			if (user.isdeleted === 0 && status === 2 && this.verifyHash(password, user.password_hash)) {
             navigateTo('LandingPage');
-        }else if (user.status === 'pending' && this.verifyHash(password, user.password_hash)) {
+        }else if (user.isdeleted === 0 && status === 1 && this.verifyHash(password, user.password_hash)) {
             showAlert('Your registration is not approved, try again later', 'error');
         }
         else {

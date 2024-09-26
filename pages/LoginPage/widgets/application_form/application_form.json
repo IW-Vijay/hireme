@@ -174,7 +174,7 @@
   "parentId": "0",
   "parentRowSpace": 40,
   "rightColumn": 53,
-  "shouldScrollContents": true,
+  "shouldScrollContents": false,
   "topRow": 31,
   "type": "FORM_WIDGET",
   "version": 1,
