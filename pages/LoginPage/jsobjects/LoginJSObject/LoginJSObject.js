@@ -22,7 +22,7 @@ export default {
         // Fetch status after ensuring fetchMembershipStatus has completed
         const status = fetchMembershipStatus.data[0].status_id;
 			
-				user.community_member_id = fetchMembershipStatus.data[0].community_member_id;
+				user.community_member_id = fetchMembershipStatus.data[0].community_member_id;0
         storeValue("user", user);
 
         // Check if the user is not deleted and the status is approved (status = 2)
@@ -31,14 +31,17 @@ export default {
         } 
         // If the user is not deleted but the status is pending approval (status = 1)
         else if (user.isdeleted === 0 && status === 1 && this.verifyHash(password, user.password_hash)) {
-            showAlert('Your registration is not approved, try again later', 'error');
+            showAlert('Your registration is not approved, try again later.', 'error');
         } 
 				else if (user.isdeleted === 0 && status === 3 && this.verifyHash(password, user.password_hash)) {
-            showAlert('Your membership has been suspended, please contact admin', 'error');
+            showAlert('Your membership has been suspended, please contact admin.', 'error');
         } 
 				else if (user.isdeleted === 0 && status === 4 && this.verifyHash(password, user.password_hash)) {
-            showAlert('Your membership request has been rejected, please contact admin', 'error');
+            showAlert('Your membership request has been rejected, please contact admin.', 'error');
         } 
+			else if (user.isdeleted === 1){
+				showAlert('Your account has been removed, please contact membership owner or admin.')
+			}
         // If the password is incorrect
         else {
             showAlert('Wrong Password', 'error');
@@ -46,7 +49,7 @@ export default {
     } 
     // If no user with the provided email is found
     else {
-        showAlert('No user with this Email, Please register', 'error');
+        showAlert('No user with this Email, Please register.', 'error');
     }
 }
 }
