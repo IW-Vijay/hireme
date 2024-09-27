@@ -26,7 +26,7 @@
   "iconName": "headset",
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{ appsmith.store.user.role_id === 2 ? true : false }}",
+  "isVisible": "{{ appsmith.store.user.role_id === 2 || (appsmith.store.user.role_id === 4 && appsmith.store.user.membership_id !== userDataJSObject.user.data.user.membership_id) ? true : false }}",
   "key": "z4xkj14pwk",
   "leftColumn": 56,
   "minWidth": 50,

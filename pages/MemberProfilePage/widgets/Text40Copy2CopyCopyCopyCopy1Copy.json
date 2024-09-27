@@ -15,9 +15,17 @@
     },
     {
       "key": "text"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
@@ -26,7 +34,7 @@
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{ appsmith.store.user.role_id === 1 || (appsmith.store.user.role_id === 4 && appsmith.store.user.membership_id === userDataJSObject.user.data.user.membership_id) ? true : false }}",
   "key": "lpp3worjsh",
   "leftColumn": 11,
   "maxDynamicHeight": 9000,

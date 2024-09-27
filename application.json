@@ -65,7 +65,7 @@
       "isDefault": true
     },
     {
-      "id": "FamilyMemberProfilePage",
+      "id": "MemberProfilePage",
       "isDefault": false
     },
     {
@@ -90,10 +90,6 @@
     },
     {
       "id": "HelperForFuture",
-      "isDefault": false
-    },
-    {
-      "id": "MemberProfilePage",
       "isDefault": false
     }
   ],

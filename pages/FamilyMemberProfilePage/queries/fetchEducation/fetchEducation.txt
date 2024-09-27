@@ -1,1 +1,0 @@
-SELECT * FROM education_details where profile_id={{userDataJSObject.user.data.user.profile_id}};
