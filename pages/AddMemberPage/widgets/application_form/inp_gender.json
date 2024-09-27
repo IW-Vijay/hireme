@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "0.375rem",
-  "bottomRow": 71,
+  "bottomRow": 47,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "displayName": "Select",
@@ -70,7 +70,7 @@
     "Select"
   ],
   "thumbnailSVG": "/static/media/thumbnail.9aef24cb159e9c6e4d0f1d7ca4fb0c79.svg",
-  "topRow": 64,
+  "topRow": 40,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "8g46kwlbex",
