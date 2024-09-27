@@ -1,4 +1,4 @@
-SELECT p.*, ed.start_date, ed.end_date
+SELECT p.*, ed.start_date, ed.end_date, ed.specialization
 FROM Profiles p
 JOIN education_details ed ON p.profile_id = ed.profile_id
 WHERE ed.institution_id = {{institutionJSObject.institutionData.data.institution.institution_id}} 

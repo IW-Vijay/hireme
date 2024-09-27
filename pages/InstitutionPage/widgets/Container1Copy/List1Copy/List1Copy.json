@@ -88,23 +88,7 @@
   "itemSpacing": 8,
   "key": "py82mhyia1",
   "leftColumn": 1,
-  "listData": [
-    {
-      "id": "001",
-      "img": "https://assets.appsmith.com/widgets/default.png",
-      "name": "Blue"
-    },
-    {
-      "id": "002",
-      "img": "https://assets.appsmith.com/widgets/default.png",
-      "name": "Green"
-    },
-    {
-      "id": "003",
-      "img": "https://assets.appsmith.com/widgets/default.png",
-      "name": "Red"
-    }
-  ],
+  "listData": "",
   "mainCanvasId": "39d8ra20dv",
   "mainContainerId": "b082heppgc",
   "minWidth": 450,

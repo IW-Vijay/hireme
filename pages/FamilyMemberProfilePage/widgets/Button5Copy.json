@@ -1,0 +1,54 @@
+{
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 122,
+  "boxShadow": "none",
+  "buttonColor": "#ef4444",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{ appsmith.store.user.role_id === 1 || appsmith.store.user.role_id === 4 ? true : false }}",
+  "key": "pjwm3u1rie",
+  "leftColumn": 51,
+  "minWidth": 120,
+  "mobileBottomRow": 60,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 56,
+  "needsErrorInfo": false,
+  "onClick": "{{removeUser.run().then(() => {\n  navigateTo('MembershipPage', {}, 'SAME_WINDOW');\n});}}",
+  "originalBottomRow": 91,
+  "originalTopRow": 87,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "text": "Remove Member",
+  "topRow": 118,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "n69r85p4gv",
+  "widgetName": "Button5Copy"
+}

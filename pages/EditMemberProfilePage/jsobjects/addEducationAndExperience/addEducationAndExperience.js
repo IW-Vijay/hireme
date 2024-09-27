@@ -96,7 +96,7 @@ export default {
 			}
 
 			// Step 7: Navigate to profile page
-			await navigateTo('MemberProfilePage');
+			await navigateTo('AllMembersPage');
 
 		} catch (err) {
 			console.error("Error during user modification:", err);

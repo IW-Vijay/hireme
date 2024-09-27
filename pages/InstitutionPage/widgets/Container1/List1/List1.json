@@ -79,7 +79,11 @@
       "key": "listData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onItemClick"
+    }
+  ],
   "enhancements": true,
   "flexVerticalAlignment": "start",
   "gridType": "vertical",
@@ -100,6 +104,7 @@
   "mobileRightColumn": 40,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
+  "onItemClick": "",
   "originalBottomRow": 49,
   "originalTopRow": 9,
   "pageSize": 3,

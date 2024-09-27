@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 22,
+  "bottomRow": 23,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -25,8 +25,8 @@
   "leftColumn": 13,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 23,
-  "originalTopRow": 19,
+  "originalBottomRow": 22,
+  "originalTopRow": 18,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
@@ -43,7 +43,7 @@
   "text": "Contact Details",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 18,
+  "topRow": 19,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

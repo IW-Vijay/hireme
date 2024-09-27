@@ -21,14 +21,19 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
-  "fontStyle": "BOLD",
+  "fontSize": "0.8rem",
+  "fontStyle": "",
   "isLoading": false,
   "isVisible": true,
   "key": "li4z8abszw",
-  "leftColumn": 18,
+  "leftColumn": 45,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -41,7 +46,7 @@
   "parentId": "9snnqx8xf9",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 51,
+  "rightColumn": 63,
   "shouldTruncate": false,
   "text": "since {{currentItem.start_date}}",
   "textAlign": "LEFT",

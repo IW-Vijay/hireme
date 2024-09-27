@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 43,
+  "bottomRow": 55,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{institutionsJSObject.getInstitutions.data\n}}",
   "dynamicBindingPathList": [
@@ -44,7 +44,7 @@
   "mobileTopRow": 120,
   "needsErrorInfo": false,
   "onInstitutionClick": "{{navigateTo('InstitutionPage', {\n  \"institution\": institutionsWidget.model.institution\n}, 'SAME_WINDOW');}}",
-  "originalBottomRow": 43,
+  "originalBottomRow": 55,
   "originalTopRow": 8,
   "parentColumnSpace": 19.8125,
   "parentId": "0",
