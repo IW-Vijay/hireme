@@ -1,1 +1,1 @@
-SELECT * FROM profiles WHERE status = 'pending';
+select * from  profiles where membership_id in (SELECT membership_id from memberships where status_id = 1);

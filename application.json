@@ -87,6 +87,10 @@
     {
       "id": "CompanyPage",
       "isDefault": false
+    },
+    {
+      "id": "HelperForFuture",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

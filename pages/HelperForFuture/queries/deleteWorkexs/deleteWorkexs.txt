@@ -1,0 +1,2 @@
+DELETE FROM work_experience
+WHERE profile_id = {{getUserJSObject.userData.data.user.profile_id}};

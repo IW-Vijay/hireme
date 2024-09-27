@@ -1,0 +1,7 @@
+INSERT into memberships  (member_name, email, phone_number, status_id)
+VALUES (
+'{{inp_name.text}}',
+	'{{inp_email.text}}',
+	'{{inp_phone.text}}',
+	1
+) RETURNING membership_id;

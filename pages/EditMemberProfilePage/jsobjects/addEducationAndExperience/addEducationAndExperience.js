@@ -1,31 +1,9 @@
 export default {
 	modifyUser: async () => {
 		try {
-			let membership_id = getUserJSObject.userData.data.user.membership_id?getUserJSObject.userData.data.user.membership_id : '';
-			 if (inp_comid.text !== "") {
-				 let membership_details = fetchMembershipDetails.data;
-				  if (!membership_details || membership_details.length === 0) {
-							try {
-								// Attempt to create a new membership
-								await createNewMembership.run();
-
-								// Ensure that createNewMembership has completed and data is available
-								membership_id = createNewMembership.data[0].membership_id;
-							} catch (error) {
-								// Catch any error and show it as an alert
-								showAlert(`This is user is already owner of an existing community ID, please modify membership to change community ID`);
-								await inp_comid.setValue(appsmith.URL.queryParams.community_id);
-								await fetchMembershipDetails.run();
-								await inp_premiumtype.selectedOptionValue(fetchMembershipDetails.data[0].premium_type_id);
-								return;
-							}
-						}
-				 	else {
-						membership_id = membership_details[0].membership_id;
-					}
-			 	}
+			 
 			// Step 1: Update user details
-			await updateUserDetails.run({membership_id});
+			await updateUserDetails.run();
 
 			// Step 2: Get user_id from store and fetch existing institutions and organizations
 			const user_id = getUserJSObject.userData.data.user.profile_id;
@@ -118,7 +96,7 @@ export default {
 			}
 
 			// Step 7: Navigate to profile page
-			await navigateTo('AllMembersPage');
+			await navigateTo('MemberProfilePage');
 
 		} catch (err) {
 			console.error("Error during user modification:", err);

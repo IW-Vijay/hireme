@@ -46,7 +46,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{fetchCommunityID.data[0].community_member_id\n}}",
+  "text": "{{appsmith.store.user.community_member_id\n}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 30,

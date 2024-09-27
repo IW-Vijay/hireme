@@ -33,7 +33,9 @@ export default {
 			// Try to create the user
 			//showAlert(membership_id);
 			//await create_user_for_approval.run({membership_id});
-			await create_user_for_approval.run();
+			await create_membership.run();
+			const membership_id = create_membership.data[0].membership_id;
+			await create_user_for_approval.run({membership_id});
 
 			// If successful, show the modal
 			showModal(RegisteredModel.name);

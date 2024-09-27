@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66f4e75573f83b5809d9de24_2bc1e2ae-eec0-4cbe-bd9b-23543fdbbe59",
+  "id": "HelperForFuture_getInstisAndOrgsJSObject",
+  "unpublishedCollection": {
+    "name": "getInstisAndOrgsJSObject",
+    "pageId": "HelperForFuture",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

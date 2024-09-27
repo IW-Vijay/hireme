@@ -1,6 +1,7 @@
-UPDATE profiles 
-SET 
-    status = 'approved', 
-    membership_id = {{ this.params.membership_id }} 
+UPDATE memberships
+SET  
+    community_member_id = {{ this.params.community_member_id}},
+		premium_type_id = {{inp_premiumtype.selectedOptionValue}},
+		status_id = 2
 WHERE 
-    profile_id = {{ JSON.parse(appsmith.URL.queryParams.requester).profile_id }};
+    membership_id = {{ JSON.parse(appsmith.URL.queryParams.requester).membership_id }};

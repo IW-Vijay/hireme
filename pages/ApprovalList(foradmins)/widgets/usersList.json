@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 21,
+  "bottomRow": 22,
   "boxShadow": "none",
   "defaultModel": "{{\nusersJSObject.usersData.data\n}}",
   "displayName": "Custom",

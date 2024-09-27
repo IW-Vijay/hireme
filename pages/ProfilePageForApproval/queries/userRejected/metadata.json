@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE profiles SET status = 'rejected' WHERE profile_id = {{JSON.parse(appsmith.URL.queryParams.requester).profile_id}};",
+      "body": "UPDATE memberships\nSET  \n\t\tstatus_id = 4\nWHERE \n    membership_id = {{ JSON.parse(appsmith.URL.queryParams.requester).membership_id }};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

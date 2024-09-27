@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 98,
+  "bottomRow": 44,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{organizationsJSObject.getOrganizations.data\n}}",
   "dynamicBindingPathList": [
@@ -44,7 +44,7 @@
   "mobileTopRow": 120,
   "needsErrorInfo": false,
   "onOrganizationClick": "{{navigateTo('CompanyPage', {\n  \"organization\": organizationWidget.model.organization\n}, 'SAME_WINDOW');}}",
-  "originalBottomRow": 98,
+  "originalBottomRow": 44,
   "originalTopRow": 9,
   "parentColumnSpace": 19.8125,
   "parentId": "0",

@@ -2,10 +2,10 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 62,
+  "bottomRow": 67,
   "boxShadow": "none",
   "closeOnSelection": true,
-  "dateFormat": "DD/MM/YYYY",
+  "dateFormat": "MM/DD/YYYY",
   "datePickerType": "DATE_PICKER",
   "dynamicBindingPathList": [
     {
@@ -13,9 +13,17 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "maxDate"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "maxDate"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "firstDayOfWeek": 0,
   "isDisabled": false,
@@ -30,6 +38,7 @@
   "labelTextSize": "1rem",
   "labelWidth": 5,
   "leftColumn": 32,
+  "maxDate": "{{Date()}}",
   "maxDynamicHeight": 9000,
   "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
@@ -39,8 +48,8 @@
   "mobileRightColumn": 52,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "originalBottomRow": 61,
-  "originalTopRow": 54,
+  "originalBottomRow": 65,
+  "originalTopRow": 58,
   "parentColumnSpace": 17.064453125,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
@@ -49,7 +58,7 @@
   "rightColumn": 63,
   "shortcuts": false,
   "timePrecision": "minute",
-  "topRow": 55,
+  "topRow": 60,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
   "widgetId": "ozrswgn6aw",

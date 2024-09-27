@@ -7,6 +7,5 @@ SET
 		gender = {{inp_gender.selectedOptionValue}},
 		birth_date = {{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : NaN }},
     location = {{inp_location.text}},                  
-    about = {{inp_about.text}},
-    interest = {{inp_interest.text}}             
+    about = {{inp_about.text}}            
 WHERE profile_id = {{appsmith.store.user.profile_id}};

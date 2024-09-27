@@ -19,11 +19,17 @@
     },
     {
       "key": "menuItems.menuItem2.isVisible"
+    },
+    {
+      "key": "menuItems.menuItemlngvh62q3m.isVisible"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "menuItems.menuItem2.isVisible"
+    },
+    {
+      "key": "menuItems.menuItemlngvh62q3m.isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -82,7 +88,7 @@
       "id": "menuItemlngvh62q3m",
       "index": 2,
       "isDisabled": false,
-      "isVisible": true,
+      "isVisible": "{{ appsmith.store.user.role_id === 1 || appsmith.store.user.role_id === 4 ? true : false }}",
       "label": "My Family",
       "onClick": "{{navigateTo('MembershipPage', {}, 'SAME_WINDOW');}}",
       "widgetId": "n2ko9sfb68"

@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "fetchCommunityID",
     "pageId": "ApprovalList(foradmins)",
     "userSetOnLoad": false

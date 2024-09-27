@@ -43,7 +43,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{navigateTo('LandingPage', {}, 'SAME_WINDOW');}}",
+  "onClick": "{{navigateTo('HomePage', {}, 'SAME_WINDOW');}}",
   "originalBottomRow": 19,
   "originalTopRow": 15,
   "parentId": "5l5k1boxj5",

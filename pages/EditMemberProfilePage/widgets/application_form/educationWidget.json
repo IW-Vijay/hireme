@@ -3,7 +3,7 @@
   "borderColor": "#b91c1c",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 94,
+  "bottomRow": 81,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{getEducationsJSObject.educationData.data}}",
   "displayName": "Custom",

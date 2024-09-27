@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 19,
+  "bottomRow": 18,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -46,7 +46,7 @@
   "text": "{{institutionJSObject.institutionData.data.institution.address ? institutionJSObject.institutionData.data.institution.address  : 'No adress available'}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 15,
+  "topRow": 14,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

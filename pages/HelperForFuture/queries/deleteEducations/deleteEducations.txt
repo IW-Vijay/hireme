@@ -1,0 +1,2 @@
+DELETE FROM education_details
+WHERE profile_id = {{getUserJSObject.userData.data.user.profile_id}};

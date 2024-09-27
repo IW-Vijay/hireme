@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0.375rem",
   "borderWidth": "1",
-  "bottomRow": 131,
+  "bottomRow": 120,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{educationAndWorkexJsObject.workexs.data}}",
   "dynamicBindingPathList": [
@@ -34,8 +34,8 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 67,
   "needsErrorInfo": false,
-  "originalBottomRow": 131,
-  "originalTopRow": 125,
+  "originalBottomRow": 119,
+  "originalTopRow": 92,
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -48,7 +48,7 @@
     "js": "appsmith.onReady(function () {\n  const experienceDetails = document.getElementById('experienceDetails');\n  function renderWorkExperience(experience) {\n    let htmlContent = '';\n    if (experience && experience.length > 0) {\n      experience.forEach(exp => {\n        htmlContent += `\n                    <div class=\"card\">\n                        <div class=\"card-content\">\n                            <div class=\"card-row\">\n                                <div class=\"card-column organization\">${exp.organization_name}</div>\n                                <div class=\"card-column role\">${exp.position}</div>\n                                <div class=\"card-column date\">${exp.start_date} - ${exp.end_date || 'Currently Working'}</div>\n                            </div>\n                            <div class=\"card-row\">\n                                <div class=\"card-column skills\">${exp.skills}</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"card-column date\">${exp.type}</div>\n                            </div>\n                        </div>\n                    </div>\n                `;\n      });\n    } else {\n      htmlContent = '<p>No work experience details available.</p>';\n    }\n    experienceDetails.innerHTML = htmlContent;\n  }\n  function checkForWorkExperienceData() {\n    const experience = appsmith.model.workex;\n    if (experience) {\n      renderWorkExperience(experience);\n    } else {\n      // Retry after 500ms if the data is not available yet\n      setTimeout(checkForWorkExperienceData, 500);\n    }\n  }\n  checkForWorkExperienceData();\n});"
   },
   "theme": "{{appsmith.theme}}",
-  "topRow": 125,
+  "topRow": 93,
   "type": "CUSTOM_WIDGET",
   "uncompiledSrcDoc": {
     "css": "body, html {\n    margin: 0;\n    padding: 0;\n    width: 100%;\n    height: auto; /* Set height to auto */\n    font-family: Arial, sans-serif;\n\t\toverflow: hidden;\n}\n\n.experience-details {\n    padding: 20px;\n    height: auto; /* Ensure the container height adjusts to content */\n}\n\n.card {\n    border: 1px solid #ccc;\n    border-radius: 8px;\n    padding: 15px;\n    margin-bottom: 15px;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n    background-color: #fff;\n}\n\n.card-content {\n    display: flex;\n    flex-direction: column;\n}\n\n.card-row {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 5px;\n}\n\n.card-column {\n    flex: 1;\n    padding: 5px;\n}\n\n.card-column.organization {\n    font-weight: bold;\n    font-size: 16px;\n}\n\n.card-column.role {\n    text-align: center;\n}\n\n.card-column.date {\n    text-align: right;\n}\n",

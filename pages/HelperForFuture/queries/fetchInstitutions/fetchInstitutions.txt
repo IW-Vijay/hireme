@@ -1,0 +1,1 @@
+SELECT institution_id, name FROM institutions;

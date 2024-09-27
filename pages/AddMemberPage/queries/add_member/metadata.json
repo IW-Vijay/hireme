@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO profiles (profile_image, profile_name, phone_number, email, location, about, status, password_hash, birth_date, gender, role_id, membership_id)\nVALUES\n(\n\t\t'{{inp_image.model.image}}',\n    '{{inp_name.text}}',\n    '{{inp_phone.text}}',\n    '{{inp_email.text}}',\n    '{{inp_location.text}}',\n    '{{inp_about.text}}',\n\t\t'{{\"appuser\"}}',\n\t\t'{{passwordHasing.createHash(inp_password.text)}}',\n\t\t{{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : 'NULL'}},\n\t\t'{{inp_gender.selectedOptionValue}}',\n\t\t2,\n\t'{{appsmith.store.user.membership_id}}'\n)",
+      "body": "INSERT INTO profiles (membership_id, profile_image, profile_name, phone_number, email, location, about, password_hash, birth_date, gender, role_id)\nVALUES\n(\n\t\t{{appsmith.store.user.membership_id}},\n\t\t'{{inp_image.model.image}}',\n    '{{inp_name.text}}',\n    '{{inp_phone.text}}',\n    '{{inp_email.text}}',\n    '{{inp_location.text}}',\n    '{{inp_about.text}}',\n\t\t'{{passwordHasing.createHash(inp_password.text)}}',\n\t\t{{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : 'NULL'}},\n\t\t'{{inp_gender.selectedOptionLabel}}',\n\t\t2\n)",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
