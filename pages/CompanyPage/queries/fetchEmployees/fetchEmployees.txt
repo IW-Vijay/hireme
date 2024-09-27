@@ -1,0 +1,4 @@
+SELECT p.*, we.position
+FROM Profiles p
+JOIN work_experience we ON p.profile_id = we.profile_id
+WHERE we.organization_id = {{organizationJSObject.organizationData.data.organization.organization_id}} and we.end_date = '';

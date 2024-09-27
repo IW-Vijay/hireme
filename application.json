@@ -79,6 +79,14 @@
     {
       "id": "AddMemberPage",
       "isDefault": false
+    },
+    {
+      "id": "InstitutionPage",
+      "isDefault": false
+    },
+    {
+      "id": "CompanyPage",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

@@ -1,24 +1,23 @@
 {
-  "gitSyncId": "669e2437c1686e0970b3aff6_76ca2e03-488d-4d5a-8a8c-31743c761018",
+  "gitSyncId": "66f4e75573f83b5809d9de24_2aff3bd7-91bb-4a29-9071-4163dce9b098",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 380,
+          "bottomRow": 830,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 850,
+          "minHeight": 1080,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 1160,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 104,
+          "snapRows": 106,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 89,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "SchoolCollegePage",
-    "slug": "schoolcollegepage"
+    "name": "CompanyPage",
+    "slug": "companypage"
   }
 }

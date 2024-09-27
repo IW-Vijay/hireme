@@ -1,0 +1,44 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0",
+  "bottomRow": 31,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "image"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "{{institutionJSObject.institutionData.data.institution.image? institutionJSObject.institutionData.data.institution.image : 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAABW1JREFUeJzt3WuIlFUcgPHHG1aKEdsFlS6ECJUYGYFQCEIgCEEgSVAWCFEQRUEUBlEUW0QRdCMpisAKiyIICiPxQwmGCIq0WGIXKyvKRdvSvKy7fZhDkbn/dXzPzHln5vnBH0GYd86c9zx+2JkdQZIkSZIkSZIkSZIkSZIkqYUmlV6A/uNiYAXwK7C/8FqkWpgEXA+sA0aA0fTnuvT3/iOmnjQbeAT4kUYUY80PwMPArCKrlNpoArAEeB8YJg7j+DmaHrckXUfqGucADwBf01wUY80u4H7g7Ha+CCm3RcBbwGHyhHH8HE7XX9SuFyRVdSZwNzBAa6IYawaAu9LzS7VzFfAacID2hnH8HABeTeuRipoG3AZsoWwUY82WtL5prdoA6UTmAS8Cv1M+gpOZ/cALad1SS0wFbgY2Uv7AV5mN6XVMzbs96lVzgKeBvZQ/3DnnN+Cp9PqkpkwGlgGf8O/HP7p1RtLrXJZetzSm84HHgJ8of3BLzB7g0bQPEgATgaXABzT/8Y9uneG0H0vT/qgHnQc8CHxL+QNZ5/kGWAWce2rbrE6zGHgbOEL5w9dJcyTt2+Lmt1x1dxZwL/Al5Q9aN8wO4J60r+pgC4HXgYOUP1TdOAfT/i48uduhOpgO3AFspfwB6qXZCtye9l81NB94CRii/GHp5RlK92F+fLvUDqcBtwKbKH8wnP/PJuCWdJ/URnOBZ4BByh8CZ/wZTPdr7olupvKYAiwHNlD+hjunPhuAG9L9VAYXAY8Dv1D+5jr55megH7gQNW0icB3wEXCM8jfTad0cAz5M99uPtYxjJvAQsJvyN85p/+xO938m+scE4FrgPRrf/VT6Jjnl5yjwLo1z0bPfAdYH3AfspPwNceo7O2mckz56xNXAG8Ahym++0znzF7CGxvnpOjOAO4HtlN9op/NnO43zNIMOtwB4BfiT8pvqdN/8AbwMXEEHOQNYCWym/AY6vTObaZy706mpS4HngH2U3yynd2cf8CxwCRnk/BHa1MzXk6oYpfHl3pIkSZIkSVKXy/lj2eX4eX7VxwjwTtWL5AzkEP6fE6qPw2T4sgj/xZcCBiIFDEQKGIgUMBApYCBSwECkQM7/1fRK/H0Q1cdo6QVIkiRJkiRJkiRJ6lB1fuf7RuCaTNfaAzxR4fEraXwRdw5fAc9XeHw/cHmmtXwGPFnh8auA2ZnWshFYm+laPWE1+b6vdVvFtazNuJb1FdeyPuNaqh7IbRnXsrriWlrCDytKAQORAgYiBQxEChiIFDAQKWAgUsBApICBSAEDkQIGIgUMRAoYiBQwEClgIFLAQKSAgUgBA5ECBiIFDEQKGIgUMBApYCBSwECkgIFIAQORAgYiBQxEChiIFDAQKWAgUsBApICBSAEDkQIGIgUMRAoYiBQwEClgIFLAQKSAgUgBA5ECBiIFDEQKGIgUMBApMKH0AgLzgQsyXWsI+LTC4xcAszKtZS/weYXHzwGmZ1rLfuC7Co9fBMzIsxS+B7ZnupYkSZIkSZIkSZLGUeqNwhVAX6HnVucaBNa08wlLBfIFcFmh51bnGgDmtfMJ/SyWFDAQKWAgUsBApICBSAEDkQIGIgUMRAoYiBQo9U765ELPq843XHoBkiRJkiRJUr3k/jHvEuDNzNeUmnUT8HGOC+V+P2IK/iqtypuS60K+ky4FDEQKGIgUMBApYCBSwECkgIFIAQORArnfKNwF9Ge+ptSsXaUXIEmSJEmSJEmSJEmSJEmSJEmSJEm18zdwdDFR/suCZAAAAABJRU5ErkJggg=='}}",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ee6wbaq9mi",
+  "leftColumn": 1,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 32,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 12,
+  "mobileTopRow": 20,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 12,
+  "topRow": 10,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "45y10g47n4",
+  "widgetName": "Image3"
+}
