@@ -76,7 +76,11 @@
       "key": "accentColor"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onItemClick"
+    }
+  ],
   "enhancements": true,
   "flexVerticalAlignment": "start",
   "gridType": "vertical",
@@ -97,6 +101,7 @@
   "mobileRightColumn": 40,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
+  "onItemClick": "{{navigateTo('MemberProfilePage', {\n  \"member\": JSON.stringify(currentItem)\n}, 'SAME_WINDOW');}}",
   "pageSize": 3,
   "parentColumnSpace": 7.1171875,
   "parentId": "19dh65ufza",
