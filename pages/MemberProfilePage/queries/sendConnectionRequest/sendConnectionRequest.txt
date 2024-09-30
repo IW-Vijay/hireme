@@ -1,0 +1,2 @@
+INSERT INTO connection_requests (requester, requested, request_date, reason, status)
+VALUES ({{appsmith.store.user.profile_id}}, {{userDataJSObject.user.data.user.profile_id}}, CURRENT_DATE, {{inp_request_reason.text}}, 'pending');

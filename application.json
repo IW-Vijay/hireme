@@ -91,6 +91,10 @@
     {
       "id": "HelperForFuture",
       "isDefault": false
+    },
+    {
+      "id": "ConnectionRequestsPage",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

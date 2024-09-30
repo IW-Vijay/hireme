@@ -1,0 +1,3 @@
+UPDATE connection_requests
+SET status = 'rejected'
+WHERE id = {{this.params.id}};

@@ -1,0 +1,3 @@
+UPDATE connection_requests
+SET status = 'accepted'
+WHERE id = {{this.params.id}};

@@ -56,7 +56,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "Event Creation Successful",
+  "text": "Reason for request (Optional)",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",

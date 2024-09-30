@@ -1,0 +1,1 @@
+SELECT community_member_id FROM memberships where membership_id = {{userDataJSObject.user.data.user.membership_id}};

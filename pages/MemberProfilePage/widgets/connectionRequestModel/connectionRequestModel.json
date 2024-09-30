@@ -1,14 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 194,
+  "bottomRow": 204,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 180,
+      "bottomRow": 190,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -32,7 +32,7 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 560,
+      "minHeight": 190,
       "minWidth": 450,
       "mobileBottomRow": 240,
       "mobileLeftColumn": 0,
@@ -69,7 +69,7 @@
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
-  "height": 180,
+  "height": 190,
   "hideCard": false,
   "iconSVG": "/static/media/icon.47fe8500526372db96cb58a82187ffeb.svg",
   "isCanvas": true,
@@ -79,7 +79,7 @@
   "leftColumn": 21,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
-  "minHeight": 180,
+  "minHeight": 190,
   "mobileBottomRow": 38,
   "mobileLeftColumn": 21,
   "mobileRightColumn": 45,
@@ -113,6 +113,6 @@
   "type": "MODAL_WIDGET",
   "version": 2,
   "widgetId": "tnm47pfd0h",
-  "widgetName": "CreationSuccessfulModel",
-  "width": 500
+  "widgetName": "connectionRequestModel",
+  "width": 810
 }

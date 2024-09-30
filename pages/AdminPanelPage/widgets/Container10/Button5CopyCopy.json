@@ -11,7 +11,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
@@ -24,6 +28,7 @@
   "mobileRightColumn": 16,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
+  "onClick": "{{navigateTo('ConnectionRequestsPage', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 18.26171875,
   "parentId": "lp8y91gj4x",
   "parentRowSpace": 10,

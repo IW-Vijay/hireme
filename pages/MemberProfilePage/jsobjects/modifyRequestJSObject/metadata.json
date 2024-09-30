@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66f4e75573f83b5809d9de24_1032ebcf-48d8-47a5-9204-5fc2961b004b",
+  "id": "MemberProfilePage_modifyRequestJSObject",
+  "unpublishedCollection": {
+    "name": "modifyRequestJSObject",
+    "pageId": "MemberProfilePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

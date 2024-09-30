@@ -1,0 +1,1 @@
+SELECT * FROM connection_requests where requester= {{appsmith.store.user.profile_id}} and requested={{userDataJSObject.user.data.user.profile_id}};

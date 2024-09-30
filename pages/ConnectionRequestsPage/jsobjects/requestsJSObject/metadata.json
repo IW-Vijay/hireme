@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66f4e75573f83b5809d9de24_82d19fa7-ccbc-4420-bb78-33722c6252ad",
+  "id": "ConnectionRequestsPage_requestsJSObject",
+  "unpublishedCollection": {
+    "name": "requestsJSObject",
+    "pageId": "ConnectionRequestsPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

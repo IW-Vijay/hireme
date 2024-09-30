@@ -1,0 +1,4 @@
+UPDATE connection_requests
+SET status = 'pending',
+reason = {{inp_request_reason.text}}
+WHERE id = {{this.params.id}};

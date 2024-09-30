@@ -54,7 +54,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{appsmith.URL.queryParams.community_id}}",
+  "text": "{{appsmith.URL.queryParams.community_id ? appsmith.URL.queryParams.community_id : fetchCommunityID.data[0].community_member_id}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 30,
