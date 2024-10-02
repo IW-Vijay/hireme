@@ -1,0 +1,5 @@
+SELECT p.*, we.start_date, we.end_date, we.position
+FROM Profiles p
+JOIN work_experience we ON p.profile_id = we.profile_id
+JOIN organizations o ON we.organization_id = o.organization_id
+WHERE o.institution_id = {{institutionJSObject.institutionData.data.institution.institution_id}} AND we.end_date = '';

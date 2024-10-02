@@ -1,0 +1,12 @@
+UPDATE institutions
+SET 
+    image = '{{inp_image.model.image}}',
+    name = '{{inp_name.text}}',
+    phone_number = '{{inp_phone.text}}',
+    email = '{{inp_email.text}}',
+    address = '{{inp_address.text}}',
+    description = {{inp_about ? `'${inp_about.text.replace(/'/g, "''")}'` : NaN}},
+    status = 'updated'
+WHERE
+    institution_id = {{institutionJSObject.institutionData.data.institution.institution_id}}
+RETURNING *;

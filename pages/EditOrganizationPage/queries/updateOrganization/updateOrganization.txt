@@ -1,0 +1,13 @@
+UPDATE organizations
+SET 
+    image = '{{inp_image.model.image}}',
+    name = '{{inp_name.text}}',
+    phone_number = '{{inp_phone.text}}',
+    email = '{{inp_email.text}}',
+    address = '{{inp_address.text}}',
+    description = {{inp_about ? `'${inp_about.text.replace(/'/g, "''")}'` : NaN}},
+		institution_id = '{{inp_institute.selectedOptionValue}}',
+    status = 'updated'
+WHERE
+    organization_id = {{organizationJSObject.organizationData.data.organization.organization_id}}
+RETURNING *;

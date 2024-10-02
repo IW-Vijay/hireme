@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE profiles\nSET       \n    profile_name = {{inp_name.text}},                      \n    profile_image = {{inp_image.model.image}},                 \n    phone_number = {{inp_phone.text}},            \n    email = {{inp_email.text}}, \n\t\tgender = {{inp_gender.selectedOptionValue}},\n\t\tbirth_date = {{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : NaN }},\n    location = {{inp_location.text}},                  \n    about = {{inp_about.text}}            \nWHERE profile_id = {{appsmith.store.user.profile_id}};",
+      "body": "UPDATE profiles\nSET       \n    profile_name = {{inp_name.text}},                      \n    profile_image = {{inp_image.model.image}},                 \n    phone_number = {{inp_phone.text}},            \n    email = {{inp_email.text}}, \n\t\tgender = {{inp_gender.selectedOptionValue}},\n\t\tbirth_date = {{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : NaN }},\n    location = {{inp_location.text}},                  \n    about = {{inp_about ? `${inp_about.text.replace(/'/g, \"''\")}` : NaN}}          \nWHERE profile_id = {{appsmith.store.user.profile_id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -1,0 +1,19 @@
+INSERT INTO institutions (
+    image, 
+    name, 
+    phone_number, 
+    email, 
+    address, 
+    description, 
+    status
+)
+VALUES (
+    '{{inp_image.model.image}}', 
+    '{{inp_name.text}}', 
+    '{{inp_phone.text}}', 
+    '{{inp_email.text}}', 
+    '{{inp_address.text}}', 
+    {{inp_about ? `'${inp_about.text.replace(/'/g, "''")}'` : NaN}}, 
+    'new'
+)
+RETURNING institution_id;

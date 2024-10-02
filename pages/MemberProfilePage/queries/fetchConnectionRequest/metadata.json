@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "fetchConnectionRequest",
     "pageId": "MemberProfilePage",
     "userSetOnLoad": false

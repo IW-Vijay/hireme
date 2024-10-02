@@ -1,5 +1,14 @@
-SELECT p.*, ed.start_date, ed.end_date, ed.specialization
+SELECT p.*, ed.start_date, ed.end_date, ed.specialization, 's' AS category
 FROM Profiles p
 JOIN education_details ed ON p.profile_id = ed.profile_id
 WHERE ed.institution_id = {{institutionJSObject.institutionData.data.institution.institution_id}} 
-AND ed.end_date != '';
+AND ed.end_date != ''
+
+UNION ALL
+
+SELECT p.*, we.start_date, we.end_date, we.position, 'F' AS category
+FROM Profiles p
+JOIN work_experience we ON p.profile_id = we.profile_id
+JOIN organizations o ON we.organization_id = o.organization_id
+WHERE o.institution_id = {{institutionJSObject.institutionData.data.institution.institution_id}} 
+AND we.end_date != '';

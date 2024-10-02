@@ -85,15 +85,31 @@
       "isDefault": false
     },
     {
-      "id": "CompanyPage",
-      "isDefault": false
-    },
-    {
       "id": "HelperForFuture",
       "isDefault": false
     },
     {
       "id": "ConnectionRequestsPage",
+      "isDefault": false
+    },
+    {
+      "id": "InstiOrgReviewPage",
+      "isDefault": false
+    },
+    {
+      "id": "EditInstitutionPage",
+      "isDefault": false
+    },
+    {
+      "id": "EditOrganizationPage",
+      "isDefault": false
+    },
+    {
+      "id": "AddNewInstitutionPage",
+      "isDefault": false
+    },
+    {
+      "id": "organizationPage",
       "isDefault": false
     }
   ],

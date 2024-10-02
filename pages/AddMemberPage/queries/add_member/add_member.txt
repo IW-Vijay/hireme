@@ -7,7 +7,7 @@ VALUES
     '{{inp_phone.text}}',
     '{{inp_email.text}}',
     '{{inp_location.text}}',
-    '{{inp_about.text}}',
+    {{inp_about ? `'${inp_about.text.replace(/'/g, "''")}'` : NaN}},
 		'{{passwordHasing.createHash(inp_password.text)}}',
 		{{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : 'NULL'}},
 		'{{inp_gender.selectedOptionLabel}}',
