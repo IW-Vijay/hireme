@@ -1,7 +1,9 @@
-INSERT into memberships  (member_name, email, phone_number, status_id)
+INSERT into memberships  (member_name, email, phone_number, premium_type_id, status_id,community_member_id)
 VALUES (
 '{{inp_name.text}}',
 	'{{inp_email.text}}',
 	'{{inp_phone.text}}',
-	1
+	{{inp_premiumtype.selectedOptionValue}},
+	1,
+	'{{inp_membershipid.text}}'
 ) RETURNING membership_id;

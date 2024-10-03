@@ -1,0 +1,1 @@
+SELECT * FROM work_experience where organization_id = {{this.params.selected_org}}

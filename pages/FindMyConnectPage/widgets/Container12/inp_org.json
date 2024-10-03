@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 12,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "atlizku3fo",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Organization",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 44,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 15,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{resultsJSObject.result();}}",
+  "optionLabel": "name",
+  "optionValue": "organization_id",
+  "parentColumnSpace": 19.8125,
+  "parentId": "yycrsjcari",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "serverSideFiltering": false,
+  "sourceData": "{{fetch_organizations.data}}",
+  "topRow": 5,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "azt4qfocxy",
+  "widgetName": "inp_org"
+}

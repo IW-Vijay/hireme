@@ -4,7 +4,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 21,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( fetch_membership.data[0].premium_type_id))(inp_premiumtype.options, inp_premiumtype.serverSideFiltering) }}",
   "displayName": "Select",
   "dynamicBindingPathList": [
     {
@@ -12,6 +12,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",

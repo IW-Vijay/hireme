@@ -111,6 +111,10 @@
     {
       "id": "organizationPage",
       "isDefault": false
+    },
+    {
+      "id": "FindMyConnectPage",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

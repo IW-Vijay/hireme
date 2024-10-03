@@ -31,7 +31,7 @@ export default {
         } 
         // If the user is not deleted but the status is pending approval (status = 1)
         else if (user.isdeleted === 0 && status === 1 && this.verifyHash(password, user.password_hash)) {
-            showAlert('Your registration is not approved, try again later.', 'error');
+            showAlert('Your registration is not approved yet, try again later.', 'error');
         } 
 				else if (user.isdeleted === 0 && status === 3 && this.verifyHash(password, user.password_hash)) {
             showAlert('Your membership has been suspended, please contact admin.', 'error');

@@ -1,7 +1,7 @@
 export default {
 	getOrganizations() {
 		return {
-			"organizations" : fetch_organizations.data
-		}
-  }
+			"organizations": fetch_organizations.data
+		};
+	}
 }

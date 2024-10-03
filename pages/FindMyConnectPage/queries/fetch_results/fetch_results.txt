@@ -1,0 +1,6 @@
+SELECT * 
+FROM profiles 
+WHERE 
+    ({{this.params.profileIdArray.length}} = 0 OR profile_id = ANY({{this.params.profileIdArray}}))
+AND LOWER(REPLACE(TRIM(profile_name), ' ', '')) 
+    LIKE '%' || LOWER(REPLACE(TRIM({{inp_search.text}}), ' ', '')) || '%';

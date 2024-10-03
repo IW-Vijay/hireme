@@ -4,7 +4,7 @@ export default {
 		const email = inp_email.text.trim();
 		const password = inp_password.text;
 		const confirmPassword = inp_confirmpassword.text;
-		//const community_id = inp_comid.text.trim();
+		//const inp_membership_id = inp_membershipid.text.trim();
 
 		// Validate inputs
 		if (!name || !email || !password) {
@@ -16,10 +16,22 @@ export default {
 			showAlert("Passwords do not match.");
 			return;
 		}
+		
+		
+		await fetch_user.run();
+		const user = fetch_user.data;
+		console.log(user);
+
+		// If user exists (check based on how your backend returns data)
+		if (user.length > 0) {
+			showAlert("User with this email already exists, please try logging in.");
+			return;
+		}
+		
 
 		/*let membership_id = null;
 
-		if (community_id) {
+		if (inp_membership_id) {
 			await fetch_membership_id.run();
 			membership_id = fetch_membership_id.data[0].membership_id;
 
@@ -41,8 +53,11 @@ export default {
 			// If successful, show the modal
 			showModal(RegisteredModel.name);
 		} catch (error) {
-			// If there's an error, show it as an alert
-			showAlert(error);
+						if (error.message.includes("create_membership failed to execute")) {
+					showAlert("This membership id already exists, please put correct ID.");
+				} else {
+					showAlert("An error occurred: " + error.message);
+				}
 		}
 	}
 }

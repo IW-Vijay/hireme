@@ -1,0 +1,1 @@
+SELECT profile_id FROM profiles where email = {{inp_email.text}};

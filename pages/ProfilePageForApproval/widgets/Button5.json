@@ -6,7 +6,11 @@
   "buttonColor": "#7313e8",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
-  "dynamicBindingPathList": [],
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -37,7 +41,7 @@
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
   "rightColumn": 14,
-  "text": "Assign Membership ID",
+  "text": "{{fetch_membership.data[0] ? 'Review' : 'Assign'}}Membership ID",
   "topRow": 56,
   "type": "BUTTON_WIDGET",
   "version": 1,

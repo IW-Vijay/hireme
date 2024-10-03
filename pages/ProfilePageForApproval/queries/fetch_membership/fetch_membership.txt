@@ -1,0 +1,1 @@
+SELECT community_member_id, premium_type_id FROM memberships where membership_id =  {{JSON.parse(appsmith.URL.queryParams.requester).membership_id}};
