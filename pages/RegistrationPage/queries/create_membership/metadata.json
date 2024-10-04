@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT into memberships  (member_name, email, phone_number, premium_type_id, status_id,community_member_id)\nVALUES (\n'{{inp_name.text}}',\n\t'{{inp_email.text}}',\n\t'{{inp_phone.text}}',\n\t{{inp_premiumtype.selectedOptionValue}},\n\t1,\n\t'{{inp_membershipid.text}}'\n) RETURNING membership_id;",
+      "body": "INSERT into memberships  (member_name, email, phone_number, premium_type_id, status_id,community_member_id)\nVALUES (\n'{{inp_name.text}}',\n\t'{{inp_email.text}}',\n\t'{{inp_phone.text}}',\n\t{{inp_premiumtype.selectedOptionValue ? inp_premiumtype.selectedOptionValue : 1}},\n\t1,\n\t'{{inp_membershipid.text}}'\n) RETURNING membership_id;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

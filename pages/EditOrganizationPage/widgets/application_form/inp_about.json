@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "0.375rem",
-  "bottomRow": 66,
+  "bottomRow": 64,
   "boxShadow": "none",
   "defaultText": "{{organizationJSObject.organizationData.data.organization.description ? organizationJSObject.organizationData.data.organization.description : ''}}",
   "displayName": "Input",

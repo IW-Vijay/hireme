@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM profiles where membership_id = {{appsmith.store.user.membership_id}} and isDeleted = 0;",
+      "body": "SELECT * FROM profiles where membership_id = {{appsmith.store.user.membership_id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

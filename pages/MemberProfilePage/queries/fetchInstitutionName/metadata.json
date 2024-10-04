@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "fetchInstitutionName",
     "pageId": "MemberProfilePage",
     "userSetOnLoad": false

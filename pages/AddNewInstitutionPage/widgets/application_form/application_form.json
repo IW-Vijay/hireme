@@ -71,7 +71,7 @@
     ]
   },
   "borderRadius": "0",
-  "bottomRow": 99,
+  "bottomRow": 75,
   "boxShadow": "none",
   "children": [
     {
@@ -129,7 +129,7 @@
         ]
       },
       "borderRadius": "0px",
-      "bottomRow": 850,
+      "bottomRow": 610,
       "boxShadow": "none",
       "canExtend": false,
       "containerStyle": "none",
@@ -157,7 +157,7 @@
     }
   ],
   "dynamicBindingPathList": [],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "borderRadius"
@@ -170,6 +170,8 @@
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "originalBottomRow": 75,
+  "originalTopRow": 14,
   "parentColumnSpace": 74,
   "parentId": "0",
   "parentRowSpace": 40,

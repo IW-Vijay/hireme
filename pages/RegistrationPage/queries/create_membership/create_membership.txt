@@ -3,7 +3,7 @@ VALUES (
 '{{inp_name.text}}',
 	'{{inp_email.text}}',
 	'{{inp_phone.text}}',
-	{{inp_premiumtype.selectedOptionValue}},
+	{{inp_premiumtype.selectedOptionValue ? inp_premiumtype.selectedOptionValue : 1}},
 	1,
 	'{{inp_membershipid.text}}'
 ) RETURNING membership_id;

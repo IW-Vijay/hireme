@@ -20,7 +20,7 @@
   "hideCard": false,
   "iconAlign": "left",
   "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-  "inputType": "TEXT",
+  "inputType": "EMAIL",
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
@@ -51,6 +51,7 @@
     "number",
     "textarea"
   ],
+  "shouldAllowAutofill": true,
   "showStepArrows": false,
   "topRow": 37,
   "type": "INPUT_WIDGET_V2",

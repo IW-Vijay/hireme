@@ -12,4 +12,5 @@ VALUES
 	{{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : 'NULL'}},
 	'{{inp_gender.selectedOptionLabel}}',
 	4
+	{{}}
 );

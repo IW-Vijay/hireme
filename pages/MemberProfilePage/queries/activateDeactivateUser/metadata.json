@@ -1,11 +1,11 @@
 {
   "gitSyncId": "66f4e75573f83b5809d9de24_76d87f4a-15c9-4d30-9bdf-96b0116d58c4",
-  "id": "MemberProfilePage_removeUser",
+  "id": "MemberProfilePage_activateDeactivateUser",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE profiles SET isDeleted = 1 WHERE profile_id = {{userDataJSObject.user.data.user.profile_id}};",
+      "body": "UPDATE profiles SET isDeleted = {{userDataJSObject.user.data.user.isdeleted == 1 ? 0 : 1}} WHERE profile_id = {{userDataJSObject.user.data.user.profile_id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "removeUser",
+    "name": "activateDeactivateUser",
     "pageId": "MemberProfilePage",
     "userSetOnLoad": false
   }
