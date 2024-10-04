@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "0.375rem",
-  "bottomRow": 31,
+  "bottomRow": 15,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "displayName": "Select",
@@ -18,20 +18,17 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [],
   "hideCard": false,
   "iconSVG": "/static/media/icon.c94480439adb48de6883bb496aa5ef7d.svg",
   "isDeprecated": false,
-  "isDisabled": "",
+  "isDisabled": false,
   "isFilterable": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": false,
   "key": "3oyqi2wf7a",
   "labelAlignment": "left",
   "labelPosition": "Top",
@@ -76,7 +73,7 @@
     "Select"
   ],
   "thumbnailSVG": "/static/media/thumbnail.9aef24cb159e9c6e4d0f1d7ca4fb0c79.svg",
-  "topRow": 23,
+  "topRow": 7,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "1esfsx5p8e",

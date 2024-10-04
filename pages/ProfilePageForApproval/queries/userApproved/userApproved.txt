@@ -1,6 +1,6 @@
 UPDATE memberships
 SET  
-    community_member_id = {{ this.params.community_member_id}},
+    community_member_id = {{ this.params.community_member_id.replace(new RegExp("'", "gm"), "''")}},
 		premium_type_id = {{inp_premiumtype.selectedOptionValue}},
 		status_id = 2
 WHERE 

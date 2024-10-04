@@ -1,1 +1,1 @@
-INSERT INTO organizations (name) values ({{this.params.organization_name}});
+INSERT INTO organizations (name) values ({{this.params.organization_name.replace(new RegExp("'", "gm"), "''")}});

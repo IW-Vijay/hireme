@@ -3,14 +3,13 @@ VALUES
 (
 	{{this.params.membership_id}},
 	'{{inp_image.model.image}}',
-	'{{inp_name.text.replace(/'/g, "''")}}', 
-	'{{inp_phone.text}}',
-	'{{inp_email.text}}',
-	'{{inp_location.text}}',
-	'{{inp_about.text.replace(/'/g, "''")}}',
+	'{{inp_name.text.replace(new RegExp("'", "gm"), "''")}}', 
+	'{{inp_phone.text.replace(new RegExp("'", "gm"), "''")}}',
+	'{{inp_email.text.replace(new RegExp("'", "gm"), "''")}}',
+	'{{inp_location.text.replace(new RegExp("'", "gm"), "''")}}',
+	'{{inp_about.text.replace(new RegExp("'", "gm"), "''")}}',
 	'{{passwordHasing.createHash(inp_password.text)}}',
 	{{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : 'NULL'}},
 	'{{inp_gender.selectedOptionLabel}}',
 	4
-	{{}}
 );

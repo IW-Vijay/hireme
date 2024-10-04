@@ -4,6 +4,7 @@ export default {
 		const email = inp_email.text.trim();
 		const password = inp_password.text;
 		const confirmPassword = inp_confirmpassword.text;
+		let membership_id;
 		//const inp_membership_id = inp_membershipid.text.trim();
 
 		// Validate inputs
@@ -40,24 +41,26 @@ export default {
 				return;
 			}
 		}*/
-
 		try {
 			// Try to create the user
 			//showAlert(membership_id);
 			//await create_user_for_approval.run({membership_id});
 			await create_membership.run();
-			const membership_id = create_membership.data[0].membership_id;
+			membership_id = create_membership.data[0].membership_id;
 			//const about = inp_about.text.replace()(/'/g, "''");
+			
+		} catch (error) {
+					showAlert("Membership id or membership for this email already exists.");
+					return;
+		}
+		try {
 			await create_user_for_approval.run({membership_id});
 
 			// If successful, show the modal
 			showModal(RegisteredModel.name);
 		} catch (error) {
-						if (error.message.includes("create_membership failed to execute")) {
-					showAlert("This membership id already exists, please put correct ID.");
-				} else {
-					showAlert("An error occurred: " + error.message);
-				}
+			delete_membership.run({membership_id})
+			showAlert("Unable to register.");
 		}
 	}
 }

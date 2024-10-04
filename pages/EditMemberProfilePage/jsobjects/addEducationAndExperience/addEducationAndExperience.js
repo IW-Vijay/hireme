@@ -96,7 +96,12 @@ export default {
 			}
 
 			// Step 7: Navigate to profile page
-			await navigateTo('AllMembersPage');
+			await navigateTo('MemberProfilePage', {
+  "member": JSON.stringify(updateUserDetails.data[0]),
+  "rownumber": appsmith.URL.queryParams.rownumber,
+  "community_id": appsmith.store.user.community_member_id,
+  "role": inp_role.selectedOptionLabel
+});
 
 		} catch (err) {
 			console.error("Error during user modification:", err);

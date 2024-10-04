@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE institutions\nSET \n    image = '{{inp_image.model.image}}',\n    name = '{{inp_name.text}}',\n    phone_number = '{{inp_phone.text}}',\n    email = '{{inp_email.text}}',\n    address = '{{inp_address.text}}',\n    description = {{inp_about ? `'${inp_about.text.replace(/'/g, \"''\")}'` : NaN}},\n    status = 'updated'\nWHERE\n    institution_id = {{institutionJSObject.institutionData.data.institution.institution_id}}\nRETURNING *;",
+      "body": "UPDATE institutions\nSET \n    image = '{{inp_image.model.image}}',\n    name = '{{inp_name.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}',\n    phone_number = '{{inp_phone.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}',\n    email = '{{inp_email.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}',\n    address = '{{inp_address.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}',\n    description = {{inp_about ? `'${inp_about.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}'` : NaN}},\n    status = 'updated'\nWHERE\n    institution_id = {{institutionJSObject.institutionData.data.institution.institution_id}}\nRETURNING *;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

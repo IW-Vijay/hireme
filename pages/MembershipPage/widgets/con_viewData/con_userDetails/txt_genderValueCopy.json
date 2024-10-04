@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 46,
+  "bottomRow": 34,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -58,7 +58,7 @@
   "text": "{{tbl_users.selectedRow.gender? tbl_users.selectedRow.gender : 'Not provided'}}",
   "textAlign": "LEFT",
   "textColor": "#101828",
-  "topRow": 42,
+  "topRow": 30,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

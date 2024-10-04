@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66f4e75573f83b5809d9de24_88225379-c76f-4f44-9dfb-628c55b4e101",
+  "id": "MemberProfilePage_userDeletionJSObject",
+  "unpublishedCollection": {
+    "name": "userDeletionJSObject",
+    "pageId": "MemberProfilePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

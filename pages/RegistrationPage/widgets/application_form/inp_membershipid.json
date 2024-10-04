@@ -41,7 +41,7 @@
   "placeholderText": "Enter membership ID if already have a membership",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
-  "rightColumn": 53,
+  "rightColumn": 63,
   "searchTags": [
     "form",
     "text input",

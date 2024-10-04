@@ -1,12 +1,12 @@
 UPDATE profiles
 SET       
-    profile_name = {{inp_name.text}},                      
+    profile_name = {{inp_name.text.replace(new RegExp("'", "gm"), "''")}},                      
     profile_image = {{inp_image.model.image}},                 
-    phone_number = {{inp_phone.text}},            
-    email = {{inp_email.text}}, 
+    phone_number = {{inp_phone.text.replace(new RegExp("'", "gm"), "''")}},            
+    email = {{inp_email.text.replace(new RegExp("'", "gm"), "''")}}, 
 		gender = {{inp_gender.selectedOptionValue}},
 		birth_date = {{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : NaN }},
-    location = {{inp_location.text}},                  
-    about = {{inp_about ? `${inp_about.text.replace(/'/g, "''")}` : NaN}},
+    location = {{inp_location.text.replace(new RegExp("'", "gm"), "''")}},                  
+    about = {{inp_about ? `${inp_about.text.replace(new RegExp("'", "gm"), "''")}` : NaN}},
 		role_id = {{inp_role.selectedOptionValue}}
-WHERE profile_id = {{getUserJSObject.userData.data.user.profile_id}};
+WHERE profile_id = {{getUserJSObject.userData.data.user.profile_id}} RETURNING *;

@@ -46,9 +46,9 @@
     "updated_at",
     "role_id",
     "profile_image",
-    "isdeleted"
+    "isdisabled"
   ],
-  "columnUpdatedAt": 1727349281229,
+  "columnUpdatedAt": 1728040513151,
   "columnWidthMap": {
     "gender": 110,
     "name": 144
@@ -116,7 +116,7 @@
       "key": "primaryColumns.phone_number.computedValue"
     },
     {
-      "key": "primaryColumns.isdeleted.computedValue"
+      "key": "primaryColumns.isdisabled.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -366,20 +366,20 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "isdeleted": {
-      "alias": "isdeleted",
+    "isdisabled": {
+      "alias": "isdisabled",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isdeleted\"]))}}",
+      "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isdisabled\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "isdeleted",
+      "id": "isdisabled",
       "index": 15,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -388,10 +388,10 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
-      "label": "isdeleted",
+      "isVisible": true,
+      "label": "isdisabled",
       "notation": "standard",
-      "originalId": "isdeleted",
+      "originalId": "isdisabled",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
