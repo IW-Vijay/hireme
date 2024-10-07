@@ -1,15 +1,12 @@
-INSERT INTO profiles (membership_id, profile_image, profile_name, phone_number, email, location, about, password_hash, birth_date, gender, role_id)
+INSERT INTO profiles (membership_id, email, profile_image, profile_name, tagline, public_contact_info, password_hash, role_id)
 VALUES
 (
 	{{this.params.membership_id}},
-	'{{inp_image.model.image}}',
-	'{{inp_name.text.replace(new RegExp("'", "gm"), "''")}}', 
-	'{{inp_phone.text.replace(new RegExp("'", "gm"), "''")}}',
 	'{{inp_email.text.replace(new RegExp("'", "gm"), "''")}}',
-	'{{inp_location.text.replace(new RegExp("'", "gm"), "''")}}',
-	'{{inp_about.text.replace(new RegExp("'", "gm"), "''")}}',
+	'{{inp_image.model.image}}',
+	'{{inp_name.text.replace(new RegExp("'", "gm"), "''")}}',
+	'{{inp_tagline.text.replace(new RegExp("'", "gm"), "''")}}',
+	'{{inp_contact_info.text.replace(new RegExp("'", "gm"), "''")}}',
 	'{{passwordHasing.createHash(inp_password.text)}}',
-	{{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : 'NULL'}},
-	'{{inp_gender.selectedOptionLabel}}',
 	4
 );

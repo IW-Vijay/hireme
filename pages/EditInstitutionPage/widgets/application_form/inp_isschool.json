@@ -1,0 +1,43 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 26,
+  "boxShadow": "none",
+  "defaultSwitchState": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "4g7wr6nned",
+  "label": "Is a School?",
+  "labelPosition": "Left",
+  "leftColumn": 57,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 83,
+  "mobileLeftColumn": 14,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 79,
+  "needsErrorInfo": false,
+  "originalBottomRow": 35,
+  "originalTopRow": 30,
+  "parentColumnSpace": 18.880859375,
+  "parentId": "set92v0qkh",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 22,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "pl281nu0ok",
+  "widgetName": "inp_isschool"
+}

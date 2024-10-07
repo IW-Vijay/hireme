@@ -1,0 +1,1 @@
+SELECT * from institutions where isschool = TRUE;

@@ -3,13 +3,16 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "0.375rem",
-  "bottomRow": 40,
+  "bottomRow": 39,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{getUserJSObject.userData.data.user.public_contact_info ? getUserJSObject.userData.data.user.public_contact_info : \"\"}}",
   "displayName": "Input",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -21,24 +24,24 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "j65kqedbz9",
-  "label": "Phone No.",
+  "label": "Public Contact Info",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",
   "labelTextSize": "1rem",
   "labelWidth": 5,
-  "leftColumn": 32,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 79,
-  "originalTopRow": 71,
+  "originalBottomRow": 34,
+  "originalTopRow": 27,
   "parentColumnSpace": 12.0732421875,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
-  "placeholderText": "Enter phone number including country prefix",
+  "placeholderText": "Enter first & last name",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "rightColumn": 63,
@@ -52,6 +55,6 @@
   "topRow": 32,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "bh9k7ji1le",
-  "widgetName": "inp_phone"
+  "widgetId": "l99e3q1igy",
+  "widgetName": "inp_contact_info"
 }

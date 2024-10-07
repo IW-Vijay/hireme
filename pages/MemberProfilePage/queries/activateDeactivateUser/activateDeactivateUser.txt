@@ -1,1 +1,1 @@
-UPDATE profiles SET isDisabled = {{userDataJSObject.user.data.user.isDisabled == 1 ? 0 : 1}} WHERE profile_id = {{userDataJSObject.user.data.user.profile_id}};
+UPDATE profiles SET isDisabled = {{userDataJSObject.user.data.user.isdisabled == 1 ? 0 : 1}} WHERE profile_id = {{userDataJSObject.user.data.user.profile_id}};

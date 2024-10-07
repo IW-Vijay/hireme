@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 21,
+  "bottomRow": 25,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -58,7 +58,7 @@
   "text": "{{tbl_users.selectedRow.about ? tbl_users.selectedRow.about : 'No Bio Provided'}}",
   "textAlign": "LEFT",
   "textColor": "#71717a",
-  "topRow": 17,
+  "topRow": 21,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

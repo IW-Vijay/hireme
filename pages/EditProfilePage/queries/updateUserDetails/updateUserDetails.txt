@@ -1,11 +1,13 @@
 UPDATE profiles
 SET       
-    profile_name = {{inp_name.text.replace(new RegExp("'", "gm"), "''")}},                      
-    profile_image = {{inp_image.model.image}},                 
-    phone_number = {{inp_phone.text.replace(new RegExp("'", "gm"), "''")}},            
-    email = {{inp_email.text.replace(new RegExp("'", "gm"), "''")}}, 
-		gender = {{inp_gender.selectedOptionValue}},
-		birth_date = {{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : NaN }},
-    location = {{inp_location.text.replace(new RegExp("'", "gm"), "''")}},                  
-    about = {{inp_about ? `${inp_about.text.replace(new RegExp("'", "gm"), "''")}` : NaN}}          
+    profile_name = {{inp_name.text}},                      
+    profile_image = {{inp_image.model.image}}, 
+    tagline = {{inp_tagline.text}},
+    public_contact_info = {{inp_contact_info.text}},
+    phone_number = {{inp_phone.text}},            
+    email = {{inp_email.text}}, 
+    gender = {{inp_gender.selectedOptionValue}},
+    birth_date = {{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : NaN }},
+    location = {{inp_location.text}},                  
+    about = {{inp_about ? inp_about.text : NaN}}          
 WHERE profile_id = {{appsmith.store.user.profile_id}};

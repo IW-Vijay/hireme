@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO profiles (membership_id, profile_image, profile_name, phone_number, email, location, about, password_hash, birth_date, gender, role_id)\nVALUES\n(\n\t\t{{appsmith.store.user.membership_id}},\n\t\t'{{inp_image.model.image}}',\n    '{{inp_name.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}',\n    '{{inp_phone.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}',\n    '{{inp_email.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}',\n    '{{inp_location.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}',\n    {{inp_about ? `'${inp_about.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}'` : NaN}},\n\t\t'{{passwordHasing.createHash(inp_password.text)}}',\n\t\t{{inp_dob.selectedDate ? `'${inp_dob.selectedDate}'` : 'NULL'}},\n\t\t'{{inp_gender.selectedOptionLabel}}',\n\t\t2\n)",
+      "body": "INSERT INTO profiles (membership_id, profile_image, profile_name, email, tagline, public_contact_info, password_hash, role_id)\nVALUES\n(\n\t\t{{appsmith.store.user.membership_id}},\n\t\t'{{inp_image.model.image}}',\n    '{{inp_name.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}',\n    '{{inp_email.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}',\n\t\t'{{inp_tagline.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}',\n\t\t'{{inp_contact_info.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}',\n\t\t'{{passwordHasing.createHash(inp_password.text)}}',\n\t\t2\n)\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

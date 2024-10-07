@@ -32,14 +32,14 @@
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 16,
+  "rightColumn": 20,
   "searchTags": [
     "typography",
     "paragraph",
     "label"
   ],
   "shouldTruncate": false,
-  "text": "Find YourConnect",
+  "text": "Find Your Connect",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 8,

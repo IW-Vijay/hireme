@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "0.375rem",
-  "bottomRow": 51,
+  "bottomRow": 36,
   "boxShadow": "none",
-  "defaultText": "{{memeberJSObject.member.data.member.location ? memeberJSObject.member.data.member.location : \"\"}}",
+  "defaultText": "{{memeberJSObject.member.data.member.tagline ? memeberJSObject.member.data.member.tagline : \"\"}}",
   "displayName": "Input",
   "dynamicBindingPathList": [
     {
@@ -27,7 +27,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "j65kqedbz9",
-  "label": "Location",
+  "label": "Tagline",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",
@@ -41,7 +41,7 @@
   "parentColumnSpace": 12.0732421875,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
-  "placeholderText": "Enter the location",
+  "placeholderText": "Enter a tagline",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "rightColumn": 63,
@@ -52,9 +52,9 @@
     "textarea"
   ],
   "showStepArrows": false,
-  "topRow": 43,
+  "topRow": 28,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "cz355dgrg8",
-  "widgetName": "inp_location"
+  "widgetName": "inp_tagline"
 }

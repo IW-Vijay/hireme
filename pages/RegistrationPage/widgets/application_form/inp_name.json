@@ -41,7 +41,7 @@
   "placeholderText": "Enter first & last name",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
-  "rightColumn": 30,
+  "rightColumn": 63,
   "searchTags": [
     "form",
     "text input",

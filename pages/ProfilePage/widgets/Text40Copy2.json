@@ -38,7 +38,7 @@
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 24,
+  "rightColumn": 60,
   "searchTags": [
     "typography",
     "paragraph",
@@ -46,7 +46,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{appsmith.store.user.location}}",
+  "text": "{{appsmith.store.user.tagline}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 21,

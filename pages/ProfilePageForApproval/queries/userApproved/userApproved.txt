@@ -2,6 +2,7 @@ UPDATE memberships
 SET  
     community_member_id = {{ this.params.community_member_id.replace(new RegExp("'", "gm"), "''")}},
 		premium_type_id = {{inp_premiumtype.selectedOptionValue}},
-		status_id = 2
+		status_id = 2,
+		owner_id = {{JSON.parse(appsmith.URL.queryParams.requester).profile_id}}
 WHERE 
     membership_id = {{ JSON.parse(appsmith.URL.queryParams.requester).membership_id }};

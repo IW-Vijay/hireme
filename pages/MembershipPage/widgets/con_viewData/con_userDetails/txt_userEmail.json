@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 8,
+  "bottomRow": 12,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -55,10 +55,10 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{ \n  tbl_users.selectedRow.role_id \n    ? fetch_roles.data.find(role => role.role_id === tbl_users.selectedRow.role_id)?.role_name \n    : \"Role\" \n}}",
+  "text": "{{tbl_users.selectedRow.public_contact_info ? tbl_users.selectedRow.public_contact_info : 'No public contact into provided'}}",
   "textAlign": "LEFT",
   "textColor": "#101828",
-  "topRow": 4,
+  "topRow": 8,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT into memberships  (member_name, email, phone_number, premium_type_id, status_id,community_member_id)\nVALUES (\n'{{inp_name.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}',\n\t'{{inp_email.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}',\n\t'{{inp_phone.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}',\n\t{{inp_premiumtype.selectedOptionValue ? inp_premiumtype.selectedOptionValue : 1}},\n\t1,\n\t'{{inp_membershipid.text ? inp_membershipid.text.replace(new RegExp(\"'\", \"gm\"), \"''\") : NaN}}'\n) RETURNING membership_id;",
+      "body": "INSERT into memberships  (premium_type_id, status_id,community_member_id)\nVALUES (\n\t{{inp_premiumtype.selectedOptionValue ? inp_premiumtype.selectedOptionValue : 1}},\n\t1,\n\t'{{inp_membershipid.text ? inp_membershipid.text.replace(new RegExp(\"'\", \"gm\"), \"''\") : NaN}}'\n) RETURNING membership_id;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

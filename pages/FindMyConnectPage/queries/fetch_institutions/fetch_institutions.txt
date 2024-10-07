@@ -1,1 +1,1 @@
-SELECT * from institutions;
+SELECT * from institutions where isschool = FALSE;

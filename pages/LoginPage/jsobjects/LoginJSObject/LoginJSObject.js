@@ -22,7 +22,7 @@ export default {
         // Fetch status after ensuring fetchMembershipStatus has completed
         const status = fetchMembershipStatus.data[0].status_id;
 			
-				user.community_member_id = fetchMembershipStatus.data[0].community_member_id;0
+				user.community_member_id = fetchMembershipStatus.data[0].community_member_id;
         storeValue("user", user);
 
         // Check if the user is not deleted and the status is approved (status = 2)

@@ -1,8 +1,5 @@
-INSERT into memberships  (member_name, email, phone_number, premium_type_id, status_id,community_member_id)
+INSERT into memberships  (premium_type_id, status_id,community_member_id)
 VALUES (
-'{{inp_name.text.replace(new RegExp("'", "gm"), "''")}}',
-	'{{inp_email.text.replace(new RegExp("'", "gm"), "''")}}',
-	'{{inp_phone.text.replace(new RegExp("'", "gm"), "''")}}',
 	{{inp_premiumtype.selectedOptionValue ? inp_premiumtype.selectedOptionValue : 1}},
 	1,
 	'{{inp_membershipid.text ? inp_membershipid.text.replace(new RegExp("'", "gm"), "''") : NaN}}'

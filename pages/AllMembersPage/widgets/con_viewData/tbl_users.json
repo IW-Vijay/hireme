@@ -46,9 +46,11 @@
     "updated_at",
     "role_id",
     "profile_image",
-    "isdisabled"
+    "isdisabled",
+    "tagline",
+    "public_contact_info"
   ],
-  "columnUpdatedAt": 1728040513151,
+  "columnUpdatedAt": 1728288901953,
   "columnWidthMap": {
     "gender": 110,
     "name": 144
@@ -117,11 +119,95 @@
     },
     {
       "key": "primaryColumns.isdisabled.computedValue"
+    },
+    {
+      "key": "primaryColumns.tagline.computedValue"
+    },
+    {
+      "key": "primaryColumns.public_contact_info.computedValue"
+    },
+    {
+      "key": "primaryColumns.profile_name.cellBackground"
+    },
+    {
+      "key": "primaryColumns.email.cellBackground"
+    },
+    {
+      "key": "primaryColumns.phone_number.cellBackground"
+    },
+    {
+      "key": "primaryColumns.gender.cellBackground"
+    },
+    {
+      "key": "primaryColumns.location.cellBackground"
+    },
+    {
+      "key": "primaryColumns.about.cellBackground"
+    },
+    {
+      "key": "primaryColumns.membership_id.cellBackground"
+    },
+    {
+      "key": "primaryColumns.birth_date.cellBackground"
+    },
+    {
+      "key": "primaryColumns.created_at.cellBackground"
+    },
+    {
+      "key": "primaryColumns.updated_at.cellBackground"
+    },
+    {
+      "key": "primaryColumns.isdisabled.cellBackground"
+    },
+    {
+      "key": "primaryColumns.tagline.cellBackground"
+    },
+    {
+      "key": "primaryColumns.public_contact_info.cellBackground"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.profile_name.cellBackground"
+    },
+    {
+      "key": "primaryColumns.email.cellBackground"
+    },
+    {
+      "key": "primaryColumns.phone_number.cellBackground"
+    },
+    {
+      "key": "primaryColumns.gender.cellBackground"
+    },
+    {
+      "key": "primaryColumns.location.cellBackground"
+    },
+    {
+      "key": "primaryColumns.about.cellBackground"
+    },
+    {
+      "key": "primaryColumns.membership_id.cellBackground"
+    },
+    {
+      "key": "primaryColumns.birth_date.cellBackground"
+    },
+    {
+      "key": "primaryColumns.created_at.cellBackground"
+    },
+    {
+      "key": "primaryColumns.updated_at.cellBackground"
+    },
+    {
+      "key": "primaryColumns.isdisabled.cellBackground"
+    },
+    {
+      "key": "primaryColumns.tagline.cellBackground"
+    },
+    {
+      "key": "primaryColumns.public_contact_info.cellBackground"
     }
   ],
   "dynamicTriggerPathList": [
@@ -170,7 +256,7 @@
       "alias": "about",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1 ? '#ef4444' : ''))}}",
       "columnType": "text",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"about\"]))}}",
       "currencyCode": "USD",
@@ -188,7 +274,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "about",
       "notation": "standard",
       "originalId": "about",
@@ -204,7 +290,7 @@
       "alias": "birth_date",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1 ? '#ef4444' : ''))}}",
       "columnType": "date",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"birth_date\"]))}}",
       "currencyCode": "USD",
@@ -238,7 +324,7 @@
       "alias": "created_at",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1 ? '#ef4444' : ''))}}",
       "columnType": "text",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_at\"]))}}",
       "currencyCode": "USD",
@@ -272,6 +358,7 @@
       "alias": "email",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1 ? '#ef4444' : ''))}}",
       "columnType": "text",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"email\"]))}}",
       "currencyCode": "USD",
@@ -304,6 +391,7 @@
       "alias": "gender",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1 ? '#ef4444' : ''))}}",
       "columnType": "text",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"gender\"]))}}",
       "currencyCode": "USD",
@@ -370,7 +458,7 @@
       "alias": "isdisabled",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1 ? '#ef4444' : ''))}}",
       "columnType": "number",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isdisabled\"]))}}",
       "currencyCode": "USD",
@@ -404,7 +492,7 @@
       "alias": "location",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1 ? '#ef4444' : ''))}}",
       "columnType": "text",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"location\"]))}}",
       "currencyCode": "USD",
@@ -438,7 +526,7 @@
       "alias": "membership_id",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1 ? '#ef4444' : ''))}}",
       "columnType": "text",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"membership_id\"]))}}",
       "currencyCode": "USD",
@@ -456,7 +544,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "membership_id",
       "notation": "standard",
       "originalId": "membership_id",
@@ -506,7 +594,7 @@
       "alias": "phone_number",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1 ? '#ef4444' : ''))}}",
       "columnType": "text",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"phone_number\"]))}}",
       "currencyCode": "USD",
@@ -608,7 +696,7 @@
       "alias": "profile_name",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1 ? '#ef4444' : ''))}}",
       "columnType": "text",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"profile_name\"]))}}",
       "currencyCode": "USD",
@@ -630,6 +718,40 @@
       "label": "profile_name",
       "notation": "standard",
       "originalId": "profile_name",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "public_contact_info": {
+      "alias": "public_contact_info",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1 ? '#ef4444' : ''))}}",
+      "columnType": "text",
+      "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"public_contact_info\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "public_contact_info",
+      "index": 17,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "public_contact_info",
+      "notation": "standard",
+      "originalId": "public_contact_info",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -672,11 +794,45 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "tagline": {
+      "alias": "tagline",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1 ? '#ef4444' : ''))}}",
+      "columnType": "text",
+      "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tagline\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "tagline",
+      "index": 16,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "tagline",
+      "notation": "standard",
+      "originalId": "tagline",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "updated_at": {
       "alias": "updated_at",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1 ? '#ef4444' : ''))}}",
       "columnType": "text",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"updated_at\"]))}}",
       "currencyCode": "USD",

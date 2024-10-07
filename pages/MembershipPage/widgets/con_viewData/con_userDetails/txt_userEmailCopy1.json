@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 51,
+  "bottomRow": 17,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -12,44 +12,56 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
-  "fontStyle": "BOLD",
+  "fontSize": "0.875rem",
+  "fontStyle": "",
   "hideCard": false,
-  "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.a47d6d5dbbb718c4dc4b2eb4f218c1b7.svg",
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "lpp3worjsh",
+  "key": "jl31nlbh5s",
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 33,
-  "originalTopRow": 29,
+  "minWidth": 450,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 5,
+  "originalBottomRow": 8,
+  "originalTopRow": 4,
   "overflow": "NONE",
-  "parentColumnSpace": 19.8125,
-  "parentId": "0",
+  "parentColumnSpace": 5.5732421875,
+  "parentId": "onifsuyjbl",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 8,
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
   "searchTags": [
     "typography",
     "paragraph",
     "label"
   ],
-  "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "About",
+  "tags": [
+    "Suggested",
+    "Content"
+  ],
+  "text": "{{tbl_users.selectedRow.tagline}}",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
-  "topRow": 47,
+  "textColor": "#101828",
+  "topRow": 13,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "a70pz37bnj",
-  "widgetName": "Text40Copy2CopyCopyCopyCopy2"
+  "widgetId": "f4rb3zwiaa",
+  "widgetName": "txt_userEmailCopy1"
 }

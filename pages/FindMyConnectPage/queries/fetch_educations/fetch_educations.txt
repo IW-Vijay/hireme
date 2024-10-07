@@ -1,1 +1,3 @@
-SELECT * FROM education_details where institution_id = {{this.params.selected_uni}};
+SELECT * 
+FROM education_details 
+WHERE institution_id = {{this.params.selected_uni}};

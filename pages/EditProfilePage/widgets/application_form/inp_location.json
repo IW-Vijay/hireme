@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "0.375rem",
-  "bottomRow": 53,
+  "bottomRow": 67,
   "boxShadow": "none",
   "defaultText": "{{getUserJSObject.userData.data.user.location ? getUserJSObject.userData.data.user.location : \"\"}}",
   "displayName": "Input",
@@ -52,7 +52,7 @@
     "textarea"
   ],
   "showStepArrows": false,
-  "topRow": 45,
+  "topRow": 59,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "cz355dgrg8",

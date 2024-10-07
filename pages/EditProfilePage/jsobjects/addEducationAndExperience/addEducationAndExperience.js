@@ -96,7 +96,9 @@ export default {
 
 			// Step 6: Fetch updated user data and store it
 			await fetchUpdatedUser.run();
-			await storeValue("user", fetchUpdatedUser.data[0]);
+			const user =  fetchUpdatedUser.data[0];
+			user.community_member_id = appsmith.store.user.community_member_id;
+			await storeValue("user", user);
 
 			// Step 7: Navigate to profile page
 			await navigateTo('ProfilePage');

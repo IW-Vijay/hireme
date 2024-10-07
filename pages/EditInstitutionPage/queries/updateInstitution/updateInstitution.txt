@@ -6,7 +6,8 @@ SET
     email = '{{inp_email.text.replace(new RegExp("'", "gm"), "''")}}',
     address = '{{inp_address.text.replace(new RegExp("'", "gm"), "''")}}',
     description = {{inp_about ? `'${inp_about.text.replace(new RegExp("'", "gm"), "''")}'` : NaN}},
-    status = 'updated'
+    status = 'updated',
+		isschool = {{inp_isschool.isSwitchedOn}}
 WHERE
     institution_id = {{institutionJSObject.institutionData.data.institution.institution_id}}
 RETURNING *;

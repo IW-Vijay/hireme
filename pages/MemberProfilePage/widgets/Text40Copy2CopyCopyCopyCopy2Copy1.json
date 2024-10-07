@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 62,
+  "bottomRow": 72,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -28,8 +28,8 @@
   "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 62,
-  "originalTopRow": 58,
+  "originalBottomRow": 72,
+  "originalTopRow": 68,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
@@ -46,7 +46,7 @@
   "text": "Education",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 58,
+  "topRow": 68,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

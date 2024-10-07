@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 42,
+  "bottomRow": 45,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -58,7 +58,7 @@
   "text": "{{new Date(tbl_users.selectedRow.birth_date).toDateString().substring(3)? new Date(tbl_users.selectedRow.birth_date).toDateString().substring(3) : 'Not Provided'}}",
   "textAlign": "LEFT",
   "textColor": "#101828",
-  "topRow": 38,
+  "topRow": 41,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

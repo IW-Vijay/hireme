@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0.375rem",
   "borderWidth": "1",
-  "bottomRow": 69,
+  "bottomRow": 89,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{educationAndWorkexJsObject.educations.data}}",
   "dynamicBindingPathList": [
@@ -34,8 +34,8 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 67,
   "needsErrorInfo": false,
-  "originalBottomRow": 69,
-  "originalTopRow": 62,
+  "originalBottomRow": 89,
+  "originalTopRow": 72,
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -48,7 +48,7 @@
     "js": "appsmith.onReady(function () {\n  const educationDetails = document.getElementById('educationDetails');\n  function renderEducation(education) {\n    let htmlContent = '';\n    if (education && education.length > 0) {\n      education.forEach(edu => {\n        htmlContent += `\n                    <div class=\"card\">\n                        <div class=\"card-content\">\n                            <div class=\"card-row\">\n                                <div class=\"card-column institution\">${edu.institution_name}</div>\n                                <div class=\"card-column degree\">${edu.degree}</div>\n                                <div class=\"card-column date\">${edu.start_date} - ${edu.end_date || 'Present'}</div>\n                            </div>\n                            <div class=\"card-row\">\n                                <div class=\"card-column\">${edu.specialization}</div>\n                                <div class=\"card-column marks\">${edu.marks} %/CGPA</div>\n                            </div>\n                        </div>\n                    </div>\n                `;\n      });\n    } else {\n      htmlContent = '<p>No education details available.</p>';\n    }\n    educationDetails.innerHTML = htmlContent;\n  }\n  function checkForData() {\n    const education = appsmith.model.education;\n    if (education) {\n      renderEducation(education);\n    } else {\n      // Retry after 500ms if the data is not available yet\n      setTimeout(checkForData, 500);\n    }\n  }\n  checkForData();\n});"
   },
   "theme": "{{appsmith.theme}}",
-  "topRow": 62,
+  "topRow": 72,
   "type": "CUSTOM_WIDGET",
   "uncompiledSrcDoc": {
     "css": "body, html {\n    margin: 0;\n    padding: 0;\n    width: 100%;\n    height: auto; /* Set height to auto */\n    font-family: Arial, sans-serif;\n\t\toverflow: hidden;\n}\n\n.education-details {\n    padding: 20px;\n    height: auto; /* Ensure the container height adjusts to content */\n}\n\n.card {\n    border: 1px solid #ccc;\n    border-radius: 8px;\n    padding: 15px;\n    margin-bottom: 15px;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n    background-color: #fff;\n}\n\n.card-content {\n    display: flex;\n    flex-direction: column;\n}\n\n.card-row {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 5px;\n}\n\n.card-column {\n    flex: 1;\n    padding: 5px;\n}\n\n.card-column.institution {\n    font-weight: bold;\n    font-size: 18px;\n}\n\n.card-column.marks, .card-column.date {\n    text-align: right;\n}\n\n.card-column.degree {\n    text-align: center;\n}\n",

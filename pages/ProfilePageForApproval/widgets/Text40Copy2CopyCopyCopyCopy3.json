@@ -46,7 +46,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{JSON.parse(appsmith.URL.queryParams.requester).phone_number ? JSON.parse(appsmith.URL.queryParams.requester).phone_number  : \"Not Provided\"}}",
+  "text": "{{JSON.parse(appsmith.URL.queryParams.requester).public_contact_info ? JSON.parse(appsmith.URL.queryParams.requester).public_contact_info : \"Not Provided\"}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 35,
