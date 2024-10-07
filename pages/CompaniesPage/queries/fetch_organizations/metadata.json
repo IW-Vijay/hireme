@@ -23,7 +23,7 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "fetch_organizations",
     "pageId": "CompaniesPage",
     "userSetOnLoad": false
