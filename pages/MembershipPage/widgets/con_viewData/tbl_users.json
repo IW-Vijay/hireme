@@ -118,6 +118,27 @@
     },
     {
       "key": "primaryColumns.isdisabled.computedValue"
+    },
+    {
+      "key": "primaryColumns.profile_name.cellBackground"
+    },
+    {
+      "key": "primaryColumns.email.cellBackground"
+    },
+    {
+      "key": "primaryColumns.phone_number.cellBackground"
+    },
+    {
+      "key": "primaryColumns.location.cellBackground"
+    },
+    {
+      "key": "primaryColumns.gender.cellBackground"
+    },
+    {
+      "key": "primaryColumns.birth_date.cellBackground"
+    },
+    {
+      "key": "primaryColumns.about.cellBackground"
     }
   ],
   "dynamicPropertyPathList": [
@@ -194,7 +215,7 @@
       "alias": "about",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1? \"#ef4444\" : \"\"))}}",
       "columnType": "text",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"about\"]))}}",
       "currencyCode": "USD",
@@ -228,7 +249,7 @@
       "alias": "birth_date",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1? \"#ef4444\" : \"\"))}}",
       "columnType": "date",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"birth_date\"]))}}",
       "currencyCode": "USD",
@@ -296,7 +317,7 @@
       "alias": "email",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1? \"#ef4444\" : \"\"))}}",
       "columnType": "text",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"email\"]))}}",
       "currencyCode": "USD",
@@ -328,7 +349,7 @@
       "alias": "gender",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1? \"#ef4444\" : \"\"))}}",
       "columnType": "text",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"gender\"]))}}",
       "currencyCode": "USD",
@@ -428,7 +449,7 @@
       "alias": "location",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1? \"#ef4444\" : \"\"))}}",
       "columnType": "text",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"location\"]))}}",
       "currencyCode": "USD",
@@ -530,7 +551,7 @@
       "alias": "phone_number",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1? \"#ef4444\" : \"\"))}}",
       "columnType": "text",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"phone_number\"]))}}",
       "currencyCode": "USD",
@@ -632,7 +653,7 @@
       "alias": "profile_name",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow.isdisabled == 1? \"#ef4444\" : \"\"))}}",
       "columnType": "text",
       "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"profile_name\"]))}}",
       "currencyCode": "USD",
