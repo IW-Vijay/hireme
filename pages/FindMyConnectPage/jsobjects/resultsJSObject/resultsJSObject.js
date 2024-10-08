@@ -66,7 +66,7 @@ export default {
     }
 
     // If the intersection or single filter results in no profile IDs, return an empty array
-    if (profileIdArray.length === 0) {
+    if (profileIdArray.length === 0 && !search_input) {
       return [];
     }
 

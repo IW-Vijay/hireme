@@ -8,6 +8,14 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -16,7 +24,7 @@
     }
   ],
   "iconName": "edit",
-  "isDisabled": false,
+  "isDisabled": "{{educationAndWorkexJsObject.workexs.data.workex && educationAndWorkexJsObject.educations.data.education ? 'false' : 'true'}}",
   "isLoading": false,
   "isVisible": true,
   "key": "z4xkj14pwk",
