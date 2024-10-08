@@ -10,7 +10,8 @@ export default {
 			// Replace organization_id with organization name
 			return {
 				...education,
-				institution_name: fetchInstitutionName.data[0]?.name || 'Unknown'
+				institution_name: fetchInstitutionName.data[0]?.name || 'Unknown',
+				institution : fetchInstitutionName.data
 			};
 		}));
 	
@@ -27,7 +28,8 @@ export default {
 			// Replace organization_id with organization name
 			return {
 				...workex,
-				organization_name: fetchOrganizationName.data[0]?.name || 'Unknown'
+				organization_name: fetchOrganizationName.data[0]?.name || 'Unknown',
+				organization : fetchOrganizationName.data
 			};
 		}));
 

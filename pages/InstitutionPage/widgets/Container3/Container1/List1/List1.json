@@ -94,7 +94,7 @@
   "itemBackgroundColor": "#FFFFFF",
   "itemSpacing": 8,
   "key": "py82mhyia1",
-  "leftColumn": 1,
+  "leftColumn": 2,
   "listData": "{{fetchStudents.data}}",
   "mainCanvasId": "86rtzmle4v",
   "mainContainerId": "lviireb63q",

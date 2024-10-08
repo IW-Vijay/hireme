@@ -1,6 +1,6 @@
 {
   "gitSyncId": "66e1b24a73f83b5809d9d6b5_10f43998-2a12-4bd3-9218-e3a360fa7b3f",
-  "id": "MembershipPage_fetch_uesrs",
+  "id": "MembershipPage_fetch_users",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "fetch_uesrs",
+    "name": "fetch_users",
     "pageId": "MembershipPage",
     "userSetOnLoad": false
   }

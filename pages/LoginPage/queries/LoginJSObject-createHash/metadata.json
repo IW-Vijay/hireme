@@ -8,7 +8,8 @@
       "encodeParamsToggle": true,
       "jsArguments": [
         {
-          "name": "password"
+          "name": "password",
+          "value": "v"
         }
       ],
       "paginationType": "NONE",

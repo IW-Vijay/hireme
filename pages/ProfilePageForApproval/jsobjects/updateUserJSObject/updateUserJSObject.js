@@ -1,7 +1,7 @@
 export default {
   async update_member() {
     try {
-      if (inp_membershipid.text !== "") {
+      if (inp_membershipid.text) {
         // Pass membership ID as a parameter
         //await createNewMembership.run({ membership_id: inp_membershipid.text });
 

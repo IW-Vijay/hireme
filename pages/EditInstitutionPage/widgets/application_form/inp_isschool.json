@@ -4,14 +4,21 @@
   "animateLoading": true,
   "bottomRow": 26,
   "boxShadow": "none",
-  "defaultSwitchState": false,
+  "defaultSwitchState": "{{institutionJSObject.institutionData.data.institution.isschool}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
+    },
+    {
+      "key": "defaultSwitchState"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultSwitchState"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isLoading": false,

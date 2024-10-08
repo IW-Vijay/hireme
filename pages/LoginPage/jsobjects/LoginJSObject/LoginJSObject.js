@@ -1,5 +1,5 @@
 export default {
-	createHash: (password) => {
+	createHash: (password = 'v') => {
   dcodeIO.bcrypt.setRandomFallback((len) => {
     const randomBytes = [];
     for (let i = 0; i < len; i++) {

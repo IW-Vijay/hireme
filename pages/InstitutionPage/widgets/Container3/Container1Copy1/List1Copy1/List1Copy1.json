@@ -104,7 +104,7 @@
   "mobileRightColumn": 40,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onItemClick": "",
+  "onItemClick": "{{navigateTo('MemberProfilePage', {\n  \"member\": JSON.stringify(currentItem)\n}, 'SAME_WINDOW');}}",
   "pageSize": 3,
   "parentColumnSpace": 7.1171875,
   "parentId": "ttxeksghh3",

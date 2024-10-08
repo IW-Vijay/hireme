@@ -1,1 +1,1 @@
-SELECT name FROM institutions where institution_id = {{this.params.institution_id}};
+SELECT * FROM institutions where institution_id = {{this.params.institution_id}};

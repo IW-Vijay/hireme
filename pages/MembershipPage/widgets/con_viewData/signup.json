@@ -7,7 +7,16 @@
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "displayName": "Button",
-  "dynamicBindingPathList": [],
+  "dynamicBindingPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -19,7 +28,7 @@
   "iconSVG": "https://appcdn.appsmith.com/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
   "isDefaultClickDisabled": true,
   "isDeprecated": false,
-  "isDisabled": false,
+  "isDisabled": "{{fetch_users.data.filter(user => user.isdisabled === 0).length >= 4 ? 'true' : 'false'}}",
   "isLoading": false,
   "isVisible": true,
   "key": "wvi3t76jwl",

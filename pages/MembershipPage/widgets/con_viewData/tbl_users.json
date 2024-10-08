@@ -845,7 +845,7 @@
   "rightColumn": 37,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{fetch_uesrs.data}}",
+  "tableData": "{{fetch_users.data}}",
   "tags": [
     "Suggested",
     "Display"

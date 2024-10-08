@@ -22,7 +22,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "fullyQualifiedName": "userDataJSObject.user",
     "name": "user",
     "pageId": "MemberProfilePage",
