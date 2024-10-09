@@ -33,7 +33,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{isInstitute.isSwitchedOn}}",
+  "isVisible": "{{isInstitute.isSwitchedOn ? isInstitute.isSwitchedOn : 'false'}}",
   "key": "cn6ns40lt3",
   "labelAlignment": "left",
   "labelPosition": "Top",

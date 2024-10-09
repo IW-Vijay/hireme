@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 26,
+  "bottomRow": 23,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -28,8 +28,8 @@
   "leftColumn": 22,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 23,
-  "originalTopRow": 19,
+  "originalBottomRow": 26,
+  "originalTopRow": 22,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
@@ -46,7 +46,7 @@
   "text": "{{ institutionJSObject.institutionData.data.institution.phone_number || institutionJSObject.institutionData.data.institution.email \n    ? `${institutionJSObject.institutionData.data.institution.phone_number ? institutionJSObject.institutionData.data.institution.phone_number : ''}/${institutionJSObject.institutionData.data.institution.email ? institutionJSObject.institutionData.data.institution.email : ''}` \n    : 'Not available'\n}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 22,
+  "topRow": 19,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
