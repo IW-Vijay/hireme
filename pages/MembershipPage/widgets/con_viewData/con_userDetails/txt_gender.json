@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 25,
+  "bottomRow": 32,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -18,6 +18,11 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textAlign"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "0.875rem",
@@ -44,7 +49,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 61,
+  "rightColumn": 63,
   "searchTags": [
     "typography",
     "paragraph",
@@ -56,7 +61,7 @@
     "Content"
   ],
   "text": "{{tbl_users.selectedRow.about ? tbl_users.selectedRow.about : 'No Bio Provided'}}",
-  "textAlign": "LEFT",
+  "textAlign": "JUSTIFY",
   "textColor": "#71717a",
   "topRow": 21,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",

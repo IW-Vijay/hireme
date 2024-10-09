@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0.375rem",
   "borderWidth": "1",
-  "bottomRow": 54,
+  "bottomRow": 98,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -52,6 +52,7 @@
   ],
   "columnUpdatedAt": 1728288901953,
   "columnWidthMap": {
+    "email": 191,
     "gender": 110,
     "name": 144
   },
@@ -245,7 +246,7 @@
   "needsHeightForContent": true,
   "onPageChange": "{{fetch_users.run()}}",
   "onRowSelected": "{{fetch_community_id.run()}}",
-  "originalBottomRow": 54,
+  "originalBottomRow": 98,
   "originalTopRow": 10,
   "parentColumnSpace": 19.8125,
   "parentId": "5xz1epy6ib",
