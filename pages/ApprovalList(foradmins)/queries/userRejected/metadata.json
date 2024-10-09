@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE profiles SET status = 'rejected' WHERE profile_id = {{usersList.model.selectedUser.profile_id}} returning *;",
+      "body": "UPDATE memberships\nSET  \n\t\tstatus_id = 4\nWHERE \n    membership_id = {{usersList.model.selectedUser.membership_id }};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
