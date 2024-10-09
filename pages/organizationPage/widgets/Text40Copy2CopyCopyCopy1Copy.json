@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 26,
+  "bottomRow": 35,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -15,6 +15,11 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textAlign"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "Inter",
   "fontSize": "1rem",
@@ -25,11 +30,11 @@
   "isLoading": false,
   "isVisible": true,
   "key": "lpp3worjsh",
-  "leftColumn": 13,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 31,
-  "originalTopRow": 22,
+  "originalBottomRow": 35,
+  "originalTopRow": 31,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
@@ -44,9 +49,9 @@
   "shouldScrollContents": true,
   "shouldTruncate": false,
   "text": "{{organizationJSObject.organizationData.data.organization.description ? organizationJSObject.organizationData.data.organization.description  : 'No description'}}",
-  "textAlign": "LEFT",
+  "textAlign": "JUSTIFY",
   "textColor": "#231F20",
-  "topRow": 22,
+  "topRow": 31,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

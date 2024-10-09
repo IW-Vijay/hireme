@@ -5,6 +5,8 @@ export default {
     const selected_school = inp_school.selectedOptionValue;
     const selected_org = inp_org.selectedOptionValue;
     const search_input = inp_search.text;
+		
+		//showAlert(selected_uni.toString());
 
     // If no search input or filters are applied, return an empty array
     if (!search_input && !selected_uni && !selected_school && !selected_org) {
@@ -12,6 +14,7 @@ export default {
     }
 
     let filterSets = [];
+		
 
     // Fetch profile IDs from the selected university
     if (selected_uni) {
@@ -29,7 +32,7 @@ export default {
 
     // Fetch profile IDs from the selected school
     if (selected_school) {
-      await fetch_educations.run({ selected_school });
+      await fetch_educations.run({"selected_uni" : selected_school});
       const school_fil = fetch_educations.data || [];
       const school_profileIds = school_fil.map(experience => experience.profile_id);
 

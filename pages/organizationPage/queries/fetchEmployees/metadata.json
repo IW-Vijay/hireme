@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT p.*, we.position, we.start_date, we.end_date\nFROM Profiles p\nJOIN work_experience we ON p.profile_id = we.profile_id\nWHERE we.organization_id = {{organizationJSObject.organizationData.data.organization.organization_id}} \nAND we.end_date = '';",
+      "body": "SELECT p.*, we.position, we.start_date, we.end_date\nFROM Profiles p\nJOIN work_experience we ON p.profile_id = we.profile_id\nWHERE we.organization_id = {{organizationJSObject.organizationData.data.organization.organization_id}} \nAND (we.end_date = '' OR TO_DATE(we.end_date || '-01', 'YYYY-MM-DD') >= CURRENT_DATE);",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

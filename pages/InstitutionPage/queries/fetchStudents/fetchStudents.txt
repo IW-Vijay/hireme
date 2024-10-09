@@ -2,4 +2,4 @@ SELECT p.*,  ed.start_date, ed.end_date, ed.specialization
 FROM Profiles p
 JOIN education_details ed ON p.profile_id = ed.profile_id
 WHERE ed.institution_id = {{institutionJSObject.institutionData.data.institution.institution_id}} 
-AND ed.end_date = '';
+AND (ed.end_date = '' OR TO_DATE(ed.end_date || '-01', 'YYYY-MM-DD') >= CURRENT_DATE);

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "0.375rem",
-  "bottomRow": 152,
+  "bottomRow": 138,
   "boxShadow": "none",
   "buttonColor": "#7313e8",
   "buttonVariant": "PRIMARY",
@@ -44,7 +44,7 @@
     "submit"
   ],
   "text": "Update Profile",
-  "topRow": 147,
+  "topRow": 133,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "5akvnnoqql",

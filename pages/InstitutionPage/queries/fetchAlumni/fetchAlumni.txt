@@ -2,7 +2,7 @@ SELECT p.*, ed.start_date, ed.end_date, ed.specialization, 's' AS category
 FROM Profiles p
 JOIN education_details ed ON p.profile_id = ed.profile_id
 WHERE ed.institution_id = {{institutionJSObject.institutionData.data.institution.institution_id}} 
-AND ed.end_date != ''
+AND (ed.end_date != '' AND TO_DATE(ed.end_date || '-01', 'YYYY-MM-DD') < CURRENT_DATE)
 
 UNION ALL
 
@@ -11,4 +11,4 @@ FROM Profiles p
 JOIN work_experience we ON p.profile_id = we.profile_id
 JOIN organizations o ON we.organization_id = o.organization_id
 WHERE o.institution_id = {{institutionJSObject.institutionData.data.institution.institution_id}} 
-AND we.end_date != '';
+AND (we.end_date != '' AND TO_DATE(we.end_date || '-01', 'YYYY-MM-DD') < CURRENT_DATE);

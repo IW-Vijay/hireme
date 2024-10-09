@@ -2,4 +2,4 @@ SELECT p.*, we.position, we.start_date, we.end_date
 FROM Profiles p
 JOIN work_experience we ON p.profile_id = we.profile_id
 WHERE we.organization_id = {{organizationJSObject.organizationData.data.organization.organization_id}} 
-AND we.end_date = '';
+AND (we.end_date = '' OR TO_DATE(we.end_date || '-01', 'YYYY-MM-DD') >= CURRENT_DATE);

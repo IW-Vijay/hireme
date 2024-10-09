@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * \nFROM education_details \nWHERE ({{this.params.selected_uni}} = 0 OR institution_id = {{this.params.selected_uni}});",
+      "body": "SELECT * \nFROM education_details \nWHERE ({{this.params.selected_uni}} = -1 OR institution_id = {{this.params.selected_uni}});",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
