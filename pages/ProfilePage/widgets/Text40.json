@@ -31,7 +31,7 @@
   "leftColumn": 13,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "overflow": "TRUNCATE",
+  "overflow": "SCROLL",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
