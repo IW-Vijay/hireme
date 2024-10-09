@@ -2,7 +2,7 @@
   "backgroundColor": "#FFFFFF",
   "borderColor": "#ffffff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "1",
+  "borderWidth": "0",
   "bottomRow": 16,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{\n  \"image\": \"{{getUserJSObject.userData.data.user.profile_image ? getUserJSObject.userData.data.user.profile_image : \"\"}}\"\n}",
