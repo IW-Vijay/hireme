@@ -5,7 +5,7 @@
   "borderWidth": "1",
   "bottomRow": 19,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultModel": "{\n  \"image\": \"{{memeberJSObject.member.data.member.profile_image  != 'null'? memeberJSObject.member.data.member.profile_image : \"\"}}\"\n}",
+  "defaultModel": "{\n  \"image\": \"{{memeberJSObject.member.data.member.profile_image ? memeberJSObject.member.data.member.profile_image : \"\"}}\"\n}",
   "displayName": "Custom",
   "dynamicBindingPathList": [
     {

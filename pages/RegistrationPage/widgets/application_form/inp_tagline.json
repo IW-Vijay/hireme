@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "0.375rem",
-  "bottomRow": 39,
+  "bottomRow": 42,
   "boxShadow": "none",
   "defaultText": "",
   "displayName": "Input",
@@ -50,7 +50,7 @@
     "textarea"
   ],
   "showStepArrows": false,
-  "topRow": 31,
+  "topRow": 34,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "cz355dgrg8",

@@ -9,12 +9,12 @@
   "animateLoading": true,
   "backgroundColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 43,
+  "bottomRow": 63,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 400,
+      "bottomRow": 600,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -59,6 +59,7 @@
     }
   ],
   "currentItemsView": "{{[]}}",
+  "defaultSelectedItem": "",
   "dynamicBindingPathList": [
     {
       "key": "currentItemsView"
@@ -101,7 +102,7 @@
   "itemSpacing": 8,
   "key": "l505k96eum",
   "leftColumn": 1,
-  "listData": "{{appsmith.store.results}}",
+  "listData": "{{(inp_search.text  == ''&& !inp_school.selectedOptionValue && !inp_uni.selectedOptionValue && !inp_org.selectedOptionValue) ? [] : appsmith.store.results}}",
   "mainCanvasId": "xzcoprt533",
   "mainContainerId": "pgagij045d",
   "minWidth": 450,
@@ -111,7 +112,7 @@
   "mobileTopRow": 3,
   "needsErrorInfo": false,
   "onItemClick": "{{navigateTo('MemberProfilePage', {\n \"member\" : JSON.stringify(currentItem)\n}, 'SAME_WINDOW');}}",
-  "pageSize": 3,
+  "pageSize": 5,
   "parentColumnSpace": 18.26171875,
   "parentId": "lp8y91gj4x",
   "parentRowSpace": 10,
@@ -121,6 +122,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "selectedItemView": "{{{}}}",
+  "serverSidePagination": false,
   "templateHeight": 160,
   "topRow": 3,
   "triggeredItemView": "{{{}}}",

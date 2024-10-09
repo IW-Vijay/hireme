@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "67036dee73f83b5809d9e299_cf55dca5-f9e9-48f7-9bf1-7c1f35f61a87",
+  "id": "MemberProfilePage_activateAndDeactiveUserJSObj",
+  "unpublishedCollection": {
+    "name": "activateAndDeactiveUserJSObj",
+    "pageId": "MemberProfilePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

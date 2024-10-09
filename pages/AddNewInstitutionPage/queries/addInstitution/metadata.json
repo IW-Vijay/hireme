@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO institutions (\n    image, \n    name, \n    phone_number, \n    email, \n    address, \n    description, \n    status\n)\nVALUES (\n    '{{inp_image.model.image}}', \n    '{{inp_name.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}', \n    '{{inp_phone.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}', \n    '{{inp_email.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}', \n    '{{inp_address.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}', \n    {{inp_about ? `'${inp_about.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}'` : NaN}}, \n    'new'\n)\nRETURNING institution_id;\n",
+      "body": "INSERT INTO institutions (\n    image, \n    name, \n    phone_number, \n    email, \n    address, \n    description, \n    status\n)\nVALUES (\n    {{inp_image.model.image ? inp_image.model.image : NaN }}, \n    '{{inp_name.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}', \n    '{{inp_phone.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}', \n    '{{inp_email.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}', \n    '{{inp_address.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}}', \n    {{inp_about ? `'${inp_about.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}'` : NaN}}, \n    'new'\n)\nRETURNING institution_id;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

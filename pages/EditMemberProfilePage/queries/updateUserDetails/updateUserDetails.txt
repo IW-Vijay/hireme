@@ -1,7 +1,7 @@
 UPDATE profiles
 SET       
     profile_name = {{inp_name.text}},                      
-    profile_image = {{inp_image.model.image}},                 
+    profile_image = {{inp_image.model.image ? inp_image.model.image : NaN }},                 
     phone_number = {{inp_phone.text}},
 		tagline = {{inp_tagline.text}},
 		public_contact_info = {{inp_contact_info.text}},

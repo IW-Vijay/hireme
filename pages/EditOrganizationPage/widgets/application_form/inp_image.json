@@ -5,7 +5,7 @@
   "borderWidth": "1",
   "bottomRow": 20,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultModel": "{\n  \"image\": \"{{organizationJSObject.organizationData.data.organization.image !== 'null'? organizationJSObject.organizationData.data.organization.image : ''}}\"\n}",
+  "defaultModel": "{\n  \"image\": \"{{organizationJSObject.organizationData.data.organization.image ? organizationJSObject.organizationData.data.organization.image : ''}}\"\n}",
   "displayName": "Custom",
   "dynamicBindingPathList": [
     {

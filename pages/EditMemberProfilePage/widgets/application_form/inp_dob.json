@@ -17,12 +17,18 @@
     },
     {
       "key": "defaultDate"
+    },
+    {
+      "key": "maxDate"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "defaultDate"
+    },
+    {
+      "key": "maxDate"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -39,8 +45,8 @@
   "labelTextSize": "1rem",
   "labelWidth": 5,
   "leftColumn": 32,
+  "maxDate": "{{new Date().toISOString().slice(0, 7)}}",
   "maxDynamicHeight": 9000,
-  "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
   "mobileBottomRow": 40,
@@ -57,7 +63,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shortcuts": false,
-  "timePrecision": "minute",
+  "timePrecision": "None",
   "topRow": 47,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,

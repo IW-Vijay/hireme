@@ -1,1 +1,1 @@
-SELECT * from institutions where isschool = TRUE;
+SELECT name, institution_id from institutions where isschool = TRUE;

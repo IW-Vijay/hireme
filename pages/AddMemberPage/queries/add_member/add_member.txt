@@ -2,7 +2,7 @@ INSERT INTO profiles (membership_id, profile_image, profile_name, email, tagline
 VALUES
 (
 		{{appsmith.store.user.membership_id}},
-		'{{inp_image.model.image}}',
+		{{inp_image.model.image ? inp_image.model.image : NaN }},
     '{{inp_name.text.replace(new RegExp("'", "gm"), "''")}}',
     '{{inp_email.text.replace(new RegExp("'", "gm"), "''")}}',
 		'{{inp_tagline.text.replace(new RegExp("'", "gm"), "''")}}',

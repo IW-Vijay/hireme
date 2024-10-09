@@ -42,7 +42,7 @@
   "mobileRightColumn": 18,
   "mobileTopRow": 56,
   "needsErrorInfo": false,
-  "onClick": "{{activateDeactivateUser.run().then(() => {\n  navigateTo('MembershipPage', {}, 'SAME_WINDOW');\n});}}",
+  "onClick": "{{activateAndDeactiveUserJSObj.activateordeactivate();}}",
   "originalBottomRow": 89,
   "originalTopRow": 85,
   "parentColumnSpace": 19.8125,

@@ -55,7 +55,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 43,
   "serverSideFiltering": false,
-  "sourceData": "{{fetch_institutions.data}}",
+  "sourceData": "{{\n  fetch_institutions.data = [\n   \t{\n      \"name\": \"All\",\n      \"institution_id\": 0\n    }, ...fetch_institutions.data\n    \n  ]\n}}\n",
   "topRow": 5,
   "type": "SELECT_WIDGET",
   "version": 1,
