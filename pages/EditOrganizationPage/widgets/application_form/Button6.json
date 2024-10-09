@@ -35,6 +35,8 @@
   "mobileTopRow": 18,
   "needsErrorInfo": false,
   "onClick": "{{navigateTo('AddNewInstitutionPage', {\n \"organization\" : appsmith.URL.queryParams.organization\n}, 'SAME_WINDOW');}}",
+  "originalBottomRow": 36,
+  "originalTopRow": 32,
   "parentId": "set92v0qkh",
   "placement": "CENTER",
   "recaptchaType": "V3",

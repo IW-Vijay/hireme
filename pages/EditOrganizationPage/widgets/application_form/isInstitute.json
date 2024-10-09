@@ -13,7 +13,7 @@
       "key": "defaultSwitchState"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "defaultSwitchState"
@@ -34,14 +34,13 @@
   "mobileRightColumn": 26,
   "mobileTopRow": 79,
   "needsErrorInfo": false,
-  "originalBottomRow": 35,
-  "originalTopRow": 30,
   "parentColumnSpace": 18.880859375,
   "parentId": "set92v0qkh",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 63,
+  "shouldScrollContents": true,
   "topRow": 25,
   "type": "SWITCH_WIDGET",
   "version": 1,
