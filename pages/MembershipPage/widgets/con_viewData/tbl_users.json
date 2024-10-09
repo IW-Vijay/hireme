@@ -224,7 +224,7 @@
   "needsHeightForContent": true,
   "onPageChange": "{{fetch_users.run()}}",
   "onRowSelected": "",
-  "originalBottomRow": 57,
+  "originalBottomRow": 96,
   "originalTopRow": 13,
   "parentColumnSpace": 19.8125,
   "parentId": "g4z51bkncq",

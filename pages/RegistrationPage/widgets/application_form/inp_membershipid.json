@@ -38,7 +38,7 @@
   "parentColumnSpace": 12.0732421875,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
-  "placeholderText": "Enter membership ID if already have a membership",
+  "placeholderText": "Enter membership ID",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "rightColumn": 63,
