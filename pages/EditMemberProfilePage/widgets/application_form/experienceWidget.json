@@ -48,8 +48,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 139,
-  "originalTopRow": 106,
+  "originalBottomRow": 113,
+  "originalTopRow": 93,
   "parentColumnSpace": 18.880859375,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,

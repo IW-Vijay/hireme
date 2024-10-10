@@ -41,7 +41,7 @@
   "parentColumnSpace": 12.0732421875,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
-  "placeholderText": "Enter first & last name",
+  "placeholderText": "Enter a contact detail such as Linkedin, Instagram etc.",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "rightColumn": 63,
