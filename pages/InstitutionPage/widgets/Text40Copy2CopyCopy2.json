@@ -43,7 +43,7 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{institutionJSObject.institutionData.data.institution.address ? institutionJSObject.institutionData.data.institution.address  : 'No adress available'}}",
+  "text": "{{institutionJSObject.institutionData.data.institution.address ? institutionJSObject.institutionData.data.institution.address  : 'No address available'}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 15,
