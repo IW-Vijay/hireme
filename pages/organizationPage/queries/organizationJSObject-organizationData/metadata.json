@@ -23,7 +23,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "organizationJSObject.organizationData",
     "name": "organizationData",
     "pageId": "organizationPage",

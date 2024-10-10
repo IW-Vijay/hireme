@@ -1,12 +1,12 @@
 UPDATE organizations
 SET 
     image = {{inp_image.model.image ? inp_image.model.image : NaN }},
-    name = '{{inp_name.text.replace(new RegExp("'", "gm"), "''")}}',
-    phone_number = '{{inp_phone.text.replace(new RegExp("'", "gm"), "''")}}',
-    email = '{{inp_email.text.replace(new RegExp("'", "gm"), "''")}}',
-    address = '{{inp_address.text.replace(new RegExp("'", "gm"), "''")}}',
-    description = {{inp_about ? `'${inp_about.text.replace(new RegExp("'", "gm"), "''")}'` : NaN}},
-		institution_id = '{{inp_institute.selectedOptionValue}}',
+    name = '{{inp_name.text}}',
+    phone_number = '{{inp_phone.text}}',
+    email = '{{inp_email.text}}',
+    address = '{{inp_address.text}}',
+    description = {{inp_about ? `${inp_about.text}` : NaN}},
+		institution_id = {{isInstitute.isSwitchedOn? inp_institute.selectedOptionValue : NaN}},
     status = 'updated'
 WHERE
     organization_id = {{organizationJSObject.organizationData.data.organization.organization_id}}

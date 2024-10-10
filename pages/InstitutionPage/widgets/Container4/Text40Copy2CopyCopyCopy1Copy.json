@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 35,
+  "bottomRow": 11,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -33,11 +33,11 @@
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 35,
-  "originalTopRow": 31,
+  "originalBottomRow": 11,
+  "originalTopRow": 0,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
-  "parentId": "0",
+  "parentId": "vn5qxsja4o",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 63,
@@ -48,13 +48,13 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{organizationJSObject.organizationData.data.organization.description ? organizationJSObject.organizationData.data.organization.description  : 'No description'}}",
+  "text": "{{institutionJSObject.institutionData.data.institution.description ? institutionJSObject.institutionData.data.institution.description  : 'No description'}}",
   "textAlign": "JUSTIFY",
   "textColor": "#231F20",
-  "topRow": 31,
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "xr7imn39b3",
+  "widgetId": "6769fjm25c",
   "widgetName": "Text40Copy2CopyCopyCopy1Copy"
 }

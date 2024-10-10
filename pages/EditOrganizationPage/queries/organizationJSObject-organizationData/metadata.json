@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66f4e75573f83b5809d9de24_2fcf6831-6eaa-447a-b5e1-acb2acad25b1",
-  "id": "EditOrganizationPage_institutionJSObject.organizationData",
+  "gitSyncId": "67036dee73f83b5809d9e299_ccd33e40-2dfb-4939-a570-d1d8c4645c33",
+  "id": "EditOrganizationPage_organizationJSObject.organizationData",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -10,7 +10,6 @@
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
-    "clientSideExecution": true,
     "collectionId": "EditOrganizationPage_organizationJSObject",
     "confirmBeforeExecute": false,
     "datasource": {
@@ -23,8 +22,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "fullyQualifiedName": "institutionJSObject.organizationData",
+    "executeOnLoad": true,
+    "fullyQualifiedName": "organizationJSObject.organizationData",
     "name": "organizationData",
     "pageId": "EditOrganizationPage",
     "userSetOnLoad": false

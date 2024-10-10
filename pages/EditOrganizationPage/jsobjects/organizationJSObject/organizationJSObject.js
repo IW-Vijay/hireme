@@ -1,5 +1,5 @@
 export default {
-	async organizationData () {
+	organizationData () {
 		return {
 			"organization" : JSON.parse(appsmith.URL.queryParams.organization)
 		}

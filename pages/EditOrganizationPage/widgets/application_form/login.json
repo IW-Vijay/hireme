@@ -27,7 +27,7 @@
   "mobileLeftColumn": 18,
   "mobileRightColumn": 34,
   "mobileTopRow": 58,
-  "onClick": "{{updateOrganization.run().then(() => {\n  navigateTo('InstitutionPage', {\n    \"institution\": JSON.stringify(updateOrganization.data[0])\n  }, 'SAME_WINDOW');\n});}}",
+  "onClick": "{{updateOrganization.run().then(() => {\n  navigateTo('organizationPage', {\n    \"organization\": JSON.stringify(updateOrganization.data[0])\n  }, 'SAME_WINDOW');\n});}}",
   "originalBottomRow": 69,
   "originalTopRow": 64,
   "parentColumnSpace": 17.064453125,
@@ -43,7 +43,7 @@
     "click",
     "submit"
   ],
-  "text": "Update Institution",
+  "text": "Update Organization",
   "topRow": 64,
   "type": "BUTTON_WIDGET",
   "version": 1,
