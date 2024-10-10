@@ -8,7 +8,7 @@ export default {
 
 		// Validate inputs
 		if (!name || !email || !password) {
-			showAlert("Name, email, or password must not be empty.");
+			showAlert("Name, Email, or Password must not be empty.");
 			return;
 		}
 
@@ -22,7 +22,7 @@ export default {
 			navigateTo('MembershipPage');
 
 		} catch (error) {
-			showAlert(`Member might already have an account, please try loging in`);
+			showAlert(`Member might already have an account, please try logging in`);
 		}
 	}
 }

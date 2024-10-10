@@ -55,7 +55,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{tbl_users.selectedRow.about ? tbl_users.selectedRow.about : 'Not Bio Provided'}}",
+  "text": "{{tbl_users.selectedRow.about ? tbl_users.selectedRow.about : 'No Bio Provided'}}",
   "textAlign": "LEFT",
   "textColor": "#71717a",
   "topRow": 17,
