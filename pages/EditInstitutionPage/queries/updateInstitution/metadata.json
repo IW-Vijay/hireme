@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE institutions\nSET \n    image = {{inp_image.model.image ? inp_image.model.image : NaN }},\n    name = '{{inp_name.text}}',\n    phone_number = '{{inp_phone.text}}',\n    email = '{{inp_email.text}}',\n    address = '{{inp_address.text}}',\n    description = {{inp_about ? `${inp_about.text}` : NaN}},\n    status = 'updated',\n\t\tisschool = {{inp_isschool.isSwitchedOn}}\nWHERE\n    institution_id = {{institutionJSObject.institutionData.data.institution.institution_id}}\nRETURNING *;",
+      "body": "UPDATE institutions\nSET \n    image = {{inp_image.model.image ? `'${inp_image.model.image}'` : NaN }},\n    name = '{{inp_name.text}}',\n    phone_number = '{{inp_phone.text}}',\n    email = '{{inp_email.text}}',\n    address = '{{inp_address.text}}',\n    description = {{inp_about ? `${inp_about.text}` : NaN}},\n    status = 'updated',\n\t\tisschool = {{inp_isschool.isSwitchedOn}}\nWHERE\n    institution_id = {{institutionJSObject.institutionData.data.institution.institution_id}}\nRETURNING *;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

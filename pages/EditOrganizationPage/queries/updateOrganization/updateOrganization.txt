@@ -1,6 +1,6 @@
 UPDATE organizations
 SET 
-    image = {{inp_image.model.image ? inp_image.model.image : NaN }},
+    image = {{inp_image.model.image ? `'${inp_image.model.image}'` : NaN }},
     name = '{{inp_name.text}}',
     phone_number = '{{inp_phone.text}}',
     email = '{{inp_email.text}}',
