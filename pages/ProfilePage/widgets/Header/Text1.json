@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 5,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -17,7 +17,12 @@
       "key": "text"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textAlign"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "0.875rem",
@@ -44,7 +49,9 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "overflow": "SCROLL",
+  "originalBottomRow": 6,
+  "originalTopRow": 1,
+  "overflow": "NONE",
   "parentColumnSpace": 17.625,
   "parentId": "drsx7gtnox",
   "parentRowSpace": 10,
@@ -56,6 +63,7 @@
     "paragraph",
     "label"
   ],
+  "shouldScrollContents": true,
   "shouldTruncate": false,
   "tags": [
     "Suggested",
