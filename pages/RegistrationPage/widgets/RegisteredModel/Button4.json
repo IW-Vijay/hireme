@@ -44,8 +44,8 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{navigateTo('HomePage', {}, 'SAME_WINDOW');}}",
-  "originalBottomRow": 19,
-  "originalTopRow": 15,
+  "originalBottomRow": 17,
+  "originalTopRow": 13,
   "parentId": "5l5k1boxj5",
   "placement": "CENTER",
   "recaptchaType": "V3",
