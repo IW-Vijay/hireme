@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 36,
+  "bottomRow": 5,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -9,52 +9,41 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "textAlign"
-    }
-  ],
+  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "fontFamily": "Inter",
-  "fontSize": "1rem",
-  "fontStyle": "",
+  "fontSize": "1.25rem",
+  "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
   "key": "lpp3worjsh",
-  "leftColumn": 1,
+  "leftColumn": 3,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 43,
-  "originalTopRow": 32,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
-  "parentId": "0",
+  "parentId": "j202naulax",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 63,
+  "rightColumn": 14,
   "searchTags": [
     "typography",
     "paragraph",
     "label"
   ],
-  "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{institutionJSObject.institutionData.data.institution.description ? institutionJSObject.institutionData.data.institution.description  : 'No description'}}",
-  "textAlign": "justify",
-  "textColor": "#231F20",
-  "topRow": 32,
+  "text": "Community Portal",
+  "textAlign": "LEFT",
+  "textColor": "#231f20",
+  "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "6769fjm25c",
-  "widgetName": "Text40Copy2CopyCopyCopy1Copy"
+  "widgetId": "8bkxjton85",
+  "widgetName": "Text40Copy1"
 }

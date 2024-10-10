@@ -27,7 +27,7 @@
   "mobileLeftColumn": 18,
   "mobileRightColumn": 34,
   "mobileTopRow": 58,
-  "onClick": "{{navigateTo('CompaniesPage', {}, 'SAME_WINDOW');}}",
+  "onClick": "{{navigateTo('ComapniesPage', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 17.064453125,
   "parentId": "tmx97mviku",
   "parentRowSpace": 10,

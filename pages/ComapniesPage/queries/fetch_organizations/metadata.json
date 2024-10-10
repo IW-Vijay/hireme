@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66ebb00d73f83b5809d9d9a4_5155d792-0343-49c5-b323-e30950e6be99",
-  "id": "CompaniesPage_fetch_organizations",
+  "gitSyncId": "67036dee73f83b5809d9e299_c91b4575-64f3-46ad-9e01-65ee3b85c692",
+  "id": "ComapniesPage_fetch_organizations",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -25,7 +25,7 @@
     "dynamicBindingPathList": [],
     "executeOnLoad": true,
     "name": "fetch_organizations",
-    "pageId": "CompaniesPage",
+    "pageId": "ComapniesPage",
     "userSetOnLoad": false
   }
 }

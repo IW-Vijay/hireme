@@ -50,10 +50,6 @@
       "isDefault": false
     },
     {
-      "id": "CompaniesPage",
-      "isDefault": false
-    },
-    {
       "id": "AdminPanelPage",
       "isDefault": false
     },
@@ -127,6 +123,10 @@
     },
     {
       "id": "FindMyConnectPage",
+      "isDefault": false
+    },
+    {
+      "id": "ComapniesPage",
       "isDefault": false
     }
   ],

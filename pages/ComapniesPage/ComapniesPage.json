@@ -1,12 +1,12 @@
 {
-  "gitSyncId": "66e1b24a73f83b5809d9d6b5_503bc53a-1d77-44d4-9964-d9cae3c39106",
+  "gitSyncId": "67036dee73f83b5809d9e299_f1eaa309-4b82-4bb3-8e3e-c550fad7fe46",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1350,
+          "bottomRow": 430,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -27,7 +27,7 @@
         }
       }
     ],
-    "name": "EditProfilePage",
-    "slug": "editprofilepage"
+    "name": "ComapniesPage",
+    "slug": "comapniespage"
   }
 }
