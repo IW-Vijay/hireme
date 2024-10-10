@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66f4e75573f83b5809d9de24_6afcd491-de4c-4c4f-921d-2f16efb7ee8a",
-  "id": "FindMyConnectPage_fetch_educations",
+  "gitSyncId": "67036dee73f83b5809d9e299_ef91e4b6-41e0-4aec-9db5-ab3510ef6cad",
+  "id": "FindMyConnectPage_fetch_work_experience_from_ins",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * \nFROM education_details \nWHERE (\n    ({{this.params.selected_uni}} = -1 AND institution_id = ANY({{this.params.institutionList}}))\n    OR institution_id = {{this.params.selected_uni}}\n);\n",
+      "body": "SELECT * \nFROM work_experience \nWHERE (\n    ({{this.params.selected_inst}} = -1 \n        AND organization_id = ANY(\n            SELECT organization_id \n            FROM organizations \n            WHERE institution_id = ANY({{this.params.insts}})\n        )\n    ) \n    OR organization_id = (\n        SELECT organization_id \n        FROM organizations \n        WHERE institution_id = {{this.params.selected_inst}}\n    )\n);\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "fetch_educations",
+    "name": "fetch_work_experience_from_ins",
     "pageId": "FindMyConnectPage",
     "userSetOnLoad": false
   }

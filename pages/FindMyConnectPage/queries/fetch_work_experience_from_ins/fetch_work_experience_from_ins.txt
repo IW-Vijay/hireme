@@ -1,0 +1,16 @@
+SELECT * 
+FROM work_experience 
+WHERE (
+    ({{this.params.selected_inst}} = -1 
+        AND organization_id = ANY(
+            SELECT organization_id 
+            FROM organizations 
+            WHERE institution_id = ANY({{this.params.insts}})
+        )
+    ) 
+    OR organization_id = (
+        SELECT organization_id 
+        FROM organizations 
+        WHERE institution_id = {{this.params.selected_inst}}
+    )
+);

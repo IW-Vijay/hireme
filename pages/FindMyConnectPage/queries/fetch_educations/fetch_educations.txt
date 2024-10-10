@@ -1,3 +1,6 @@
 SELECT * 
 FROM education_details 
-WHERE ({{this.params.selected_uni}} = -1 OR institution_id = {{this.params.selected_uni}});
+WHERE (
+    ({{this.params.selected_uni}} = -1 AND institution_id = ANY({{this.params.institutionList}}))
+    OR institution_id = {{this.params.selected_uni}}
+);

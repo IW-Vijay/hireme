@@ -1,1 +1,1 @@
-SELECT * FROM work_experience where ({{this.params.selected_org}} = -1 OR organization_id = {{this.params.selected_org}});
+SELECT * FROM work_experience where (({{this.params.selected_org}} = -1 AND organization_id = ANY({{this.params.orgs}}))OR organization_id = {{this.params.selected_org}});

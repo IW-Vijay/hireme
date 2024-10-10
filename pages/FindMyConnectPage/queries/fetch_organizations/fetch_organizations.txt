@@ -1,1 +1,1 @@
-SELECT * FROM organizations;
+SELECT * FROM organizations where institution_id ISNULL;
