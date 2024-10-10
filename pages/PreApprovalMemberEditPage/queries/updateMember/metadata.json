@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE profiles\nSET       \n    profile_name = '{{inp_name.text}}',\n    profile_image = {{inp_image.model.image ? `${inp_image.model.image}` : NaN }},\n    tagline = '{{inp_tagline.text}}',\n    email = '{{inp_email.text}}',\n\t\tpublic_contact_info = '{{inp_contact_info.text}}'\nWHERE profile_id = {{JSON.parse(appsmith.URL.queryParams.requester).profile_id}}\nRETURNING *;",
+      "body": "UPDATE profiles\nSET       \n    profile_name = '{{inp_name.text}}',\n    profile_image = {{inp_image.model.image ? `'${inp_image.model.image}'` : NaN }},\n    tagline = '{{inp_tagline.text}}',\n    email = '{{inp_email.text}}',\n\t\tpublic_contact_info = '{{inp_contact_info.text}}'\nWHERE profile_id = {{JSON.parse(appsmith.URL.queryParams.requester).profile_id}}\nRETURNING *;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
