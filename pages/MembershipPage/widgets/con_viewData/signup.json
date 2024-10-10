@@ -10,6 +10,9 @@
   "dynamicBindingPathList": [
     {
       "key": "isDisabled"
+    },
+    {
+      "key": "tooltip"
     }
   ],
   "dynamicPropertyPathList": [
@@ -55,6 +58,7 @@
     "submit"
   ],
   "text": "Add Member",
+  "tooltip": "{{fetch_users.data.filter(user => user.isdisabled === 0).length >= 4 ? 'Max(4) activated members' : ''}}",
   "topRow": 1,
   "type": "BUTTON_WIDGET",
   "version": 1,
