@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 27,
+  "bottomRow": 24,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -46,7 +46,7 @@
   "text": "{{\n  organizationJSObject.organizationData.data.organization.phone_number || organizationJSObject.organizationData.data.organization.email \n    ? `${organizationJSObject.organizationData.data.organization.phone_number ? organizationJSObject.organizationData.data.organization.phone_number : ''}/${organizationJSObject.organizationData.data.organization.email ? organizationJSObject.organizationData.data.organization.email : ''}` \n    : 'Not available'\n}}\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 23,
+  "topRow": 20,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
