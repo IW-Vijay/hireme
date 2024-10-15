@@ -869,7 +869,7 @@
   "rightColumn": 37,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{fetch_users.data}}",
+  "tableData": "{{usersJSObject.usersObject.data.users}}",
   "tags": [
     "Suggested",
     "Display"

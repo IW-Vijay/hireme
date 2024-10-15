@@ -44,15 +44,24 @@
     }
   ],
   "displayName": "Form",
-  "dynamicBindingPathList": [],
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "hideCard": false,
   "iconSVG": "/static/media/icon.ea3e08d130e59c56867ae40114c10eed.svg",
   "isCanvas": true,
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{tbl_users.selectedRow.profile_name== \"\"? false : true}}",
   "key": "b2g4hzss2y",
   "leftColumn": 37,
   "maxDynamicHeight": 9000,
