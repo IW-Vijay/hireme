@@ -1,1 +1,1 @@
-SELECT institution_id, name FROM institutions;
+SELECT institution_id, name, isschool FROM institutions;

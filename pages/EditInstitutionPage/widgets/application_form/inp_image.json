@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
   "bottomRow": 18,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "boxShadow": "none",
   "defaultModel": "{\n \"image\" : \n\"{{institutionJSObject.institutionData.data.institution.image? institutionJSObject.institutionData.data.institution.image : ''}}\"\n}",
   "displayName": "Custom",
   "dynamicBindingPathList": [
@@ -13,9 +13,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
     },
     {
       "key": "defaultModel"

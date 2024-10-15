@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO institutions (name) values ({{this.params.institution_name.replace(new RegExp(\"'\", \"gm\"), \"''\")}});",
+      "body": "INSERT INTO institutions (name, isschool) values ({{this.params.institution_name.replace(new RegExp(\"'\", \"gm\"), \"''\")}}, {{this.params.isSchool}}) RETURNING institution_id;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

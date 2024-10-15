@@ -1,7 +1,6 @@
 export default {
 	modifyUser: async () => {
 		try {
-			 
 			// Step 1: Update user details
 			await updateUserDetails.run();
 
@@ -19,7 +18,7 @@ export default {
 
 			if (educations.length > 0) {
 				for (const education of educations) {
-					let { institution_id, institution_name , degree, specialization, start_date, end_date, marks } = education;
+					let { institution_id, institution_name , degree, specialization, start_date, end_date, marks, isSchool } = education;
 
 
 
@@ -28,9 +27,8 @@ export default {
 						institution_id = institution?.institution_id;
 						// Add new institution and fetch the new institution ID
 						if (!institution_id) {
-							await addInstitution.run({institution_name});
-							//await fetchNewInstitution.run({institution_name});
-							institution_id = addInstitution.data[0]?.institution_id;
+							await addInstitution.run({institution_name, isSchool});
+							institution_id = addInstitution.data[0].institution_id;
 						}
 
 						if (!institution_id) {
@@ -59,7 +57,7 @@ export default {
 
 			if (experiences.length > 0) {
 				for (const experience of experiences) {
-					let { organization_id, organization_name, position, start_date, end_date, skills, type } = experience;
+					let { organization_id, organization_name, position, start_date, end_date, skills, type, institution_id,  isSchool } = experience;
 
 					// Check if the organization exists
 
@@ -69,9 +67,19 @@ export default {
 						organization_id = organisation?.organization_id;
 						// Add new organization and fetch the new organization ID
 						if (!organization_id) {
-							await addOrganization.run({ organization_name });
-							//await fetchNewOrganization.run({ organization_name });
-							organization_id = addOrganization.data[0]?.organization_id;
+							if (!institution_id) {
+								let institution = institutions.find(inst => inst.name.trim() === organization_name.trim());
+								institution_id = institution?.institution_id;
+								// Add new institution and fetch the new institution ID
+								if (!institution_id) {
+									await addInstitution.run({"institution_name" : organization_name, isSchool});
+									institution_id = addInstitution.data[0].institution_id;
+								}
+							}
+
+							await addOrganization.run({ organization_name, institution_id });
+							organization_id = addOrganization.data[0].organization_id;
+
 						}
 
 						if (!organization_id) {
@@ -95,18 +103,16 @@ export default {
 				console.log("No experiences to add.");
 			}
 
-			// Step 7: Navigate to profile page
+			// Step 6: Fetch updated user data and store it
 			await navigateTo('MemberProfilePage', {
-  "member": JSON.stringify(updateUserDetails.data[0]),
-  "rownumber": appsmith.URL.queryParams.rownumber,
-  "community_id": appsmith.store.user.community_member_id,
-  "role": inp_role.selectedOptionLabel
-});
+				"member": JSON.stringify(updateUserDetails.data[0]),
+				"rownumber": appsmith.URL.queryParams.rownumber,
+				"community_id": appsmith.store.user.community_member_id,
+				"role": inp_role.selectedOptionLabel
+			});
 
 		} catch (err) {
 			console.error("Error during user modification:", err);
 		}
 	}
 }
-
-

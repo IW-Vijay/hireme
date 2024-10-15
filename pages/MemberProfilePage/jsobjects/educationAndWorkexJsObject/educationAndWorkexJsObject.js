@@ -19,6 +19,7 @@ export default {
 			return {
 				...education,
 				institution_name: fetchInstitutionName.data[0]?.name || 'Unknown',
+				isschool : fetchInstitutionName.data[0]?.isschool,
 				institution : fetchInstitutionName.data
 			};
 		}));
@@ -44,6 +45,7 @@ export default {
 			return {
 				...workex,
 				organization_name: fetchOrganizationName.data[0]?.name || 'Unknown',
+				institution_id : fetchOrganizationName.data[0]?.institution_id,
 				organization : fetchOrganizationName.data
 			};
 		}));

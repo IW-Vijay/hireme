@@ -1,1 +1,1 @@
-SELECT organization_id, name FROM organizations;
+SELECT organization_id, name, institution_id FROM organizations;
