@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
   "bottomRow": 140,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "boxShadow": "none",
   "defaultModel": "{{getEducationsJSObject.educationData.data}}",
   "displayName": "Custom",
   "dynamicBindingPathList": [
@@ -13,9 +13,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
     },
     {
       "key": "defaultModel"
@@ -48,7 +45,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 140,
+  "originalBottomRow": 103,
   "originalTopRow": 78,
   "parentColumnSpace": 18.880859375,
   "parentId": "hnice2rhm7",

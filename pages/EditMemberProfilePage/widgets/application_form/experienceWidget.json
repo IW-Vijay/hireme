@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
   "bottomRow": 123,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "boxShadow": "none",
   "defaultModel": "{{getWorkexsJSObject.workexData.data}}",
   "displayName": "Custom",
   "dynamicBindingPathList": [
@@ -13,9 +13,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
     },
     {
       "key": "defaultModel"

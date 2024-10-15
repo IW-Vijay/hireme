@@ -3,8 +3,8 @@
   "borderColor": "#b91c1c",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 202,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "bottomRow": 238,
+  "boxShadow": "none",
   "defaultModel": "{{getWorkexsJSObject.workexData.data}}",
   "displayName": "Custom",
   "dynamicBindingPathList": [
@@ -13,9 +13,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
     },
     {
       "key": "defaultModel"
@@ -48,8 +45,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 220,
-  "originalTopRow": 140,
+  "originalBottomRow": 128,
+  "originalTopRow": 103,
   "parentColumnSpace": 18.880859375,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,

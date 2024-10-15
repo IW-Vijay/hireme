@@ -36,7 +36,9 @@
   "labelWidth": 5,
   "leftColumn": 32,
   "maxDynamicHeight": 9000,
+  "maxNum": "100000000000000000000",
   "minDynamicHeight": 4,
+  "minNum": "0",
   "originalBottomRow": 51,
   "originalTopRow": 42,
   "parentColumnSpace": 12.0732421875,
@@ -57,6 +59,7 @@
   "showStepArrows": false,
   "topRow": 43,
   "type": "INPUT_WIDGET_V2",
+  "validation": "",
   "version": 2,
   "widgetId": "bh9k7ji1le",
   "widgetName": "inp_phone"

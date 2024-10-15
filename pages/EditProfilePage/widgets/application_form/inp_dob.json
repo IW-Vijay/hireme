@@ -17,6 +17,9 @@
     },
     {
       "key": "defaultDate"
+    },
+    {
+      "key": "maxDate"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -42,7 +45,7 @@
   "labelTextSize": "1rem",
   "labelWidth": 5,
   "leftColumn": 32,
-  "maxDate": "{{}}",
+  "maxDate": "{{new Date().toISOString().slice(0, 7)}}",
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
