@@ -9,12 +9,31 @@ export default {
 			const institutions = getEducationsJSObject.educationData.data.institutions;
 			const organisations = getWorkexsJSObject.workexData.data.organizations;
 
-			// Step 3: Delete existing educations and experiences
-			await deleteEducations.run();
-			await deleteWorkexs.run();
+
+
 
 			// Step 4: Handle adding educations
 			const educations = educationWidget?.model?.educations || [];
+			const experiences = experienceWidget?.model?.workexs || [];
+
+			const hasEmptyInstitution = educations.some((education) => education.institution_name === "");
+
+			if (hasEmptyInstitution) {
+				showAlert("One or more education records have an empty institution name.");
+				return;
+			}
+
+			const hasEmptyOrganization = experiences.some((experience) => experience.organization_name === "");
+
+			if (hasEmptyOrganization) {
+				showAlert("One or more work experience records have an empty organization name.");
+				return;
+			}
+
+
+			// Step 3: Delete existing educations and experiences
+			await deleteEducations.run();
+			await deleteWorkexs.run();
 
 			if (educations.length > 0) {
 				for (const education of educations) {
@@ -53,7 +72,7 @@ export default {
 			}
 
 			// Step 5: Handle adding experiences
-			const experiences = experienceWidget?.model?.workexs || [];
+
 
 			if (experiences.length > 0) {
 				for (const experience of experiences) {
@@ -76,44 +95,44 @@ export default {
 									institution_id = addInstitution.data[0].institution_id;
 								}
 							}
-							
+
 							await addOrganization.run({ organization_name, institution_id });
 							organization_id = addOrganization.data[0].organization_id;
-							
+
 						}
 
-							if (!organization_id) {
-								throw new Error(`Failed to fetch new organization ID for organization: ${organization_name}`);
-							}
+						if (!organization_id) {
+							throw new Error(`Failed to fetch new organization ID for organization: ${organization_name}`);
 						}
-
-						// Add experience record for the user
-						await addExperience.run({
-							user_id, 
-							organization_id, 
-							position, 
-							start_date, 
-							end_date, 
-							skills,
-							type
-						});
-						console.log("Experience added:", experience);
 					}
-				} else {
-					console.log("No experiences to add.");
+
+					// Add experience record for the user
+					await addExperience.run({
+						user_id, 
+						organization_id, 
+						position, 
+						start_date, 
+						end_date, 
+						skills,
+						type
+					});
+					console.log("Experience added:", experience);
 				}
-
-				// Step 6: Fetch updated user data and store it
-				await fetchUpdatedUser.run();
-				const user =  fetchUpdatedUser.data[0];
-				user.community_member_id = appsmith.store.user.community_member_id;
-				await storeValue("user", user);
-
-				// Step 7: Navigate to profile page
-				await navigateTo('ProfilePage');
-
-			} catch (err) {
-				console.error("Error during user modification:", err);
+			} else {
+				console.log("No experiences to add.");
 			}
+
+			// Step 6: Fetch updated user data and store it
+			await fetchUpdatedUser.run();
+			const user =  fetchUpdatedUser.data[0];
+			user.community_member_id = appsmith.store.user.community_member_id;
+			await storeValue("user", user);
+
+			// Step 7: Navigate to profile page
+			await navigateTo('ProfilePage');
+
+		} catch (err) {
+			console.error("Error during user modification:", err);
 		}
 	}
+}

@@ -1,5 +1,6 @@
 export default {
 	async educations() {
+		await fetchEducation.run();
 		let educationList = fetchEducation.data;
 
 		// Loop through the workex list and replace organization_id with the fetched name
@@ -19,6 +20,7 @@ export default {
 		return { "education": educationWithNames };
 	},
 	async workexs() {
+		await fetchWorkex.run();
 		let workexList = fetchWorkex.data;
 
 		// Loop through the workex list and replace organization_id with the fetched name

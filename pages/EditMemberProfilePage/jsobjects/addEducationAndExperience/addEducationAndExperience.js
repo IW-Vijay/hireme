@@ -9,12 +9,29 @@ export default {
 			const institutions = getEducationsJSObject.educationData.data.institutions;
 			const organisations = getWorkexsJSObject.workexData.data.organizations;
 
-			// Step 3: Delete existing educations and experiences
-			await deleteEducations.run();
-			await deleteWorkexs.run();
+			
 
 			// Step 4: Handle adding educations
 			const educations = educationWidget?.model?.educations || [];
+			const experiences = experienceWidget?.model?.workexs || [];
+			
+			const hasEmptyInstitution = educations.some((education) => education.institution_name === "");
+
+			if (hasEmptyInstitution) {
+				showAlert("One or more education records have an empty institution name.");
+				return;
+			}
+
+			const hasEmptyOrganization = experiences.some((experience) => experience.organization_name === "");
+
+			if (hasEmptyOrganization) {
+				showAlert("One or more work experience records have an empty organization name.");
+				return;
+			}
+			
+			// Step 3: Delete existing educations and experiences
+			await deleteEducations.run();
+			await deleteWorkexs.run();
 
 			if (educations.length > 0) {
 				for (const education of educations) {
@@ -53,11 +70,11 @@ export default {
 			}
 
 			// Step 5: Handle adding experiences
-			const experiences = experienceWidget?.model?.workexs || [];
+			
 
 			if (experiences.length > 0) {
 				for (const experience of experiences) {
-					let { organization_id, organization_name, position, start_date, end_date, skills, type, institution_id,  isSchool } = experience;
+					let { organization_id, organization_name, position, start_date, end_date, skills, type, institution_id, isInstitute, isSchool } = experience;
 
 					// Check if the organization exists
 
