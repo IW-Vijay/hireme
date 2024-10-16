@@ -13,10 +13,6 @@ export default {
 		return dcodeIO.bcrypt.compareSync(password, hash)
 	},
 	signin: async (user, password) => {
-		if(inp_pass.text.length < 5){
-			storeValue("alert" , "Password should be atleast 5 chars");
-			return;
-		}
     if (user) {
         
 
