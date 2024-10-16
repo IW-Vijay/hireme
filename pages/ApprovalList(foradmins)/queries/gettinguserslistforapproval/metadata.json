@@ -23,7 +23,7 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "gettinguserslistforapproval",
     "pageId": "ApprovalList(foradmins)",
     "userSetOnLoad": false

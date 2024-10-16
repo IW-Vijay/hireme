@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "0.375rem",
-  "bottomRow": 12,
+  "bottomRow": 19,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -17,6 +17,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "labelTextSize"
     }
   ],
   "dynamicTriggerPathList": [
@@ -32,10 +35,11 @@
   "key": "atlizku3fo",
   "labelAlignment": "left",
   "labelPosition": "Top",
+  "labelStyle": "",
   "labelText": "Organization",
-  "labelTextSize": "0.875rem",
+  "labelTextSize": "12px",
   "labelWidth": 5,
-  "leftColumn": 44,
+  "leftColumn": 32,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -56,7 +60,7 @@
   "rightColumn": 63,
   "serverSideFiltering": false,
   "sourceData": "{{\n  fetch_organizations.data = [\n   \t{\n      \"name\": \"All\",\n      \"organization_id\": -1\n    }, ...fetch_organizations.data\n    \n  ]\n}}\n",
-  "topRow": 5,
+  "topRow": 12,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "azt4qfocxy",

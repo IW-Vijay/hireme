@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 16,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -11,7 +11,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "fontSize"
@@ -19,7 +19,7 @@
   ],
   "dynamicTriggerPathList": [],
   "fontFamily": "Inter",
-  "fontSize": "30px",
+  "fontSize": "25px",
   "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -30,6 +30,8 @@
   "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "originalBottomRow": 15,
+  "originalTopRow": 9,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
@@ -41,6 +43,7 @@
     "paragraph",
     "label"
   ],
+  "shouldScrollContents": true,
   "shouldTruncate": false,
   "text": "Family Registration",
   "textAlign": "LEFT",

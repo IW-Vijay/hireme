@@ -17,6 +17,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "labelTextSize"
     }
   ],
   "dynamicTriggerPathList": [
@@ -33,9 +36,9 @@
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelText": "School",
-  "labelTextSize": "0.875rem",
+  "labelTextSize": "12px",
   "labelWidth": 5,
-  "leftColumn": 4,
+  "leftColumn": 8,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -53,7 +56,7 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 23,
+  "rightColumn": 63,
   "serverSideFiltering": false,
   "sourceData": "{{ fetch_schools.data = [{\n      \"name\": \"ALL\",\n      \"institution_id\": -1\n    },\n    ...fetch_schools.data\n    \n  ]}}",
   "topRow": 5,

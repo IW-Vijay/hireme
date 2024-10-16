@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 13,
+  "bottomRow": 12,
   "capSide": 0,
   "capType": "nc",
   "displayName": "Divider",
@@ -36,7 +36,7 @@
     "Layout"
   ],
   "thickness": "1",
-  "topRow": 9,
+  "topRow": 8,
   "type": "DIVIDER_WIDGET",
   "version": 1,
   "widgetId": "kyzsc68uki",

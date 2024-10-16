@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 4,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -12,9 +12,14 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "Inter",
-  "fontSize": "1.875rem",
+  "fontSize": "20px",
   "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.c3b6033f570046f8c6288d911333a827.svg",
@@ -30,7 +35,7 @@
   "mobileLeftColumn": 14,
   "mobileRightColumn": 30,
   "mobileTopRow": 1,
-  "originalBottomRow": 5,
+  "originalBottomRow": 8,
   "originalTopRow": 0,
   "overflow": "NONE",
   "parentColumnSpace": 6.42333984375,
@@ -38,7 +43,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 24,
+  "rightColumn": 62,
   "searchTags": [
     "typography",
     "paragraph",

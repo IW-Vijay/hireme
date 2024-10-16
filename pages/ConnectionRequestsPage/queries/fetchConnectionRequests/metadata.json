@@ -23,7 +23,7 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "fetchConnectionRequests",
     "pageId": "ConnectionRequestsPage",
     "userSetOnLoad": false

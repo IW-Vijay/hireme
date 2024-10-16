@@ -12,9 +12,14 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "Inter",
-  "fontSize": "1rem",
+  "fontSize": "12px",
   "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -32,7 +37,7 @@
   "parentId": "yycrsjcari",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 4,
+  "rightColumn": 8,
   "searchTags": [
     "typography",
     "paragraph",

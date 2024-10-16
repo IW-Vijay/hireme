@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 21,
+  "bottomRow": 24,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -18,9 +18,14 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontSize": "12px",
   "fontStyle": "BOLD,ITALIC",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -28,17 +33,17 @@
   "isLoading": false,
   "isVisible": true,
   "key": "lpp3worjsh",
-  "leftColumn": 13,
+  "leftColumn": 10,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 21,
-  "originalTopRow": 17,
+  "originalBottomRow": 20,
+  "originalTopRow": 16,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 24,
+  "rightColumn": 21,
   "searchTags": [
     "typography",
     "paragraph",
@@ -49,7 +54,7 @@
   "text": "{{ \n  fetchRoles.data.find(role => role.role_id === appsmith.store.user.role_id)?.role_name || 'Unknown'\n}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 17,
+  "topRow": 20,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

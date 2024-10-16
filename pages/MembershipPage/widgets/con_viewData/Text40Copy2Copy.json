@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 8,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -15,9 +15,14 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontSize": "12px",
   "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -29,13 +34,13 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "originalBottomRow": 9,
-  "originalTopRow": 5,
+  "originalTopRow": 4,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "g4z51bkncq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 7,
+  "rightColumn": 16,
   "searchTags": [
     "typography",
     "paragraph",
@@ -43,10 +48,10 @@
   ],
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "Membership ID",
+  "text": "Membership ID :",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 5,
+  "topRow": 4,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

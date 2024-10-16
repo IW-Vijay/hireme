@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 9,
+  "bottomRow": 8,
   "capSide": 0,
   "capType": "nc",
   "displayName": "Divider",
@@ -36,7 +36,7 @@
     "Layout"
   ],
   "thickness": "1",
-  "topRow": 5,
+  "topRow": 4,
   "type": "DIVIDER_WIDGET",
   "version": 1,
   "widgetId": "hayti2fc9o",

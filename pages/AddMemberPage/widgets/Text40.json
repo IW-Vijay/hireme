@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 18,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -19,7 +19,7 @@
   ],
   "dynamicTriggerPathList": [],
   "fontFamily": "Inter",
-  "fontSize": "30px",
+  "fontSize": "20px",
   "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -27,7 +27,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "lpp3worjsh",
-  "leftColumn": 2,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
@@ -35,7 +35,7 @@
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 35,
+  "rightColumn": 34,
   "searchTags": [
     "typography",
     "paragraph",
@@ -45,7 +45,7 @@
   "text": "Add Member",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 8,
+  "topRow": 12,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

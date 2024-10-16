@@ -1,0 +1,118 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "configureMenuItems": {
+    "config": {
+      "id": "config",
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Menu Item"
+    },
+    "id": "config",
+    "label": "Configure menu items"
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "menuItems.menuItem2.isVisible"
+    },
+    {
+      "key": "menuItems.menuItemlngvh62q3m.isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "menuItems.menuItem2.isVisible"
+    },
+    {
+      "key": "menuItems.menuItemlngvh62q3m.isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "menuItems.menuItem3.onClick"
+    },
+    {
+      "key": "menuItems.menuItem2.onClick"
+    },
+    {
+      "key": "menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "menuItems.menuItemlngvh62q3m.onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "menu",
+  "isCompact": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "p1wvy0bmx0",
+  "label": "",
+  "leftColumn": 58,
+  "menuColor": "#231f20",
+  "menuItems": {
+    "menuItem1": {
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "My Profile",
+      "onClick": "{{navigateTo('ProfilePage', {}, 'SAME_WINDOW');}}",
+      "widgetId": ""
+    },
+    "menuItem2": {
+      "id": "menuItem2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": "{{ appsmith.store.user.role_id === 1 ? true : false }}",
+      "label": "Admin Panel",
+      "onClick": "{{navigateTo('AdminPanelPage', {}, 'SAME_WINDOW');}}",
+      "widgetId": ""
+    },
+    "menuItem3": {
+      "id": "menuItem3",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Log Out",
+      "onClick": "{{navigateTo('LoginPage', {}, 'SAME_WINDOW');}}",
+      "widgetId": ""
+    },
+    "menuItemlngvh62q3m": {
+      "id": "menuItemlngvh62q3m",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": "{{ appsmith.store.user.role_id === 1 || appsmith.store.user.role_id === 4 ? true : false }}",
+      "label": "My Family",
+      "onClick": "{{navigateTo('MembershipPage', {}, 'SAME_WINDOW');}}",
+      "widgetId": "n2ko9sfb68"
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "TERTIARY",
+  "mobileBottomRow": 95,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 16,
+  "mobileTopRow": 91,
+  "needsErrorInfo": false,
+  "originalBottomRow": 88,
+  "originalTopRow": 84,
+  "parentColumnSpace": 19.8125,
+  "parentId": "anolkfux7h",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "sourceData": [],
+  "topRow": 1,
+  "type": "MENU_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "rukm9iwoc3",
+  "widgetName": "MenuButton1Copy"
+}

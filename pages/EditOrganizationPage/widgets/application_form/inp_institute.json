@@ -61,7 +61,7 @@
   "placeholderText": "Select institution",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 55,
+  "rightColumn": 43,
   "serverSideFiltering": false,
   "sourceData": "{{fetchInstitutions.data}}",
   "topRow": 29,

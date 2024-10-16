@@ -33,7 +33,7 @@
   "labelStyle": "BOLD",
   "labelTextSize": "1rem",
   "labelWidth": 5,
-  "leftColumn": 1,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "originalBottomRow": 44,

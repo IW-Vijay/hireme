@@ -27,7 +27,7 @@
   "isLoading": false,
   "isVisible": "{{isInstitute.isSwitchedOn ? isInstitute.isSwitchedOn : 'false'}}",
   "key": "pjwm3u1rie",
-  "leftColumn": 56,
+  "leftColumn": 44,
   "minWidth": 120,
   "mobileBottomRow": 22,
   "mobileLeftColumn": 31,

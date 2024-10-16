@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 24,
+  "bottomRow": 28,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -15,9 +15,14 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "Inter",
-  "fontSize": "1rem",
+  "fontSize": "10px",
   "fontStyle": "",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -25,11 +30,11 @@
   "isLoading": false,
   "isVisible": true,
   "key": "lpp3worjsh",
-  "leftColumn": 22,
+  "leftColumn": 16,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 27,
-  "originalTopRow": 23,
+  "originalBottomRow": 28,
+  "originalTopRow": 24,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
@@ -46,7 +51,7 @@
   "text": "{{\n  organizationJSObject.organizationData.data.organization.phone_number || organizationJSObject.organizationData.data.organization.email \n    ? `${organizationJSObject.organizationData.data.organization.phone_number ? organizationJSObject.organizationData.data.organization.phone_number : ''}/${organizationJSObject.organizationData.data.organization.email ? organizationJSObject.organizationData.data.organization.email : ''}` \n    : 'Not available'\n}}\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 20,
+  "topRow": 24,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

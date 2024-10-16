@@ -17,6 +17,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "defaultSwitchState"
+    },
+    {
+      "key": "labelTextSize"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -26,7 +29,8 @@
   "key": "4g7wr6nned",
   "label": "Is a School?",
   "labelPosition": "Left",
-  "leftColumn": 57,
+  "labelTextSize": "10px",
+  "leftColumn": 48,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "mobileBottomRow": 83,
@@ -34,14 +38,15 @@
   "mobileRightColumn": 26,
   "mobileTopRow": 79,
   "needsErrorInfo": false,
-  "originalBottomRow": 35,
-  "originalTopRow": 30,
+  "originalBottomRow": 37,
+  "originalTopRow": 22,
   "parentColumnSpace": 18.880859375,
   "parentId": "set92v0qkh",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
+  "shouldScrollContents": true,
   "topRow": 22,
   "type": "SWITCH_WIDGET",
   "version": 1,

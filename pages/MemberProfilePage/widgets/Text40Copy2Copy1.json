@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 24,
+  "bottomRow": 25,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -15,9 +15,14 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "Inter",
-  "fontSize": "1rem",
+  "fontSize": "10px",
   "fontStyle": "BOLD,ITALIC",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -25,17 +30,17 @@
   "isLoading": false,
   "isVisible": true,
   "key": "lpp3worjsh",
-  "leftColumn": 13,
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 23,
-  "originalTopRow": 19,
+  "originalBottomRow": 25,
+  "originalTopRow": 21,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 47,
+  "rightColumn": 62,
   "searchTags": [
     "typography",
     "paragraph",
@@ -46,7 +51,7 @@
   "text": "{{userDataJSObject.user.data.user.tagline?userDataJSObject.user.data.user.tagline : 'No location provided'}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 20,
+  "topRow": 21,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

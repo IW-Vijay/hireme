@@ -44,7 +44,7 @@
   "placeholderText": "",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
-  "rightColumn": 55,
+  "rightColumn": 40,
   "searchTags": [
     "form",
     "text input",

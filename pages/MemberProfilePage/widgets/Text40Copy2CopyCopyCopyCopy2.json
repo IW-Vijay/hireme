@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 58,
+  "bottomRow": 57,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -15,9 +15,14 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontSize": "12px",
   "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -28,14 +33,14 @@
   "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 33,
-  "originalTopRow": 29,
+  "originalBottomRow": 64,
+  "originalTopRow": 60,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 9,
+  "rightColumn": 13,
   "searchTags": [
     "typography",
     "paragraph",
@@ -46,7 +51,7 @@
   "text": "About",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 54,
+  "topRow": 53,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

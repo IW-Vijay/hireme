@@ -18,9 +18,14 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
+  "fontSize": "10px",
   "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.301748e14b0306a7b94ece2d9e2c11cc.svg",
@@ -28,7 +33,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "ulsj8t6uep",
-  "leftColumn": 40,
+  "leftColumn": 30,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -52,7 +57,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 59,
+  "rightColumn": 52,
   "searchTags": [
     "typography",
     "paragraph",
