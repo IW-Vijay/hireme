@@ -1,1 +1,1 @@
-SELECT * FROM institutions;
+SELECT * FROM institutions order by name asc;

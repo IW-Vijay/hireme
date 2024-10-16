@@ -1,5 +1,5 @@
 export default {
-	createHash: (password = 'v') => {
+	createHash: (password ) => {
   dcodeIO.bcrypt.setRandomFallback((len) => {
     const randomBytes = [];
     for (let i = 0; i < len; i++) {
@@ -13,6 +13,10 @@ export default {
 		return dcodeIO.bcrypt.compareSync(password, hash)
 	},
 	signin: async (user, password) => {
+		if(inp_pass.text.length < 5){
+			storeValue("alert" , "Password should be atleast 5 chars");
+			return;
+		}
     if (user) {
         
 
@@ -31,25 +35,31 @@ export default {
         } 
         // If the user is not deleted but the status is pending approval (status = 1)
         else if (user.isdisabled === 0 && status === 1 && this.verifyHash(password, user.password_hash)) {
-            showAlert('Your registration is not approved yet, try again later.', 'error');
+            //showAlert('Your registration is not approved yet, try again later.', 'error');
+						storeValue("alert" , "Your registration is not approved yet, try again later.");
         } 
 				else if (user.isdisabled === 0 && status === 3 && this.verifyHash(password, user.password_hash)) {
-            showAlert('Your membership has been disabled, please contact memebership owner.', 'error');
+            //showAlert('Your membership has been disabled, please contact memebership owner.', 'error');
+						storeValue("alert" , "Your membership has been disabled, please contact memebership owner.");
         } 
 				else if (user.isdisabled === 0 && status === 4 && this.verifyHash(password, user.password_hash)) {
-            showAlert('Your membership request has been rejected, please contact admin.', 'error');
+            //showAlert('Your membership request has been rejected, please contact admin.', 'error');
+						storeValue("alert" , "Your membership request has been rejected, please contact admin.");
         } 
 			else if (user.isdisabled === 1){
-				showAlert('Your account has been removed, please contact membership owner or admin.')
+				//showAlert('Your account has been removed, please contact membership owner or admin.');
+				storeValue("alert" , "Your account has been removed, please contact membership owner or admin.");
 			}
         // If the password is incorrect
         else {
-            showAlert('Wrong Password', 'error');
+            //showAlert('Wrong Password', 'error');
+						storeValue("alert_pass" , "Wrong Password!");
         }
     } 
     // If no user with the provided email is found
     else {
-        showAlert('No user with this Email, Please register.', 'error');
+        //showAlert('No user with this Email, Please register.', 'error');
+				storeValue("alert_mail" , "No user with this Email, Please register.");
     }
 }
 }

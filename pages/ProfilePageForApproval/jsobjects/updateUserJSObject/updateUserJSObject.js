@@ -11,10 +11,10 @@ export default {
         // Pass the obtained membership_id to userApproved function
 				const community_member_id = inp_membershipid.text
 				await check_membership_id_existance.run();
-				/*if (check_membership_id_existance.data[0]){
+				if (check_membership_id_existance.data[0]){
 					showAlert("Membership ID already exist.");
 					return;
-				}*/
+				}
         await userApproved.run({community_member_id});
 
         // Navigate to the approval list page

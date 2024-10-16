@@ -10,10 +10,18 @@
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
+    },
+    {
+      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFocus"
+    }
+  ],
   "hideCard": false,
   "iconAlign": "left",
   "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -28,11 +36,13 @@
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",
+  "labelTextColor": "",
   "labelTextSize": "1rem",
   "labelWidth": 5,
   "leftColumn": 15,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "onFocus": "{{removeValue('alert_mail');}}",
   "parentColumnSpace": 12.0732421875,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
@@ -50,6 +60,7 @@
   "showStepArrows": false,
   "topRow": 5,
   "type": "INPUT_WIDGET_V2",
+  "validation": "{{appsmith.store.alert_mail ? false : true}}",
   "version": 2,
   "widgetId": "bh9k7ji1le",
   "widgetName": "inp_email"

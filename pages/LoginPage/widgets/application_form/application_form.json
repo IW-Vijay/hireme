@@ -131,7 +131,7 @@
         ]
       },
       "borderRadius": "0px",
-      "bottomRow": 350,
+      "bottomRow": 410,
       "boxShadow": "none",
       "canExtend": false,
       "containerStyle": "none",
@@ -174,7 +174,7 @@
   "parentId": "0",
   "parentRowSpace": 40,
   "rightColumn": 53,
-  "shouldScrollContents": false,
+  "shouldScrollContents": true,
   "topRow": 31,
   "type": "FORM_WIDGET",
   "version": 1,

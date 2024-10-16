@@ -1,1 +1,1 @@
-SELECT * FROM organizations where institution_id ISNULL;
+SELECT * FROM organizations where institution_id ISNULL order by name asc;
