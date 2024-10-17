@@ -80,8 +80,10 @@ export default {
 
 
 					if (!organization_id) {
-						let organisation = organisations.find(org => org.name === organization_name);
-						organization_id = organisation?.organization_id;
+						if(!isInstitute){
+							let organisation = organisations.find(org => org.name === organization_name);
+							organization_id = organisation?.organization_id;
+						}
 						// Add new organization and fetch the new organization ID
 						if (!organization_id) {
 							if (isInstitute) {
@@ -91,6 +93,7 @@ export default {
 								if (!institution_id) {
 									await addInstitution.run({"institution_name" : organization_name, isSchool});
 									institution_id = addInstitution.data[0].institution_id;
+									showAlert(institution_id);
 								}
 							}
 
