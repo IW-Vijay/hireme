@@ -1,6 +1,6 @@
-INSERT into memberships  (premium_type_id, status_id,community_member_id)
-VALUES (
-	{{inp_premiumtype.selectedOptionValue ? inp_premiumtype.selectedOptionValue : 1}},
-	1,
-	'{{inp_membershipid.text ? inp_membershipid.text.replace(new RegExp("'", "gm"), "''") : NaN}}'
-) RETURNING membership_id;
+INSERT INTO memberships (premium_type_id, status_id, community_member_id)
+SELECT 
+    {{inp_premiumtype.selectedOptionValue ? inp_premiumtype.selectedOptionValue : 1}},
+    1,
+    'KCA' || LPAD((COALESCE(MAX(CAST(SUBSTRING(community_member_id, 4, LENGTH(community_member_id) - 3) AS INTEGER)), 0) + 1)::TEXT, 4, '0')
+FROM memberships;

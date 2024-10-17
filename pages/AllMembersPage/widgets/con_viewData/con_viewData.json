@@ -95,8 +95,8 @@
     "selectionBGCSSVar": "--ads-widget-selection",
     "selectionColorCSSVar": "--ads-widget-focus"
   },
-  "originalBottomRow": 108,
-  "originalTopRow": 8,
+  "originalBottomRow": 113,
+  "originalTopRow": 13,
   "parentColumnSpace": 16.6875,
   "parentId": "0",
   "parentRowSpace": 10,

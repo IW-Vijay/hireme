@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 55,
+  "bottomRow": 103,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{organizationsJSObject.getOrganizations.data\n}}",
   "dynamicBindingPathList": [
@@ -44,7 +44,7 @@
   "mobileTopRow": 120,
   "needsErrorInfo": false,
   "onOrganizationClick": "{{navigateTo('organizationPage', {\n  \"organization\": organizationsWidget.model.organization\n}, 'SAME_WINDOW');}}",
-  "originalBottomRow": 31,
+  "originalBottomRow": 55,
   "originalTopRow": 8,
   "parentColumnSpace": 19.8125,
   "parentId": "0",

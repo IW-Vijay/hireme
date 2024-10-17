@@ -44,6 +44,9 @@
     },
     {
       "key": "menuItems.menuItemlngvh62q3m.onClick"
+    },
+    {
+      "key": "menuItems.menuItemmuofvg3zkj.onClick"
     }
   ],
   "iconAlign": "left",
@@ -77,7 +80,7 @@
     },
     "menuItem3": {
       "id": "menuItem3",
-      "index": 3,
+      "index": 4,
       "isDisabled": false,
       "isVisible": true,
       "label": "Log Out",
@@ -92,6 +95,15 @@
       "label": "My Family",
       "onClick": "{{navigateTo('MembershipPage', {}, 'SAME_WINDOW');}}",
       "widgetId": "n2ko9sfb68"
+    },
+    "menuItemmuofvg3zkj": {
+      "id": "menuItemmuofvg3zkj",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Settings",
+      "onClick": "{{navigateTo('SettingsPage', {}, 'SAME_WINDOW');}}",
+      "widgetId": "pujlwj5e5s"
     }
   },
   "menuItemsSource": "STATIC",
@@ -113,6 +125,6 @@
   "topRow": 1,
   "type": "MENU_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "s94a197pkp",
+  "widgetId": "18258xrdnj",
   "widgetName": "MenuButton1"
 }

@@ -19,6 +19,9 @@
     },
     {
       "key": "menuItems.menuItem2.isVisible"
+    },
+    {
+      "key": "menuItems.menuItemlngvh62q3m.isVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -41,6 +44,9 @@
     },
     {
       "key": "menuItems.menuItemlngvh62q3m.onClick"
+    },
+    {
+      "key": "menuItems.menuItemmuofvg3zkj.onClick"
     }
   ],
   "iconAlign": "left",
@@ -74,7 +80,7 @@
     },
     "menuItem3": {
       "id": "menuItem3",
-      "index": 3,
+      "index": 4,
       "isDisabled": false,
       "isVisible": true,
       "label": "Log Out",
@@ -85,10 +91,19 @@
       "id": "menuItemlngvh62q3m",
       "index": 2,
       "isDisabled": false,
-      "isVisible": "true",
+      "isVisible": "{{ appsmith.store.user.role_id === 1 || appsmith.store.user.role_id === 4 ? true : false }}",
       "label": "My Family",
       "onClick": "{{navigateTo('MembershipPage', {}, 'SAME_WINDOW');}}",
       "widgetId": "n2ko9sfb68"
+    },
+    "menuItemmuofvg3zkj": {
+      "id": "menuItemmuofvg3zkj",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Settings",
+      "onClick": "{{navigateTo('SettingsPage', {}, 'SAME_WINDOW');}}",
+      "widgetId": "pujlwj5e5s"
     }
   },
   "menuItemsSource": "STATIC",
@@ -110,6 +125,6 @@
   "topRow": 1,
   "type": "MENU_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "7hf1m3ijj1",
+  "widgetId": "to6gv5h8nm",
   "widgetName": "MenuButton1"
 }

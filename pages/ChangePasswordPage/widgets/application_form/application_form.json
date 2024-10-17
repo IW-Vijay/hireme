@@ -1,0 +1,183 @@
+{
+  "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
+  "blueprint": {
+    "view": [
+      {
+        "position": {
+          "left": 0,
+          "top": 0
+        },
+        "props": {
+          "blueprint": {
+            "view": [
+              {
+                "position": {
+                  "left": 0,
+                  "top": 0
+                },
+                "props": {
+                  "text": "Form",
+                  "textStyle": "HEADING"
+                },
+                "size": {
+                  "cols": 12,
+                  "rows": 1
+                },
+                "type": "TEXT_WIDGET"
+              },
+              {
+                "position": {
+                  "left": 12,
+                  "top": 11
+                },
+                "props": {
+                  "buttonStyle": "PRIMARY_BUTTON",
+                  "disabledWhenInvalid": true,
+                  "resetFormOnClick": true,
+                  "text": "Submit"
+                },
+                "size": {
+                  "cols": 4,
+                  "rows": 1
+                },
+                "type": "FORM_BUTTON_WIDGET"
+              },
+              {
+                "position": {
+                  "left": 8,
+                  "top": 11
+                },
+                "props": {
+                  "buttonStyle": "SECONDARY_BUTTON",
+                  "disabledWhenInvalid": false,
+                  "resetFormOnClick": true,
+                  "text": "Reset"
+                },
+                "size": {
+                  "cols": 4,
+                  "rows": 1
+                },
+                "type": "FORM_BUTTON_WIDGET"
+              }
+            ]
+          },
+          "canExtend": false,
+          "children": [],
+          "containerStyle": "none",
+          "detachFromLayout": true
+        },
+        "type": "CANVAS_WIDGET"
+      }
+    ]
+  },
+  "borderColor": "#3b82f6",
+  "borderRadius": "1.5rem",
+  "borderWidth": "1",
+  "bottomRow": 66,
+  "boxShadow": "none",
+  "children": [
+    {
+      "blueprint": {
+        "view": [
+          {
+            "position": {
+              "left": 0,
+              "top": 0
+            },
+            "props": {
+              "text": "Form",
+              "textStyle": "HEADING"
+            },
+            "size": {
+              "cols": 12,
+              "rows": 1
+            },
+            "type": "TEXT_WIDGET"
+          },
+          {
+            "position": {
+              "left": 12,
+              "top": 11
+            },
+            "props": {
+              "buttonStyle": "PRIMARY_BUTTON",
+              "disabledWhenInvalid": true,
+              "resetFormOnClick": true,
+              "text": "Submit"
+            },
+            "size": {
+              "cols": 4,
+              "rows": 1
+            },
+            "type": "FORM_BUTTON_WIDGET"
+          },
+          {
+            "position": {
+              "left": 8,
+              "top": 11
+            },
+            "props": {
+              "buttonStyle": "SECONDARY_BUTTON",
+              "disabledWhenInvalid": false,
+              "resetFormOnClick": true,
+              "text": "Reset"
+            },
+            "size": {
+              "cols": 4,
+              "rows": 1
+            },
+            "type": "FORM_BUTTON_WIDGET"
+          }
+        ]
+      },
+      "borderRadius": "0px",
+      "bottomRow": 400,
+      "boxShadow": "none",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [],
+      "dynamicTriggerPathList": [],
+      "isLoading": false,
+      "isVisible": true,
+      "labelTextSize": "0.875rem",
+      "leftColumn": 0,
+      "minHeight": 670,
+      "parentColumnSpace": 1,
+      "parentId": "rwssl5rgqb",
+      "parentRowSpace": 1,
+      "rightColumn": 2072,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "9agij1x4a0",
+      "widgetName": "Canvas18"
+    }
+  ],
+  "dynamicBindingPathList": [
+    {
+      "key": "backgroundColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isVisible": true,
+  "labelTextSize": "0.875rem",
+  "leftColumn": 11,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "originalBottomRow": 66,
+  "originalTopRow": 26,
+  "parentColumnSpace": 74,
+  "parentId": "0",
+  "parentRowSpace": 40,
+  "rightColumn": 54,
+  "shouldScrollContents": true,
+  "topRow": 26,
+  "type": "FORM_WIDGET",
+  "version": 1,
+  "widgetId": "rwssl5rgqb",
+  "widgetName": "application_form"
+}

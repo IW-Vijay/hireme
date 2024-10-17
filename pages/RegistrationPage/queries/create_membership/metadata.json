@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT into memberships  (premium_type_id, status_id,community_member_id)\nVALUES (\n\t{{inp_premiumtype.selectedOptionValue ? inp_premiumtype.selectedOptionValue : 1}},\n\t1,\n\t'{{inp_membershipid.text ? inp_membershipid.text.replace(new RegExp(\"'\", \"gm\"), \"''\") : NaN}}'\n) RETURNING membership_id;",
+      "body": "INSERT INTO memberships (premium_type_id, status_id, community_member_id)\nSELECT \n    {{inp_premiumtype.selectedOptionValue ? inp_premiumtype.selectedOptionValue : 1}},\n    1,\n    'KCA' || LPAD((COALESCE(MAX(CAST(SUBSTRING(community_member_id, 4, LENGTH(community_member_id) - 3) AS INTEGER)), 0) + 1)::TEXT, 4, '0')\nFROM memberships;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
