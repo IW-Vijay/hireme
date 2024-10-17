@@ -36,7 +36,7 @@
   "originalBottomRow": 53,
   "originalTopRow": 42,
   "parentColumnSpace": 12.0732421875,
-  "parentId": "set92v0qkh",
+  "parentId": "8ck4i9tmv5",
   "parentRowSpace": 10,
   "placeholderText": "Write something about institution",
   "renderMode": "CANVAS",
@@ -53,6 +53,6 @@
   "topRow": 42,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "dm4hkqua40",
+  "widgetId": "p4loumndpu",
   "widgetName": "inp_about"
 }

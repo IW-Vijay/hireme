@@ -8,6 +8,11 @@
   "disabledWhenInvalid": false,
   "displayName": "Button",
   "dynamicBindingPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -17,7 +22,7 @@
   "iconSVG": "https://appcdn.appsmith.com/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
   "isDefaultClickDisabled": true,
   "isDeprecated": false,
-  "isDisabled": false,
+  "isDisabled": "",
   "isLoading": false,
   "isVisible": true,
   "key": "wvi3t76jwl",
@@ -27,9 +32,11 @@
   "mobileLeftColumn": 18,
   "mobileRightColumn": 34,
   "mobileTopRow": 58,
-  "onClick": "{{getUser.run().then(() => {\n  removeValue('alert');\n  LoginJSObject.signin(getUser.data[0], inp_pass.text);\n});}}",
+  "onClick": "{{LoginJSObject.signin();}}",
+  "originalBottomRow": 41,
+  "originalTopRow": 36,
   "parentColumnSpace": 17.064453125,
-  "parentId": "hnice2rhm7",
+  "parentId": "tkttgnxxxn",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
@@ -45,6 +52,6 @@
   "topRow": 36,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "5akvnnoqql",
+  "widgetId": "yv9xmc3o0j",
   "widgetName": "Button1"
 }

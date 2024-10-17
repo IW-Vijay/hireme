@@ -42,7 +42,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "overflow": "NONE",
-  "parentId": "5l5k1boxj5",
+  "parentId": "2ku0edwrgd",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 41,
@@ -64,6 +64,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "hdi96gyo0f",
+  "widgetId": "mtqviha79m",
   "widgetName": "Text43"
 }

@@ -10,10 +10,18 @@
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
+    },
+    {
+      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "errorMessage": "",
   "hideCard": false,
   "iconAlign": "left",
   "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -33,10 +41,11 @@
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "onTextChanged": "{{removeValue('alert_mail');}}",
   "originalBottomRow": 62,
   "originalTopRow": 54,
   "parentColumnSpace": 12.0732421875,
-  "parentId": "hnice2rhm7",
+  "parentId": "cfmjtqv3rn",
   "parentRowSpace": 10,
   "placeholderText": "Enter email address",
   "renderMode": "CANVAS",
@@ -52,7 +61,8 @@
   "showStepArrows": false,
   "topRow": 30,
   "type": "INPUT_WIDGET_V2",
+  "validation": "{{appsmith.store.alert_mail ? false : true}}",
   "version": 2,
-  "widgetId": "6w7cn6of34",
+  "widgetId": "9dc14thcpy",
   "widgetName": "inp_email"
 }

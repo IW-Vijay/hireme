@@ -20,6 +20,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "onFocus"
+    },
+    {
+      "key": "onTextChanged"
     }
   ],
   "errorMessage": "",
@@ -43,9 +46,10 @@
   "leftColumn": 15,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onFocus": "{{removeValue('alert_pass');}}",
+  "onFocus": "",
+  "onTextChanged": "{{removeValue('alert_pass');}}",
   "parentColumnSpace": 12.0732421875,
-  "parentId": "hnice2rhm7",
+  "parentId": "tkttgnxxxn",
   "parentRowSpace": 10,
   "placeholderText": "Enter your password",
   "renderMode": "CANVAS",
@@ -63,6 +67,6 @@
   "type": "INPUT_WIDGET_V2",
   "validation": "{{appsmith.store.alert_pass ? false : true}}",
   "version": 2,
-  "widgetId": "ao9ljcbzap",
+  "widgetId": "w3xbf22568",
   "widgetName": "inp_pass"
 }

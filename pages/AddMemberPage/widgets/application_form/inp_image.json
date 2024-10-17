@@ -49,7 +49,7 @@
   },
   "onResetClick": "{{showAlert('Successfully reset!!', '').then(() => {\n  storeValue('image', Logo);\n});}}",
   "parentColumnSpace": 18.880859375,
-  "parentId": "hnice2rhm7",
+  "parentId": "cfmjtqv3rn",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 42,
@@ -75,6 +75,6 @@
     "js": "appsmith.onReady(() => {\n    const fileInput = document.getElementById('fileInput');\n    const profilePicture = document.getElementById('profilePicture');\n\n    fileInput.addEventListener('change', function(event) {\n        const file = event.target.files[0];\n        if (file) {\n            const reader = new FileReader();\n            reader.onload = function(e) {\n                profilePicture.src = e.target.result;\n\t\t\t\t\t\t\t\tappsmith.updateModel({ image: e.target.result });\n            };\n            reader.readAsDataURL(file);\n        }\n    });\n});\n"
   },
   "version": 1,
-  "widgetId": "pt35epnu8x",
+  "widgetId": "eou9b5g1dw",
   "widgetName": "inp_image"
 }

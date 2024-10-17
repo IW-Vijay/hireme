@@ -44,7 +44,7 @@
   "originalBottomRow": 14,
   "originalTopRow": 7,
   "overflow": "NONE",
-  "parentId": "5l5k1boxj5",
+  "parentId": "2ku0edwrgd",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 62,
@@ -66,6 +66,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "1bili8nxnv",
+  "widgetId": "l751j50cd4",
   "widgetName": "Text43Copy"
 }

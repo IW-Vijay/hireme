@@ -1,9 +1,9 @@
 {
-  "backgroundColor": "#FFFFFF",
+  "backgroundColor": "",
   "borderColor": "#b91c1c",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 128,
+  "bottomRow": 259,
   "boxShadow": "none",
   "defaultModel": "{{getWorkexsJSObject.workexData.data}}",
   "displayName": "Custom",
@@ -19,7 +19,11 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "backgroundColor"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "events": [],
   "hideCard": false,
@@ -45,8 +49,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 256,
-  "originalTopRow": 158,
+  "originalBottomRow": 133,
+  "originalTopRow": 108,
   "parentColumnSpace": 18.880859375,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
@@ -66,7 +70,7 @@
   ],
   "theme": "{{appsmith.theme}}",
   "thumbnailSVG": "/static/media/thumbnail.a7d7cde44fad9a0d4d490def43560a78.svg",
-  "topRow": 103,
+  "topRow": 162,
   "type": "CUSTOM_WIDGET",
   "uncompiledSrcDoc": {
     "css": ".work-experience-form {\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n\toverflow : hidden;\n}\n\n.work-experience-field {\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  position: relative;\n  padding-right: 50px; /* Space for the remove button */\n}\n\n.work-experience-row {\n  display: flex;\n  gap: 10px;\n}\n\n.row1 input,\n.row1 select {\n  padding: 10px;\n  border-radius: 5px;\n  border: 1px solid #ddd;\n}\n\n.row1 input.organisation {\n  flex: 2;\n  font-size: 16px;\n}\n\n.row1 input.role {\n  flex: 1.5;\n  font-size: 14px;\n}\n\n.row2 input,\n.row2 select {\n  padding: 10px;\n  border-radius: 5px;\n  border: 1px solid #ddd;\n}\n\n.row2 input.start-date,\n.row2 input.end-date {\n  flex: 1;\n  font-size: 14px;\n}\n\n.row2 input.skills {\n  flex: 2;\n  font-size: 14px;\n}\n\n.remove-work-experience-button {\n  position: absolute;\n  right: 10px; /* Space from the right edge */\n  top: 50%; /* Center vertically */\n  transform: translateY(-125%); /* Center vertically */\n  width: 24px;\n  height: 24px;\n  background-color: #ff4d4f;\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  cursor: pointer;\n  transition: background-color 0.3s ease, transform 0.3s ease;\n  z-index: 1; /* Ensure it's above other content */\n}\n\n.remove-work-experience-button:hover {\n  background-color: #d9363e;\n  transform: translateY(-125%) scale(1.1);\n}\n\n\n.add-work-experience-button {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: #1E1E1E;\n  color: white;\n  padding: 8px 12px; /* Smaller padding */\n  border-radius: 5px;\n  cursor: pointer;\n  transition: background-color 0.3s ease, transform 0.3s ease;\n  width: 150px; /* Set a fixed width for the button */\n  text-align: center; /* Center text inside the button */\n  margin: 0 auto; /* Center the button horizontally */\n}\n\n.add-work-experience-button:hover {\n  background-color:#1E1E1E;\n  transform: scale(1.02); /* Slightly increase the size on hover */\n}\n\n\n\n\n.autocomplete-list {\n  border: 1px solid #ddd;\n  background-color: #fff;\n  max-height: 97%;\n  overflow-y: auto;\n  position: absolute;\n  top: 55%; /* Position dropdown directly below the text field */\n  left: 0;\n  width: 87%; /* Ensure dropdown matches the width of the text field */\n  z-index: 1000;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n}\n\n.autocomplete-list li {\n  padding: 8px;\n  cursor: pointer;\n}\n\n.autocomplete-list li:hover {\n  background-color: #f0f0f0;\n}\n\n\n\n\n\n.workex-tabs {\n  display: flex;\n  justify-content: center;\n  gap: 10px;\n  margin-bottom: 10px;\n}\n\n.tab-button {\n  padding: 8px 12px;\n  cursor: pointer;\n  background-color: #f0f0f0;\n  border: none;\n  border-radius: 5px;\n  transition: background-color 0.3s ease;\n}\n\n.tab-button.active {\n  background-color: #71717a;\n  color: white;\n}\n\n\n\n\n\n\n.child-tab-button {\n  padding: 4px 8px; /* Reduced padding for a smaller tab */\n  cursor: pointer;\n  background-color: #e0e0e0; /* Light gray for child tabs */\n  border: none; /* No border to match parent tab style */\n  border-radius: 5px; /* Same border radius */\n  margin-left: 8px; /* Space between child tabs */\n  transition: background-color 0.3s ease; /* Smooth transition */\n  font-size: 12px; /* Smaller font size for child tabs */\n  line-height: 1.2; /* Adjust line height for better alignment */\n  max-width: fit-content; /* Ensures button width fits content */\n}\n\n.child-tab-button.active {\n  background-color: #71717a; /* Same active color as parent tabs */\n  color: white; /* White text for active child tab */\n}\n\n\n",

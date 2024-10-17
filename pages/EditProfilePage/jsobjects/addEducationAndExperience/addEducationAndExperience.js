@@ -1,6 +1,9 @@
 export default {
 	modifyUser: async () => {
 		try {
+			removeValue("alert");
+			removeValue("alert_education");
+			removeValue("alert_workex");
 			// Step 1: Update user details
 			await updateUserDetails.run();
 
@@ -12,21 +15,21 @@ export default {
 
 
 
-			// Step 4: Handle adding educations
+			
 			const educations = educationWidget?.model?.educations || [];
 			const experiences = experienceWidget?.model?.workexs || [];
 
 			const hasEmptyInstitution = educations.some((education) => education.institution_name === "");
 
 			if (hasEmptyInstitution) {
-				showAlert("One or more education records have an empty institution name.");
+				storeValue("alert_education" , "One or more education records have an empty institution name.");
 				return;
 			}
 
 			const hasEmptyOrganization = experiences.some((experience) => experience.organization_name === "");
 
 			if (hasEmptyOrganization) {
-				showAlert("One or more work experience records have an empty organization name.");
+				storeValue("alert_workex" , "One or more work experience records have an empty organization name.");
 				return;
 			}
 
@@ -134,7 +137,7 @@ export default {
 			await navigateTo('ProfilePage');
 
 		} catch (err) {
-			console.error("Error during user modification:", err);
+			storeValue("alert", "Error during update, Please check all the fields.")
 		}
 	}
 }

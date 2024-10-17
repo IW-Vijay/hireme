@@ -43,7 +43,7 @@
   },
   "onClick": "{{navigateTo('LandingPage', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 17.625,
-  "parentId": "zibp2bwxa1",
+  "parentId": "lr16umjygl",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 3,
@@ -54,6 +54,6 @@
   "topRow": 1,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "fdp1gzw3tg",
+  "widgetId": "a4bz8t7q1c",
   "widgetName": "Image2"
 }

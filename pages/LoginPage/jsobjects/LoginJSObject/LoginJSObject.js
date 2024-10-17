@@ -12,10 +12,24 @@ export default {
 	verifyHash: (password, hash) => {
 		return dcodeIO.bcrypt.compareSync(password, hash)
 	},
-	signin: async (user, password) => {
+	signin: async () => {
+		removeValue('alert');
+		removeValue('alert_mail');
+		removeValue('alert_pass');
+		const email = inp_email.text.trim();
+		const password = inp_pass.text;
+		if (!email) {
+			storeValue("alert_mail" , "Email must not be empty.");
+			return;
+		}
+		if (!password) {
+			storeValue("alert_pass" , "Password must not be empty.");
+			return;
+		}
+		await getUser.run();
+		const user = getUser.data[0]
     if (user) {
-        
-
+				
         // Wait for the membership status to be fetched before proceeding
         await fetchMembershipStatus.run({ membership_id: user.membership_id });
 

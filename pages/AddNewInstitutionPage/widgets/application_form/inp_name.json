@@ -10,10 +10,17 @@
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
+    },
+    {
+      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "hideCard": false,
   "iconAlign": "left",
   "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -33,10 +40,11 @@
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "onTextChanged": "{{removeValue('alert_name');}}",
   "originalBottomRow": 38,
   "originalTopRow": 30,
   "parentColumnSpace": 12.0732421875,
-  "parentId": "set92v0qkh",
+  "parentId": "8ck4i9tmv5",
   "parentRowSpace": 10,
   "placeholderText": "Enter institution's name",
   "renderMode": "CANVAS",
@@ -51,7 +59,8 @@
   "showStepArrows": false,
   "topRow": 16,
   "type": "INPUT_WIDGET_V2",
+  "validation": "{{appsmith.store.alert_name? false:true}}",
   "version": 2,
-  "widgetId": "cfpye930ea",
+  "widgetId": "n3rpp9bze9",
   "widgetName": "inp_name"
 }

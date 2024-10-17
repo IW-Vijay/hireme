@@ -1,9 +1,9 @@
 {
-  "backgroundColor": "#FFFFFF",
-  "borderColor": "#b91c1c",
+  "backgroundColor": "",
+  "borderColor": "#fca5a5",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "0",
-  "bottomRow": 103,
+  "borderWidth": "",
+  "bottomRow": 157,
   "boxShadow": "none",
   "defaultModel": "{{getEducationsJSObject.educationData.data}}",
   "displayName": "Custom",
@@ -19,7 +19,11 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "backgroundColor"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "events": [],
   "hideCard": false,
@@ -45,7 +49,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 158,
+  "originalBottomRow": 103,
   "originalTopRow": 78,
   "parentColumnSpace": 18.880859375,
   "parentId": "hnice2rhm7",

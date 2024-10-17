@@ -73,7 +73,7 @@
   "borderColor": "#3b82f6",
   "borderRadius": "1.5rem",
   "borderWidth": "1",
-  "bottomRow": 66,
+  "bottomRow": 73,
   "boxShadow": "none",
   "children": [
     {
@@ -131,7 +131,7 @@
         ]
       },
       "borderRadius": "0px",
-      "bottomRow": 410,
+      "bottomRow": 430,
       "boxShadow": "none",
       "canExtend": false,
       "containerStyle": "none",
@@ -144,14 +144,14 @@
       "leftColumn": 0,
       "minHeight": 670,
       "parentColumnSpace": 1,
-      "parentId": "jl8q4pz21u",
+      "parentId": "jlrsizk75a",
       "parentRowSpace": 1,
       "rightColumn": 2072,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "hnice2rhm7",
-      "widgetName": "Canvas1"
+      "widgetId": "tkttgnxxxn",
+      "widgetName": "Canvas18"
     }
   ],
   "dynamicBindingPathList": [
@@ -159,25 +159,25 @@
       "key": "backgroundColor"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "isLoading": false,
   "isVisible": true,
   "labelTextSize": "0.875rem",
-  "leftColumn": 10,
+  "leftColumn": 11,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 67,
-  "originalTopRow": 32,
+  "originalBottomRow": 73,
+  "originalTopRow": 30,
   "parentColumnSpace": 74,
   "parentId": "0",
   "parentRowSpace": 40,
-  "rightColumn": 53,
+  "rightColumn": 54,
   "shouldScrollContents": true,
-  "topRow": 31,
+  "topRow": 30,
   "type": "FORM_WIDGET",
   "version": 1,
-  "widgetId": "jl8q4pz21u",
+  "widgetId": "jlrsizk75a",
   "widgetName": "application_form"
 }

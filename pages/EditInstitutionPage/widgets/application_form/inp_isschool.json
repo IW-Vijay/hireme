@@ -37,7 +37,7 @@
   "originalBottomRow": 35,
   "originalTopRow": 30,
   "parentColumnSpace": 18.880859375,
-  "parentId": "set92v0qkh",
+  "parentId": "xeegsdl40z",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -45,6 +45,6 @@
   "topRow": 22,
   "type": "SWITCH_WIDGET",
   "version": 1,
-  "widgetId": "pl281nu0ok",
+  "widgetId": "g73tc1vg2d",
   "widgetName": "inp_isschool"
 }

@@ -1,5 +1,9 @@
 export default {
 	async addUser() {
+		removeValue('alert');
+		removeValue('alert_name');
+		removeValue('alert_mail');
+		removeValue('alert_pass');
 		const name = inp_name.text.trim();
 		const email = inp_email.text.trim();
 		const password = inp_password.text;
@@ -7,13 +11,21 @@ export default {
 		//const community_id = inp_comid.text.trim();
 
 		// Validate inputs
-		if (!name || !email || !password) {
-			showAlert("Name, Email, or Password must not be empty.");
+		if (!name) {
+			storeValue("alert_name" , "Name must not be empty.");
+			return;
+		}
+		if (!email) {
+			storeValue("alert_mail" , "Email must not be empty.");
+			return;
+		}
+		if (!password) {
+			storeValue("alert_pass" , "Password must not be empty.");
 			return;
 		}
 
 		if (password !== confirmPassword) {
-			showAlert("Passwords do not match.");
+			storeValue("alert_pass" , "Passwords do not match.");
 			return;
 		}
 
@@ -22,7 +34,7 @@ export default {
 			navigateTo('MembershipPage');
 
 		} catch (error) {
-			showAlert(`Member might already have an account, please try logging in`);
+			storeValue("alert" , "Member might already have an account, please try logging in");
 		}
 	}
 }

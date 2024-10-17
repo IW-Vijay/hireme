@@ -29,7 +29,7 @@
   "mobileTopRow": 58,
   "onClick": "{{navigateTo('ComapniesPage', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 17.064453125,
-  "parentId": "zibp2bwxa1",
+  "parentId": "5a3uckhj8l",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
@@ -45,6 +45,6 @@
   "topRow": 1,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "ssjnvqb6vz",
+  "widgetId": "1g9xnc70om",
   "widgetName": "Button1Copy"
 }

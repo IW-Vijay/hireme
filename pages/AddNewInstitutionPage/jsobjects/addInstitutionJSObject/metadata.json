@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "670e3e4173f83b5809d9e7c2_7c1290b3-a274-4063-855a-d784750ae888",
+  "id": "AddNewInstitutionPage_addInstitutionJSObject",
+  "unpublishedCollection": {
+    "name": "addInstitutionJSObject",
+    "pageId": "AddNewInstitutionPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

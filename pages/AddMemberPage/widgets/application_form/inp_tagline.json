@@ -37,7 +37,7 @@
   "originalBottomRow": 96,
   "originalTopRow": 88,
   "parentColumnSpace": 12.0732421875,
-  "parentId": "hnice2rhm7",
+  "parentId": "cfmjtqv3rn",
   "parentRowSpace": 10,
   "placeholderText": "Enter a tagline (Ex. Software Engineer, HSC Student etc.)",
   "renderMode": "CANVAS",
@@ -53,6 +53,6 @@
   "topRow": 38,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "bslsq2pa6y",
+  "widgetId": "rsukfur0hs",
   "widgetName": "inp_tagline"
 }

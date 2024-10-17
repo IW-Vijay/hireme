@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "0.375rem",
-  "bottomRow": 128,
+  "bottomRow": 143,
   "boxShadow": "none",
   "buttonColor": "#7313e8",
   "buttonVariant": "PRIMARY",
@@ -28,8 +28,8 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 58,
   "onClick": "{{addEducationAndExperience.modifyUser().then(() => {});}}",
-  "originalBottomRow": 128,
-  "originalTopRow": 123,
+  "originalBottomRow": 133,
+  "originalTopRow": 128,
   "parentColumnSpace": 17.064453125,
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
@@ -44,7 +44,7 @@
     "submit"
   ],
   "text": "Update Profile",
-  "topRow": 123,
+  "topRow": 138,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "5akvnnoqql",

@@ -41,11 +41,11 @@
   "mobileRightColumn": 40,
   "mobileTopRow": 73,
   "needsErrorInfo": false,
-  "originalBottomRow": 77,
-  "originalTopRow": 73,
+  "originalBottomRow": 29,
+  "originalTopRow": 25,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
-  "parentId": "hnice2rhm7",
+  "parentId": "tkttgnxxxn",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -58,6 +58,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "qrfkrdf3g4",
+  "widgetId": "k3zc8z74jk",
   "widgetName": "Text42"
 }

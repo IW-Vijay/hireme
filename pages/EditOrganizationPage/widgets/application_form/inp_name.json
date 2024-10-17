@@ -13,10 +13,17 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "hideCard": false,
   "iconAlign": "left",
   "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -36,10 +43,11 @@
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "onTextChanged": "{{removeValue('alert_name');}}",
   "originalBottomRow": 49,
   "originalTopRow": 41,
   "parentColumnSpace": 12.0732421875,
-  "parentId": "set92v0qkh",
+  "parentId": "x49b04gzbp",
   "parentRowSpace": 10,
   "placeholderText": "",
   "renderMode": "CANVAS",
@@ -54,7 +62,8 @@
   "showStepArrows": false,
   "topRow": 21,
   "type": "INPUT_WIDGET_V2",
+  "validation": "{{appsmith.store.alert_name? false : true}}",
   "version": 2,
-  "widgetId": "cfpye930ea",
+  "widgetId": "84hnyerpvv",
   "widgetName": "inp_name"
 }
