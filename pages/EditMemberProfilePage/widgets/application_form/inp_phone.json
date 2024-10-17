@@ -44,7 +44,7 @@
   "parentId": "hnice2rhm7",
   "parentRowSpace": 10,
   "placeholderText": "Enter phone number including country prefix",
-  "regex": "",
+  "regex": "^(\\+1\\s?)?(\\([2-9]\\d{2}\\)|[2-9]\\d{2})[\\s.-]?\\d{3}[\\s.-]?\\d{4}$",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "rightColumn": 63,

@@ -42,6 +42,7 @@
   "parentId": "xeegsdl40z",
   "parentRowSpace": 10,
   "placeholderText": "Enter institution's phone number",
+  "regex": "^(\\+1\\s?)?(\\([2-9]\\d{2}\\)|[2-9]\\d{2})[\\s.-]?\\d{3}[\\s.-]?\\d{4}$",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "rightColumn": 30,
