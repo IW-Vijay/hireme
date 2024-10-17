@@ -6,6 +6,23 @@
     "pageId": "RegistrationPage",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": []
+    "variables": [
+      {
+        "name": "alert",
+        "value": "null"
+      },
+      {
+        "name": "alert_name",
+        "value": "null"
+      },
+      {
+        "name": "alert_mail",
+        "value": "null"
+      },
+      {
+        "name": "alert_pass",
+        "value": "null"
+      }
+    ]
   }
 }

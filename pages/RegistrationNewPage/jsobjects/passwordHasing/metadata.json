@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "670e3e4173f83b5809d9e7c2_0388b9ca-eaf9-488f-ade3-b77c68ea6e8a",
+  "id": "RegistrationNewPage_passwordHasing",
+  "unpublishedCollection": {
+    "name": "passwordHasing",
+    "pageId": "RegistrationNewPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

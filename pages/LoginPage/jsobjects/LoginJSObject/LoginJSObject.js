@@ -45,6 +45,8 @@ export default {
 
 			// Wait for the membership status to be fetched before proceeding
 			await fetchMembershipStatus.run({ membership_id: user.membership_id });
+			
+	
 
 			// Fetch status after ensuring fetchMembershipStatus has completed
 			const status = fetchMembershipStatus.data[0].status_id;

@@ -13,7 +13,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "hideCard": false,
   "iconAlign": "left",
   "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -33,6 +37,7 @@
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "onTextChanged": "{{submitRequest.removeAlerts('alert_mail');}}",
   "originalBottomRow": 79,
   "originalTopRow": 71,
   "parentColumnSpace": 12.0732421875,
@@ -41,7 +46,7 @@
   "placeholderText": "Enter email address",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
-  "rightColumn": 30,
+  "rightColumn": 63,
   "searchTags": [
     "form",
     "text input",

@@ -1,12 +1,10 @@
-INSERT INTO profiles (membership_id, profile_image, profile_name, email, tagline, public_contact_info, password_hash, role_id)
+INSERT INTO profiles (membership_id, profile_image, profile_name, email,password_hash, role_id)
 VALUES
 (
 	{{appsmith.store.user.membership_id}},
 	{{inp_image.model.image ? `'${inp_image.model.image}'` : NaN }},
 	'{{inp_name.text.replace(new RegExp("'", "gm"), "''")}}',
 	'{{inp_email.text.replace(new RegExp("'", "gm"), "''")}}',
-	'{{inp_tagline.text.replace(new RegExp("'", "gm"), "''")}}',
-	'{{inp_contact_info.text.replace(new RegExp("'", "gm"), "''")}}',
 	'{{passwordHasing.createHash(inp_password.text)}}',
 	2
 )

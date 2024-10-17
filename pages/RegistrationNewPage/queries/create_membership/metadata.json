@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67036dee73f83b5809d9e299_a9f939c7-7c65-45b0-b3d0-d114511db958",
-  "id": "ProfilePageForApproval_check_membership_id_existance",
+  "gitSyncId": "670e3e4173f83b5809d9e7c2_4a07591c-c768-4af3-863c-531194927a75",
+  "id": "RegistrationNewPage_create_membership",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM memberships where community_member_id = {{inp_membershipid.text.replace(new RegExp(\"'\", \"gm\"), \"''\")}};",
+      "body": "INSERT INTO memberships (premium_type_id, status_id, community_member_id)\nSELECT \n    1,\n    1,\n    'KCA' || LPAD((COALESCE(MAX(CAST(SUBSTRING(community_member_id, 4, LENGTH(community_member_id) - 3) AS INTEGER)), 0) + 1)::TEXT, 4, '0')\nFROM memberships;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,14 +22,10 @@
       "name": "Community Portal Database",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "executeOnLoad": false,
-    "name": "check_membership_id_existance",
-    "pageId": "ProfilePageForApproval",
+    "name": "create_membership",
+    "pageId": "RegistrationNewPage",
     "userSetOnLoad": false
   }
 }

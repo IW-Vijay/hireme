@@ -1,4 +1,23 @@
 export default {
+	alert : null,
+	alert_name : null,
+	alert_mail : null,
+	alert_pass : null,
+	
+	removeAlerts: (alert_name) => {
+		if (alert_name === 'alert') {
+			this.alert = null;
+		} else if (alert_name === 'alert_name') {
+			this.alert_name = null;
+		} else if (alert_name === 'alert_mail') {
+			this.alert_mail = null;
+		}
+		else if (alert_name === 'alert_pass') {
+			this.alert_pass = null;
+		}
+		return this[alert_name];
+	},
+	
 	async addUser() {
 		const name = inp_name.text.trim();
 		const email = inp_email.text.trim();
@@ -8,14 +27,22 @@ export default {
 		//const inp_membership_id = inp_membershipid.text.trim();
 
 		// Validate inputs
-		if (!name || !email || !password) {
-			showAlert("Name, email, or password must not be empty.");
-			return;
+		if (!name) {
+			this.alert_name = "Name; must not be empty.";
+			return this.alert_name;
+		}
+		if (!email) {
+			this.alert_mail = "Email must not be empty.";
+			return this.alert_mail;
+		}
+		if ( !password) {
+			this.alert_pass = "Password must not be empty.";
+			return this.alert_pass;
 		}
 
 		if (password !== confirmPassword) {
-			showAlert("Passwords do not match.");
-			return;
+				this.alert_pass = "Passwords do not match.";
+				return 	this.alert_pass;
 		}
 		
 		
@@ -25,8 +52,8 @@ export default {
 
 		// If user exists (check based on how your backend returns data)
 		if (user.length > 0) {
-			showAlert("User with this email already exists, please try logging in.");
-			return;
+				this.alert = "User with this email already exists, please try logging in.";
+				return 	this.alert;
 		}
 		
 
@@ -47,11 +74,15 @@ export default {
 			//await create_user_for_approval.run({membership_id});
 			await create_membership.run();
 			membership_id = create_membership.data[0].membership_id;
+			//storeValue("mem" , membership_id);
+			showAlert(membership_id);
+			//delete_membership.run({membership_id})
+			//return;
 			//const about = inp_about.text.replace()(/'/g, "''");
 			
 		} catch (error) {
-					showAlert("Membership id or membership for this email already exists.");
-					return;
+					this.alert_mail = "Membership for this email already exists.";
+					return this.alert_mail;
 		}
 		try {
 			await create_user_for_approval.run({membership_id});
@@ -60,7 +91,8 @@ export default {
 			showModal(RegisteredModel.name);
 		} catch (error) {
 			delete_membership.run({membership_id})
-			showAlert("Unable to register.");
+			this.alert = "Unable to register.";
+			return this.alert;
 		}
 	}
 }

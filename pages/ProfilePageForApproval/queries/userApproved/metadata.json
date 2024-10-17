@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE memberships\nSET  \n    community_member_id = {{ this.params.community_member_id.replace(new RegExp(\"'\", \"gm\"), \"''\")}},\n\t\tpremium_type_id = {{inp_premiumtype.selectedOptionValue}},\n\t\tstatus_id = 2,\n\t\towner_id = {{JSON.parse(appsmith.URL.queryParams.requester).profile_id}}\nWHERE \n    membership_id = {{ JSON.parse(appsmith.URL.queryParams.requester).membership_id }};",
+      "body": "UPDATE memberships\nSET  \n\t\tpremium_type_id = {{inp_premiumtype.selectedOptionValue}},\n\t\tstatus_id = 2,\n\t\towner_id = {{JSON.parse(appsmith.URL.queryParams.requester).profile_id}}\nWHERE \n    membership_id = {{ JSON.parse(appsmith.URL.queryParams.requester).membership_id }};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

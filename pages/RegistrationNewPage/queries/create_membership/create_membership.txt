@@ -1,0 +1,6 @@
+INSERT INTO memberships (premium_type_id, status_id, community_member_id)
+SELECT 
+    1,
+    1,
+    'KCA' || LPAD((COALESCE(MAX(CAST(SUBSTRING(community_member_id, 4, LENGTH(community_member_id) - 3) AS INTEGER)), 0) + 1)::TEXT, 4, '0')
+FROM memberships;
