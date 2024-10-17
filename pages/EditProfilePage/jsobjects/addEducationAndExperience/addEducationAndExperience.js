@@ -76,7 +76,7 @@ export default {
 
 			if (experiences.length > 0) {
 				for (const experience of experiences) {
-					let { organization_id, organization_name, position, start_date, end_date, skills, type, institution_id,  isSchool } = experience;
+					let { organization_id, organization_name, position, start_date, end_date, skills, type, institution_id, isInstitute,  isSchool } = experience;
 
 					// Check if the organization exists
 
@@ -86,7 +86,7 @@ export default {
 						organization_id = organisation?.organization_id;
 						// Add new organization and fetch the new organization ID
 						if (!organization_id) {
-							if (!institution_id) {
+							if (isInstitute) {
 								let institution = institutions.find(inst => inst.name.trim() === organization_name.trim());
 								institution_id = institution?.institution_id;
 								// Add new institution and fetch the new institution ID
