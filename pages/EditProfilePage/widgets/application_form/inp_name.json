@@ -22,7 +22,7 @@
   "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
   "inputType": "TEXT",
   "isDeprecated": false,
-  "isDisabled": false,
+  "isDisabled": true,
   "isLoading": false,
   "isRequired": true,
   "isVisible": true,
