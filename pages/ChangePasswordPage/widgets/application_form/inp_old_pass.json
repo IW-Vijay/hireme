@@ -12,11 +12,15 @@
       "key": "accentColor"
     },
     {
-      "key": "validation"
+      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onFocus"
@@ -31,12 +35,12 @@
   "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
   "inputType": "PASSWORD",
   "isDeprecated": false,
-  "isDisabled": false,
+  "isDisabled": "{{ChangePasswordJSObject.show_new_fields}}",
   "isLoading": false,
   "isRequired": true,
   "isVisible": true,
   "key": "j65kqedbz9",
-  "label": "Existing Password",
+  "label": "Current Password",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",
@@ -65,7 +69,7 @@
   "showStepArrows": false,
   "topRow": 2,
   "type": "INPUT_WIDGET_V2",
-  "validation": "{{ChangePasswordJSObject.alert_pass ? false : true}}",
+  "validation": "",
   "version": 2,
   "widgetId": "0en32b0yk9",
   "widgetName": "inp_old_pass"
