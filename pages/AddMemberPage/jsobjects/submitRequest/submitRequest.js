@@ -1,5 +1,22 @@
 export default {
-	async addUser() {
+	alert : null,
+	alert_name : null,
+	alert_mail : null,
+	alert_pass : null,
+	
+	removeAlerts: (alert_name) => {
+		if (alert_name === 'alert') {
+			this.alert = null;
+		} else if (alert_name === 'alert_mail') {
+			this.alert_mail = null;
+		} else if (alert_name === 'alert_pass') {
+			this.alert_pass = null;
+		} else if (alert_name === 'alert_name') {
+			this.alert_name = null;
+		}
+		return this[alert_name];
+	},
+	async addUser()  {
 		removeValue('alert');
 		removeValue('alert_name');
 		removeValue('alert_mail');
@@ -12,21 +29,21 @@ export default {
 
 		// Validate inputs
 		if (!name) {
-			storeValue("alert_name" , "Name must not be empty.");
-			return;
+			this.alert_name = "Name must not be empty.";
+			return this.alert_name;
 		}
 		if (!email) {
-			storeValue("alert_mail" , "Email must not be empty.");
-			return;
+			this.alert_mail = "Email must not be empty.";
+			return this.alert_mai;
 		}
 		if (!password) {
-			storeValue("alert_pass" , "Password must not be empty.");
-			return;
+			this.alert_pass = "Password must not be empty.";
+			return this.alert_pass;
 		}
 
 		if (password !== confirmPassword) {
-			storeValue("alert_pass" , "Passwords do not match.");
-			return;
+			this.alert_pass = "Passwords do not match.";
+			return this.alert_pass;
 		}
 
 		try {
@@ -34,7 +51,8 @@ export default {
 			navigateTo('MembershipPage');
 
 		} catch (error) {
-			storeValue("alert" , "Member might already have an account, please try logging in");
+		 	this.alert = "Member might already have an account, please try logging in.";
+			return this.alert;
 		}
 	}
 }

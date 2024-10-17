@@ -47,7 +47,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onFocus": "",
-  "onTextChanged": "{{removeValue('alert_pass');}}",
+  "onTextChanged": "{{LoginJSObject.removeAlerts('alert_pass');}}",
   "parentColumnSpace": 12.0732421875,
   "parentId": "tkttgnxxxn",
   "parentRowSpace": 10,
@@ -65,7 +65,7 @@
   "showStepArrows": false,
   "topRow": 14,
   "type": "INPUT_WIDGET_V2",
-  "validation": "{{appsmith.store.alert_pass ? false : true}}",
+  "validation": "{{LoginJSObject.alert_pass ? false : true}}",
   "version": 2,
   "widgetId": "w3xbf22568",
   "widgetName": "inp_pass"

@@ -46,7 +46,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onFocus": "",
-  "onTextChanged": "{{removeValue('alert_mail');}}",
+  "onTextChanged": "{{LoginJSObject.removeAlerts('alert_mail');}}",
   "parentColumnSpace": 12.0732421875,
   "parentId": "tkttgnxxxn",
   "parentRowSpace": 10,
@@ -64,7 +64,7 @@
   "showStepArrows": false,
   "topRow": 5,
   "type": "INPUT_WIDGET_V2",
-  "validation": "{{appsmith.store.alert_mail ? false : true}}",
+  "validation": "{{LoginJSObject.alert_mail ? false : true}}",
   "version": 2,
   "widgetId": "8d5g3csgoo",
   "widgetName": "inp_email"

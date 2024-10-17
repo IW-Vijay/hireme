@@ -6,6 +6,11 @@
     "pageId": "EditInstitutionPage",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": []
+    "variables": [
+      {
+        "name": "alert_name",
+        "value": "null"
+      }
+    ]
   }
 }

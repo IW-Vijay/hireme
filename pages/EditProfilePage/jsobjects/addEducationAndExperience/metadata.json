@@ -6,6 +6,19 @@
     "pageId": "EditProfilePage",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": []
+    "variables": [
+      {
+        "name": "alert",
+        "value": "null"
+      },
+      {
+        "name": "alert_education",
+        "value": "null"
+      },
+      {
+        "name": "alert_workex",
+        "value": "null"
+      }
+    ]
   }
 }

@@ -43,7 +43,7 @@
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onTextChanged": "{{removeValue('alert_name');}}",
+  "onTextChanged": "{{updateOrganizationJSObject.removeAlerts()}}",
   "originalBottomRow": 49,
   "originalTopRow": 41,
   "parentColumnSpace": 12.0732421875,
@@ -62,7 +62,7 @@
   "showStepArrows": false,
   "topRow": 21,
   "type": "INPUT_WIDGET_V2",
-  "validation": "{{appsmith.store.alert_name? false : true}}",
+  "validation": "{{updateOrganizationJSObject.alert_name? false : true}}",
   "version": 2,
   "widgetId": "84hnyerpvv",
   "widgetName": "inp_name"

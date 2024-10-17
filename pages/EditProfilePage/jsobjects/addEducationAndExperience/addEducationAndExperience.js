@@ -1,4 +1,17 @@
 export default {
+	alert : null,
+	alert_education : null,
+	alert_workex : null,
+	removeAlerts: (alert_name) => {
+		if (alert_name === 'alert') {
+			this.alert = null;
+		} else if (alert_name === 'alert_education') {
+			this.alert_education = null;
+		} else if (alert_name === 'alert_workex') {
+			this.alert_workex = null;
+		}
+		return this[alert_name];
+	},
 	modifyUser: async () => {
 		try {
 			removeValue("alert");
@@ -22,15 +35,15 @@ export default {
 			const hasEmptyInstitution = educations.some((education) => education.institution_name === "");
 
 			if (hasEmptyInstitution) {
-				storeValue("alert_education" , "One or more education records have an empty institution name.");
-				return;
+				this.alert_education = "One or more education records have an empty institution name.";
+				return this.alert_education;
 			}
 
 			const hasEmptyOrganization = experiences.some((experience) => experience.organization_name === "");
 
 			if (hasEmptyOrganization) {
-				storeValue("alert_workex" , "One or more work experience records have an empty organization name.");
-				return;
+				this.alert_workex = "One or more work experience records have an empty organization name.";
+				return this.alert_workex;
 			}
 
 
@@ -137,7 +150,8 @@ export default {
 			await navigateTo('ProfilePage');
 
 		} catch (err) {
-			storeValue("alert", "Error during update, Please check all the fields.")
+			this.alert = "Error during update, Please check all the fields.";
+			return this.alert;
 		}
 	}
 }
