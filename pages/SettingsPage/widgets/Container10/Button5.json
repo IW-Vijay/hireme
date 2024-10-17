@@ -24,7 +24,7 @@
   "mobileRightColumn": 16,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('ApprovalList(foradmins)', {}, 'SAME_WINDOW');}}",
+  "onClick": "{{navigateTo('ChangePasswordPage', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 18.26171875,
   "parentId": "lp8y91gj4x",
   "parentRowSpace": 10,
