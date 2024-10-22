@@ -45,7 +45,7 @@
   "mobileTopRow": 120,
   "needsErrorInfo": false,
   "onInstitutionClick": "{{navigateTo('InstitutionPage', {\n  \"institution\": institutionsWidget.model.institution\n}, 'SAME_WINDOW');}}",
-  "originalBottomRow": 458,
+  "originalBottomRow": 100,
   "originalTopRow": 9,
   "parentColumnSpace": 19.8125,
   "parentId": "0",

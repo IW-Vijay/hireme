@@ -44,7 +44,7 @@
   "mobileTopRow": 120,
   "needsErrorInfo": false,
   "onOrganizationClick": "{{navigateTo('organizationPage', {\n  \"organization\": organizationsWidget.model.organization\n}, 'SAME_WINDOW');}}",
-  "originalBottomRow": 103,
+  "originalBottomRow": 31,
   "originalTopRow": 8,
   "parentColumnSpace": 19.8125,
   "parentId": "0",
