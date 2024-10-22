@@ -1,63 +1,56 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 43,
+  "borderWidth": "",
+  "bottomRow": 69,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
     },
     {
-      "key": "fontFamily"
-    },
-    {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
-      "key": "isVisible"
+      "key": "fontSize"
     }
   ],
   "dynamicTriggerPathList": [],
-  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
-  "fontStyle": "",
+  "fontFamily": "Inter",
+  "fontSize": "20px",
+  "fontStyle": "BOLD",
   "isLoading": false,
-  "isVisible": "{{appsmith.store.alert_name ? true : false}}",
-  "key": "oo3s6qvgd5",
-  "leftColumn": 1,
+  "isVisible": true,
+  "key": "klnpt6ed37",
+  "leftColumn": 31,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 77,
-  "mobileLeftColumn": 24,
-  "mobileRightColumn": 40,
-  "mobileTopRow": 73,
+  "mobileBottomRow": 43,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 39,
   "needsErrorInfo": false,
-  "originalBottomRow": 25,
-  "originalTopRow": 21,
+  "originalBottomRow": 69,
+  "originalTopRow": 61,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
-  "parentId": "cti0tti10h",
+  "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 64,
+  "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{appsmith.store.alert_name}}",
+  "text": "Let's get to know each other and shape the future of our community, one connection at a time!\nಒಟ್ಟಾಗಿ ಬೆಳೆದು, ಒಟ್ಟಾಗಿ ಯಶಸ್ಸು ಸಾಧಿಸೋಣ!",
   "textAlign": "CENTER",
-  "textColor": "#ef4444",
-  "topRow": 39,
+  "textColor": "#231F20",
+  "topRow": 61,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "m3zzdszk1q",
-  "widgetName": "Text42Copy2"
+  "widgetId": "tinntn4n1a",
+  "widgetName": "Text2CopyCopy"
 }

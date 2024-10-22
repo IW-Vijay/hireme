@@ -11,9 +11,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -24,7 +21,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "4f8gxtjt45",
-  "leftColumn": 25,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -34,19 +31,19 @@
   "mobileTopRow": 35,
   "needsErrorInfo": false,
   "originalBottomRow": 39,
-  "originalTopRow": 35,
+  "originalTopRow": 34,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 37,
+  "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "Welcome {{appsmith.store.user.profile_name}}!",
+  "text": "ಸ್ವಾಗತ\nನಮಸ್ಕಾರ!",
   "textAlign": "CENTER",
   "textColor": "#231F20",
-  "topRow": 35,
+  "topRow": 34,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

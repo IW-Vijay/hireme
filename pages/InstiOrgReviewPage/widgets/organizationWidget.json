@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "2",
-  "bottomRow": 350,
+  "bottomRow": 76,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "defaultModel": "{{organizationsJSObject.getOrganizations.data\n}}",
   "dynamicBindingPathList": [
@@ -45,7 +45,7 @@
   "mobileTopRow": 120,
   "needsErrorInfo": false,
   "onOrganizationClick": "{{navigateTo('organizationPage', {\n  \"organization\": organizationWidget.model.organization\n}, 'SAME_WINDOW');}}",
-  "originalBottomRow": 62,
+  "originalBottomRow": 350,
   "originalTopRow": 9,
   "parentColumnSpace": 19.8125,
   "parentId": "0",

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 48,
+  "bottomRow": 44,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -14,50 +14,42 @@
     },
     {
       "key": "text"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
-  "fontStyle": "",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
   "isLoading": false,
-  "isVisible": "{{appsmith.store.alert_mail ? true : false}}",
-  "key": "oo3s6qvgd5",
-  "leftColumn": 1,
+  "isVisible": true,
+  "key": "4f8gxtjt45",
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 77,
-  "mobileLeftColumn": 24,
-  "mobileRightColumn": 40,
-  "mobileTopRow": 73,
+  "mobileBottomRow": 39,
+  "mobileLeftColumn": 25,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 35,
   "needsErrorInfo": false,
-  "originalBottomRow": 36,
-  "originalTopRow": 32,
+  "originalBottomRow": 44,
+  "originalTopRow": 40,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
-  "parentId": "cti0tti10h",
+  "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "{{appsmith.store.alert_mail}}",
+  "text": "{{appsmith.store.user.profile_name}} ಗೆ ಲಾಗಿನ್ ಆದ ನಿಮಗೆ ಧನ್ಯವಾದಗಳು.",
   "textAlign": "CENTER",
-  "textColor": "#ef4444",
-  "topRow": 44,
+  "textColor": "#231F20",
+  "topRow": 40,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "36ff7nftbu",
-  "widgetName": "Text42Copy1"
+  "widgetId": "6gueszimhi",
+  "widgetName": "Text2Copy"
 }

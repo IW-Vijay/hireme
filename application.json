@@ -136,10 +136,6 @@
     {
       "id": "ChangePasswordPage",
       "isDefault": false
-    },
-    {
-      "id": "RegistrationNewPage",
-      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

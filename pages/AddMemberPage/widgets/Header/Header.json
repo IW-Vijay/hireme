@@ -4,11 +4,11 @@
   "borderColor": "transparent",
   "borderRadius": "0px",
   "borderWidth": "1",
-  "bottomRow": 7,
+  "bottomRow": 8,
   "boxShadow": "none",
   "children": [
     {
-      "bottomRow": 70,
+      "bottomRow": 80,
       "canExtend": false,
       "containerStyle": "none",
       "detachFromLayout": true,

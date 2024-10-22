@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 35,
+  "bottomRow": 20,
   "boxShadow": "none",
   "defaultModel": "{{usersJSObject.usersObject.data}}",
   "dynamicBindingPathList": [
@@ -46,7 +46,7 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 112,
   "needsErrorInfo": false,
-  "originalBottomRow": 40,
+  "originalBottomRow": 35,
   "originalTopRow": 13,
   "parentColumnSpace": 19.8125,
   "parentId": "g4z51bkncq",

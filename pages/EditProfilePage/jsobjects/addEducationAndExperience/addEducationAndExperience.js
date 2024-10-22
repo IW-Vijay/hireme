@@ -53,7 +53,7 @@ export default {
 
 			if (educations.length > 0) {
 				for (const education of educations) {
-					let { institution_id, institution_name , degree, specialization, start_date, end_date, marks, isSchool } = education;
+					let { institution_id, institution_name , degree, specialization, start_date, end_date, marks, isSchool, currently_pursuing } = education;
 
 
 
@@ -79,7 +79,8 @@ export default {
 						specialization, 
 						start_date, 
 						end_date, 
-						marks
+						marks,
+						currently_pursuing
 					});
 					console.log("Education added:", education);
 				}
@@ -92,7 +93,7 @@ export default {
 
 			if (experiences.length > 0) {
 				for (const experience of experiences) {
-					let { organization_id, organization_name, position, start_date, end_date, skills, type, institution_id, isInstitute,  isSchool } = experience;
+					let { organization_id, organization_name, position, start_date, end_date, skills, type, institution_id, isInstitute,  isSchool, currently_working } = experience;
 
 					// Check if the organization exists
 
@@ -132,7 +133,8 @@ export default {
 						start_date, 
 						end_date, 
 						skills,
-						type
+						type,
+						currently_working
 					});
 					console.log("Experience added:", experience);
 				}
