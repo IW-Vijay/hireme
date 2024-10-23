@@ -47,7 +47,7 @@
   "labelTextColor": "",
   "labelTextSize": "1rem",
   "labelWidth": 5,
-  "leftColumn": 14,
+  "leftColumn": 6,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onFocus": "",
@@ -58,7 +58,7 @@
   "placeholderText": "Enter your password",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
-  "rightColumn": 45,
+  "rightColumn": 58,
   "searchTags": [
     "form",
     "text input",

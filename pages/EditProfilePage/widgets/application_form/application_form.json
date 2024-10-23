@@ -71,7 +71,7 @@
     ]
   },
   "borderRadius": "0",
-  "bottomRow": 148,
+  "bottomRow": 147,
   "boxShadow": "none",
   "children": [
     {
@@ -129,7 +129,7 @@
         ]
       },
       "borderRadius": "0px",
-      "bottomRow": 1400,
+      "bottomRow": 1390,
       "boxShadow": "none",
       "canExtend": false,
       "containerStyle": "none",

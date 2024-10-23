@@ -47,7 +47,7 @@
   "labelTextColor": "",
   "labelTextSize": "1rem",
   "labelWidth": 5,
-  "leftColumn": 14,
+  "leftColumn": 6,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onFocus": "",
@@ -59,7 +59,7 @@
   "regex": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
-  "rightColumn": 45,
+  "rightColumn": 59,
   "searchTags": [
     "form",
     "text input",
