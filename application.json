@@ -136,6 +136,14 @@
     {
       "id": "ChangePasswordPage",
       "isDefault": false
+    },
+    {
+      "id": "AfterActivationLinkLandingPage",
+      "isDefault": false
+    },
+    {
+      "id": "ErrorActivationPage",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

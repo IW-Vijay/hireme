@@ -17,6 +17,10 @@ export default {
 		}
 		return this[alert_name];
 	},
+	htmlencoding(text = "Admin@123") {
+		const encoded_string = encodeURIComponent(text);
+		return encoded_string;
+	},
 	
 	async addUser() {
 		const name = inp_name.text.trim();
@@ -96,6 +100,9 @@ export default {
 
 			// If successful, show the modal
 			showModal(RegisteredModel.name);
+			
+			send_activation_link.run();
+			
 		} catch (error) {
 			delete_membership.run({membership_id})
 			this.alert = "Unable to register.";

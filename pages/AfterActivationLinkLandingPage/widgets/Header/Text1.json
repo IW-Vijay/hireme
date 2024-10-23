@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 5,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -12,26 +12,29 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontSize": "0.875rem",
   "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.301748e14b0306a7b94ece2d9e2c11cc.svg",
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "fautc68j4f",
-  "leftColumn": 1,
+  "key": "ulsj8t6uep",
+  "leftColumn": 40,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
   "mobileBottomRow": 5,
-  "mobileLeftColumn": 1,
-  "mobileRightColumn": 41,
+  "mobileLeftColumn": 42,
+  "mobileRightColumn": 58,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "onCanvasUI": {
@@ -41,13 +44,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 12,
-  "originalTopRow": 7,
+  "originalBottomRow": 5,
+  "originalTopRow": 1,
   "overflow": "NONE",
-  "parentId": "5l5k1boxj5",
+  "parentColumnSpace": 17.625,
+  "parentId": "8hgg1pfekv",
+  "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 62,
+  "rightColumn": 59,
   "searchTags": [
     "typography",
     "paragraph",
@@ -58,14 +63,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "Activation link has been sent to your Email address.\nplease click on that link to verify email.",
-  "textAlign": "LEFT",
-  "textColor": "#231F20",
+  "text": "{{appsmith.store.user.profile_name}}",
+  "textAlign": "RIGHT",
+  "textColor": "#231f20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 7,
+  "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "1bili8nxnv",
-  "widgetName": "Text43Copy"
+  "widgetId": "ijnw79q81e",
+  "widgetName": "Text1"
 }

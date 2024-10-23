@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 11,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -41,7 +41,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 12,
+  "originalBottomRow": 14,
   "originalTopRow": 7,
   "overflow": "NONE",
   "parentId": "5l5k1boxj5",
@@ -58,7 +58,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "Activation link has been sent to your Email address.\nplease click on that link to verify email.",
+  "text": "Thankyou for creating an event to help community.",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
