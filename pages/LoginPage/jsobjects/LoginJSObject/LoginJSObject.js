@@ -15,6 +15,10 @@ export default {
 	verifyHash: (password, hash) => {
 		return dcodeIO.bcrypt.compareSync(password, hash)
 	},
+	htmlencoding(text) {
+		const encoded_string = encodeURIComponent(text);
+		return encoded_string;
+	},
 	removeAlerts: (alert_name) => {
 		if (alert_name === 'alert') {
 			this.alert = null;

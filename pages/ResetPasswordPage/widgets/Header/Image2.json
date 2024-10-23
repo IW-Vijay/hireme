@@ -10,11 +10,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
@@ -41,9 +37,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{navigateTo('LandingPage', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 17.625,
-  "parentId": "5yviod1yjj",
+  "parentId": "8hgg1pfekv",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 3,
@@ -54,6 +49,6 @@
   "topRow": 0,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "mg3ovtekpr",
+  "widgetId": "gwloxcm79b",
   "widgetName": "Image2"
 }

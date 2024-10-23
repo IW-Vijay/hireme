@@ -29,7 +29,7 @@
   "mobileTopRow": 58,
   "onClick": "{{navigateTo('SchoolCollegePage', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 17.064453125,
-  "parentId": "aqblg9z76b",
+  "parentId": "5yviod1yjj",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
@@ -45,6 +45,6 @@
   "topRow": 1,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "x4sxvsug2u",
+  "widgetId": "4amcjfr554",
   "widgetName": "Button1"
 }

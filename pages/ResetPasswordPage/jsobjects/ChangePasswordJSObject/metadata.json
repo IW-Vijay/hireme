@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "6715e2bb73f83b5809d9ebd1_8b4ff800-af29-4ded-977e-df2034c8a4d7",
+  "id": "ResetPasswordPage_ChangePasswordJSObject",
+  "unpublishedCollection": {
+    "name": "ChangePasswordJSObject",
+    "pageId": "ResetPasswordPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "alert",
+        "value": "null"
+      }
+    ]
+  }
+}

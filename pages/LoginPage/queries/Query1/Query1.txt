@@ -1,0 +1,9 @@
+Hi, 
+
+Please click the below link to reset your KCA portal password.
+
+http://3.89.202.29/app/hireme-1/resetpasswordpage-6718ddca52c1475bda2f1c5a?branch=MVP-103&email={{LoginJSObject.htmlencoding(inp_email_fp.text)}}
+
+best regards,
+KCA Board members
+contact_info

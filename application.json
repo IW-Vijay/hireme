@@ -144,6 +144,10 @@
     {
       "id": "ErrorActivationPage",
       "isDefault": false
+    },
+    {
+      "id": "ResetPasswordPage",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
