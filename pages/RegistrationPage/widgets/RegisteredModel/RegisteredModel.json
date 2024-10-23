@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 204,
+  "bottomRow": 19,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
@@ -96,7 +96,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClose": "{{navigateTo('HomePage', {}, 'SAME_WINDOW');}}",
+  "onClose": "{{navigateTo('AfterActivationLinkLandingPage', {\n \"email\" : inp_email.text,\n\t\"pass\" : inp_password.text\n}, 'SAME_WINDOW');}}",
   "originalBottomRow": 264,
   "originalTopRow": 14,
   "parentColumnSpace": 18.880859375,

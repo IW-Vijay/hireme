@@ -1,7 +1,9 @@
 Hi {{inp_name.text}},
 We are glad to have you onboard. Please use following link to actiavte your account.
 
-http://3.89.202.29/app/hireme-1/afteractivationlinklandingpage-671786973393c011d443cbd2/branch=MVP-103&email={{submitRequest.htmlencoding(inp_email.text)}}&pass={{submitRequest.htmlencoding(inp_password.text)}}
+http://3.89.202.29/app/hireme-1/afteractivationlinklandingpage-671786973393c011d443cbd2?branch=MVP-103&email={{submitRequest.htmlencoding(inp_email.text)}}&pass={{submitRequest.htmlencoding(inp_password.text)}}
+
+
 
 
 best regards,

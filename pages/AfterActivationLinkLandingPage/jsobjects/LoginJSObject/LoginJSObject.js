@@ -18,6 +18,7 @@ export default {
 		
 		await getUser.run();
 		const user = getUser.data[0]
+		storeValue("user", user);
 		if (user) {
 			if(this.verifyHash(password, user.password_hash)){
 				await activateMembership.run({ membership_id: user.membership_id });

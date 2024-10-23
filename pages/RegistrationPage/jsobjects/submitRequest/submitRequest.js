@@ -101,7 +101,7 @@ export default {
 			// If successful, show the modal
 			showModal(RegisteredModel.name);
 			
-			send_activation_link.run();
+			//send_activation_link.run();
 			
 		} catch (error) {
 			delete_membership.run({membership_id})
