@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 39,
+  "bottomRow": 53,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -30,8 +30,8 @@
   "mobileRightColumn": 41,
   "mobileTopRow": 35,
   "needsErrorInfo": false,
-  "originalBottomRow": 39,
-  "originalTopRow": 34,
+  "originalBottomRow": 53,
+  "originalTopRow": 49,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
@@ -40,13 +40,13 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "ಸ್ವಾಗತ\nನಮಸ್ಕಾರ!",
+  "text": "ಮತ್ತೆ ಸ್ವಾಗತ – ಜೊತೆಯಾಗಿ ಮುಂದುವರಿಯೋಣ!",
   "textAlign": "CENTER",
   "textColor": "#231F20",
-  "topRow": 34,
+  "topRow": 49,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "a5e40mr83k",
-  "widgetName": "Text2"
+  "widgetId": "xqcq3ugouw",
+  "widgetName": "Text2CopyCopy"
 }

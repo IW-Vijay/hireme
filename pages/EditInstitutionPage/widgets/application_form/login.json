@@ -28,7 +28,7 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 58,
   "onClick": "{{updateInstitutionJSObject.updateInstitution().then(() => {});}}",
-  "originalBottomRow": 66,
+  "originalBottomRow": 65,
   "originalTopRow": 61,
   "parentColumnSpace": 17.064453125,
   "parentId": "xeegsdl40z",

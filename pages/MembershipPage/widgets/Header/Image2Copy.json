@@ -48,7 +48,7 @@
   },
   "onClick": "{{navigateTo('ProfilePage', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 17.625,
-  "parentId": "5yviod1yjj",
+  "parentId": "63v6s6txqz",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 62,
@@ -59,6 +59,6 @@
   "topRow": 0,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "b4oukjapdz",
+  "widgetId": "lbttlmdv1e",
   "widgetName": "Image2Copy"
 }

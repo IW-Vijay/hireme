@@ -28,7 +28,7 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 58,
   "onClick": "{{addInstitutionJSObject.addInstitution()}}",
-  "originalBottomRow": 63,
+  "originalBottomRow": 62,
   "originalTopRow": 58,
   "parentColumnSpace": 17.064453125,
   "parentId": "8ck4i9tmv5",

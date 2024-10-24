@@ -113,10 +113,10 @@
   "mobileRightColumn": 16,
   "mobileTopRow": 91,
   "needsErrorInfo": false,
-  "originalBottomRow": 96,
-  "originalTopRow": 92,
+  "originalBottomRow": 88,
+  "originalTopRow": 84,
   "parentColumnSpace": 19.8125,
-  "parentId": "zibp2bwxa1",
+  "parentId": "fhozp15r9v",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "renderMode": "CANVAS",
@@ -125,6 +125,6 @@
   "topRow": 1,
   "type": "MENU_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "jm56lwljj1",
+  "widgetId": "jddpy8f0ga",
   "widgetName": "MenuButton1"
 }

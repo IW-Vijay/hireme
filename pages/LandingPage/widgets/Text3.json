@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 51,
+  "bottomRow": 49,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -31,7 +31,7 @@
   "mobileRightColumn": 39,
   "mobileTopRow": 38,
   "needsErrorInfo": false,
-  "originalBottomRow": 51,
+  "originalBottomRow": 49,
   "originalTopRow": 44,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
@@ -41,7 +41,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 56,
   "shouldTruncate": false,
-  "text": "ಈ ಪೋರ್ಟಲ್ ಮೂಲಕ, ನಮ್ಮ ಸಮುದಾಯದ ಸದಸ್ಯರೊಂದಿಗೆ ಶಾಲೆಗಳು, ಕಾಲೇಜುಗಳು, ಇಂಟರ್ನ್‌ಶಿಪ್‌ಗಳು ಮತ್ತು ಉದ್ಯೋಗ ಅವಕಾಶಗಳ ಕುರಿತು ಮಾಹಿತಿ ಹಂಚಿಕೊಳ್ಳುವ ಮತ್ತು ಅರಿತುಕೊಳ್ಳುವ ಅವಕಾಶವನ್ನು ನೀವು ಪಡೆಯಬಹುದು. ನಮ್ಮ ಸಮಾಜವನ್ನು ಬಲಪಡಿಸಲು ಹಾಗೂ ಒಟ್ಟಾಗಿ ಬೆಳೆಸಲು ನಿಮ್ಮ ಸಹಭಾಗಿತ್ವ ಬಹಳ ಮುಖ್ಯವಾಗಿದೆ",
+  "text": "Check in with your community, update your profile, or see what's new. Take a moment to reconnect and explore.\nWe're happy to have you back—let's continue building together!",
   "textAlign": "CENTER",
   "textColor": "#231F20",
   "topRow": 44,

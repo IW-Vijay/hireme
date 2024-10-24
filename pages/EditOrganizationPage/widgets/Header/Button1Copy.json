@@ -19,9 +19,9 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": false,
   "key": "wvi3t76jwl",
-  "leftColumn": 21,
+  "leftColumn": 34,
   "minWidth": 120,
   "mobileBottomRow": 62,
   "mobileLeftColumn": 18,
@@ -29,14 +29,14 @@
   "mobileTopRow": 58,
   "onClick": "{{navigateTo('ComapniesPage', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 17.064453125,
-  "parentId": "l151bwiaeo",
+  "parentId": "2e9x9ja4f0",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 27,
+  "rightColumn": 40,
   "searchTags": [
     "click",
     "submit"
@@ -45,6 +45,6 @@
   "topRow": 1,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "jgvjelyxfi",
+  "widgetId": "pqcc5icj1v",
   "widgetName": "Button1Copy"
 }

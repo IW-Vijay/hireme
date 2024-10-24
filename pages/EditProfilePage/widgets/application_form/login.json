@@ -28,7 +28,7 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 58,
   "onClick": "{{addEducationAndExperience.modifyUser().then(() => {});}}",
-  "originalBottomRow": 138,
+  "originalBottomRow": 137,
   "originalTopRow": 133,
   "parentColumnSpace": 17.064453125,
   "parentId": "hnice2rhm7",

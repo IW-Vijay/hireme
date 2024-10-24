@@ -28,7 +28,7 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 58,
   "onClick": "{{updateOrganizationJSObject.updateOrganization()}}",
-  "originalBottomRow": 75,
+  "originalBottomRow": 74,
   "originalTopRow": 70,
   "parentColumnSpace": 17.064453125,
   "parentId": "x49b04gzbp",
