@@ -19,9 +19,9 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": false,
   "key": "wvi3t76jwl",
-  "leftColumn": 14,
+  "leftColumn": 27,
   "minWidth": 120,
   "mobileBottomRow": 62,
   "mobileLeftColumn": 18,
@@ -36,7 +36,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 21,
+  "rightColumn": 34,
   "searchTags": [
     "click",
     "submit"
