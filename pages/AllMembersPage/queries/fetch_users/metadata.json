@@ -23,7 +23,7 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "fetch_users",
     "name": "fetch_users",
     "pageId": "AllMembersPage",

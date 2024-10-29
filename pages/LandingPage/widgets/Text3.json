@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 49,
+  "bottomRow": 48,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -31,8 +31,8 @@
   "mobileRightColumn": 39,
   "mobileTopRow": 38,
   "needsErrorInfo": false,
-  "originalBottomRow": 49,
-  "originalTopRow": 44,
+  "originalBottomRow": 48,
+  "originalTopRow": 43,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
@@ -44,7 +44,7 @@
   "text": "Check in with your community, update your profile, or see what's new. Take a moment to reconnect and explore.\nWe're happy to have you back—let's continue building together!",
   "textAlign": "CENTER",
   "textColor": "#231F20",
-  "topRow": 44,
+  "topRow": 43,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
