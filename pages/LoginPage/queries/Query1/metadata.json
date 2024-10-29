@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "Hi, \n\nPlease click the below link to reset your KCA portal password.\n\nhttp://52.91.222.219/app/hireme-1/resetpasswordpage-6718ddca52c1475bda2f1c5a?branch=MVP-103&email={{LoginJSObject.htmlencoding(inp_email_fp.text)}}\n\nbest regards,\nKCA Board members\ncontact_info\n",
+      "body": "Hi, \n\nPlease click the below link to reset your KCA portal password.\n\nhttp://44.223.73.194/app/hireme/resetpasswordpage-6718ddca52c1475bda2f1c5a?branch=MVP-103&email={{LoginJSObject.htmlencoding(inp_email_fp.text)}}\n\nbest regards,\nKCA Board members\ncontact_info\n",
       "encodeParamsToggle": true,
       "formData": {
         "command": "SEND",
