@@ -26,6 +26,6 @@
     "executeOnLoad": false,
     "name": "fetch_roles",
     "pageId": "MembershipPage",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

@@ -30,6 +30,6 @@
     "executeOnLoad": false,
     "name": "fetch_users",
     "pageId": "MembershipPage",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }
