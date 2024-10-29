@@ -71,6 +71,7 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "hideCard": false,
   "iconSVG": "https://appcdn.appsmith.com/static/media/icon.dcc052e58db911c4c8955c200f4bcf5c.svg",
