@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "fetchEducation",
     "pageId": "ProfilePage",
     "userSetOnLoad": false
